@@ -1,0 +1,70 @@
+.ways-to-buy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 70px;
+    /* color: #373435; */
+}
+.ways-to-buy .content {
+    flex: 0 1 45%;
+}
+.ways-to-buy h1 {
+    /* font-family: Outfit; */
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.ways-to-buy .info {
+    flex: 1;
+}
+.ways-to-buy .info img {
+    width: 100%;
+}
+.ways-to-buy .description {
+    /* font-family: Outfit; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 20px;
+}
+.way-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 18px;
+    padding: 29px;
+    width: 100%;
+    max-width: 526px;
+}
+.way-sec-container + .way-sec-container {
+    margin-top: 20px;
+}
+.way-sec-container:nth-child(odd) {
+    margin-left: 110px;
+}
+.way-section .way-img {
+    flex: 0 0 58px;
+}
+.way-section .way-info {
+    flex: 1;
+}
+.way-section .way-info h2 {
+    /* font-family: Outfit; */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+}
+.way-section .way-info .way-desc {
+    /* font-family: Outfit; */
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+    margin-top: 10px;
+}
