@@ -1,4 +1,4 @@
-
+import React from 'react';
 import logo from "../images/main-logo.png";
 
 function Header() {

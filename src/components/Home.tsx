@@ -1,3 +1,4 @@
+import React from 'react';
 import HomeTop from "./HomeTop/index.tsx";
 import WaysToBuy from "./WaysToBuy/index.tsx";
 import LookingFor from "./LookingFor/index.tsx";

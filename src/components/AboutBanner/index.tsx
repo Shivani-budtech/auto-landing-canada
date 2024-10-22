@@ -1,17 +1,17 @@
 import React from 'react';
 import './index.css';
-function BottomBanner() {
+function AboutBanner() {
 
     return (
         <section className="banner-sec">
             <div className="banner-container">
                 <div className='banner-content'>
-                    <div className="sec-title">Get Approved for Your Car Loan</div>
+                    <div className="sec-title">Start your journey now</div>
                     <div className="banner-desc">
-                        Your online application takes only 3 minutes to complete and we only ask for information we actually need.
+                        YOUR DREAM CAR AWAITS YOU
                     </div>
                     <div className="banner-btn">
-                        <a href='#' className='primary-btn'>Get Approved Today</a>
+                        <a href='#' className='primary-btn'>Apply Now</a>
                     </div>
                 </div>
             </div>
@@ -19,4 +19,4 @@ function BottomBanner() {
     );
 }
 
-export default BottomBanner;
+export default AboutBanner;
