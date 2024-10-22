@@ -2,6 +2,9 @@
     padding: 100px 70px;
     /* color: #373435; */
 }
+.about-page .testimonials-sec {
+    padding-bottom: 0;
+}
 .testimonial-grid {
     /* display: flex;
     align-items: center;

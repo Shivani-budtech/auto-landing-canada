@@ -3,7 +3,7 @@
 }
 .about-us-sec .about-us-container {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .about-us-sec .about-image {
     flex: 1;
