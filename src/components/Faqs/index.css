@@ -27,7 +27,7 @@
     content: "";
     height: 23px;
     width: 23px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgBtZVLTgJBEIb/moGlBm8wrnSjGRNdywnEGygnAPckQOAAnAA5gnAAHieQkJDASm7grHm1VT0zvBkGGf6kp5t+fH/T1ekiBEhZVgKXlxkolQSRxbXlDTlcutxXx3j8RYPBaB+DdoJvby3E45/cTCKcaphMiruMjC34/X2G4d9HwEXvsobXZjcHaAOe52Mo4BQRFajXK24Z6J0rVUEUIvpgk8rCwDtzOZYEopHDMXmQmLgxiMfzEcKhWe4lAXm7/8E5ZJpXBn9ecS5Np1kDhpHaO+HiAiiV3PqYMV9EzxIDe++Ex0cgxf7V6jpI2tInY09PCJAlBvuD22oBuRxwc7M08eHSJ2PNJoIMSN3dKRzSywtQLgPDofvbhzcaB5fGuIzEKXCWDxITUUg4ywlnsGqy2Q6SUt0Yfzoc7WSoBWHBS4M6KdtOYDb7xTlkmtcGdbuSPNqIXjVme2+RaabhZqmo5DBTP9naQJw4DkVEpfm8qJlYyWj6/VbqdBNmUL+/yCtbOVmnPaX+83w7eucr8J0G2sS2Lb5ZBW6+IYyUaiMWS/vHctBgzWg+f+WS4hjJo+j/qxFDR1x3GFzxbuJO/QE1lqbvLK8kwgAAAABJRU5ErkJggg==);
+    background-image: url("./faq-arrow.png");
     display: block;
     background-size: contain;
     position: absolute;

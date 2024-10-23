@@ -28,9 +28,9 @@ function AboutFeatures() {
             <div className="why-choose-row">
                 <img src={require("./dotted-bg.png")} className="first-img" />
                 <img src={require("./round.png")} className="last-img" />
-                <div class="grida">
+                <div className="grida">
                     {Object.entries(whyChoose).map(([key, why]) => (
-                        <div key={key} class="grida-item">
+                        <div key={key} className="grida-item">
                             <div className="grida-img">
                                 <img src={require(`./${why.img}`)} />
                             </div>

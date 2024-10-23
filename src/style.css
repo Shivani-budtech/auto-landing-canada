@@ -27,6 +27,26 @@ ul , li {
     list-style-type: none;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
 /* header */
 .main-header {
     width: 100%;
@@ -79,6 +99,12 @@ ul , li {
     border-radius: 14px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    font-family: inherit;
+    border-color: var(--primary-btn-color);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: inherit;
 }
 .secondary-btn {
     background-color: transparent;
@@ -89,6 +115,9 @@ ul , li {
     border-radius: 14px;
     font-weight: 700;
     letter-spacing: 1;  
+}
+.header-marging {
+    margin-top: 106px;
 }
 
 
@@ -236,4 +265,42 @@ ul , li {
 }
 .mt-10 {
     margin-top: 10px;
+}
+.form-input input , .form-input textarea {
+    width: 100%;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    border: 1px solid #37343533 !important;
+    outline: none !important;
+    border-radius: 12px;
+    font-family: inherit;
+    max-width: 100%;
+}
+.auto-lending-app .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 16px 18px;
+}
+.auto-lending-app .select2-container--default .select2-selection--single {
+    height: fit-content;
+}
+.auto-lending-app .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 16px;
+}
+.auto-lending-app .select2-container--default .select2-selection--single {
+    border-color: #37343533;
+    border-radius: 12px;
+}
+.auto-lending-app .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 60px;
+    width: 35px;
+}
+.select2-dropdown {
+    border-color: #37343533 !important; 
+}
+.auto-lending-app .select2-container--default .select2-selection--single .select2-selection__clear {
+    display: none;
+}
+.auto-lending-app .select2 {
+    width: 100% !important;
 }

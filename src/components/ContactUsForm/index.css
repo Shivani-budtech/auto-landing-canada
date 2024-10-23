@@ -1,0 +1,24 @@
+.contact-us-sec {
+    padding: 100px 70px 0;
+}
+.contact-form-row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-form-row .contact-col {
+    flex: 1;
+}
+.contact-form-row + .contact-form-row {
+    margin-top: 25px;
+}
+.contact-col {
+    max-width: 100%;
+}
+.consent-check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
