@@ -1,0 +1,278 @@
+.apply-stepper {
+    padding: 0 20px;
+    max-width: 885px;
+    margin: 0 auto;
+}
+.stepper-progress-container {
+        padding: 30px 0;
+}
+.stepper-progress {
+    height: 10px;
+    width: 100%;
+    background: #dae0ea;
+    /* opacity: 0.15; */
+    border-radius: 5px;
+    position: relative;
+}
+.stepper-complete{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    background: #e5082b;
+}
+.stepper-complete img {
+    position: absolute;
+    top: 50%;
+    transform: translate(50%,-50%);
+    right: 0;
+}
+.stepper-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.stepper-question-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.stepper-question {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+.stepper-title-sec {
+    flex: 1;
+}
+.stepper-time {
+    font-size: 18px;
+    font-weight: 300;
+    flex: 0 0 max-content;
+}
+.stepper-car-input {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.stepper-car-input .car-radio {
+    width: 33.33%;
+    padding: 10px;
+    
+}
+.stepper-car-input .car-radio label {
+    box-shadow: 0px 0px 50px 0px #072E731A;
+    text-align: center;
+    display: block;
+    opacity: 0.4;
+    padding: 10px;
+    border-radius: 18px;
+    position: relative;
+}
+.stepper-car-input .car-radio label > span {
+    display: block;
+}
+.stepper-car-input .car-radio label:has( > input:checked) {
+    opacity: 1;
+}
+.stepper-car-input .car-radio label:has( > input:checked):after {
+    content: '\2713';
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: var(--primary-btn-color);
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.stepper-btn {
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    justify-content: center;
+}
+.stepper-option-input {
+    max-width: 460px;
+    width: 100%;
+    margin: 30px auto;
+}
+.stepper-option-input .option-radio label {
+    padding: 25px;
+    display: block;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    opacity: 0.4;
+}
+.stepper-option-input .option-radio label:has( > input:checked) {
+    opacity: 1;
+}
+.stepper-option-input .option-radio label > span {
+    flex: 1;
+}
+.stepper-option-input .option-radio label > input {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+.stepper-option-input .option-radio label > input:checked {
+  accent-color: var(--primary-btn-color);
+}
+.stepper-option-input .option-radio + .option-radio {
+    margin-top: 20px;
+}
+.stepper-text-input {
+    max-width: 460px;
+    width: 100%;
+    margin: 30px auto;
+}
+.stepper-text-input .input-guide {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    opacity:  0.6;
+    margin-bottom: 10px;
+}
+.stepper-text-input .dollar-input input , .stepper-text-input .text-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 14px;
+    padding: 20px 10px 20px 45px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.stepper-text-input .text-input input {
+    padding-left: 10px;
+}
+.stepper-text-input .dollar-input {
+    display: block;
+    position: relative;
+}
+.stepper-text-input .dollar-input::after{
+    content: url('./images/dollar.png');
+    position: absolute;
+    top: 16px;
+    display: block;
+    left: 16px;
+}
+.stepper-text-input .dollar-input.calender::after {
+    content: url('./images/calender.png');
+    top: 19px;
+}
+.stepper-flex-input {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.stepper-flex-input .stepper-input {
+    flex: 1;
+}
+.stepper-flex-input .stepper-input:not(.input-text) {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 12px;
+}
+.stepper-flex-input .stepper-input .form-input{
+    flex: 0 1 250px;
+}
+.stepper-flex-input .stepper-input > span {
+    flex: 1;
+}
+.inline-radio-input {
+        max-width: 460px;
+    width: 100%;
+    margin: 30px auto;
+}
+.inline-radio-row {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    text-align: center;
+    border-radius: 14px;
+    padding: 8px;
+}
+.inline-radio-row .inline-radio {
+    flex: 1;
+    padding: 10px;
+}
+.inline-radio-row .inline-radio label > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+.inline-radio-row .inline-radio label > input {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+.inline-radio-row .inline-radio label > input:checked {
+  accent-color: var(--primary-btn-color);
+}
+.inline-radio-row .inline-radio label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.inline-radio-row .inline-radio + .inline-radio {
+    border-left: 1px solid #000000
+}
+
+.inline-radio-row-gap {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center; 
+    gap: 20px;
+}
+.inline-radio-row-gap .inline-radio-gap {
+    flex: 1;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 14px;
+}
+.inline-radio-row-gap .inline-radio-gap label > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+.inline-radio-row-gap .inline-radio-gap label > input {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+.inline-radio-row-gap .inline-radio-gap label > input:checked {
+  accent-color: var(--primary-btn-color);
+}
+.inline-radio-row-gap .inline-radio-gap label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 18px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #007BFF;
+    border-radius: 5px;
+    padding: 5px;
+    left: 16px;
+    top: 19px;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+}
