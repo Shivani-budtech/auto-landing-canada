@@ -7,6 +7,7 @@
 }
 .about-us-sec .about-image {
     flex: 1;
+    max-width: 590px;
 }
 .about-us-sec .about-image img {
     width: 100%;
@@ -18,9 +19,9 @@
     flex: 1;
 } 
 .about-us-sec .about-content h1 {
-    font-size: var(--font-size-50);
+    font-size: clamp(30px, 3vw, 50px);
     font-weight: 700;
-    line-height: 54px;
+    line-height: 1.5;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -31,4 +32,14 @@
 }
 .about-us-sec .about-content p + p {
     margin-top: 10px;
+}
+@media screen and (max-width: 928px) {
+    .about-us-sec {
+        padding: 100px 30px 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .about-us-container {
+        flex-direction: column;
+    }
 }

@@ -1,16 +1,16 @@
 .internal-header {
     background-image: url('./home-top-bg.png');
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 10px;
 }
-.header-title {
-    font-size: var(--font-size-45);
+.internal-header .header-title {
+    font-size: clamp(30px, 3vw, 45px);
     font-weight: 700;
     line-height: 70px;
     text-transform: uppercase;
     text-align: center;
 }
-.header-desc {
+.internal-header .header-desc {
     font-size: var(--font-size-18);
     font-weight: 400;
     line-height: 22px;

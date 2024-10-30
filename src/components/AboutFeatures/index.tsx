@@ -25,7 +25,7 @@ function AboutFeatures() {
         },
     ];
     return (
-        <section className="why-choose about-features">
+        <section className="about-features">
             <div className="why-choose-row">
                 <img src={require("./dotted-bg.png")} className="first-img" />
                 <img src={require("./round.png")} className="last-img" />
