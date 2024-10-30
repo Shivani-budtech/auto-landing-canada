@@ -29,11 +29,11 @@
     text-align: center;
 }
 .calculated-counter-sec h1 {
-    font-size: 64px;
+    font-size: var(--font-size-64);
     font-weight: 700;
 }
 .calculated-counter-sec p {
-    font-size: 22px;
+    font-size: var(--font-size-22);
     font-weight: 300;
 }
 

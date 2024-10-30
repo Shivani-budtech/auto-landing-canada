@@ -1,0 +1,46 @@
+@media screen and (max-width:928px) {
+    .footer-sec {
+        padding: 46px 30px;
+    }
+}
+@media screen and (max-width:870px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .contact-row {
+        justify-content: flex-start;
+    }
+    .social-media-copyright {
+        position: relative;
+        margin-top: 20px;
+    }
+    .copy-right-desc {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:845px) {
+    .header-mobile-toggle {
+        display: none;
+    }
+}
+@media screen and (max-width:844px) {
+    .header-nav {
+        display: none;
+    }
+    .header-btn {
+        display: none;
+    }
+    .header-logo {
+        flex: 1;
+    }
+}
+@media screen and (max-width:435px) {
+    .contact-row {
+        flex-direction: column;
+    }
+    .contact-row > a {
+        width: fit-content;
+    }
+}
+

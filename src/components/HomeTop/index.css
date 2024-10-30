@@ -14,10 +14,10 @@
 }
 .car-ad h1 {
     /* font-family: Outfit; */
-    font-size: 54px;
+    font-size: var(--font-size-54);
+    font-size: clamp(30px, 3vw, 54px);
     font-weight: 500;
-    line-height: 61px;
-    text-align: left;
+    line-height: 1.5;
     margin: 0;
     text-transform: uppercase;
 }
@@ -29,7 +29,7 @@
 }
 .car-ad .description {
     /* font-family: Outfit; */
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 400;
     line-height: 22px;
     text-align: left;
@@ -37,10 +37,9 @@
 }
 .car-ad .subtext {
     /* font-family: Outfit; */
-    font-size: 20px;
+    font-size: var(--font-size-20);
     font-weight: 600;
-    line-height: 40px;
-    text-align: left;
+    line-height: 1.5;
     margin: 18px 0;
 }
 .car-ad .buttons {
@@ -51,7 +50,7 @@
 .car-ad .primary-btn , .car-ad .secondary-btn {
     padding: 20px 40px;
     /* font-family: Outfit; */
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 700;
     line-height: 22.68px;
 }
@@ -60,4 +59,23 @@
 }
 .car-ad .info img {
     width: 100%;
+}
+
+
+@media screen and (max-width:975px) {
+    .car-ad {
+        flex-direction: column;
+        padding: 150px 70px 150px;
+    }
+}
+@media screen and (max-width:928px) {
+    .car-ad {
+        padding: 150px 30px 150px;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+}
+@media screen and (max-width:445px) {
+    .car-ad .primary-btn, .car-ad .secondary-btn {
+            padding: 20px 20px;
+    }
 }

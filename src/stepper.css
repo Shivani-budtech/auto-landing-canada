@@ -30,12 +30,12 @@
     right: 0;
 }
 .stepper-title {
-    font-size: 30px;
+    font-size: var(--font-size-30);
     font-weight: 700;
     margin-bottom: 15px;
 }
 .stepper-question-title {
-    font-size: 24px;
+    font-size: var(--font-size-24);
     font-weight: 500;
 }
 .stepper-question {
@@ -47,7 +47,7 @@
     flex: 1;
 }
 .stepper-time {
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 300;
     flex: 0 0 max-content;
 }
@@ -106,7 +106,7 @@
     display: block;
     box-shadow: 0px 0px 50px 0px #072E7312;
     border-radius: 14px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -136,7 +136,7 @@
 }
 .stepper-text-input .input-guide {
     display: block;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: 300;
     opacity:  0.6;
     margin-bottom: 10px;
@@ -148,7 +148,7 @@
     box-shadow: 0px 0px 50px 0px #072E7312;
     border-radius: 14px;
     padding: 20px 10px 20px 45px;
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
 }
 .stepper-text-input .text-input input {
@@ -164,6 +164,9 @@
     top: 16px;
     display: block;
     left: 16px;
+}
+.stepper-text-input .dollar-input.phone-input::after {
+    content: url('./images/canada-flag.png');
 }
 .stepper-text-input .dollar-input.calender::after {
     content: url('./images/calender.png');
@@ -210,7 +213,7 @@
     padding: 10px;
 }
 .inline-radio-row .inline-radio label > span {
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 700;
 }
 .inline-radio-row .inline-radio label > input {
@@ -244,7 +247,7 @@
     border-radius: 14px;
 }
 .inline-radio-row-gap .inline-radio-gap label > span {
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 700;
 }
 .inline-radio-row-gap .inline-radio-gap label > input {

@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.css';
+import '../../responsive.css';
 function AboutBanner() {
 
     return (
-        <section className="banner-sec">
+        <section className="banner-sec about-banner">
             <div className="banner-container">
                 <div className='banner-content'>
                     <div className="sec-title">Start your journey now</div>

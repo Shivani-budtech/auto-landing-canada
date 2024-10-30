@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import '../../responsive.css';
 function AboutUs() {
     return (
         <section className="about-us-sec">

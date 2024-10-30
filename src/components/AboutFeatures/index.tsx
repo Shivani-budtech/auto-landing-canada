@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import '../../responsive.css';
 function AboutFeatures() {
     const whyChoose = [
         {
@@ -24,7 +25,7 @@ function AboutFeatures() {
         },
     ];
     return (
-        <section className="why-choose">
+        <section className="why-choose about-features">
             <div className="why-choose-row">
                 <img src={require("./dotted-bg.png")} className="first-img" />
                 <img src={require("./round.png")} className="last-img" />

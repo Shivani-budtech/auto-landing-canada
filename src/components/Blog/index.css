@@ -30,13 +30,13 @@
     bottom: 20px;
     color: #fff;
     left: 15px;
-    font-size: 22px;
+    font-size: var(--font-size-22);
     font-weight: 700;
     text-transform: uppercase;
 }
 .blog-detail-img-text h1 span {
     text-transform: none;
-    font-size: 17px;
+    font-size: var(--font-size-17);
     display: block;
     font-weight: normal;
     margin-top: 5px;
@@ -46,12 +46,12 @@
 }
 .blog-content p {
     margin-bottom:15px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 400;
 } 
 .blog-content h1 {
     margin-bottom:15px;
-    font-size: 34px;
+    font-size: var(--font-size-34);
     font-weight: 700;
 }
 .blog-content ul {

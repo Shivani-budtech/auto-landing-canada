@@ -1,17 +1,17 @@
-.banner-sec {
+.about-banner.banner-sec {
     padding: 100px 70px 0;
 }
-.banner-sec .banner-container {
+.about-banner.banner-sec .banner-container {
     background-image: url('./banner.png');
     position: relative;
     border-radius: 20px;
 }
-.banner-sec .banner-container img {
+.about-banner.banner-sec .banner-container img {
     width: 100%;
     height: auto;
     visibility: hidden;
 }
-.banner-sec .banner-container::before {
+.about-banner.banner-sec .banner-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -22,7 +22,7 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
     border-radius: 20px;
 }
-.banner-content {
+.about-banner .banner-content {
     z-index: 9;
     color: #fff;
     position: relative;
@@ -31,15 +31,15 @@
     width: 100%;
     padding: 50px 0;
 }
-.banner-content .sec-title {
+.about-banner .banner-content .sec-title {
     margin-bottom: 10px;
 }
-.banner-desc {
-    font-size: 20px;
+.about-banner .banner-desc {
+    font-size: var(--font-size-20);
     line-height: 25.2px;
     text-align: center;
 }
-.banner-btn {
+.about-banner .banner-btn {
     margin-top: 40px;
     text-align: center;
 }

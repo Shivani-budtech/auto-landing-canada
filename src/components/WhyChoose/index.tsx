@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import '../../responsive.css';
 function WhyChoose() {
     const whyChoose = [
         {

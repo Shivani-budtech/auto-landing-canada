@@ -20,14 +20,14 @@
 }
 .review-grid .review .review-desc {
     /* font-family: Outfit; */
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
     line-height: 19px;
     text-align: left;
 }
 .review-grid .review .review-author {
     /* font-family: Outfit; */
-    font-size: 24px;
+    font-size: var(--font-size-24);
     font-weight: 700;
     line-height: 30.24px;
     text-align: left;

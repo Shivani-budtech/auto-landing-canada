@@ -14,7 +14,7 @@
     text-align: center;
     padding: 15px 25px;
     border-radius: 18px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 600;
     transition: all 0.2s linear;
     cursor: pointer;
@@ -32,7 +32,7 @@
 .faq-tab-items .faq-tab-item {
     background-color: #fff;
     letter-spacing: 0.5px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     height: fit-content;
     padding: 5px 0;
     border-bottom: 1px solid #00000033

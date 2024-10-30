@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.css';
+import '../../responsive.css';
 function BottomBanner() {
 
     return (
-        <section className="banner-sec">
+        <section className="banner-sec bottom-banner">
             <div className="banner-container">
                 <div className='banner-content'>
                     <div className="sec-title">Get Approved for Your Car Loan</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './index.css';
 function HomeTop() {
     return (
@@ -15,9 +16,7 @@ function HomeTop() {
                     No Appointments, No Obligation and Free to Apply
                 </p>
                 <div className="buttons">
-                    <a href="#" className="primary-btn">
-                        Apply Now
-                    </a>
+                    <Link to="/apply" className="primary-btn">Apply Now</Link>
                     <a href="#" className="secondary-btn">
                         Learn More
                     </a>

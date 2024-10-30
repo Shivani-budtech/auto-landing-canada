@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
+import '../../responsive.css';
 
 function Testimonials() {
     const arr = [
@@ -30,6 +31,22 @@ function Testimonials() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 835,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ],
     };
 
     return (

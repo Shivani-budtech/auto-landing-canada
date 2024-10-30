@@ -21,7 +21,7 @@
     border-radius: 18px;
 }
 .blog-title {
-    font-size: 28px;
+    font-size: var(--font-size-28);
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: 300;
     color: #000000;
 }

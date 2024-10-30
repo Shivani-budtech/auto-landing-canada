@@ -14,12 +14,14 @@ import StepperTwelve from './Steppers/StepperTwelve.tsx';
 import StepperThirteen from './Steppers/StepperThirteen.tsx';
 import StepperFourteen from './Steppers/StepperFourteen.tsx';
 import StepperFifteen from './Steppers/StepperFifteen.tsx';
+import StepperSixteen from './Steppers/StepperSixteen.tsx';
 import '../stepper.css';
+import '../responsive.css';
 
 
 function ApplyNow() {
     
-    const [alcStep,setAlcStep] = useState(0);
+    const [alcStep,setAlcStep] = useState(15);
     const [formData, setFormData] = useState({
         'vehicle_type' : '',
         'budget' :'',
@@ -74,6 +76,7 @@ function ApplyNow() {
         <StepperThirteen formData={formData} setFormData={setFormData} nextStep={nextStep} prevStep={prevStep} />,
         <StepperFourteen formData={formData} setFormData={setFormData} nextStep={nextStep} prevStep={prevStep} />,
         <StepperFifteen formData={formData} setFormData={setFormData} nextStep={nextStep} prevStep={prevStep} />,
+        <StepperSixteen formData={formData} setFormData={setFormData} nextStep={nextStep} prevStep={prevStep} />,
     ];
     
     const completionPercentage = (alcStep / (steps.length - 1)) * 100;

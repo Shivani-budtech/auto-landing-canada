@@ -20,14 +20,14 @@
 }
 .testimonial-grid .testimonial .testimonial-desc {
     /* font-family: Outfit; */
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
     line-height: 19px;
     text-align: left;
 }
 .testimonial-grid .testimonial .testimonial-author {
     /* font-family: Outfit; */
-    font-size: 24px;
+    font-size: var(--font-size-24);
     font-weight: 700;
     line-height: 30.24px;
     text-align: left;
@@ -42,7 +42,7 @@
     padding:10px;
 }
 .testimonial-grid .slick-dots li button:before {
-    font-size: 13px;
+    font-size: var(--font-size-13);
     line-height: 22px;
     width: 22px;
     height: 22px;
@@ -56,4 +56,9 @@
 }
 .testimonial-grid .slick-dots li.slick-active button:before {
     opacity: 1;
+}
+@media screen and (max-width: 928px) {
+    .testimonials-sec {
+        padding: 100px 30px;
+    }
 }

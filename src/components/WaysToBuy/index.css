@@ -11,10 +11,9 @@
 }
 .ways-to-buy h1 {
     /* font-family: Outfit; */
-    font-size: 45px;
+    font-size: clamp(30px, 3vw, 45px);
     font-weight: 700;
-    line-height: 55px;
-    text-align: left;
+    line-height: 1.5;
     text-transform: uppercase;
 }
 .ways-to-buy .info {
@@ -25,13 +24,13 @@
 }
 .ways-to-buy .description {
     /* font-family: Outfit; */
-    font-size: 18px;
+    font-size: var(--font-size-18);
     font-weight: 400;
     line-height: 26px;
     text-align: left;
     margin-top: 20px;
 }
-.way-section {
+.ways-to-buy .way-section {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -41,30 +40,53 @@
     width: 100%;
     max-width: 526px;
 }
-.way-sec-container + .way-sec-container {
+.ways-to-buy .way-sec-container + .way-sec-container {
     margin-top: 20px;
 }
-.way-sec-container:nth-child(odd) {
+.ways-to-buy .way-sec-container:nth-child(odd) {
     margin-left: 110px;
 }
-.way-section .way-img {
+.ways-to-buy .way-section .way-img {
     flex: 0 0 58px;
 }
-.way-section .way-info {
+.ways-to-buy .way-section .way-info {
     flex: 1;
 }
-.way-section .way-info h2 {
+.ways-to-buy .way-section .way-info h2 {
     /* font-family: Outfit; */
-    font-size: 24px;
+    font-size: var(--font-size-24);
     font-weight: 700;
     line-height: 1.5;
     text-align: left;
 }
-.way-section .way-info .way-desc {
+.ways-to-buy .way-section .way-info .way-desc {
     /* font-family: Outfit; */
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
     line-height: 19px;
     text-align: left;
     margin-top: 10px;
+}
+@media screen and (max-width:1020px) {
+    .ways-to-buy .way-sec-container:nth-child(odd) {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:928px) {
+    .ways-to-buy {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:830px) {
+    .ways-to-buy {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px) {
+    .ways-to-buy .way-section {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        align-items: flex-start;
+    }
 }

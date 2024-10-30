@@ -1,12 +1,13 @@
 .why-choose {
     padding: 100px 70px 0;
 }
-.grida {
+.why-choose .grida {
     display: flex;
     align-items: center;
     gap:30px;
+    flex-wrap: wrap;
 }
-.grida .grida-item {
+.why-choose .grida .grida-item {
     flex: 1;
     text-align: center;
     margin-top: 47px;
@@ -14,50 +15,72 @@
     border-radius: 18px;
     padding: 0 50px;
     background-color: #ffffff;
+    align-self: stretch;
 }
-.grida .grida-img {
+.why-choose .grida .grida-img {
     margin-top: -47px;
     margin: -47px auto 0;
 }
-.grida .grida-title {
+.why-choose .grida .grida-title {
     /* font-family: Outfit; */
-    font-size: 20px;
+    font-size: var(--font-size-20);
     font-weight: 700;
     line-height: 25px;
     text-align: center;
     padding: 20px 0;
 }
-.grida .grida-desc {
+.why-choose .grida .grida-desc {
     /* font-family: Outfit; */
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
     line-height: 19px;
     text-align: center;
 }
-.grida .grida-link {
+.why-choose .grida .grida-link {
     padding: 20px 0;
 }
-.grida .grida-link > a {
+.why-choose .grida .grida-link > a {
     /* font-family: Outfit; */
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: 700;
     line-height: 20.16px;
     text-align: center;
     color: #FF2D2D;
 }
-.why-choose-row {
+.why-choose .why-choose-row {
     position: relative;
     padding: 0 20px 20px;
 }
-.why-choose-row > .first-img {
+.why-choose .why-choose-row > .first-img {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
-.why-choose-row > .last-img {
+.why-choose .why-choose-row > .last-img {
     position: absolute;
     bottom: -30px;
     right: -30px;
     z-index: -1;
+}
+
+@media screen and (max-width: 928px) {
+    .why-choose {
+        padding: 100px 30px 0;
+    }
+}
+@media screen and (max-width: 928px) {
+    .why-choose .grida .grida-item {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .why-choose .grida .grida-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+@media screen and (max-width: 570px) {
+    .why-choose .grida .grida-item {
+        flex: 0 0 100%;
+    }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from "react-router-dom";
 import './index.css';
+import '../../responsive.css';
 function InternalHeader() {
     const location = useLocation();
     const [pageTitle, setPageTitle] = useState("");

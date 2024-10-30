@@ -1,4 +1,5 @@
 import './index.css';
+import '../../responsive.css';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 function Faq() {

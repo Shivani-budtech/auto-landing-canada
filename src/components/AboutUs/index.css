@@ -18,14 +18,14 @@
     flex: 1;
 } 
 .about-us-sec .about-content h1 {
-    font-size: 50px;
+    font-size: var(--font-size-50);
     font-weight: 700;
     line-height: 54px;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 .about-us-sec .about-content p {
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
     line-height: 20px;
 }

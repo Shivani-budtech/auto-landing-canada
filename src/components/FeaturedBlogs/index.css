@@ -8,7 +8,7 @@
     height: fit-content;
 }
 .featured-blogs-sec > h1 {
-    font-size: 24px;
+    font-size: var(--font-size-24);
     font-weight: 700;
     color: #373435;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
     border-radius: 14px;
 }
 .blog-list-title {
-    font-size: 16px;
+    font-size: var(--font-size-16);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -44,7 +44,7 @@
     flex: 1;
 }
 .blog-list-btn .primary-btn {
-    font-size: 12px;
+    font-size: var(--font-size-12);
     padding: 5px 8px;
     border-radius: 5px;
 }

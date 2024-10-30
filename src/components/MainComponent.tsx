@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import "../style.css";
+import '../responsive.css';
 import "../font.css";
 import Header from "./Header.tsx";
+import MobileHeader from './MobileHeader.tsx';
 import Footer from "./Footer.tsx";
 import Home from "./Home.tsx";
 import About from "./About.tsx";
@@ -15,10 +17,13 @@ import Calculator from './Calculator.tsx';
 import ApplyNow from './ApplyNow.tsx';
 
 function MainComponent() {
+  const [isMenuOpen, setIsMenuOpen] = useState("closed");
+
   return (
     <Router>
       <div className="auto-lending-app">
-        <Header />
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <MobileHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

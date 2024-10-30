@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import "./index.css";
+import '../../responsive.css';
 import $ from 'jquery';
 import 'select2'; // Import Select2 jQuery plugin
 import 'select2/dist/css/select2.min.css';
