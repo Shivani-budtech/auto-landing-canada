@@ -17,6 +17,7 @@
     padding: 30px;
     border-radius: 18px;
     position: relative;
+    height: 100%;
 }
 .review-grid .review .review-desc {
     /* font-family: Outfit; */
@@ -41,4 +42,21 @@
 .review-grid .review-item {
     padding:10px;
     width: 33.33%;
+    align-self: stretch;
+}
+@media screen and (max-width:928px) {
+    .reviews-sec {
+        padding: 100px 30px 0;
+    }
+}
+
+@media screen and (max-width:785px) {
+    .review-grid .review-item {
+        width: 50%;
+    }
+}
+@media screen and (max-width:540px) {
+    .review-grid .review-item {
+        width: 100%;
+    }
 }

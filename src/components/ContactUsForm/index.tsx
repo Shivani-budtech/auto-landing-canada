@@ -34,7 +34,7 @@ function ContactUsForm() {
     };
 
     return (
-        <section className='contact-us-sec'>
+        <section className='contact-us-sec contact-us-form'>
             <div className="sec-title">
                 Get in touch!
                 <span>
