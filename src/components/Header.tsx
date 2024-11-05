@@ -9,6 +9,9 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
         <div className="header-logo">
           <Link to="/">
             <img src={logo} alt="logo" />
+            <div>
+            Auto Lending <span>Canada</span>
+            </div>
           </Link>
         </div>
         <div className="header-nav">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import '../../responsive.css';
+import { Link } from 'react-router-dom';
 function AllBlogs() {
     const arr = [
         {
@@ -42,7 +43,7 @@ function AllBlogs() {
         <section className="all-blogs-sec">
             <div className="blog-grid">
                 {Object.entries(blogs).map(([key, blog]) => (
-                    <div className="blog-item">
+                    <div key={key} className="blog-item">
                         <div className='blog-image'>
                             <img src={require("./about-us-img.png")} />
                         </div>
@@ -54,7 +55,7 @@ function AllBlogs() {
                                 22 May, 2024 
                             </div>
                             <div className='blog-btn'>
-                                <a href='#' className='primary-btn'>Read More</a>
+                                <Link to={`/blog/` + key} className='primary-link'>Read More</Link>
                             </div>
                         </div>
                     </div>

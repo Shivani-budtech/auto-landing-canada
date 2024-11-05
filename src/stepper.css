@@ -21,7 +21,7 @@
     width: 50%;
     height: 100%;
     border-radius: 5px;
-    background: #e5082b;
+    background: var(--primary-btn-color);
 }
 .stepper-complete img {
     position: absolute;

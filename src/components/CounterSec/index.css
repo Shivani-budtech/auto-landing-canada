@@ -10,10 +10,10 @@
     flex: 1;
     padding: 20px;
     text-align: center;
-    border-left: 1px solid #E5082B;
+    border-left: 1px solid var(--primary-btn-color);
 }
 .counter-row .counter:last-child {
-    border-right: 1px solid #E5082B;
+    border-right: 1px solid var(--primary-btn-color);
 }
 .counter-row .counter h1 {
     font-size: var(--font-size-54);
@@ -50,11 +50,11 @@
 @media screen and (max-width:530px) {
     .counter-row .counter {
         flex: 0 0 100%;
-        border-top: 1px solid #E5082B;
+        border-top: 1px solid var(--primary-btn-color);
         max-width: 320px;
         margin: 0 auto;
     }
     .counter-row .counter:last-child {
-        border-bottom: 1px solid #E5082B;
+        border-bottom: 1px solid var(--primary-btn-color);
     }
 }

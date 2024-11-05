@@ -1,13 +1,18 @@
 import React from 'react';
+import logo from "../images/main-logo.png";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer-sec">
       <div className="footer-container">
         <div className="footer-col-1">
-          <div className="footer-logo">
-            <a href="#">
-              <img src={require(`../images/footer-logo.png`)} />
-            </a>
+          <div className="header-logo">
+            <Link to="/">
+              <img src={logo} alt="logo" />
+              <div>
+                Auto Lending <span>Canada</span>
+              </div>
+            </Link>
           </div>
           <div className="footer-desc">
             A decade leading Canada’s online auto sales with tailored financing options. Your trusted partner for a seamless and affordable auto finance experience.
@@ -74,6 +79,12 @@ function Footer() {
               </a>
               <a href="#">
                 <img src={require(`../images/linkedin-social.png`)} />
+              </a>
+              <a href="#">
+                <img src={require(`../images/linkedin-social.png`)} />
+              </a>
+              <a href="#">
+                <img src={require(`../images/tiktok-social.png`)} />
               </a>
             </div>
             <div className="copy-right-desc">

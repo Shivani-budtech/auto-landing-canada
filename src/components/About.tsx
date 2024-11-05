@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import InternalHeader from './InternalHeader/index.tsx';
 import AboutFeatures from './AboutFeatures/index.tsx';
 import AboutUs from './AboutUs/index.tsx';

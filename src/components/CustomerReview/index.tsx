@@ -45,7 +45,7 @@ function CustomerReview() {
             <div className="sec-title">Why Canadians Love Us</div>
             <div className="review-grid">
                 {Object.entries(testimonials).map(([key, testimonial]) => (
-                    <div className="review-item">
+                    <div key={key} className="review-item">
                         <div className="review">
                             <div className="review-desc">{testimonial.desc}</div>
                             <div className="review-author">{testimonial.name}</div>

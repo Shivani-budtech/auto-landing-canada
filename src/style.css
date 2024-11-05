@@ -1,6 +1,6 @@
 :root {
   --theme-font-color: #373435;
-  --primary-btn-color: #FF2D2D;
+  --primary-btn-color: #e5082b;
   --font-size-64 : 64px;
   --font-size-54 : 54px;
   --font-size-50 : 50px;
@@ -79,7 +79,7 @@ input[type=number] {
     background-color: #ffffff;
 }
 .header-logo {
-    flex: 0 0 181px;
+    flex: 0 0 252px;
 }
 .header-logo img {
     max-width: 100%;
@@ -125,6 +125,19 @@ input[type=number] {
     border: none;
     font-size: inherit;
 }
+.primary-link {
+    background-color: transparent;
+    display: inline-block;
+    color: var(--primary-btn-color);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    border-bottom: 1px solid var(--primary-btn-color);
+}
 .secondary-btn {
     background-color: transparent;
     display: inline-block;
@@ -136,7 +149,7 @@ input[type=number] {
     letter-spacing: 1;  
 }
 .header-marging {
-    margin-top: 106px !important;
+    margin-top: 104px !important;
 }
 
 
@@ -192,6 +205,9 @@ input[type=number] {
     flex: 1;
 }
 .footer-container .footer-logo {
+    margin-bottom: 20px;
+}
+.footer-container .header-logo {
     margin-bottom: 20px;
 }
 .footer-desc {
@@ -267,10 +283,16 @@ input[type=number] {
     display: flex;
     gap:15px;
 }
-.social-media-row {
+.social-media-row > a {
+    height: 50px;
+    width: 50px;
     display: flex;
-    gap:15px;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-btn-color);
+    border-radius: 14px;
 }
+
 .copy-right-desc {
     font-size: var(--font-size-18);
     font-weight: 300;
@@ -405,5 +427,17 @@ input[type=number] {
     font-size: var(--font-size-18);
     padding: 5px 0;
 }
-
-
+.header-logo > a {
+    /* font-family: Montserrat; */
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21.94px;
+    text-align: left;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header-logo > a span {
+    color: var(--primary-btn-color)
+}

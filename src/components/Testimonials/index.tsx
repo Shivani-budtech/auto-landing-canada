@@ -55,7 +55,7 @@ function Testimonials() {
             <div className="testimonial-grid">
                 <Slider {...settings}>
                     {Object.entries(testimonials).map(([key, testimonial]) => (
-                        <div className="testimonial-item">
+                        <div key={key} className="testimonial-item">
                             <div className="testimonial">
                                 <div className="testimonial-desc">{testimonial.desc}</div>
                                 <div className="testimonial-author">{testimonial.name}</div>

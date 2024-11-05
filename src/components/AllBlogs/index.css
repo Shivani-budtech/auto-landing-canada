@@ -21,7 +21,7 @@
     border-radius: 18px;
 }
 .blog-title {
-    font-size: var(--font-size-28);
+    font-size:clamp(18px, 3vw, 28px);
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
@@ -38,4 +38,19 @@
 }
 .blog-info .blog-date {
     flex: 1;
+}
+@media screen and (max-width:985px) {
+    .all-blogs-row {
+        flex-direction: column;
+        gap: 20px
+    }
+    .all-blogs-row .all-blogs-sec .blog-grid .blog-item:nth-child(even) {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width:585px) {
+    .all-blogs-row .all-blogs-sec .blog-grid .blog-item {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
 }

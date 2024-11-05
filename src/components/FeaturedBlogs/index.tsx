@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import '../../responsive.css';
+import { Link } from 'react-router-dom';
 function FeatureBlogs() {
     const arr = [
         {
@@ -54,11 +55,9 @@ function FeatureBlogs() {
                                 <div className='blog-list-date'>
                                     22 May, 2024
                                 </div>
-                                <div className='blog-list-btn'>
-                                    <a href='#' className='primary-btn'>Read More</a>
-                                </div>
                             </div>
                         </div>
+                        <Link to={`/blog/`+key}></Link>
                     </div>
                 ))}
             </div>
