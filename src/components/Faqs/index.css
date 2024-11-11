@@ -35,6 +35,7 @@
     transform: translateY(-50%);
     right: 20px;
     transition: all 0.2s linear;
+    background-repeat: no-repeat;
 }
 .faq-question.opened:after {
     transform: translateY(-50%) rotate(180deg);

@@ -29,7 +29,7 @@
     text-align: center;
 }
 .calculator-budget .calculated-counter-sec h1 {
-    font-size: var(--font-size-64);
+    font-size: clamp(50px, 3vw, 64px);
     font-weight: 700;
 }
 .calculator-budget .calculated-counter-sec p {
@@ -37,3 +37,16 @@
     font-weight: 300;
 }
 
+@media screen and (max-width: 928px) {
+    .calculator-budget.contact-us-sec {
+        padding: 100px 30px 0;
+    }
+}
+@media screen and (max-width: 680px) {
+    .calculator-budget .contact-form-row:first-child {
+        flex-direction: column;
+    }
+    .calculator-budget .contact-form-row .contact-col{
+        width: 100%;
+    }
+}

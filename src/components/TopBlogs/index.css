@@ -43,3 +43,8 @@
 .top-blog-grid .slick-dots li.slick-active button:before {
     opacity: 1;
 }
+@media screen and (max-width: 1110px) {
+    .top-blog-sec {
+        padding: 70px 30px 0;
+    }
+}

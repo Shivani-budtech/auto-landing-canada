@@ -55,7 +55,7 @@
 }
 .faq-tab-question:after {
     content: "";
-    height: 23px;
+    height: 22px;
     width: 23px;
     background-image: url("./faq-arrow.png");
     display: block;
@@ -65,6 +65,7 @@
     transform: translateY(-50%);
     right: 20px;
     transition: all 0.2s linear;
+    background-repeat: no-repeat;
 }
 .faq-tab-question.opened:after {
     transform: translateY(-50%) rotate(180deg);

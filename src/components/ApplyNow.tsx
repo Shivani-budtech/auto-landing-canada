@@ -21,7 +21,7 @@ import '../responsive.css';
 
 function ApplyNow() {
     
-    const [alcStep,setAlcStep] = useState(15);
+    const [alcStep,setAlcStep] = useState(0);
     const [formData, setFormData] = useState({
         'vehicle_type' : '',
         'budget' :'',

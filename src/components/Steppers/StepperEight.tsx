@@ -39,12 +39,14 @@ const StepperEight = ({ formData, setFormData, nextStep, prevStep }) => {
                         <span>
                             Select Year
                         </span>
+                        <div className="form-input">
                             <select id="income_year">
                             <option value="option1" selected={formData.income_year === "option1"}>Option 1</option>
                             <option value="option2" selected={formData.income_year === "option2"}>Option 2</option>
                             <option value="option3" selected={formData.income_year === "option3"}>Option 3</option>
                             <option value="option4" selected={formData.income_year === "option4"}>Option 4</option>
                             </select>
+                        </div>
                     </div>
                     <div className='stepper-input'>
                         <span>

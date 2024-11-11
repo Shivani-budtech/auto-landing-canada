@@ -38,13 +38,16 @@
     border-radius: 18px;
     padding: 29px;
     width: 100%;
-    max-width: 526px;
+    /* max-width: 526px; */
 }
 .ways-to-buy .way-sec-container + .way-sec-container {
     margin-top: 20px;
 }
 .ways-to-buy .way-sec-container:nth-child(odd) {
     margin-left: 110px;
+}
+.ways-to-buy .way-sec-container:nth-child(even) {
+    margin-right: 110px;
 }
 .ways-to-buy .way-section .way-img {
     flex: 0 0 58px;
@@ -70,6 +73,9 @@
 @media screen and (max-width:1020px) {
     .ways-to-buy .way-sec-container:nth-child(odd) {
         margin-left: 0;
+    }
+    .ways-to-buy .way-sec-container:nth-child(even) {
+        margin-right: 0;
     }
 }
 @media screen and (max-width:928px) {
