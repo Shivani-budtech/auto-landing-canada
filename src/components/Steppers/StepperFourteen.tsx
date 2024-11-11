@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperFourteen = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperFourteen = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
     return (
         <div className='stepper-content'>
@@ -15,7 +15,7 @@ const StepperFourteen = ({ formData, setFormData, nextStep, prevStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide">Select Date of Birth</span>
                     <span className='dollar-input calender'>
-                        <input type='date' className='' value={formData.birth_date} name="birth_date" onChange={(e) => setFormData({ ...formData, birth_date: e.target.value })} />
+                        <input type='date' className='' value={formData.birth_date} name="birth_date" onChange={(e) => setFieldValue("birth_date", e.target.value)} />
                     </span>
                 </div>
                 <div className='stepper-btn'>

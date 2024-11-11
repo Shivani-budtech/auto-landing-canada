@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperTwelve = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperTwelve = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
     return (
         <div className='stepper-content'>
@@ -24,7 +24,7 @@ const StepperTwelve = ({ formData, setFormData, nextStep, prevStep }) => {
                                     name="home_type" 
                                     value="own" 
                                     checked={formData.home_type === "own"}
-                                    onChange={(e) => setFormData({ ...formData, home_type: e.target.value })} />
+                                    onChange={(e) => setFieldValue("home_type", e.target.value)} />
                             </label>
                         </div>
                         <div className="inline-radio">
@@ -37,7 +37,7 @@ const StepperTwelve = ({ formData, setFormData, nextStep, prevStep }) => {
                                     name="home_type"
                                     value="rent"
                                     checked={formData.home_type === "rent"}
-                                    onChange={(e) => setFormData({ ...formData, home_type: e.target.value })} />
+                                    onChange={(e) => setFieldValue("home_type", e.target.value )} />
                             </label>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ const StepperTwelve = ({ formData, setFormData, nextStep, prevStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide">Round to Nearest Dollar</span>
                     <span className='dollar-input'>
-                        <input type='number' className='' value={formData.monthly_rent} name="monthly_rent" onChange={(e) => setFormData({ ...formData, monthly_rent: e.target.value })} />
+                        <input type='number' className='' value={formData.monthly_rent} name="monthly_rent" onChange={(e) => setFieldValue("monthly_rent", e.target.value)} />
                     </span>
                 </div>
                 <div className='stepper-btn'>

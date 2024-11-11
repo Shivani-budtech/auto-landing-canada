@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const StepperTwo = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperTwo = ({ formData, setFieldValue, nextStep, prevStep }) => {
     const budgetOptions = [
         {
             'title': 'Under $400 / Month',
@@ -40,7 +40,7 @@ const StepperTwo = ({ formData, setFormData, nextStep, prevStep }) => {
                                     value={option.val}
                                     name="budget"
                                     checked={formData.budget === option.val}
-                                    onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                                    onChange={(e) => setFieldValue("budget", e.target.value )}
                                 />
                             </label>
                         </div>

@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { form } from 'framer-motion/m';
 import React, { useState } from 'react';
 
 
-const StepperOne = ({ formData, setFormData, nextStep , prevStep }) => {
+const StepperOne = ({ formData, setFieldValue, nextStep , prevStep }) => {
     const carTypes = [
         {
             'title' : 'Coupe',
@@ -55,7 +56,11 @@ const StepperOne = ({ formData, setFormData, nextStep , prevStep }) => {
                                     name="vehicle_type"
                                     className='sr-only'
                                     checked={formData.vehicle_type === car.val}
-                                    onChange={(e) => setFormData({ ...formData, vehicle_type: e.target.value })}
+                                    onChange={(e) => setFieldValue("vehicle_type", e.target.value )}
+                                 
+                                    // onChange={(e) => {
+                                    //     console.log("e", e.target?.value)
+                                    // }}
                                 />
                                 <img src={require(`./images/cars/`+car.image)} />
                                 <span>{car.title}</span>

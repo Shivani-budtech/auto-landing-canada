@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StepperNine = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperNine = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
 
     return (
@@ -17,7 +17,7 @@ const StepperNine = ({ formData, setFormData, nextStep, prevStep }) => {
                         <div className='stepper-text-input'>
                             <span className="input-guide">Company Name</span>
                             <span className='text-input'>
-                                <input type='text' className='' name="company_name" value={formData.company_name} onChange={(e) => setFormData({ ...formData, company_name: e.target.value })} />
+                                <input type='text' className='' name="company_name" value={formData.company_name} onChange={(e) => setFieldValue("company_name", e.target.value)} />
                             </span>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const StepperNine = ({ formData, setFormData, nextStep, prevStep }) => {
                         <div className='stepper-text-input'>
                             <span className="input-guide">Job Title</span>
                             <span className='text-input'>
-                                <input type='text' className='' name="job_title" value={formData.job_title} onChange={(e) => setFormData({ ...formData, job_title: e.target.value })} />
+                                <input type='text' className='' name="job_title" value={formData.job_title} onChange={(e) => setFieldValue("job_title", e.target.value)} />
                             </span>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const StepperThree = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperThree = ({ formData, setFieldValue, nextStep, prevStep }) => {
     const tradeOptions = [
         {
             'title': 'Yes',
@@ -36,7 +36,7 @@ const StepperThree = ({ formData, setFormData, nextStep, prevStep }) => {
                                     value={option.val}
                                     name="trade_in"
                                     checked={formData.trade_in === option.val}
-                                    onChange={(e) => setFormData({ ...formData, trade_in: e.target.value })}
+                                    onChange={(e) => setFieldValue("trade_in", e.target.value)}
                                 />
                             </label>
                         </div>

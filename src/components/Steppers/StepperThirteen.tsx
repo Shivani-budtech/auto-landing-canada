@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperThirteen = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperThirteen = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
     return (
         <div className='stepper-content'>
@@ -24,7 +24,7 @@ const StepperThirteen = ({ formData, setFormData, nextStep, prevStep }) => {
                                     name="canadian_citizen"
                                     value="yes"
                                     checked={formData.canadian_citizen === "yes"}
-                                    onChange={(e) => setFormData({ ...formData, canadian_citizen: e.target.value })} />
+                                    onChange={(e) => setFieldValue("canadian_citizen", e.target.value)} />
                             </label>
                         </div>
                         <div className="inline-radio-gap">
@@ -37,7 +37,7 @@ const StepperThirteen = ({ formData, setFormData, nextStep, prevStep }) => {
                                     name="canadian_citizen"
                                     value="no"
                                     checked={formData.canadian_citizen === "no"}
-                                    onChange={(e) => setFormData({ ...formData, canadian_citizen: e.target.value })} />
+                                    onChange={(e) => setFieldValue("canadian_citizen", e.target.value)} />
                             </label>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const StepperThirteen = ({ formData, setFormData, nextStep, prevStep }) => {
                                     name="canadian_licence"
                                     value="yes"
                                     checked={formData.canadian_licence === "yes"}
-                                    onChange={(e) => setFormData({ ...formData, canadian_licence: e.target.value })} />
+                                    onChange={(e) => setFieldValue("canadian_licence", e.target.value )} />
                             </label>
                         </div>
                         <div className="inline-radio-gap">
@@ -74,7 +74,7 @@ const StepperThirteen = ({ formData, setFormData, nextStep, prevStep }) => {
                                     name="canadian_licence"
                                     value="no"
                                     checked={formData.canadian_licence === "no"}
-                                    onChange={(e) => setFormData({ ...formData, canadian_licence: e.target.value })} />
+                                    onChange={(e) => setFieldValue("canadian_licence", e.target.value)} />
                             </label>
                         </div>
                     </div>

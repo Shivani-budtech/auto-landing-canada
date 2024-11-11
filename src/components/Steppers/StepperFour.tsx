@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperFour = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperFour = ({ formData, setFieldValue, nextStep, prevStep }) => {
     const creditOptions = [
         {
             'title': 'Excellent (760-900)',
@@ -48,7 +48,7 @@ const StepperFour = ({ formData, setFormData, nextStep, prevStep }) => {
                                     value={option.val}
                                     name="credit_rating"
                                     checked={formData.credit_rating === option.val}
-                                    onChange={(e) => setFormData({ ...formData, credit_rating: e.target.value })}
+                                    onChange={(e) => setFieldValue("credit_rating", e.target.value )}
                                 />
                             </label>
                         </div>

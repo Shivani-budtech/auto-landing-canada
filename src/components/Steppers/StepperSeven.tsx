@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperSeven = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperSeven = ({ formData, setFieldValue, nextStep, prevStep }) => {
     
     return (
         <div className='stepper-content'>
@@ -15,7 +15,7 @@ const StepperSeven = ({ formData, setFormData, nextStep, prevStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide">Round to Nearest Dollar</span>
                     <span className='dollar-input'>
-                        <input type='number' className='' value={formData.income_amount} name="income_amount" onChange={(e) => setFormData({ ...formData, income_amount: e.target.value })} />
+                        <input type='number' className='' value={formData.income_amount} name="income_amount" onChange={(e) => setFieldValue("income_amount", e.target.value )} />
                     </span>
                 </div>
                 <div className='stepper-btn'>

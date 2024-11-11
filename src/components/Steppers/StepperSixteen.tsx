@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperSixteen = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperSixteen = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
     return (
         <div className='stepper-content'>
@@ -15,7 +15,7 @@ const StepperSixteen = ({ formData, setFormData, nextStep, prevStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide">Email Address</span>
                     <span className='text-input'>
-                        <input type='text' className='' value={formData.email} name="email" onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                        <input type='text' className='' value={formData.email} name="email" onChange={(e) => setFieldValue("email", e.target.value)} />
                     </span>
                 </div>
                 <p style={{ textAlign:'center' }}>
@@ -25,7 +25,7 @@ const StepperSixteen = ({ formData, setFormData, nextStep, prevStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide">Mobile Number</span>
                     <span className='dollar-input phone-input'>
-                        <input type='number' className='' value={formData.phone_number} name="phone_number" onChange={(e) => setFormData({ ...formData, phone_number: e.target.value })} />
+                        <input type='number' className='' value={formData.phone_number} name="phone_number" onChange={(e) => setFieldValue("phone_number", e.target.value)} />
                     </span>
                 </div>
                 <div className='stepper-btn'>

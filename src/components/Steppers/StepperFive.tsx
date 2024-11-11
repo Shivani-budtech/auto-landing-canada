@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperFive = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperFive = ({ formData, setFieldValue, nextStep, prevStep }) => {
     const creditOptions = [
         {
             'title': 'Employed',
@@ -44,7 +44,7 @@ const StepperFive = ({ formData, setFormData, nextStep, prevStep }) => {
                                     value={option.val}
                                     name="employment_status"
                                     checked={formData.employment_status === option.val}
-                                    onChange={(e) => setFormData({ ...formData, employment_status: e.target.value })}
+                                    onChange={(e) => setFieldValue( "employment_status", e.target.value)}
                                 />
                             </label>
                         </div>

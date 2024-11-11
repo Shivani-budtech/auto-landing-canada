@@ -3,7 +3,7 @@ import $ from 'jquery';
 import 'select2'; // Import Select2 jQuery plugin
 import 'select2/dist/css/select2.min.css';
 
-const StepperEleven = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
     useEffect(() => {
         // Initialize Select2 for the first select box
@@ -11,7 +11,7 @@ const StepperEleven = ({ formData, setFormData, nextStep, prevStep }) => {
             placeholder: 'Select Year',
             minimumResultsForSearch: -1
         }).on("change", function () {
-            setFormData({ ...formData, address_year: this.value })
+            setFieldValue("address_year", this.value)
         });
 
         // Initialize Select2 for the second select box
@@ -19,7 +19,7 @@ const StepperEleven = ({ formData, setFormData, nextStep, prevStep }) => {
             placeholder: 'Select Month',
             minimumResultsForSearch: -1
         }).on("change", function () {
-            setFormData({ ...formData, address_month: this.value })
+            setFieldValue("address_month", this.value)
         });
 
 

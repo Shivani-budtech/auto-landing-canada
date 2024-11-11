@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperSix = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperSix = ({ formData, setFieldValue, nextStep, prevStep }) => {
     const SalaryOptions = [
         {
             'title': 'I Know My Annual Salary',
@@ -40,7 +40,7 @@ const StepperSix = ({ formData, setFormData, nextStep, prevStep }) => {
                                     value={option.val}
                                     name="income_detail"
                                     checked={formData.income_detail === option.val}
-                                    onChange={(e) => setFormData({ ...formData, income_detail: e.target.value })}
+                                    onChange={(e) => setFieldValue("income_detail", e.target.value )}
                                 />
                             </label>
                         </div>

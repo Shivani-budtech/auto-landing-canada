@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const StepperTen = ({ formData, setFormData, nextStep, prevStep }) => {
+const StepperTen = ({ formData, setFieldValue, nextStep, prevStep }) => {
 
     return (
         <div className='stepper-content'>
@@ -15,7 +15,7 @@ const StepperTen = ({ formData, setFormData, nextStep, prevStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide">Home Address</span>
                     <span className='text-input'>
-                        <input type='text' className='' value={formData.address} name="address" onChange={(e) => setFormData({ ...formData, address: e.target.value })} />
+                        <input type='text' className='' value={formData.address} name="address" onChange={(e) => setFieldValue("address", e.target.value )} />
                     </span>
                 </div>
                 <div className='stepper-btn'>
