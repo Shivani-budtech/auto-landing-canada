@@ -3,7 +3,7 @@ import { form } from 'framer-motion/m';
 import React, { useState } from 'react';
 
 
-const StepperOne = ({ formData, setFieldValue, nextStep , prevStep }) => {
+const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touched,total_steps,alcStep }) => {
     const carTypes = [
         {
             'title' : 'Coupe',
@@ -36,6 +36,8 @@ const StepperOne = ({ formData, setFieldValue, nextStep , prevStep }) => {
             'val': 'Truck'
         },
     ];
+    const remainingSteps = total_steps - alcStep - 1;
+    const remainingMinutes = Math.ceil((remainingSteps / total_steps) * 3);
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
@@ -43,7 +45,8 @@ const StepperOne = ({ formData, setFieldValue, nextStep , prevStep }) => {
                     <div className="stepper-title">Get Pre-Approved for the Car You Want at a Price You Can Afford</div>
                     <span className='stepper-question-title'>What type of vehicle are you looking for?</span>
                 </div>
-                <span className='stepper-time'>3 minutes from finish</span>
+                
+                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-car-input'>

@@ -21,14 +21,7 @@ function waysToBuy() {
     ];
     return (
         <section className="ways-to-buy">
-            <div className="content">
-                <h1>The Smart Way to Buy a Car</h1>
-                <p className="description">
-                    Take control of your car shopping experience. Get approved for a car
-                    loan and find your perfect vehicle all from the comfort of your own
-                    home in under 3 minutes.
-                </p>
-            </div>
+            
             <div className="info">
                 {Object.entries(waysToBuy).map(([key, ways]) => (
                     <div key={key} className="way-sec-container">
@@ -43,6 +36,9 @@ function waysToBuy() {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="content">
+                <img src={require(`./car_app.png`)} />
             </div>
         </section>
     );

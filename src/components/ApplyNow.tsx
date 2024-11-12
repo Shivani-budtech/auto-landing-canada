@@ -120,7 +120,8 @@ function ApplyNow() {
                 console.log("data",data)
             }}
         >
-            {({ validateForm, setFieldValue, values, errors, touched }) => { 
+            {({ validateForm, setFieldValue, values, errors, touched }) => {
+                const total_steps = steps.length;
                 return (
                 <div className='apply-stepper header-marging'>
                     <div className="stepper-progress-container">
@@ -137,11 +138,23 @@ function ApplyNow() {
                         prevStep,
                         errors,
                         touched,
+                        total_steps,
+                        alcStep
                     })}</div>
-                    <div className="">
 
+                    <div className="error-messages">
+                        {Object.keys(errors).length > 0 && (
+                            <ul>
+                                {Object.keys(errors).map((key) => (
+                                    <li key={key} className="error-text">
+                                        {errors[key]}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </div>
+                
             )}}
         </Formik>
     )

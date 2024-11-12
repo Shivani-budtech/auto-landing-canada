@@ -1,98 +1,109 @@
 import React from 'react';
 import logo from "../images/main-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Footer() {
+  const location = useLocation();
+  const curLoc = location.pathname;
+  console.log(curLoc);
   return (
-    <div className="footer-sec">
-      <div className="footer-container">
-        <div className="footer-col-1">
-          <div className="header-logo">
-            <Link to="/">
-              <img src={logo} alt="logo" />
-              <div>
-                Auto Lending <span>Canada</span>
-              </div>
-            </Link>
-          </div>
-          <div className="footer-desc">
-            A decade leading Canada’s online auto sales with tailored financing options. Your trusted partner for a seamless and affordable auto finance experience.
-          </div>
-          <div className="footer-cols">
-            <div className="footer-col">
-              <div className="footer-col-title">
-                Company
-              </div>
-              <ul>
-                <li>
-                  <a href="#">Why Choose ALC?</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Terms of Use</a>
-                </li>
-              </ul>
+    <div>
+    { curLoc != "/apply" ? (
+      <div className="footer-sec">
+        <div className="footer-container">
+          <div className="footer-col-1">
+            <div className="header-logo">
+              <Link to="/">
+                <img src={logo} alt="logo" />
+                <div>
+                  Auto Lending <span>Canada</span>
+                </div>
+              </Link>
             </div>
-            <div className="footer-col">
-              <div className="footer-col-title">
-                Financing
+            <div className="footer-desc">
+              A decade leading Canada’s online auto sales with tailored financing options. Your trusted partner for a seamless and affordable auto finance experience.
+            </div>
+            <div className="footer-cols">
+              <div className="footer-col">
+                <div className="footer-col-title">
+                  Company
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Why Choose ALC?</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  <a href="#">Car & Auto</a>
-                </li>
-                <li>
-                  <a href="#">Power Sport</a>
-                </li>
-                <li>
-                  <a href="#">Loan Calculator</a>
-                </li>
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-              </ul>
+              <div className="footer-col">
+                <div className="footer-col-title">
+                  Financing
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">Car & Auto</a>
+                  </li>
+                  <li>
+                    <a href="#">Power Sport</a>
+                  </li>
+                  <li>
+                    <a href="#">Loan Calculator</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="footer-col-2">
-          <div className="contact-row">
-            <a href="#" className="primary-btn contact-phone">778-650-0611</a>
-            <a href="#" className="primary-btn contact-phone">888-899-7356</a>
-          </div>
-          <div className="contact-row">
-            <a href="#" className="primary-btn contact-email">info@autolendingcanada.com</a>
-          </div>
-          <div className="social-media-copyright">
-            <div className="social-media-row">
-              <a href="#">
-                <img src={require(`../images/insta-social.png`)} />
-              </a>
-              <a href="#">
-                <img src={require(`../images/facebook-social.png`)} />
-              </a>
-              <a href="#">
-                <img src={require(`../images/youtube-social.png`)} />
-              </a>
-              <a href="#">
-                <img src={require(`../images/linkedin-social.png`)} />
-              </a>
-              <a href="#">
-                <img src={require(`../images/linkedin-social.png`)} />
-              </a>
-              <a href="#">
-                <img src={require(`../images/tiktok-social.png`)} />
-              </a>
+          <div className="footer-col-2">
+            <div className="contact-row">
+              <a href="#" className="primary-btn contact-phone">778-650-0611</a>
+              <a href="#" className="primary-btn contact-phone">888-899-7356</a>
             </div>
-            <div className="copy-right-desc">
-              © 2024 Auto Lending Canada, All Rights Reserved.
+            <div className="contact-row">
+              <a href="#" className="primary-btn contact-email">info@autolendingcanada.com</a>
+            </div>
+            <div className="social-media-copyright">
+              <div className="social-media-row">
+                <a href="#">
+                  <img src={require(`../images/insta-social.png`)} />
+                </a>
+                <a href="#">
+                  <img src={require(`../images/facebook-social.png`)} />
+                </a>
+                <a href="#">
+                  <img src={require(`../images/youtube-social.png`)} />
+                </a>
+                <a href="#">
+                  <img src={require(`../images/linkedin-social.png`)} />
+                </a>
+                <a href="#">
+                  <img src={require(`../images/twitter-social.png`)} />
+                </a>
+                <a href="#">
+                  <img src={require(`../images/tiktok-social.png`)} />
+                </a>
+              </div>
+              <div className="copy-right-desc">
+                © 2024 Auto Lending Canada, All Rights Reserved.
+              </div>
             </div>
           </div>
         </div>
       </div>
+    ) : (
+          <div className="stepper-footer">
+
+      </div>
+    ) }
     </div>
   );
 }

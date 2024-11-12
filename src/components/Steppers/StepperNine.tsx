@@ -1,15 +1,16 @@
 import React from 'react';
 
-const StepperNine = ({ formData, setFieldValue, nextStep, prevStep }) => {
+const StepperNine = ({ formData, setFieldValue, nextStep, prevStep, errors, touched, total_steps, alcStep }) => {
 
-
+    const remainingSteps = total_steps - alcStep - 1;
+    const remainingMinutes = Math.ceil((remainingSteps / total_steps) * 3);
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
                     <span className='stepper-question-title'>Where do you work?</span>
                 </div>
-                <span className='stepper-time'>3 minutes from finish</span>
+                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-flex-input'>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const StepperThree = ({ formData, setFieldValue, nextStep, prevStep }) => {
+const StepperThree = ({ formData, setFieldValue, nextStep, prevStep, errors, touched, total_steps, alcStep }) => {
     const tradeOptions = [
         {
             'title': 'Yes',
@@ -16,13 +16,15 @@ const StepperThree = ({ formData, setFieldValue, nextStep, prevStep }) => {
             'val': 'not_sure'
         }
     ];
+    const remainingSteps = total_steps - alcStep - 1;
+    const remainingMinutes = Math.ceil((remainingSteps / total_steps) * 3);
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
                     <span className='stepper-question-title'>Do you have a trade-in?</span>
                 </div>
-                <span className='stepper-time'>3 minutes from finish</span>
+                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>

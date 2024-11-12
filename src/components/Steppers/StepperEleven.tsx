@@ -3,8 +3,9 @@ import $ from 'jquery';
 import 'select2'; // Import Select2 jQuery plugin
 import 'select2/dist/css/select2.min.css';
 
-const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep }) => {
-
+const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep, errors, touched, total_steps, alcStep }) => {
+    const remainingSteps = total_steps - alcStep - 1;
+    const remainingMinutes = Math.ceil((remainingSteps / total_steps) * 3);
     useEffect(() => {
         // Initialize Select2 for the first select box
         $('#address_year').select2({
@@ -31,7 +32,7 @@ const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep }) => {
                 <div className='stepper-title-sec'>
                     <span className='stepper-question-title'>How long have you lived at your current address?</span>
                 </div>
-                <span className='stepper-time'>3 minutes from finish</span>
+                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-flex-input'>
