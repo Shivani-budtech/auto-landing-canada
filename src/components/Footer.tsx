@@ -7,6 +7,7 @@ function Footer() {
   console.log(curLoc);
   return (
     <div>
+    { curLoc != "/apply" ? (
       <div className="footer-sec">
         <div className="footer-container">
           <div className="footer-col-1">
@@ -101,6 +102,13 @@ function Footer() {
           </div>
         </div>
       </div>
+    ) : (
+        <div className="stepper-footer">
+            <div className="">
+              
+            </div>
+        </div>
+    ) }
     </div>
   );
 }
