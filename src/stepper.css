@@ -127,15 +127,13 @@
     flex: 1;
 }
 .stepper-option-input .option-radio label > input {
-    margin: 10px !important;
+    margin: 0 !important;
     height: 20px;
     width: 20px;
-    padding-right: 10px !important;
-    -webkit-appearance: radio; /* Ensure it renders correctly on Safari */
     appearance: radio;
-    overflow: visible; /* Ensure container doesn't clip */
-    flex-shrink: 0; /* Prevents shrinking if used in flex container */
-    transform: scale(1.1);
+    overflow: visible;
+    flex-shrink: 0;
+    position: relative;
 }
 .stepper-option-input .option-radio label > input:checked {
   accent-color: var(--primary-btn-color);
