@@ -127,9 +127,19 @@
 }
 .stepper-option-input .option-radio label > input {
     margin: 0;
-    height: 20px;
+    -webkit-appearance: none; /* Removes default radio button styles */
+    appearance: none;
     width: 20px;
+    height: 20px;
+    border: 2px solid #ccc; /* Add your border styling */
+    border-radius: 50%;
+    outline: none;
+    margin-right: 10px;
 }
+.stepper-option-input .option-radio label > input:checked {
+    background-color: #fff; /* Custom color for selected radio */
+    border: 6px solid #e63946; /* Same color as background */
+  }
 .stepper-option-input .option-radio label > input:checked {
   accent-color: var(--primary-btn-color);
 }
