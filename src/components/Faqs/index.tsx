@@ -54,6 +54,7 @@ function Faq() {
                 </div>
             ))}
             </div>
+            <a href='#' className='primary-btn'>View All</a>
         </section>
     );
 }

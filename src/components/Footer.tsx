@@ -7,7 +7,6 @@ function Footer() {
   console.log(curLoc);
   return (
     <div>
-    { curLoc != "/apply" ? (
       <div className="footer-sec">
         <div className="footer-container">
           <div className="footer-col-1">
@@ -25,20 +24,20 @@ function Footer() {
             <div className="footer-cols">
               <div className="footer-col">
                 <div className="footer-col-title">
-                  Company
+                  Why Choose ALC?
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Why Choose ALC?</a>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="#">Contact Us</a>
+                      <Link to="/">How it works?</Link>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                      <Link to="/customer_stories">Customer Stories</Link>
                   </li>
                   <li>
-                    <a href="#">Terms of Use</a>
+                      <Link to="/">Power Sports</Link>
                   </li>
                 </ul>
               </div>
@@ -48,29 +47,32 @@ function Footer() {
                 </div>
                 <ul>
                   <li>
-                    <a href="#">Car & Auto</a>
+                      <Link to="/contact_us">Contact Us</Link>
                   </li>
                   <li>
-                    <a href="#">Power Sport</a>
+                      <Link to="/blogs">Blogs</Link>
                   </li>
                   <li>
-                    <a href="#">Loan Calculator</a>
+                      <Link to="/faqs">FAQs</Link>
                   </li>
                   <li>
-                    <a href="#">FAQ</a>
+                      <Link to="/calculator">Car loan calculator</Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="footer-col-2">
-            <div className="contact-row">
-              <a href="#" className="primary-btn contact-phone">778-650-0611</a>
-              <a href="#" className="primary-btn contact-phone">888-899-7356</a>
+            <div className="footer-contact-row">
+                <div className="contact-row">
+                  <a href="#" className="primary-btn contact-phone">778-650-0611</a>
+                  <a href="#" className="primary-btn contact-phone">888-899-7356</a>
+                </div>
+                <div className="contact-row">
+                  <a href="#" className="primary-btn contact-email">info@autolendingcanada.com</a>
+                </div>
             </div>
-            <div className="contact-row">
-              <a href="#" className="primary-btn contact-email">info@autolendingcanada.com</a>
-            </div>
+            
             <div className="social-media-copyright">
               <div className="social-media-row">
                 <a href="#">
@@ -99,11 +101,6 @@ function Footer() {
           </div>
         </div>
       </div>
-    ) : (
-          <div className="stepper-footer">
-
-      </div>
-    ) }
     </div>
   );
 }

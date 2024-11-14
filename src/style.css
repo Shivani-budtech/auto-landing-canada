@@ -156,22 +156,23 @@ input[type=number] {
 .sec-title {
     /* font-family: Outfit; */
     font-size: clamp(30px, 3vw, 45px);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.5;
     text-align: center;
     /* color: #373435; */
     text-transform: uppercase;
-    max-width: 720px;
+    max-width: 870px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
 .sec-title span {
     display: block;
     /* font-family: Outfit; */
-    font-size: var(--font-size-18);
+    font-size: var(--font-size-16);
     font-weight: 400;
     line-height: 22px;
-    margin-top: 15px;
+    margin-top: 5px;
+    text-transform: none;
 }
 
 .footer-sec {
@@ -242,6 +243,9 @@ input[type=number] {
 .contact-phone {
     padding-left: 50px;
     position: relative;
+    flex: 1;
+    text-align: center;
+    padding: 15px 20px 15px 50px;
 }
 .contact-phone:after {
     content: "";
@@ -267,6 +271,9 @@ input[type=number] {
     position: relative;
     background: #fff;
     color: inherit;
+    flex: 1;
+    padding: 15px 20px 15px 50px;
+    text-align: left;
 }
 .contact-email:after {
     content: "";
@@ -440,4 +447,8 @@ input[type=number] {
 }
 .header-logo > a span {
     color: var(--primary-btn-color)
+}
+.footer-contact-row {
+    max-width: 400px;
+    margin-left: auto;
 }

@@ -8,13 +8,17 @@
     text-align: center;
 }
 .looking-for .looking-for-row .content {
-    flex: 0 0 43%;
+    flex: 0 0 40%;
 }
 .looking-for .looking-for-row .content img {
     width: 100%;
 }
 .looking-for .looking-for-row .info {
     flex: 1;
+}
+.looking-for-row .info .primary-btn {
+    padding: 15px 50px;
+    font-size: 18px;
 }
 .looking-for .looking-for-row .desc{
     /* font-family: Outfit; */
@@ -34,7 +38,7 @@
 }
 .looking-for .looking-for-row .looking-for-tabs .tab {
     flex: 0 0 calc(33.33% - 40px);
-    padding: 20px;
+    padding: 15px 20px;
     background-color: #F3F3F3;
     /* font-family: Outfit; */
     font-size: var(--font-size-18);
