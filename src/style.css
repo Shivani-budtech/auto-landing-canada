@@ -72,7 +72,7 @@ input[type=number] {
     z-index: 999;
 }
 .main-header  .header-container {
-    padding: 25px 30px 25px 15px;
+    padding: 25px 40px 25px 30px;
     display: flex;
     align-items: center;
     gap:35px;
