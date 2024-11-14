@@ -75,7 +75,7 @@ input[type=number] {
     padding: 25px 30px 25px 15px;
     display: flex;
     align-items: center;
-    gap:55px;
+    gap:35px;
     background-color: #ffffff;
 }
 .header-logo {
@@ -107,8 +107,8 @@ input[type=number] {
 .header-nav .nav-link-dropdown a {
     font-size: var(--font-size-20);
 }
-.header-btn {
-
+.header-btn .primary-btn {
+    padding: 12px 30px;
 }
 .primary-btn {
     background-color: var(--primary-btn-color);
