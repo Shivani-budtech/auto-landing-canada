@@ -118,6 +118,7 @@
     display: flex;
     align-items: center;
     opacity: 0.4;
+    overflow: visible;
 }
 .stepper-option-input .option-radio label:has( > input:checked) {
     opacity: 1;
