@@ -131,6 +131,7 @@
     height: 20px;
     width: 20px;
     padding-right:10px !important;
+    overflow: visible;
 }
 .stepper-option-input .option-radio label > input:checked {
   accent-color: var(--primary-btn-color);
