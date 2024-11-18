@@ -40,7 +40,7 @@
 }
 .stepper-question-title {
     font-size: clamp(20px, 3vw, 24px);
-    font-weight: 500;
+    font-weight: 600;
 }
 .stepper-question {
     display: flex;

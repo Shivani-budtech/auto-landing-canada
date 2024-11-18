@@ -7,7 +7,7 @@
 }
 .about-us-sec .about-image {
     flex: 1;
-    max-width: 590px;
+    max-width: 560px;
 }
 .about-us-sec .about-image img {
     width: 100%;
@@ -20,7 +20,7 @@
 } 
 .about-us-sec .about-content h1 {
     font-size: clamp(30px, 3vw, 50px);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.5;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -32,6 +32,11 @@
 }
 .about-us-sec .about-content p + p {
     margin-top: 10px;
+}
+.about-content .primary-btn {
+    padding: 14px 35px;
+    font-size: var(--font-size-16);
+    margin-top: 40px;
 }
 @media screen and (max-width: 928px) {
     .about-us-sec {

@@ -45,7 +45,7 @@ function CalculatorBudget() {
     }, []);
 
     return (
-        <section className='contact-us-sec calculator-budget'>
+        <section className='contact-us-sec calculator-budget container'>
             <div className="sec-title">
                 Car Loan Calculator
                 <span>

@@ -22,6 +22,66 @@
     align-items: center;
     gap: 5px;
 }
+.user-input , .email-input , .phone-input , .support-input {
+    position: relative;
+}
+.email-header {
+    position: relative;
+    padding: 5px 10px 0 35px;
+}
+.email-header:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("./email-input.png");
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+.phone-header {
+    position: relative;
+    padding: 5px 30px 0 35px;
+}
+.phone-header:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("./phone-input.png");
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+.user-input:after , .email-input:after , .phone-input:after , .support-input:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("./user-input.png");
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+}
+.email-input:after {
+    background-image: url("./email-input.png");
+}
+.phone-input:after {
+    background-image: url("./phone-input.png");
+}
+.support-input:after {
+    background-image: url("./support-input.png");
+    top:32px;
+}
+.user-input >input , .email-input > input , .phone-input > input , .support-input > textarea {
+    padding-left: 50px;
+}
+.header-desc .email-header , .header-desc .phone-header {
+    display: inline-block;
+}
 
 @media screen and (max-width:928px) {
     .contact-us-form.contact-us-sec {

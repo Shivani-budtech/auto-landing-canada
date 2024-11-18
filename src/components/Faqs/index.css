@@ -1,8 +1,10 @@
 .faqs-sec {
-    padding: 100px 70px 50px;
     /* color: #373435; */
     background-image: url('./home-top-bg.png');
     background-color: #D9D9D9;
+}
+.faqs-sec .faqs-sec-row {
+    padding: 100px 70px 50px;
 }
 .faq-items {
     display: flex;
@@ -50,7 +52,7 @@
     width: fit-content;
 }
 @media screen and (max-width:928px) {
-    .faqs-sec {
+    .faqs-sec .faqs-sec-row {
         padding: 100px 30px 50px;
     }
 }

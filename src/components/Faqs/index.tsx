@@ -36,25 +36,27 @@ function Faq() {
 
     return (
         <section className="faqs-sec">
-            <div className="sec-title">Frequently Asked Questions</div>
-            <div className='faq-items'>
-            {Object.entries(faqs).map(([key, faq]) => (
-                <div className="faq-item" key={key}>
-                    <div className={isOpen == key ? "faq-question opened" : "faq-question"}  onClick={() => toggleFAQ(key)}>
-                        {faq.question}
+            <div className="faqs-sec-row container">
+                <div className="sec-title">Frequently Asked Questions</div>
+                <div className='faq-items'>
+                {Object.entries(faqs).map(([key, faq]) => (
+                    <div className="faq-item" key={key}>
+                        <div className={isOpen == key ? "faq-question opened" : "faq-question"}  onClick={() => toggleFAQ(key)}>
+                            {faq.question}
+                        </div>
+                        <motion.div
+                            initial={{ height: 0 }}
+                            animate={{ height: isOpen == key ? 'auto' : 0 }}
+                            transition={{ duration: 0.3 }}
+                            style={{ overflow: 'hidden' }}
+                        >
+                            <div className="faq-ans">{faq.answer}</div>
+                        </motion.div>
                     </div>
-                    <motion.div
-                        initial={{ height: 0 }}
-                        animate={{ height: isOpen == key ? 'auto' : 0 }}
-                        transition={{ duration: 0.3 }}
-                        style={{ overflow: 'hidden' }}
-                    >
-                        <div className="faq-ans">{faq.answer}</div>
-                    </motion.div>
+                ))}
                 </div>
-            ))}
+                <a href='#' className='primary-btn'>View All</a>
             </div>
-            <a href='#' className='primary-btn'>View All</a>
         </section>
     );
 }

@@ -13,7 +13,7 @@ function Testimonials() {
             name: "Sarah M.",
         },
         {
-            desc: "After comparing several lenders, I found the best rates here. The customer service was outstanding—they took the time to explain all my options clearly. I’m thrilled with my new ride!",
+            desc: "The customer service was outstanding—they took the time to explain all my options clearly. I’m thrilled with my new ride!",
             name: "James T.",
         },
         {
@@ -29,7 +29,7 @@ function Testimonials() {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         responsive: [
             {
@@ -50,7 +50,7 @@ function Testimonials() {
     };
 
     return (
-        <section className="testimonials-sec">
+        <section className="testimonials-sec container">
             <div className="sec-title">Why Canadians Love Us</div>
             <div className="testimonial-grid">
                 <Slider {...settings}>

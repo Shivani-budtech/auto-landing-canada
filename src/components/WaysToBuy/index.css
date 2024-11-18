@@ -55,6 +55,10 @@
 }
 .ways-to-buy .way-section .way-img {
     flex: 0 0 58px;
+    background: var(--primary-btn-color);
+    padding: 15px;
+    height: 58px;
+    border-radius: 50%;
 }
 .ways-to-buy .way-section .way-info {
     flex: 1;

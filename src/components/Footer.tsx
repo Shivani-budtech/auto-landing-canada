@@ -8,6 +8,7 @@ function Footer() {
   return (
     <div>
       <div className="footer-sec">
+        <img src={require(`../images/logos.png`)} />
         <div className="footer-container">
           <div className="footer-col-1">
             <div className="header-logo">
@@ -97,6 +98,7 @@ function Footer() {
               <div className="copy-right-desc">
                 © 2024 Auto Lending Canada, All Rights Reserved.
               </div>
+              
             </div>
           </div>
         </div>

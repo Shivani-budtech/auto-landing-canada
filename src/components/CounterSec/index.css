@@ -11,16 +11,22 @@
     padding: 20px;
     text-align: center;
     border-left: 1px solid var(--primary-btn-color);
+    align-self: stretch;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .counter-row .counter:last-child {
     border-right: 1px solid var(--primary-btn-color);
 }
 .counter-row .counter h1 {
-    font-size: var(--font-size-54);
+    font-size: var(--font-size-24);
     font-weight: 700;
+    margin-bottom: 10px;
 }
 .counter-row .counter p {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-14);
     font-weight: 300;
 }
 

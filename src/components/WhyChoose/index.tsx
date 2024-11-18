@@ -23,7 +23,7 @@ function WhyChoose() {
         },
     ];
     return (
-        <section className="why-choose">
+        <section className="why-choose container">
             <div className="sec-title">
                 Why Choose ALC?
                 <span>

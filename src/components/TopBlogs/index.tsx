@@ -67,7 +67,7 @@ function TopBlogs() {
     };
 
     return (
-        <section className="top-blog-sec">
+        <section className="top-blog-sec container">
             <div className="sec-title">More Blogs</div>
             <div className="top-blog-grid">
                 <Slider {...settings}>
@@ -84,7 +84,7 @@ function TopBlogs() {
                                 22 May, 2024
                             </div>
                             <div className='top-blog-btn'>
-                                <a href='#' className='primary-btn'>Read More</a>
+                                <a href='#' className='primary-link'>Read More</a>
                             </div>
                         </div>
                     </div>

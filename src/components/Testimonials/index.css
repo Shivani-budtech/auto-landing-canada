@@ -17,6 +17,7 @@
     padding: 30px;
     border-radius: 18px;
     position: relative;
+    height: 100%;
 }
 .testimonial-grid .testimonial .testimonial-desc {
     /* font-family: Outfit; */
@@ -24,6 +25,7 @@
     font-weight: 300;
     line-height: 19px;
     text-align: left;
+    margin-bottom: 50px;
 }
 .testimonial-grid .testimonial .testimonial-author {
     /* font-family: Outfit; */
@@ -31,7 +33,12 @@
     font-weight: 700;
     line-height: 30.24px;
     text-align: left;
-    margin-top: 40px;
+    bottom: 30px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
 }
 .testimonial-grid .testimonial .testimonail-vec {
     position: absolute;
@@ -40,6 +47,7 @@
 }
 .testimonial-grid .testimonial-item {
     padding:10px;
+    height: 100%;
 }
 .testimonial-grid .slick-dots li button:before {
     font-size: var(--font-size-13);
@@ -56,6 +64,18 @@
 }
 .testimonial-grid .slick-dots li.slick-active button:before {
     opacity: 1;
+}
+.testimonial-grid .slick-track
+{
+    display: flex !important;
+}
+
+.testimonial-grid .slick-slide
+{
+    height: inherit !important;
+}
+.testimonial-grid .slick-slide > div , .testimonial-item {
+    height: 100%;
 }
 @media screen and (max-width: 928px) {
     .testimonials-sec {

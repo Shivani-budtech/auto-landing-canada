@@ -8,7 +8,7 @@ function Blogs() {
     return (
         <section className='blogs-page'>
             <InternalHeader />
-            <div className='all-blogs-row'>
+            <div className='all-blogs-row container'>
                 <AllBlogs />
                 <FeatureBlogs />
             </div>

@@ -34,7 +34,7 @@ function ContactUsForm() {
     };
 
     return (
-        <section className='contact-us-sec contact-us-form'>
+        <section className='contact-us-sec contact-us-form container'>
             <div className="sec-title">
                 Get in touch!
                 <span>
@@ -45,7 +45,7 @@ function ContactUsForm() {
                 <form onSubmit={handleSubmit}>
                     <div className='contact-form-row'>
                         <div className='contact-col'>
-                            <div className="form-input">
+                            <div className="form-input user-input">
                                 <input
                                     type="text"
                                     id="first_name"
@@ -58,7 +58,7 @@ function ContactUsForm() {
                             </div>
                         </div>
                         <div className='contact-col'>
-                            <div className="form-input">
+                            <div className="form-input user-input">
                                 <input
                                     type="text"
                                     id="last_name"
@@ -71,7 +71,7 @@ function ContactUsForm() {
                             </div>
                         </div>
                         <div className='contact-col'>
-                            <div className="form-input">
+                            <div className="form-input email-input">
                                 <input
                                     type="email"
                                     id="email"
@@ -84,7 +84,7 @@ function ContactUsForm() {
                             </div>
                         </div>
                         <div className='contact-col'>
-                            <div className="form-input">
+                            <div className="form-input phone-input">
                                 <input
                                     type="number"
                                     id="mobile_no"
@@ -99,7 +99,7 @@ function ContactUsForm() {
                     </div>
                     <div className='contact-form-row'>
                         <div className='contact-col'>
-                            <div className="form-input">
+                            <div className="form-input support-input">
                                 <textarea
                                     id="message"
                                     name="message"

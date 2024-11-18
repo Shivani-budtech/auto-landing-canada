@@ -41,23 +41,65 @@ function CustomerReview() {
     const [testimonials, setTestimonials] = useState(arr);
 
     return (
-        <section className="reviews-sec">
-            <div className="sec-title">Why Canadians Love Us</div>
+        <section className="reviews-sec container">
             <div className="review-grid">
-                {Object.entries(testimonials).map(([key, testimonial]) => (
-                    <div key={key} className="review-item">
-                        <div className="review">
-                            <div className="review-desc">{testimonial.desc}</div>
-                            <div className="review-author">{testimonial.name}</div>
-                            <img
-                                alt="review vector"
-                                src={require(`./testimonial-vec.png`)}
-                                className="review-vec"
-                            />
-                        </div>
+                <div className="review-items-container">
+                    <div className="review">
+                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
+                        <div className="review-author">Linda R.</div>
+                        <img
+                            alt="review vector"
+                            src={require(`./testimonial-vec.png`)}
+                            className="review-vec"
+                        />
                     </div>
-                ))}
+                    <div className="review">
+                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
+                        <div className="review-author">Linda R.</div>
+                        <img
+                            alt="review vector"
+                            src={require(`./testimonial-vec.png`)}
+                            className="review-vec"
+                        />
+                    </div>
+                </div>
+                <div className="review-image-container">
+                    <img
+                        alt="review vector"
+                        src={require(`./customer-review-1.png`)}
+                        className=""
+                    />
+                </div>
+                <div className="review-image-container">
+                    <img
+                        alt="review vector"
+                        src={require(`./customer-review-2.png`)}
+                        className=""
+                    />
+                </div>
+                <div className="review-items-container">
+                    <div className="review">
+                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
+                        <div className="review-author">Linda R.</div>
+                        <img
+                            alt="review vector"
+                            src={require(`./testimonial-vec.png`)}
+                            className="review-vec"
+                        />
+                    </div>
+                    <div className="review">
+                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
+                        <div className="review-author">Linda R.</div>
+                        <img
+                            alt="review vector"
+                            src={require(`./testimonial-vec.png`)}
+                            className="review-vec"
+                        />
+                    </div>
+                </div>
             </div>
+                        
+                    
         </section>
     );
 }

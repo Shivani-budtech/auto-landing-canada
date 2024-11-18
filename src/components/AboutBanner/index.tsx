@@ -4,11 +4,11 @@ import '../../responsive.css';
 function AboutBanner() {
 
     return (
-        <section className="banner-sec about-banner">
+        <section className="banner-sec about-banner container">
             <div className="banner-container">
                 <div className='banner-content'>
-                    <div className="sec-title">Start your journey now</div>
-                    <div className="banner-desc">
+                    <div className="banner-desc">Start your journey now</div>
+                    <div className="sec-title">
                         YOUR DREAM CAR AWAITS YOU
                     </div>
                     <div className="banner-btn">

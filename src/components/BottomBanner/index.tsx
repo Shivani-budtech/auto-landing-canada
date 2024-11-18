@@ -4,7 +4,7 @@ import '../../responsive.css';
 function BottomBanner() {
 
     return (
-        <section className="banner-sec bottom-banner">
+        <section className="banner-sec bottom-banner container">
             <div className="banner-container">
                 <div className='banner-content'>
                     <div className="sec-title">Get Approved for Your Car Loan</div>

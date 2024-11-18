@@ -61,7 +61,7 @@
 .about-features .why-choose-row > .last-img {
     position: absolute;
     bottom: -30px;
-    right: -30px;
+    right: -20px;
     z-index: -1;
 }
 

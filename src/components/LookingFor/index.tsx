@@ -29,7 +29,7 @@ function LookingFor() {
         },
     ];
     return (
-        <section className="looking-for">
+        <section className="looking-for container">
             <div className="sec-title">
                 Car Loans for All Makes and Models – Fast Approval!
             </div>

@@ -6,7 +6,7 @@ import TopBlogs from './TopBlogs/index.tsx';
 function BlogDetail() {
     return (
         <section className='blog-detail-page header-marging'>
-            <div className='blogs-detail-row'>
+            <div className='blogs-detail-row container'>
                 <Blog />
                 <FeatureBlogs />
             </div>

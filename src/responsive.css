@@ -3,6 +3,11 @@
         padding: 46px 30px;
     }
 }
+@media screen and (max-width:905px) {
+    .main-header .header-container {
+        gap:35px;
+    }
+}
 @media screen and (max-width:870px) {
     .footer-container {
         flex-direction: column;
@@ -19,6 +24,10 @@
     }
     .copy-right-desc {
         text-align: left;
+    }
+    .footer-sec > img {
+        height: 500px;
+        right:0
     }
 }
 
@@ -37,9 +46,7 @@
     .header-logo {
         flex: 1;
     }
-    .main-header .header-container {
-        gap:35px;
-    }
+    
 }
 @media screen and (max-width:450px) {
     .social-media-row > a {
@@ -54,6 +61,12 @@
     }
     .contact-row > a {
         width: fit-content;
+    }
+}
+
+@media screen and (max-width:395px) {
+    .main-header .header-container{
+        padding: 25px 20px 25px 20px;
     }
 }
 

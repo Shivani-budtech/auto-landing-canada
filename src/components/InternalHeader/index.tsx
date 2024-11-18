@@ -19,7 +19,7 @@ function InternalHeader() {
                 break;
             case "/contact_us":
                 setPageTitle("Contact Us");
-                setPageDesc("info@autolendingcanada.com      888-899-7356");
+                setPageDesc("<span class='email-header'>info@autolendingcanada.com</span><span class='phone-header'>888-899-7356</span>");
                 break;
             case "/blogs":
                 setPageTitle("ALC BLogs");
@@ -34,7 +34,7 @@ function InternalHeader() {
                 setPageDesc("This car loan calculator will help provide you with a rough estimate of what your approval options could be. Once you apply with Auto Lending Canada you will receive a pre-approval tailored to your personal financial circumstances at the click of a button.");
                 break;
             default:
-                document.title = "My Website";
+                setPageTitle ("My Website");
         }
     }, [location]);
     return (
@@ -42,9 +42,9 @@ function InternalHeader() {
             <div className="header-title">
                 {pageTitle}
             </div>
-            <div className='header-desc'>
-                {pageDesc}
-            </div>
+            <div className='header-desc'
+                dangerouslySetInnerHTML={{ __html: pageDesc }}
+            />
         </section>
     );
 }

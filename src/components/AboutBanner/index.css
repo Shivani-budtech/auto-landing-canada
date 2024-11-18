@@ -5,6 +5,7 @@
     background-image: url('./banner.png');
     position: relative;
     border-radius: 20px;
+    background-position: center top;
 }
 .about-banner.banner-sec .banner-container img {
     width: 100%;
@@ -22,14 +23,15 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
     border-radius: 20px;
 }
+
 .about-banner .banner-content {
     z-index: 9;
     color: #fff;
     position: relative;
     margin: 0 auto;
-    max-width: 635px;
+    /* max-width: 635px; */
     width: 100%;
-    padding: 50px 10px;
+    padding: 80px 10px;
 }
 .about-banner .banner-content .sec-title {
     margin-bottom: 10px;

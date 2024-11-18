@@ -20,6 +20,14 @@
 .why-choose .grida .grida-img {
     margin-top: -47px;
     margin: -47px auto 0;
+    width: 94px;
+    height: 94px;
+    background-color: var(--primary-btn-color);
+    border-radius: 50%;
+    padding: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .why-choose .grida .grida-title {
     /* font-family: Outfit; */
@@ -60,7 +68,7 @@
 .why-choose .why-choose-row > .last-img {
     position: absolute;
     bottom: -30px;
-    right: -30px;
+    right: -20px;
     z-index: -1;
 }
 

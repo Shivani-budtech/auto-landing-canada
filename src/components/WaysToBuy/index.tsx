@@ -20,7 +20,7 @@ function waysToBuy() {
         },
     ];
     return (
-        <section className="ways-to-buy">
+        <section className="ways-to-buy container">
             
             <div className="info">
                 {Object.entries(waysToBuy).map(([key, ways]) => (

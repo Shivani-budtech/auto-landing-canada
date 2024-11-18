@@ -55,6 +55,7 @@ function FeatureBlogs() {
                                 <div className='blog-list-date'>
                                     22 May, 2024
                                 </div>
+                                <Link to={`/blog/` + key} className='primary-link'>Read More</Link>
                             </div>
                         </div>
                         <Link to={`/blog/`+key}></Link>
