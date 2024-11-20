@@ -44,14 +44,17 @@ const StepperTwelve = ({ formData, setFieldValue, nextStep, prevStep, errors, to
                     </div>
                 </div>
                 <div className='stepper-text-input'>
-                    <span className="input-guide">Round to Nearest Dollar</span>
+                    <span className="input-guide" style={{ marginLeft: "15px" }}>Round to Nearest Dollar</span>
                     <span className='dollar-input'>
-                        <input type='number' className='' value={formData.monthly_rent} name="monthly_rent" onChange={(e) => setFieldValue("monthly_rent", e.target.value)} />
+                        <input type='number' className='' placeholder='Monthly Income' value={formData.monthly_rent} name="monthly_rent" onChange={(e) => setFieldValue("monthly_rent", e.target.value)} />
                     </span>
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    If you share a mortgage or rent payment with someone else only<br/> include the amount you pay every month.
                 </div>
             </div>
         </div>

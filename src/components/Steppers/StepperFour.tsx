@@ -57,8 +57,11 @@ const StepperFour = ({ formData, setFieldValue, nextStep, prevStep, errors, touc
                     ))}
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    Great rates available, regardless of your credit score.
                 </div>
             </div>
         </div>

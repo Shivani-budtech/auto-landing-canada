@@ -27,7 +27,7 @@ function waysToBuy() {
                     <div key={key} className="way-sec-container">
                         <div className="way-section">
                             <div className="way-img">
-                                <img src={require(`./${ways.img}`)} />
+                                <img src={require(`../../images/${ways.img}`)} />
                             </div>
                             <div className="way-info">
                                 <h2>{ways.title}</h2>
@@ -38,7 +38,7 @@ function waysToBuy() {
                 ))}
             </div>
             <div className="content">
-                <img src={require(`./car_app.png`)} />
+                <img src={require(`../../images/car_app.png`)} />
             </div>
         </section>
     );

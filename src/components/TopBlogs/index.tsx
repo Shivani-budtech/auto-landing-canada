@@ -74,7 +74,7 @@ function TopBlogs() {
                 {Object.entries(blogs).map(([key, blog]) => (
                     <div key={key} className="top-blog-item">
                         <div className='top-blog-image'>
-                            <img src={require("./about-us-img.png")} />
+                            <img src={require("../../images/about-us-img.png")} />
                         </div>
                         <div className='top-blog-title'>
                             How Rolling Over a Car Loan Works

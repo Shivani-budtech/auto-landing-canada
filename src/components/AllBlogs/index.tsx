@@ -45,7 +45,7 @@ function AllBlogs() {
                 {Object.entries(blogs).map(([key, blog]) => (
                     <div key={key} className="blog-item">
                         <div className='blog-image'>
-                            <img src={require("./about-us-img.png")} />
+                            <img src={require("../../images/about-us-img.png")} />
                         </div>
                         <div className='blog-title'>
                             How Rolling Over a Car Loan Works

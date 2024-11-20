@@ -49,8 +49,11 @@ const StepperTwo = ({ formData, setFieldValue, nextStep, prevStep, errors, touch
                     ))}
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    Find vehicle options that fit your budget.
                 </div>
             </div>
         </div>

@@ -32,8 +32,11 @@ const StepperNine = ({ formData, setFieldValue, nextStep, prevStep, errors, touc
                     </div>
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    We won't come visit, but we need these details to confirm your employment status so you can get the best rates possible.
                 </div>
             </div>
         </div>

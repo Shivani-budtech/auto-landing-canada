@@ -53,8 +53,11 @@ const StepperFive = ({ formData, setFieldValue, nextStep, prevStep, errors, touc
                     ))}
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    Your employment status will help determine the best vehicle and financing options for you.
                 </div>
             </div>
         </div>

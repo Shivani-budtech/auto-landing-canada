@@ -35,7 +35,7 @@ const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep, errors, to
                 <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
-                <div className='stepper-flex-input'>
+                <div className='stepper-flex-input' style={{ margin: "30px 0" }}>
                     <div className='stepper-input'>
                         <span>
                             Select Year
@@ -62,8 +62,11 @@ const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep, errors, to
                     </div>
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    If you just moved in please enter 1 month to continue.
                 </div>
             </div>
         </div>

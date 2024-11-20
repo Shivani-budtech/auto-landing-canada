@@ -66,14 +66,14 @@ function CustomerReview() {
                 <div className="review-image-container">
                     <img
                         alt="review vector"
-                        src={require(`./customer-review-1.png`)}
+                        src={require(`../../images/customer-review-1.png`)}
                         className=""
                     />
                 </div>
                 <div className="review-image-container">
                     <img
                         alt="review vector"
-                        src={require(`./customer-review-2.png`)}
+                        src={require(`../../images/customer-review-2.png`)}
                         className=""
                     />
                 </div>

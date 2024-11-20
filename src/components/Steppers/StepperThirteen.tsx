@@ -82,7 +82,7 @@ const StepperThirteen = ({ formData, setFieldValue, nextStep, prevStep, errors, 
                 </div>
             </div>
             <div className='stepper-btn'>
-                <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                 <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
             </div>
         </div>

@@ -18,14 +18,17 @@ const StepperTen = ({ formData, setFieldValue, nextStep, prevStep, errors, touch
             </div>
             <div className="stepper-input">
                 <div className='stepper-text-input'>
-                    <span className="input-guide">Home Address</span>
+                    <span className="input-guide" style={{ marginLeft: "15px" }}>Home Address</span>
                     <span className='text-input'>
                         <input type='text' className='' value={formData.address} name="address" onChange={(e) => setFieldValue("address", e.target.value )} />
                     </span>
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={checkForApproval}>Continue</button>
+                </div>
+                <div className="stepper-desc">
+                    Providing your location helps find the best deals near you.
                 </div>
             </div>
             {isApproved === "pending" ? (
@@ -47,10 +50,10 @@ const StepperTen = ({ formData, setFieldValue, nextStep, prevStep, errors, touch
                                 Become a Premium Member of the Auto Lending Canada Affinity Program and get pre-approved for your car loan.
                             </p>
                             <p>
-                                Membership in the Affinity Program is governed by the Rules for Membership in Auto Lending Canada Affinity Program (available here)
+                                    Membership in the Affinity Program is governed by the Rules for Membership in Auto Lending Canada Affinity Program <Link to="/"><b>(available here)</b></Link>
                             </p>
                             <p>
-                                By clicking on the Continue Button, I confirm my agreement to Auto Lending Canada' General Terms of Service, my consent to Auto Lending Canada and all members of Auto Lending Canada Company recording all my calls with them for quality assurance and training purposes, and my consent to Auto Lending Canada, car dealers and lenders obtaining credit reports about me to facilitate my application for a car loan.
+                                    By clicking on the Continue Button, I confirm my agreement to Auto Lending Canada' <Link to="/"><b>General Terms of Service</b></Link>, my consent to Auto Lending Canada and all members of Auto Lending Canada Company recording all my calls with them for quality assurance and training purposes, and my consent to Auto Lending Canada, car dealers and lenders obtaining credit reports about me to facilitate my application for a car loan.
                             </p>
                         </div>
                         <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>

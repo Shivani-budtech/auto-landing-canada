@@ -6,7 +6,7 @@ function AboutUs() {
         <section className="about-us-sec container">
             <div className="about-us-container">
                 <div className='about-image'>
-                    <img src={require("./about-us-img.png")} />
+                    <img src={require("../../images/about-us-img.png")} />
                 </div>
                 <div className='about-content'>
                     <h1>

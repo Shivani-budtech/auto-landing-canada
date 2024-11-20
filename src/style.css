@@ -338,20 +338,20 @@ input[type=number] {
     max-width: 100%;
 }
 .auto-lending-app .select2-container--default .select2-selection--single .select2-selection__rendered {
-    padding: 16px 18px;
+    padding: 8px 18px;
 }
 .auto-lending-app .select2-container--default .select2-selection--single {
     height: fit-content;
 }
 .auto-lending-app .select2-container--default .select2-selection--single .select2-selection__rendered {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-18);
 }
 .auto-lending-app .select2-container--default .select2-selection--single {
     border-color: #37343533;
     border-radius: 12px;
 }
 .auto-lending-app .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 60px;
+    height: 44px;
     width: 35px;
 }
 .select2-dropdown {

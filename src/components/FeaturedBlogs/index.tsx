@@ -45,7 +45,7 @@ function FeatureBlogs() {
                 {Object.entries(blogs).map(([key, blog]) => (
                     <div key={key} className="blog-list-item">
                         <div className='blog-list-image'>
-                            <img src={require("./about-us-img.png")} />
+                            <img src={require("../../images/about-us-img.png")} />
                         </div>
                         <div className='blog-list-info'>
                             <div className='blog-list-title'>

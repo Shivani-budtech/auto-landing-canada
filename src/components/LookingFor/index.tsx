@@ -28,6 +28,7 @@ function LookingFor() {
             active: false,
         },
     ];
+    const imagePath = "../../images/";
     return (
         <section className="looking-for container">
             <div className="sec-title">
@@ -35,7 +36,7 @@ function LookingFor() {
             </div>
             <div className="looking-for-row">
                 <div className="content">
-                    <img src={require(`./single-car.png`)} />
+                    <img src={require(`../../images/single-car.png`)} />
                 </div>
                 <div className="info">
                     <div className="desc">What type of vehicle are you looking for?</div>

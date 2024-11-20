@@ -13,7 +13,7 @@ const StepperSixteen = ({ formData, setFieldValue, nextStep, prevStep, errors, t
                 <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
-                <div className='stepper-text-input'>
+                <div className='stepper-text-input' style={{maxWidth:"636px"}}>
                     <span className="input-guide">Email Address</span>
                     <span className='text-input'>
                         <input type='text' className='' value={formData.email} name="email" onChange={(e) => setFieldValue("email", e.target.value)} />
@@ -23,15 +23,18 @@ const StepperSixteen = ({ formData, setFieldValue, nextStep, prevStep, errors, t
                     Please take a moment to verify your phone number. This helps us confirm your identity and secure your account.
                     <br /><b>When you tap "Submit" we will text you a verification code. Message and data rates may apply.</b>
                 </p>
-                <div className='stepper-text-input'>
+                <div className='stepper-text-input' style={{ maxWidth: "636px" }}>
                     <span className="input-guide">Mobile Number</span>
-                    <span className='dollar-input phone-input'>
+                    <span className='dollar-input can-phone-input'>
                         <input type='number' className='' value={formData.phone_number} name="phone_number" onChange={(e) => setFieldValue("phone_number", e.target.value)} />
                     </span>
                 </div>
-                <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
-                    <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                <div className='stepper-btn bigger-btn'>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
+                    <button type='button' className='primary-btn' onClick={nextStep}>Continue to Final Step</button>
+                </div>
+                <div className="stepper-desc">
+                    Get access to your vehicle and financing options by creating your account. There is no obligation to <br/> continue with financing if you change your mind.
                 </div>
             </div>
         </div>

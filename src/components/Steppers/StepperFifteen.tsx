@@ -31,9 +31,9 @@ const StepperFifteen = ({ formData, setFieldValue, nextStep, prevStep, errors, t
                         </div>
                     </div>
                 </div>
-                <div className='stepper-btn'>
-                    <button type='button' className='secondary-btn' onClick={prevStep}>Previous</button>
-                    <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                <div className='stepper-btn bigger-btn'>
+                    <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
+                    <button type='button' className='primary-btn' onClick={nextStep}>Continue to Final Step</button>
                 </div>
             </div>
         </div>

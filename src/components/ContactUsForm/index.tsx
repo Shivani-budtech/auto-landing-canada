@@ -119,7 +119,7 @@ function ContactUsForm() {
                                 checked={formData.consent}
                                 onChange={handleCheckboxChange}
                             />
-                            I agree to the terms and conditions
+                            By submitting this form, you are consenting to receive text message communications from Auto Lending Canada.
                         </label>
                     </div>
                     <div className='contact-form-row'>

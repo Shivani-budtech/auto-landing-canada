@@ -6,6 +6,10 @@
 .apply-stepper .primary-btn , .apply-stepper .secondary-btn {
     padding: 15px 50px;
     font-size: 18px;
+    width: 176px;
+}
+.apply-stepper .bigger-btn .primary-btn , .apply-stepper .bigger-btn .secondary-btn {
+    width: 286px;
 }
 .stepper-progress-container {
         padding: 30px 0;
@@ -102,6 +106,7 @@
     align-items: center;
     gap:15px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .stepper-option-input {
     max-width: 460px;
@@ -125,7 +130,7 @@
 .stepper-option-input .option-radio label > span {
     flex: 1;
 }
-.stepper-option-input .option-radio label > input {
+input[type='radio'] {
     margin: 0;
     -webkit-appearance: none; /* Removes default radio button styles */
     appearance: none;
@@ -136,11 +141,11 @@
     outline: none;
     margin-right: 10px;
 }
-.stepper-option-input .option-radio label > input:checked {
+input[type='radio']:checked {
     background-color: #fff; /* Custom color for selected radio */
     border: 6px solid #e63946; /* Same color as background */
   }
-.stepper-option-input .option-radio label > input:checked {
+input[type='radio']:checked {
   accent-color: var(--primary-btn-color);
 }
 .stepper-option-input .option-radio + .option-radio {
@@ -164,9 +169,10 @@
     outline: none;
     box-shadow: 0px 0px 50px 0px #072E7312;
     border-radius: 14px;
-    padding: 20px 10px 20px 45px;
+    padding: 20px 10px 20px 50px;
     font-size: var(--font-size-14);
     font-weight: 300;
+    letter-spacing: 0.5px;
 }
 .stepper-text-input .text-input input {
     padding-left: 10px;
@@ -182,7 +188,7 @@
     display: block;
     left: 16px;
 }
-.stepper-text-input .dollar-input.phone-input::after {
+.stepper-text-input .dollar-input.can-phone-input::after {
     content: url('./images/canada-flag.png');
 }
 .stepper-text-input .dollar-input.calender::after {
@@ -190,7 +196,7 @@
     top: 19px;
 }
 .stepper-flex-input {
-    margin: 30px 0;
+    /* margin: 30px 0; */
     display: flex;
     align-items: center;
     gap: 15px;
@@ -198,6 +204,7 @@
 .stepper-flex-input .stepper-input {
     flex: 1;
 }
+
 .stepper-flex-input .stepper-input:not(.input-text) {
     display: flex;
     align-items: center;
@@ -210,6 +217,7 @@
 }
 .stepper-flex-input .stepper-input > span {
     flex: 1;
+    font-size: 18px;
 }
 .inline-radio-input {
         max-width: 460px;
@@ -325,6 +333,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .approval-pop-container {
     width: 631px;
     max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 30px);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -334,22 +343,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: 999;
     border-radius: 14px;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    overflow: auto;
 }
 .approve-pop-title {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
+    margin-top: 8px;
 }
 .approve-pop-address {
     max-width: 416px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 10px;
     background: #00000010;
     border-radius: 14px;
 }
+.approve-pop-address h1 {
+    font-size: 22px;
+}
 .approve-pop-content p {
     font-size: 14px;
     font-weight: 300;
+}
+.approve-pop-content p a {
+    text-decoration: underline;
 }
 .approve-pop-content p + p {
     margin-top: 20px;
@@ -363,6 +380,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #F3F3F3;
     position: relative;
     overflow: hidden;
+}
+.stepper-desc {
+    text-align: center;
+    margin-top: 20px;
+    color: #373435;
 }
 
 @media screen and (max-width:800px) {
