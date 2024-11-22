@@ -6,7 +6,7 @@ function Footer() {
   const curLoc = location.pathname;
   console.log(curLoc);
   return (
-    <div>
+    <div className={(curLoc == "/apply") ? 'apply-footer main-footer-container' : 'main-footer-container'}>
       <div className="footer-sec">
         <img src={require(`../images/logos.png`)} />
         <div className="footer-container">
@@ -32,13 +32,13 @@ function Footer() {
                     <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                      <Link to="/">How it works?</Link>
+                    <Link to="/how_works">How it works?</Link>
                   </li>
                   <li>
                       <Link to="/customer_stories">Customer Stories</Link>
                   </li>
                   <li>
-                      <Link to="/">Power Sports</Link>
+                      <Link to="/power_sports">Power Sports</Link>
                   </li>
                 </ul>
               </div>
@@ -101,6 +101,15 @@ function Footer() {
               
             </div>
           </div>
+        </div>
+      </div>
+      <div className="small-footer">
+        <p>Copyright © 2024 Auto Lending Canada. All rights reserved. Auto Lending Canada® and the Auto Lending Canada Logo design are registered <br/> trademarks of Auto Lending Canada Ltd. Other trademarks are the property of their respective owners.</p>
+        <div className="footer-links">
+          <a href='#'>Privacy Policy</a>
+          <a href='#'>Privacy Policy</a>
+          <a href='#'>Privacy Policy</a>
+          <a href='#'>Privacy Policy</a>
         </div>
       </div>
     </div>

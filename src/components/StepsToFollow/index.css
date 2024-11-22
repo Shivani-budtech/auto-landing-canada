@@ -1,0 +1,26 @@
+.steps-sec {
+    background-image: url('./home-top-bg.png');
+    background-color: #D9D9D9;
+}
+.steps-row {
+    padding: 20px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.steps-row .steps-to-follow {
+    flex: 1;
+    text-align: center;
+    padding: 20px 40px;
+}
+.steps-row .steps-to-follow + .steps-to-follow {
+    border-left: 1px solid #373435;
+}
+.steps-row .steps-to-follow p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width:860px) {
+    .steps-row .steps-to-follow + .steps-to-follow {
+        border: none;
+    }
+}

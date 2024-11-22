@@ -33,6 +33,14 @@ function InternalHeader() {
                 setPageTitle("Your Budget Matters");
                 setPageDesc("This car loan calculator will help provide you with a rough estimate of what your approval options could be. Once you apply with Auto Lending Canada you will receive a pre-approval tailored to your personal financial circumstances at the click of a button.");
                 break;
+            case "/power_sports":
+                setPageTitle("Power Sports");
+                setPageDesc("Discover the ease of auto financing with Auto Lending Canada. Our innovative approach removes stress and connects you with tailored options. Redefine your car-buying journey with us, where every step is filled with simplicity and ease.");
+                break;
+            case "/how_works":
+                setPageTitle("How it works? ");
+                setPageDesc("Take the Auto Lending Canada Auto Financing Quiz to discover personalised financing options that suit your lifestyle and budget. This quick and easy quiz will match you with competitive rates tailored just for you.Don’t wait—start your journey to hassle - free auto financing today!");
+                break;
             default:
                 setPageTitle ("My Website");
         }

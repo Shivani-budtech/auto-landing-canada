@@ -15,6 +15,9 @@ import BlogDetail from './BlogDetail.tsx';
 import Faqs from './Faqs.tsx';
 import Calculator from './Calculator.tsx';
 import ApplyNow from './ApplyNow.tsx';
+import VerificationCode from './VerificationCode.tsx';
+import PowerSports from './PowerSports.tsx';
+import HowItWorks from './HowItWorks.tsx';
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
@@ -38,6 +41,9 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/apply" element={<ApplyNow />} />
+        <Route path="/verification_code" element={<VerificationCode />} />
+        <Route path="/power_sports" element={<PowerSports />} />
+        <Route path='/how_works' element={<HowItWorks />} />
       </Routes>
 
       <Footer />

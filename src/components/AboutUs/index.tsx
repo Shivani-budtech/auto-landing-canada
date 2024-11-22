@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import '../../responsive.css';
+import { Link } from 'react-router-dom';
 function AboutUs() {
     return (
         <section className="about-us-sec container">
@@ -18,7 +19,7 @@ function AboutUs() {
                     <p>
                         Today, Auto Lending Canada stands proudly as a trusted leader in the online automotive sales and marketing industry. With a vast selection of high-quality vehicles at our fingertips through dealer partners, we’ve been able to address a significant industry challenge and transform it into our strength. As we continue our journey, we remain committed to delivering affordability, quality, and an unparalleled buying experience, solidifying our reputation as a customer-centric, forward-thinking leader in the auto finance world.
                     </p>
-                    <a href='#' className="primary-btn">Get in Touch</a>
+                    <Link to="/contact_us" className="primary-btn">Get in Touch</Link>
                 </div>
             </div>
         </section>

@@ -2,6 +2,9 @@
     .footer-sec {
         padding: 46px 30px;
     }
+    .small-footer {
+        padding: 50px 30px;
+    }
 }
 @media screen and (max-width:905px) {
     .main-header .header-container {
@@ -53,6 +56,16 @@
         height: 35px;
         width: 35px;
         border-radius: 8px;
+    }
+}
+@media screen and (max-width:540px) {
+    .small-footer .footer-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .small-footer .footer-links a {
+        padding: 0;
+        border: none;
     }
 }
 @media screen and (max-width:435px) {

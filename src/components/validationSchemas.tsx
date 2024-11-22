@@ -55,7 +55,7 @@ const validationSchemas = [
     Yup.object({
         email: Yup.string().required('Email is required').email('Enter a valid email'),
         phone_number: Yup.string().required('Phone number is required').matches(/^(\+1\s?)?(\(?\d{3}\)?[\s.-]?)?[\d\s.-]{7,10}$/,'Enter a valid Canadian mobile number'),
-    }),
+    })
     // Define schemas for each step
     // Continue for each field grouping, up to step 15
 ];

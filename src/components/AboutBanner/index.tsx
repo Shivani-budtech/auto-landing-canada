@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.css';
 import '../../responsive.css';
+import { Link } from 'react-router-dom';
+
 function AboutBanner() {
 
     return (
@@ -12,7 +14,7 @@ function AboutBanner() {
                         YOUR DREAM CAR AWAITS YOU
                     </div>
                     <div className="banner-btn">
-                        <a href='#' className='primary-btn'>Apply Now</a>
+                        <Link to="/apply" className='primary-btn'>Apply Now</Link>
                     </div>
                 </div>
             </div>

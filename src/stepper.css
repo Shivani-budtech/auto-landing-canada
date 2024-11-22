@@ -2,6 +2,7 @@
     padding: 0 20px;
     max-width: 885px;
     margin: 0 auto;
+    min-height: calc(100vh - 366px);
 }
 .apply-stepper .primary-btn , .apply-stepper .secondary-btn {
     padding: 15px 50px;
@@ -385,6 +386,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
     margin-top: 20px;
     color: #373435;
+}
+.verify-desc {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.verify-desc a {
+    text-decoration: underline;
 }
 
 @media screen and (max-width:800px) {

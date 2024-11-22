@@ -1,0 +1,92 @@
+.how-works-grid {
+    padding: 100px 70px 0;
+}
+.how-works-grid .grida {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.how-works-grid .grida .grida-item {
+    flex: 0 1 calc(50% - 10px);
+    text-align: center;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 18px;
+    padding: 30px;
+    background-color: #ffffff;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.how-works-grid .grida .grida-img {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-btn-color);
+    border-radius: 50%;
+    padding: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 70px;
+}
+.how-works-grid .grida .grida-title {
+    /* font-family: Outfit; */
+    font-size: var(--font-size-24);
+    font-weight: 700;
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+.how-works-grid .grida .grida-desc {
+    /* font-family: Outfit; */
+    font-size: var(--font-size-14);
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+}
+.how-works-grid .grida .grida-link {
+    padding: 20px 0;
+}
+.how-works-grid .grida .grida-link > a {
+    /* font-family: Outfit; */
+    font-size: var(--font-size-16);
+    font-weight: 700;
+    line-height: 20.16px;
+    text-align: center;
+    color: #FF2D2D;
+}
+.how-works-grid .how-works-grid-row {
+    position: relative;
+    padding: 20px;
+}
+.how-works-grid .how-works-grid-row > .first-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.how-works-grid .how-works-grid-row > .last-img {
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 928px) {
+    .how-works-grid {
+        padding: 100px 30px 0;
+    }
+}
+@media screen and (max-width: 840px) {
+    .how-works-grid .grida .grida-item {
+        padding: 20px;
+    }
+    .how-works-grid .grida {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 420px) {
+    .how-works-grid .how-works-grid-row {
+        padding: 10px;
+    }
+}

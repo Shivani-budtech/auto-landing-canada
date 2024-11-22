@@ -481,3 +481,43 @@ input[type=number] {
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
+.small-footer {
+    background-color: #F3F3F3;
+    padding: 50px 70px;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.footer-links a {
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: underline;
+}
+.footer-links a + a {
+    border-left: 1px solid var(--theme-font-color);
+}
+.main-footer-container.apply-footer .footer-sec {
+    display: none;
+}
+.main-footer-container.apply-footer .small-footer {
+    margin-top: 100px;
+}
+.main-footer-container:not(.apply-footer) .small-footer {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.verification-code-input {
+    display: flex;
+    gap: 30px;
+}
+.verification-code-input input {
+    text-align: center;
+    font-size: 18px;
+}
+.power-sport-page + .main-footer-container .footer-sec {
+    margin-top: 0;
+}

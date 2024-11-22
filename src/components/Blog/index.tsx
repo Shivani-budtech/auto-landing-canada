@@ -10,7 +10,7 @@ function Blog() {
     return (
         <section className="blog-detail-sec">
             <div className='blog-detail-img'>
-                <img src={require("../../images/about-us-img.png")} />
+                <img src={require(`../../images/about-us-img.png`)} />
                 <div className='blog-detail-img-text'>
                     <h1>How Rolling Over a Car Loan Works
                         <span>

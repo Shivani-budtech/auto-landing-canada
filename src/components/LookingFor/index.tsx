@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import '../../responsive.css';
+import { Link } from 'react-router-dom';
+
 function LookingFor() {
+
+    
+
     const lookingTabs = [
         {
-            title: "Coupes",
-            active: false,
+            title: "Coupe"
         },
         {
-            title: "Hatchback",
-            active: true,
+            title: "Hatchback"
         },
         {
-            title: "Sedans",
-            active: false,
+            title: "Sedan"
         },
         {
-            title: "Minivans",
-            active: false,
+            title: "Minivan",
         },
         {
-            title: "SUVs & Crossovers",
-            active: false,
+            title: "SUV & Crossover"
         },
         {
-            title: "Trucks",
-            active: false,
+            title: "Truck"
         },
     ];
+    const [activeTab, setActiveTab] = useState(lookingTabs[0].title);
+    function changeTab(e,currstape) {
+        setActiveTab(currstape);
+    }
     const imagePath = "../../images/";
     return (
         <section className="looking-for container">
@@ -42,14 +45,14 @@ function LookingFor() {
                     <div className="desc">What type of vehicle are you looking for?</div>
                     <div className="looking-for-tabs">
                         {Object.entries(lookingTabs).map(([key, looking]) => (
-                            <div key={key} className={looking.active ? "tab active" : "tab"}>
+                            <div key={key} className={activeTab == looking.title ? "tab active" : "tab"} onClick={(e) => changeTab(e,looking.title)}>
                                 {looking.title}
                             </div>
                         ))}
                     </div>
-                    <a href="#" className="primary-btn">
+                    <Link to={{ pathname: '/apply', }} state={{ vehicle_type: activeTab }} className="primary-btn" >
                         Apply Now
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
