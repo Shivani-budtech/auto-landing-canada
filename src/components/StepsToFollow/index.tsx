@@ -13,11 +13,11 @@ function StepsTOFollow() {
                     </div>
                     <div className='steps-to-follow'>
                         <img src={require("../../images/step_2.png")} />
-                        <p>Our online application takes less than 60 seconds</p>
+                        <p>Get matched with one of our amazing partners</p>
                     </div>
                     <div className='steps-to-follow'>
                         <img src={require("../../images/step_3.png")} />
-                        <p>Our online application takes less than 60 seconds</p>
+                        <p>We make sure you are getting the best possible deal</p>
                     </div>
                 </div>
             </div>
