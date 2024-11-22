@@ -22,8 +22,14 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
                 <li className={location.pathname == "/about" ? "active" : ""}> 
                   <Link to="/about">About Us</Link>
                 </li>
+                <li className={location.pathname == "/how_works" ? "active" : ""}>
+                  <Link to="/how_works">How it works?</Link>
+                </li>
                 <li className={location.pathname == "/customer_stories" ? "active" : ""} > 
                   <Link to="/customer_stories">Customer Stories</Link>
+                </li>
+                <li className={location.pathname == "/power_sports" ? "active" : ""}>
+                  <Link to="/power_sports">Power Sports</Link>
                 </li>
               </ul>
             </div>
