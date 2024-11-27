@@ -2,6 +2,7 @@ import './index.css';
 import '../../responsive.css';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 function Faq() {
     const [isOpen, setIsOpen] = useState("");
     const faqs = [
@@ -55,7 +56,7 @@ function Faq() {
                     </div>
                 ))}
                 </div>
-                <a href='#' className='primary-btn'>View All</a>
+                <Link to="/faqs" className="primary-btn">View All</Link>
             </div>
         </section>
     );

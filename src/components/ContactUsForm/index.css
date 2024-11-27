@@ -83,7 +83,7 @@
     display: inline-block;
 }
 .contact-form {
-    font-size: 18px;
+    font-size: var(--font-size-18);
     padding: 15px 35px;
 }
 @media screen and (max-width:928px) {

@@ -218,7 +218,7 @@ input[type='radio']:checked {
 }
 .stepper-flex-input .stepper-input > span {
     flex: 1;
-    font-size: 18px;
+    font-size: var(--font-size-18);
 }
 .inline-radio-input {
         max-width: 460px;
@@ -348,7 +348,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow: auto;
 }
 .approve-pop-title {
-    font-size: 30px;
+    font-size: var(--font-size-30);
     font-weight: 700;
     margin-top: 8px;
 }
@@ -360,10 +360,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 14px;
 }
 .approve-pop-address h1 {
-    font-size: 22px;
+    font-size: var(--font-size-22);
 }
 .approve-pop-content p {
-    font-size: 14px;
+    font-size: var(--font-size-14);
     font-weight: 300;
 }
 .approve-pop-content p a {

@@ -18,7 +18,7 @@
 }
 .looking-for-row .info .primary-btn {
     padding: 15px 50px;
-    font-size: 18px;
+    font-size: var(--font-size-18);
     box-shadow: 0px 7px 21.6px 0px #00000040;
 }
 .looking-for .looking-for-row .desc{
