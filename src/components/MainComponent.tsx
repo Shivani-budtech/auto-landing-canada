@@ -24,6 +24,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
 
   useEffect(() => {
     setIsMenuOpen("closed");
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
