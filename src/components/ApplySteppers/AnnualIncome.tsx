@@ -16,7 +16,7 @@ const AnnualIncome = ({ formData, setFormData, setalcStep }) => {
             setHasError(1); // Show error
         } else {
             setHasError(0); // Clear error
-            setalcStep('income_amount'); // Move to the next step
+            setalcStep(''); // Move to the next step
         }
     }
     const handleChange = (e) => {
