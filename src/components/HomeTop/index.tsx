@@ -7,14 +7,13 @@ function HomeTop() {
             <div className="car-ad-row container">
                 <div className="content">
                     <h1>
-                        The Better Way to <span>Buy a Car</span>
+                        Secure Your <span>Car Financing</span> in Minutes!
                     </h1>
                     <p className="description">
-                        Good credit or bad credit, it doesn’t matter — Auto Lending Canada
-                        will get you approved.
+                        Canada’s Quickest Car Loan Approval Process – Your Dream Car Awaits!
                     </p>
                     <p className="subtext">
-                        No Appointments, No Obligation and Free to Apply
+                        Get Approved in No Time!
                     </p>
                     <div className="buttons">
                         <Link to="/apply" className="primary-btn">Apply Now</Link>

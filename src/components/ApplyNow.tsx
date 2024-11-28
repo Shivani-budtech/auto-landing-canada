@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Formik, Form } from 'formik';
+
 import StepperOne from './Steppers/StepperOne.tsx';
 import StepperTwo from './Steppers/StepperTwo.tsx';
 import StepperThree from './Steppers/StepperThree.tsx';
@@ -20,14 +21,14 @@ import StepperSeventeen from './Steppers/StepperSeventeen.tsx';
 import '../stepper.css';
 import '../responsive.css';
 import validationSchemas from './validationSchemas.tsx';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 
 function ApplyNow() {
-    const navigate = useNavigate();
 
     const setFieldValueRef = useRef(null); 
 
+    const { step } = useParams();
 
     const location = useLocation();
     const { vehicle_type } = location.state || {};

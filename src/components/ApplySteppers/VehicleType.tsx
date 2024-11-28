@@ -2,12 +2,11 @@
 import { form } from 'framer-motion/m';
 import React, { useState } from 'react';
 
-
-const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touched,total_steps,alcStep }) => {
+const VehicleType = ({ formData, setFormData, setalcStep }) => {
     const carTypes = [
         {
-            'title' : 'Coupe',
-            'image' : 'coupe.png',
+            'title': 'Coupe',
+            'image': 'coupe.png',
             'val': 'Coupe'
         },
         {
@@ -36,8 +35,22 @@ const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touche
             'val': 'Truck'
         },
     ];
-    const remainingSteps = total_steps - alcStep - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / total_steps) * 3);
+    const remainingSteps = 10 - 1 - 1;
+    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
+
+    const [hasError, setHasError] = useState(0);
+    const handleNext = () => {
+        if (formData.vehicle_type === "") {
+            setHasError(1); // Show error
+        } else {
+            setHasError(0); // Clear error
+            setalcStep('budget'); // Move to the next step
+        }
+    }
+    const handleChange = (e) => {
+        setHasError(0);
+        setFormData({ ...formData, vehicle_type: e.target.value });
+    };
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
@@ -45,7 +58,7 @@ const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touche
                     <div className="stepper-title">Get Pre-Approved for the Car You Want at a Price You Can Afford</div>
                     <span className='stepper-question-title'>What type of vehicle are you looking for?</span>
                 </div>
-                
+
                 <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>
             <div className="stepper-input">
@@ -59,24 +72,28 @@ const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touche
                                     name="vehicle_type"
                                     className='sr-only'
                                     checked={formData.vehicle_type === car.val}
-                                    onChange={(e) => setFieldValue("vehicle_type", e.target.value )}
-                                 
-                                    // onChange={(e) => {
-                                    //     console.log("e", e.target?.value)
-                                    // }}
+                                    onChange={handleChange}
                                 />
-                                <img src={require(`./images/cars/`+car.image)} />
+                                <img src={require(`./images/cars/` + car.image)} />
                                 <span>{car.title}</span>
                             </label>
                         </div>
                     ))}
                 </div>
                 <div className='stepper-btn'>
-                    <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
+                    <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
+            </div>
+            <div className="error-messages">
+                {hasError === 1 ? 
+                    <ul>
+                        {formData.vehicle_type == "" ? <li>Vehicle type is required</li> : ""}
+                    </ul> : ""
+                }
+                    
             </div>
         </div>
     );
 }
 
-export default StepperOne;
+export default VehicleType;

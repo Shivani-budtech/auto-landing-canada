@@ -6,17 +6,17 @@ function waysToBuy() {
         {
             img: "budget.png",
             title: "Budget Discovery",
-            desc: "The first step is to learn what your true budget is, in other words what you can actually get approved for.",
+            desc: "Start your car-buying journey by discovering your budget. Calculate how much you can comfortably spend on your dream car with our easy-to-use tools.",
         },
         {
             img: "finance.png",
             title: "Financing Approval",
-            desc: "Once we have your application we will work to get you the best approval options possible.",
+            desc: "Get pre-approved for your car loan in minutes! Our hassle-free financing process ensures you secure the best rates in Canada.",
         },
         {
             img: "vehicle.png",
             title: "Vehicle Selection",
-            desc: "We will present you with a variety of vehicles that you already qualify for.",
+            desc: "Choose the perfect vehicle for your lifestyle and budget. With financing secured, finding your dream car has never been easier!",
         },
     ];
     return (

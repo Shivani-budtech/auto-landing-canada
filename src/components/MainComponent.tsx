@@ -18,6 +18,7 @@ import ApplyNow from './ApplyNow.tsx';
 import VerificationCode from './VerificationCode.tsx';
 import PowerSports from './PowerSports.tsx';
 import HowItWorks from './HowItWorks.tsx';
+import PreApply from './PreApply.tsx';
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
@@ -45,6 +46,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Route path="/verification_code" element={<VerificationCode />} />
         <Route path="/power_sports" element={<PowerSports />} />
         <Route path='/how_works' element={<HowItWorks />} />
+        <Route path='/pre_apply' element={<PreApply />} />
       </Routes>
 
       <Footer />

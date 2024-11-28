@@ -5,145 +5,56 @@ import React, { useState } from 'react';
 function Faq() {
     const generalfaqs = [
         {
-            question: "Why use Auto Lending Canada? (general)",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "How do I apply for a car loan in Canada?",
+            answer: "Applying is easy! Fill out our online application form and get pre-approved for your car loan in minutes. ",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "Can I get a car loan with bad credit in Canada?",
+            answer: "Yes, we specialize in helping Canadians with all credit types, including bad credit, secure affordable car loans. ",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "What is the minimum credit score required for a car loan in Canada?",
+            answer: "There’s no strict minimum; we work with lenders across Canada to find the best car financing option for your credit situation.",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "How long does it take to get approved for a car loan?",
+            answer: "With our fast approval process, you can receive car loan approval in as little as a few minutes!",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "What documents are needed for a car loan in Canada?",
+            answer: " You typically need proof of income, identification, and a recent bank statement. We’ll guide you through the process. ",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-    ];
-    const financefaqs = [
-        {
-            question: "Why use Auto Lending Canada? (financial)",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "What are the interest rates for car loans in Canada?",
+            answer: "Our competitive rates vary based on your credit score and loan terms. Contact us for a personalized quote!",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "Can I get a car loan with low monthly payments?",
+            answer: "Yes, we tailor financing options to fit your budget, offering low monthly payment plans to make owning a car affordable.",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "How much money do I need for a down payment on a car loan?",
+            answer: "Down payments aren’t always required, but having one can reduce your monthly payments and interest rates.",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "Do you offer financing for all car makes and models in Canada?",
+            answer: "Absolutely! We provide auto loans for new and used vehicles of all makes and models across Canada.",
         },
         {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-    ];
-    const creditfaqs = [
-        {
-            question: "Why use Auto Lending Canada? (credit)",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-    ];
-    const guidefaqs = [
-        {
-            question: "Why use Auto Lending Canada? (guide)",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
-        },
-        {
-            question: "Why use Auto Lending Canada?",
-            answer: "We connect Canadians with a variety of different financial products that they need. Whether it’s a personal loan, auto loan, mortgage, or anything else! If you’re looking for anything that’s not listed then send us a message and we will do our best to help. ",
+            question: "Can I refinance my existing car loan?",
+            answer: "Yes, refinancing your car loan with us could lower your interest rate or monthly payments, helping you save more.",
         },
     ];
     const [isOpen, setIsOpen] = useState("");
     const [faqs,setFaqs] = useState(generalfaqs);
-    const [selectedFaq, setSelectedFaq] = useState("general");
     
     const toggleFAQ = (key) => {
         setIsOpen(isOpen == key ? "" : key);
     };
-    const changeTab = (key) => {
-        if(key == "general") {
-            setFaqs(generalfaqs);
-        } else if (key == "finance") {
-            setFaqs(financefaqs);
-        } else if (key == "credit") {
-            setFaqs(creditfaqs);
-        } else if (key == "guide") {
-            setFaqs(guidefaqs);
-        }
-        setSelectedFaq(key);
-        setIsOpen("");
-    }
 
     return (
         <section className="faqs-tab-sec">
-            <div className='faqs-tabs'>
-                <div className={selectedFaq == "general" ? "faqs-tab selected" : "faqs-tab"} onClick={() => changeTab("general")}>
-                    General
-                </div>
-                <div className={selectedFaq == "finance" ? "faqs-tab selected" : "faqs-tab"} onClick={() => changeTab("finance")}>
-                    Finance Options
-                </div>
-                <div className={selectedFaq == "credit" ? "faqs-tab selected" : "faqs-tab"} onClick={() => changeTab("credit")}>
-                    Credit Score
-                </div>
-                <div className={selectedFaq == "guide" ? "faqs-tab selected" : "faqs-tab"} onClick={() => changeTab("guide")}>
-                    Guide
-                </div>
-            </div>
+            
             <div className='faq-tab-items' >
                 {Object.entries(faqs).map(([key, faq]) => (
                     <div className="faq-tab-item" key={key}>

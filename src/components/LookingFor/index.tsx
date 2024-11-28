@@ -35,7 +35,7 @@ function LookingFor() {
     return (
         <section className="looking-for container">
             <div className="sec-title">
-                Car Loans for All Makes and Models – Fast Approval!
+                Quick Car Financing for All Makes and Models
             </div>
             <div className="looking-for-row">
                 <div className="content">

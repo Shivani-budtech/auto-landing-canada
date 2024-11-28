@@ -28,7 +28,7 @@
     color: #fff;
     position: relative;
     margin: 0 auto;
-    max-width: 635px;
+    max-width: 1025px;
     width: 100%;
     padding: 70px 10px;
 }
@@ -44,7 +44,7 @@
 .banner-content .sec-title {
     max-width: none;
     letter-spacing: 1.5px;  
-    font-size: 60px;
+    font-size: clamp(35px, 3vw, 60px);
     line-height: 1.2;
 }
 .banner-content .primary-btn {

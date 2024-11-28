@@ -20,7 +20,7 @@ function Footer() {
               </Link>
             </div>
             <div className="footer-desc">
-              A decade leading Canada’s online auto sales with tailored financing options. Your trusted partner for a seamless and affordable auto finance experience.
+              Enjoy affordable auto loan rates, low monthly payments, and exceptional service when financing your car with us. Our seamless online application process lets you get pre-approved for your auto loan in minutes. Explore our financing solutions tailored for all credit types and vehicle needs.
             </div>
             <div className="footer-cols">
               <div className="footer-col">

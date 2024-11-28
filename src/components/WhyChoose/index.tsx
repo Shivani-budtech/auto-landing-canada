@@ -4,21 +4,21 @@ import '../../responsive.css';
 function WhyChoose() {
     const whyChoose = [
         {
-            title: "Get Any Make and Model",
+            title: "Better Rates",
             img: "wheel.png",
-            desc: "Step into variety with Auto Lending Canada. From economy to luxury, your ideal vehicle awaits.",
+            desc: "Choose us for car financing in Canada and enjoy unbeatable rates, flexible payments, and more money in your pocket!",
             link: "#",
         },
         {
-            title: "99% Guaranteed Approval",
+            title: "Low Payments",
             img: "approval.png",
-            desc: "Navigate auto financing with ease. Our customized options align with your budget for a smooth purchase.",
+            desc: "With our low payments, you’ll save more while driving the car you love. Choose Canada’s trusted car loan provider!",
             link: "#",
         },
         {
-            title: "24/7 Accepting Applications",
+            title: "Saving Money",
             img: "24-7.png",
-            desc: "Our dedicated team is here 24/7 to ensure a seamless and top--tier application process.",
+            desc: "Get the best rates in Canada, low monthly payments, and save more with our tailored auto financing solutions.",
             link: "#",
         },
     ];
@@ -27,8 +27,7 @@ function WhyChoose() {
             <div className="sec-title">
                 Why Choose ALC?
                 <span>
-                    Discover a new standard in car financing and immerse yourself in an
-                    exceptional experience that sets us apart.
+                    Enjoy better rates, low monthly payments, and significant savings. We make car financing in Canada easy and affordable!
                 </span>
             </div>
             <div className="why-choose-row">
