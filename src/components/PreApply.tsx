@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../stepper.css';
 import '../responsive.css';
+import { useLocation } from 'react-router-dom';
 
 import VehicleType from './ApplySteppers/VehicleType.tsx';
 import Budget from './ApplySteppers/Budget.tsx';
@@ -30,6 +31,9 @@ function PreApply() {
 
     const [alcStep, setalcStep] = useState('vehicle_type');
     const [completionPercentage, setCompletionPercentage] = useState(0);
+
+    const location = useLocation();
+    const { vehicle_type } = location.state || {};
 
     const [formData,setFormData] = useState({
         'vehicle_type': '',
@@ -141,7 +145,11 @@ function PreApply() {
         }
     };
 
-
+    useEffect(() => {
+        if (vehicle_type) {
+            setFormData({ ...formData, vehicle_type: vehicle_type });
+        }
+    }, [vehicle_type]);
 
     return (
         <div className='apply-stepper header-marging'>
