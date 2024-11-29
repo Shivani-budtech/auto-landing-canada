@@ -29,8 +29,6 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
             'val': 'not_sure'
         }
     ];
-    const remainingSteps = 10 - 2 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -53,9 +51,9 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your estimated credit rating?</span>
+                    <span className='stepper-question-title'>What is your approximate credit score?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>
@@ -80,13 +78,13 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
                 <div className="stepper-desc">
-                    Great rates available, regardless of your credit score.
+                    Enjoy great rates, no matter your credit score.
                 </div>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?
                     <ul>
-                        {formData.credit_rating == "" ? <li>Credit Rating is required</li> : ""}
+                        {formData.credit_rating === "" ? <li>Credit Rating is required</li> : ""}
                     </ul> : ""
                 }
 

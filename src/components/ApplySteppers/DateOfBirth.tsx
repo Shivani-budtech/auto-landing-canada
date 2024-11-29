@@ -1,53 +1,50 @@
-import React, { useState } from 'react';
+import React,{ useState } from 'react';
 
 
-const AnnualIncome = ({ formData, setFormData, setalcStep }) => {
+const DateOfBirth = ({ formData, setFormData, setalcStep }) => {
     const [hasError, setHasError] = useState(0);
 
     const handleBack = () => {
         setHasError(0);
-        setalcStep('income_type');
+        setalcStep('citizen_details');
     }
 
     const handleNext = () => {
-        if (formData.annual_income === "") {
+        if (formData.birth_date === "") {
             setHasError(1); // Show error
         } else {
             setHasError(0); // Clear error
-            setalcStep('years_of_income'); // Move to the next step
+            setalcStep('full_name'); // Move to the next step
         }
     }
     const handleChange = (e) => {
         setHasError(0);
-        setFormData({ ...formData, annual_income: e.target.value });
+        setFormData({ ...formData, birth_date: e.target.value });
     };
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your annual income before taxes & deductions?</span>
+                    <span className='stepper-question-title'>What is your date of birth?</span>
                 </div>
-                <span className='stepper-time'>2 minutes from finish</span>
+                <span className='stepper-time'>1 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-text-input'>
-                    <span className="input-guide" style={{ marginLeft: "15px" }}>Round to Nearest Dollar</span>
-                    <span className='dollar-input'>
-                        <input type='number' className='' value={formData.annual_income} placeholder="Annual Income" name="annual_income" onChange={handleChange} />
+                    <span className="input-guide" style={{ marginLeft: "15px" }}>Select Date of Birth</span>
+                    <span className='dollar-input calender'>
+                        <input type='date' className='' value={formData.birth_date} name="birth_date" onChange={handleChange} />
                     </span>
                 </div>
                 <div className='stepper-btn'>
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
-                    Your income details help us make sure your vehicle payments are easy and affordable.
-                </div>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?
                     <ul>
-                        {formData.annual_income === "" ? <li>Enter Annual Income</li> : ""}
+                        {formData.birth_date === "" ? <li>Enter Date of birth</li> : ""}
                     </ul> : ""
                 }
 
@@ -56,4 +53,4 @@ const AnnualIncome = ({ formData, setFormData, setalcStep }) => {
     );
 }
 
-export default AnnualIncome;
+export default DateOfBirth;

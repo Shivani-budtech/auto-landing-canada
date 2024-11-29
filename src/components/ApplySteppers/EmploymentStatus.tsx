@@ -25,8 +25,6 @@ const EmploymentStatus = ({ formData, setFormData, setalcStep }) => {
             'val': 'other'
         }
     ];
-    const remainingSteps = 10 - 2 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -59,9 +57,9 @@ const EmploymentStatus = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your employment status?</span>
+                    <span className='stepper-question-title'>What is your current employment status?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>
@@ -86,7 +84,7 @@ const EmploymentStatus = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
                 <div className="stepper-desc">
-                    Your employment status will help determine the best vehicle and financing options for you.
+                    Your employment status helps us find the best vehicle and financing options for you.
                 </div>
             </div>
             <div className="error-messages">

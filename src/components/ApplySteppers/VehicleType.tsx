@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { form } from 'framer-motion/m';
 import React, { useState } from 'react';
 
 const VehicleType = ({ formData, setFormData, setalcStep }) => {
@@ -35,8 +34,6 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
             'val': 'Truck'
         },
     ];
-    const remainingSteps = 10 - 1 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const [hasError, setHasError] = useState(0);
     const handleNext = () => {
@@ -55,11 +52,10 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <div className="stepper-title">Get Pre-Approved for the Car You Want at a Price You Can Afford</div>
-                    <span className='stepper-question-title'>What type of vehicle are you looking for?</span>
+                    <div className="stepper-title">Secure Pre-Approval for Your Dream Car at a Price That Fits Your Budget!</div>
+                    <span className='stepper-question-title'>What kind of vehicle are you interested in?</span>
                 </div>
-
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-car-input'>
@@ -87,7 +83,7 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
             <div className="error-messages">
                 {hasError === 1 ? 
                     <ul>
-                        {formData.vehicle_type == "" ? <li>Vehicle type is required</li> : ""}
+                        {formData.vehicle_type === "" ? <li>Vehicle type is required</li> : ""}
                     </ul> : ""
                 }
                     

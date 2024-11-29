@@ -37,8 +37,6 @@ const OtherIncomeSource = ({ formData, setFormData, setalcStep }) => {
             'val': 'Other / Not Listed'
         }
     ];
-    const remainingSteps = 10 - 2 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -61,9 +59,9 @@ const OtherIncomeSource = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your employment status?</span>
+                    <span className='stepper-question-title'>What is your primary source of income?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>

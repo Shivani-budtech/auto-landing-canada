@@ -17,8 +17,6 @@ const TradeIn = ({ formData, setFormData, setalcStep }) => {
             'val': 'not_sure'
         }
     ];
-    const remainingSteps = 10 - 3 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -42,9 +40,9 @@ const TradeIn = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Do you have a trade-in?</span>
+                    <span className='stepper-question-title'>Do you have a vehicle to trade in?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>

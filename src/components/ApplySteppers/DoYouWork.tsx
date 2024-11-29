@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 
 const DoYouWork = ({ formData, setFormData, setalcStep }) => {
     const [hasError, setHasError] = useState(0);
-    const remainingSteps = 10 - 3 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -31,9 +29,9 @@ const DoYouWork = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Are you working while in school?</span>
+                    <span className='stepper-question-title'>Are you currently working while attending school?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className="inline-radio-input">

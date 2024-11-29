@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 
 const HourlyIncome = ({ formData, setFormData, setalcStep }) => {
     const [hasError, setHasError] = useState(0);
-    const remainingSteps = 10 - 3 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -13,10 +11,10 @@ const HourlyIncome = ({ formData, setFormData, setalcStep }) => {
 
     const handleNext = () => {
         if (formData.hourly_income === "" || formData.hour_week === "") {
-            setHasError(1); // Show error
+            setHasError(1);
         } else {
-            setHasError(0); // Clear error
-            setalcStep(''); // Move to the next step
+            setHasError(0);
+            setalcStep('years_of_income'); // Move to the next step
         }
     }
     const handleChange = (e) => {
@@ -31,9 +29,9 @@ const HourlyIncome = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Income Details. Please Select One:</span>
+                    <span className='stepper-question-title'>What is your hourly wage?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>2 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-text-input'>

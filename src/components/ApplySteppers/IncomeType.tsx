@@ -21,8 +21,6 @@ const IncomeType = ({ formData, setFormData, setalcStep }) => {
             'val': 'other'
         }
     ];
-    const remainingSteps = 10 - 3 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -57,9 +55,9 @@ const IncomeType = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Income Details. Please Select One:</span>
+                    <span className='stepper-question-title'>Please provide your income details by selecting one of the options below:</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>
@@ -84,7 +82,7 @@ const IncomeType = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
                 <div className="stepper-desc">
-                    Your income details help us make sure your vehicle payments are easy and affordable.
+                    Your income details help us ensure that your vehicle payments are manageable and within your budget.
                 </div>
             </div>
             <div className="error-messages">

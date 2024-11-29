@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Budget = ({ formData, setFormData, setalcStep }) => {
     const [hasError, setHasError] = useState(0);
-    const navigate = useNavigate();
 
     const budgetOptions = [
         {
@@ -23,8 +21,6 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
             'val': 'option_4'
         }
     ];
-    const remainingSteps = 10 - 2 - 1;
-    const remainingMinutes = Math.ceil((remainingSteps / 10) * 3);
 
     const handleBack = () => {
         setHasError(0);
@@ -48,9 +44,9 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your budget?</span>
+                    <span className='stepper-question-title'>What is your budget range?</span>
                 </div>
-                <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
+                <span className='stepper-time'>3 minutes from finish</span>
             </div>
             <div className="stepper-input">
                 <div className='stepper-option-input'>
@@ -75,13 +71,13 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
                 <div className="stepper-desc">
-                    Find vehicle options that fit your budget.
+                    Discover Vehicle Options Within Your Budget.
                 </div>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?
                     <ul>
-                        {formData.budget == "" ? <li>Budget is required</li> : ""}
+                        {formData.budget === "" ? <li>Budget is required</li> : ""}
                     </ul> : ""
                 }
 

@@ -42,7 +42,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/calculator" element={<Calculator />} />
-        <Route path="/apply" element={<ApplyNow />} />
+        <Route path="/apply" element={<PreApply />} />
         <Route path="/verification_code" element={<VerificationCode />} />
         <Route path="/power_sports" element={<PowerSports />} />
         <Route path='/how_works' element={<HowItWorks />} />
