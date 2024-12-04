@@ -45,6 +45,9 @@
     margin-top: 40px;
     text-align: center;
 }
+.abc{
+    padding-bottom: 10px;
+}
 @media screen and (max-width:928px) {
     .about-banner.banner-sec {
         padding: 100px 30px 0;
