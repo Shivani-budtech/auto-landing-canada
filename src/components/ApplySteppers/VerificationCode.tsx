@@ -71,9 +71,6 @@ const VerificationCode = ({ formData, setFormData, setalcStep }) => {
                 </div>
                 <div className="stepper-desc verify-desc">
                     <a href='#'>
-                        Call me instead
-                    </a>
-                    <a href='#'>
                         Resend Code
                     </a>
                 </div>

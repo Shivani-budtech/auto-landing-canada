@@ -4,24 +4,24 @@ import '../../responsive.css';
 function AboutFeatures() {
     const whyChoose = [
         {
-            title: "Safe and Confidential",
+            title: "Fast Approval Process",
             img: "safe.png",
-            desc: "Your privacy is our top priority. Our platform utilizes advanced encryption to ensure all transactions are secure and confidential.",
+            desc: "We offer a quick and seamless approval process, ensuring you can secure your auto loan and hit the road without delay.",
         },
         {
-            title: "Fast Solutions",
+            title: "Affordable Rate",
             img: "fast.png",
-            desc: "We offer efficient solutions for all your needs, helping you secure your dream vehicle and financing quickly and effortlessly.",
+            desc: "Enjoy the lowest interest rates in Canada and customizable payment options designed to fit your budget and lifestyle.",
         },
         {
-            title: "Customer Care",
+            title: "All Credit Types Welcome",
             img: "chat.png",
-            desc: "Our dedicated customer service team aims to build long-lasting relationships through active listening and problem-solving.",
+            desc: "Our inclusive financing solutions ensure everyone, regardless of credit history, can access reliable and affordable car loans.",
         },
         {
-            title: "Referral Program",
+            title: "Nationwide Service",
             img: "reference.png",
-            desc: "We value loyalty. Our referral program rewards you for spreading the word about us, providing incentives for each successful referral you make.",
+            desc: "Serving customers across Canada, we’re committed to making car financing easy and stress-free with personalized support every step of the way.",
         },
     ];
     return (

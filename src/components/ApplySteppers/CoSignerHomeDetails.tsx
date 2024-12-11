@@ -1,31 +1,34 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 
-const HomeDetails = ({ formData, setFormData, setalcStep }) => {
+const CoSignerHomeDetails = ({ formData, setFormData, setalcStep }) => {
     const [hasError, setHasError] = useState(0);
 
     const handleBack = () => {
         setHasError(0);
-        setalcStep('years_of_living');
+        setalcStep('co_signer_home_address');
     }
 
     const handleNext = () => {
-        if (formData.home_type === "" || formData.monthly_payment === "") {
+        if (formData.co_signer_home_type === "" || formData.co_signer_monthly_payment === "") {
             setHasError(1); // Show error
         } else {
             setHasError(0); // Clear error
-            setalcStep('citizen_details'); // Move to the next step
+            setalcStep('co_signer_citizen_details'); // Move to the next step
         }
     }
     const handleChange = (e) => {
         setHasError(0);
-        setFormData({ ...formData, home_type: e.target.value });
+        setFormData({ ...formData, co_signer_home_type: e.target.value });
     };
     const handleChangePayment = (e) => {
         setHasError(0);
-        setFormData({ ...formData, monthly_payment: e.target.value });
+        setFormData({ ...formData, co_signer_monthly_payment: e.target.value });
     }
     return (
         <div className='stepper-content'>
+            <div className="stepper-title-desc">
+                Co-signer details
+            </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
                     <span className='stepper-question-title'>Do you currently rent or own your home?</span>
@@ -42,9 +45,9 @@ const HomeDetails = ({ formData, setFormData, setalcStep }) => {
                                 </span>
                                 <input
                                     type='radio'
-                                    name="home_type"
+                                    name="co_signer_home_type"
                                     value="own"
-                                    checked={formData.home_type === "own"}
+                                    checked={formData.co_signer_home_type === "own"}
                                     onChange={handleChange} />
                             </label>
                         </div>
@@ -55,9 +58,9 @@ const HomeDetails = ({ formData, setFormData, setalcStep }) => {
                                 </span>
                                 <input
                                     type='radio'
-                                    name="home_type"
+                                    name="co_signer_home_type"
                                     value="rent"
-                                    checked={formData.home_type === "rent"}
+                                    checked={formData.co_signer_home_type === "rent"}
                                     onChange={handleChange} />
                             </label>
                         </div>
@@ -66,7 +69,7 @@ const HomeDetails = ({ formData, setFormData, setalcStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide" style={{ marginLeft: "15px" }}>Round to Nearest Dollar</span>
                     <span className='dollar-input'>
-                        <input type='number' className='' placeholder='Monthly Payment' value={formData.monthly_payment} name="monthly_payment" onChange={handleChangePayment} />
+                        <input type='number' className='' placeholder='Monthly Payment' value={formData.co_signer_monthly_payment} name="co_signer_monthly_payment" onChange={handleChangePayment} />
                     </span>
                 </div>
                 <div className='stepper-btn'>
@@ -80,8 +83,8 @@ const HomeDetails = ({ formData, setFormData, setalcStep }) => {
             <div className="error-messages">
                 {hasError === 1 ?
                     <ul>
-                        {formData.home_type === "" ? <li>Do you rent or own your home?</li> : ""}
-                        {formData.monthly_payment === "" ? <li>Enter monthly payable amount</li> : ""}
+                        {formData.co_signer_home_type === "" ? <li>Do you rent or own your home?</li> : ""}
+                        {formData.co_signer_monthly_payment === "" ? <li>Enter monthly payable amount</li> : ""}
                     </ul> : ""
                 }
             </div>
@@ -89,4 +92,4 @@ const HomeDetails = ({ formData, setFormData, setalcStep }) => {
     );
 }
 
-export default HomeDetails;
+export default CoSignerHomeDetails;

@@ -9,15 +9,15 @@ function StepsTOFollow() {
                 <div className="steps-row">
                     <div className='steps-to-follow'>
                         <img src={require("../../images/step_1.png")} />
-                        <p>Our online application takes less than 60 seconds</p>
+                        <p>One simple application done in 3 minutes or less.</p>
                     </div>
                     <div className='steps-to-follow'>
                         <img src={require("../../images/step_2.png")} />
-                        <p>Get matched with one of our amazing partners</p>
+                        <p>We'll get you the best rates to compare.</p>
                     </div>
                     <div className='steps-to-follow'>
                         <img src={require("../../images/step_3.png")} />
-                        <p>We make sure you are getting the best possible deal</p>
+                        <p>We have access to 100+ dealerships across the nation!</p>
                     </div>
                 </div>
             </div>

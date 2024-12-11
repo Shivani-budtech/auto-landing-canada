@@ -11,13 +11,16 @@ function AboutUs() {
                 </div>
                 <div className='about-content'>
                     <h1>
-                        The Story of <br/> Auto Lending Canada
+                        Our Story <br /> Driving Dreams Across Canada
                     </h1>
                     <p>
-                        Over the past decade, Auto Lending Canada has been a forerunner in the transformative journey of Canada’s online vehicle sales and financing sector. Driven by the vision to revolutionize the car buying process, we leveraged digital innovation to effectively meet the evolving demands of consumers. Our unwavering dedication led to robust partnerships with top Canadian dealerships and banks, providing us with the ability to offer competitive financing options that respect each customer’s unique needs.
+                        At Auto Lending Canada, our journey began with a simple mission: to make car ownership accessible for every Canadian, no matter their financial situation. We saw a gap in the market—a need for a car loan company that not only provided financing but also cared about the people behind the applications. That’s when we decided to create a service that combines speed, affordability, and a human touch.
                     </p>
                     <p>
-                        Today, Auto Lending Canada stands proudly as a trusted leader in the online automotive sales and marketing industry. With a vast selection of high-quality vehicles at our fingertips through dealer partners, we’ve been able to address a significant industry challenge and transform it into our strength. As we continue our journey, we remain committed to delivering affordability, quality, and an unparalleled buying experience, solidifying our reputation as a customer-centric, forward-thinking leader in the auto finance world.
+                        Our process is simple because we believe car financing shouldn’t be complicated. From fast online applications to approvals in minutes, we’ve streamlined every step to make your experience smooth and hassle-free. Over the years, we’ve helped thousands of Canadians, from coast to coast, drive off in cars they love.
+                    </p>
+                    <p>
+                        But our story doesn’t stop here. We continue to innovate, finding new ways to save our customers money, offer better terms, and provide exceptional service.
                     </p>
                     <Link to="/contact_us" className="primary-btn">Get in Touch</Link>
                 </div>

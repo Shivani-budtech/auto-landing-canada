@@ -1,45 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
 import '../../responsive.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { API_URL, BACKEND_URL } from '../Constant.tsx';
+
 function TopBlogs() {
-    const arr = [
-        {
-            desc: "I was nervous about applying for a car loan, but the process was so easy! The team helped me navigate everything, and I was approved within hours. Now I’m driving my new SUV, and I couldn’t be happier!",
-            name: "Sarah M.",
-        },
-        {
-            desc: "After comparing several lenders, I found the best rates here. The customer service was outstanding—they took the time to explain all my options clearly. I’m thrilled with my new ride!",
-            name: "James T.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-    ];
-    const [blogs, setBlogs] = useState(arr);
+    const [blogs, setBlogs] = useState({});
     const settings = {
         dots: true,
         infinite: true,
@@ -65,6 +35,27 @@ function TopBlogs() {
             },
         ],
     };
+    const fetchBlogs = async () => {
+        try {
+            const response = await axios.get(API_URL+"blog_random"); // Replace with your API URL
+            setBlogs(response.data); // Assume the API returns an array of blogs
+
+        } catch (err) {
+
+        }
+    };
+    const formateDate = (dateString) => {
+        const date = new Date(dateString);
+        return date.toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+        });
+    }
+
+    useEffect(() => {
+        fetchBlogs();
+    }, []);
 
     return (
         <section className="top-blog-sec container">
@@ -74,17 +65,17 @@ function TopBlogs() {
                 {Object.entries(blogs).map(([key, blog]) => (
                     <div key={key} className="top-blog-item">
                         <div className='top-blog-image'>
-                            <img src={require("../../images/about-us-img.png")} />
+                            <img src={BACKEND_URL+"public/uploads/"+blog.image} />
                         </div>
                         <div className='top-blog-title'>
-                            How Rolling Over a Car Loan Works
+                            {blog.title}
                         </div>
                         <div className='top-blog-info'>
                             <div className='top-blog-date'>
-                                22 May, 2024
+                                {formateDate(blog.created_at)}
                             </div>
                             <div className='top-blog-btn'>
-                                <a href='#' className='primary-link'>Read More</a>
+                                <Link to={`/blog/` + blog.id} className="primary-link">Read more</Link>
                             </div>
                         </div>
                     </div>

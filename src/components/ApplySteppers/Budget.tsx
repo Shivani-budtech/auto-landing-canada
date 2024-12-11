@@ -6,19 +6,19 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
     const budgetOptions = [
         {
             'title': 'Under $400 / Month',
-            'val': 'option_1'
+            'val': 'under_400'
         },
         {
             'title': '$500 - 600 / Month',
-            'val': 'option_2'
+            'val': '500_to_600'
         },
         {
             'title': '$400 - 499 / Month',
-            'val': 'option_3'
+            'val': '400_to_499'
         },
         {
             'title': 'Over $600 / Month',
-            'val': 'option_4'
+            'val': 'over_600'
         }
     ];
 

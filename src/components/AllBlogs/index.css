@@ -9,7 +9,7 @@
 }
 .all-blogs-row .all-blogs-sec .blog-grid {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 .all-blogs-row .all-blogs-sec .blog-grid .blog-item {

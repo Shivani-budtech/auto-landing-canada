@@ -427,6 +427,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
     padding: 20px 0;
 }
+#fileInput {
+    display: none;
+}
+label.custom-file-input  {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.upload-img-btn {
+    text-align: center;
+}
+.p-link {
+    text-align: center;
+    margin: 10px 0;
+}
+.p-link > p {
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+}
+.stepper-title-desc {
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width:800px) {
     .stepper-flex-input .stepper-input:not(.input-text) {

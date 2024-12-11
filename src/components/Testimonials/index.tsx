@@ -1,10 +1,12 @@
 import React from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 import '../../responsive.css';
+import axios from 'axios';
+import { API_URL } from '../Constant.tsx';
 
 function Testimonials() {
     const arr = [
@@ -22,6 +24,21 @@ function Testimonials() {
         },
     ];
     const [testimonials, setTestimonials] = useState(arr);
+
+
+    const fetchTestimonials = async () => {
+        try {
+            const response = await axios.get(API_URL+"testimonials"); // Replace with your API URL
+            setTestimonials(response.data); // Assume the API returns an array of blogs
+
+        } catch (err) {
+
+        }
+    };
+
+    useEffect(() => {
+        fetchTestimonials();
+    }, []);
 
     const settings = {
         dots: true,
@@ -57,8 +74,8 @@ function Testimonials() {
                     {Object.entries(testimonials).map(([key, testimonial]) => (
                         <div key={key} className="testimonial-item">
                             <div className="testimonial">
-                                <div className="testimonial-desc">{testimonial.desc}</div>
-                                <div className="testimonial-author">{testimonial.name}</div>
+                                <div className="testimonial-desc">{testimonial.content}</div>
+                                <div className="testimonial-author">{testimonial.author}</div>
                                 <img
                                     alt="Testimonial vector"
                                     src={require(`./testimonial-vec.png`)}

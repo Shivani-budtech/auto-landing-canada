@@ -30,7 +30,7 @@ const StepperEight = ({ formData, setFieldValue, nextStep, prevStep, errors, tou
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>How long have you been receiving this income?</span>
+                    <span className='stepper-question-title'>For how long have you been receiving this income source?</span>
                 </div>
                 <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>

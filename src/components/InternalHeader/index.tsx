@@ -11,11 +11,11 @@ function InternalHeader() {
         switch (location.pathname) {
             case "/about":
                 setPageTitle("About us");
-                setPageDesc("At Auto Lending Canada, we combine convenience, transparency, and commitment into an exceptional car buying experience. Our seamless online process respects your time and space, putting a range of financing options and vehicle choices at your fingertips.");
+                setPageDesc("At Auto Lending Canada, we pride ourselves on delivering fast, transparent, and affordable auto loan services. With better rates, low monthly payments, and a customer-first approach, we’re here to drive your dreams forward.");
                 break;
             case "/customer_stories":
                 setPageTitle("Customer Stories");
-                setPageDesc("At Auto Lending Canada, we combine convenience, transparency, and commitment into an exceptional car buying experience. Our seamless online process respects your time and space, putting a range of financing options and vehicle choices at your fingertips.");
+                setPageDesc("At Auto Lending Canada, we pride ourselves on delivering fast, transparent, and affordable auto loan services. With better rates, low monthly payments, and a customer-first approach, we’re here to drive your dreams forward.");
                 break;
             case "/contact_us":
                 setPageTitle("Contact Us");
@@ -39,7 +39,7 @@ function InternalHeader() {
                 break;
             case "/how_works":
                 setPageTitle("How it works? ");
-                setPageDesc("Take the Auto Lending Canada Auto Financing Quiz to discover personalised financing options that suit your lifestyle and budget. This quick and easy quiz will match you with competitive rates tailored just for you.Don’t wait—start your journey to hassle - free auto financing today!");
+                setPageDesc("Discover personalized auto financing options in Canada that perfectly fit your lifestyle and budget. With just a quick and easy quiz, you’ll be matched with competitive car loan rates tailored to your needs.");
                 break;
             default:
                 setPageTitle ("My Website");

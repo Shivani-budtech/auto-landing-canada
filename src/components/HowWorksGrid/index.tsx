@@ -4,34 +4,34 @@ import '../../responsive.css';
 function HowWorksGrid() {
     const Array = [
         {
-            title: "Online Auto Financing",
+            title: "Fast Approvals Across Canada",
             img: "online_fin.png",
-            desc: "Get approved without having to leave the comfort of your home",
+            desc: "Our streamlined application process ensures you get approved for your car loan in minutes, no matter where you are in Canada.",
         },
         {
-            title: "Guides",
+            title: "Competitive Rates for Every Budget",
             img: "guide.png",
-            desc: "Guides covering registration, insurance, buying/selling, licence renewal and much more",
+            desc: "Enjoy some of the lowest interest rates in the Canadian market, with flexible payment plans tailored to suit your financial needs.",
         },
         {
-            title: "Car Loan Calculator",
+            title: "Inclusive Financing for All Credit Types",
             img: "calc.png",
-            desc: "Try out our car loan calculator to see what you can expect your payments to be",
+            desc: "Whether you have good credit, bad credit, or no credit, we specialize in securing auto loans for every Canadian driver.",
         },
         {
-            title: "Canadian Car Blog",
+            title: "Nationwide Network for All Makes and Models",
             img: "car_blog.png",
-            desc: "Over 500 blog posts covering everything about car and auto financing in Canada",
+            desc: "From compact cars to SUVs, we finance vehicles of all makes and models, providing reliable service across Canada.",
         },
         {
-            title: "Bad Credit Car Loans",
+            title: "Customer-First Approach with Expert Support",
             img: "verified.png",
-            desc: "No matter your credit issues there are programs available to help get you approved",
+            desc: "Our team is dedicated to guiding you every step of the way, offering personalized advice to make car financing stress-free.",
         },
         {
-            title: "Lowest Rates",
+            title: "Save Time and Money with Tailored Solutions",
             img: "low_arr.png",
-            desc: "We work with a vast network of lenders who offer the lowest car rates in Canada",
+            desc: "Our efficient process and customized loan options help you save both time and money, putting you behind the wheel faster.",
         },
     ];
     return (
@@ -39,7 +39,7 @@ function HowWorksGrid() {
             <div className="sec-title">
                 What Sets Us Apart 
                 <span>
-                    Discover a new standard in car financing and immerse yourself in an exceptional experience that sets us apart.
+                    We stand out by empowering you to take charge of your auto loan and drive towards your financial goals with confidence
                 </span>
             </div>
             <div className="how-works-grid-row">
