@@ -34,12 +34,12 @@
     }
 }
 
-@media screen and (min-width:845px) {
+@media screen and (min-width:978px) {
     .header-mobile-toggle {
         display: none;
     }
 }
-@media screen and (max-width:844px) {
+@media screen and (max-width:977px) {
     .header-nav {
         display: none;
     }
@@ -83,3 +83,19 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .privacy-policy-page {
+        padding: 50px 70px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header-logo>a {
+        font-size: 18px;
+    }
+    .header-logo img {
+        max-width: 40px;
+    }
+    .header-marging {
+        margin-top:92px !important;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import '../../responsive.css';
+import { Link } from "react-router-dom";
 function WhyChoose() {
     const whyChoose = [
         {
@@ -42,7 +43,7 @@ function WhyChoose() {
                             <div className="grida-title">{why.title}</div>
                             <div className="grida-desc">{why.desc}</div>
                             <div className="grida-link">
-                                <a href={why.link}>Read More</a>
+                                <Link to="/about" >Read More</Link>
                             </div>
                         </div>
                     ))}

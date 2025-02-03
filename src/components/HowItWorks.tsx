@@ -3,6 +3,7 @@ import InternalHeader from './InternalHeader/index.tsx';
 import StepsTOFollow from './StepsToFollow/index.tsx';
 import BottomBanner from "./BottomBanner/index.tsx";
 import HowWorksGrid from './HowWorksGrid/index.tsx';
+import HowWorksBanner from './HowWorksBanner/index.tsx';
 
 function HowItWorks() {
     return (
@@ -10,7 +11,7 @@ function HowItWorks() {
             <InternalHeader />
             <StepsTOFollow />
             <HowWorksGrid />
-            <BottomBanner />
+            <HowWorksBanner />
         </section>
     );
 }

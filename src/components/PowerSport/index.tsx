@@ -23,10 +23,10 @@ function PowerSport() {
                     </div>
                     <div className='power-sport-detail'>
                         <p>
-                            Experience relaxation at its best with our recreational financing options. Whether you’re looking to hit the open road in a stylish camper, explore scenic parks in a comfortable RV, or tow your own trailer for a unique adventure, we’ve got you covered.
+                            Discover Canada’s breathtaking landscapes with Auto Lending Canada's recreational financing solutions. Whether it’s an RV for road trips, a camper for serene escapes, or a trailer to carry your gear, we make adventure affordable. 
                         </p>
                         <p>
-                            Our flexible financing plans make it easy to turn your leisure dreams into reality, with competitive rates and convenient terms. Say goodbye to stress and hello to unforgettable experiences as you embark on your next journey. Don’t let financial worries hold you back from enjoying life’s simple pleasures – trust us to make your leisure time truly exceptional.
+                            With competitive rates and flexible terms, you’re one step closer to the outdoor experience you’ve always dreamed of. Start your journey today and explore Canada like never before!
                         </p>
                     </div>
                     <div className='power-sport-apply'>
@@ -49,10 +49,10 @@ function PowerSport() {
                     </div>
                     <div className='power-sport-detail'>
                         <p>
-                            Set sail with confidence through our comprehensive Marine financing options at Allstar Auto Finance. Whether you’re in the market for an affordable boat, a sleek sailboat, a thrilling Sea-Doo, or even a luxurious yacht, we’re here to ensure your aquatic dreams become a reality.
+                            Canada’s waterways are waiting—don’t let financial constraints hold you back. Whether you're exploring crystal-clear lakes or venturing into coastal waters, our recreational marine loans make it possible. 
                         </p>
                         <p>
-                            Our financing solutions are designed to make your maritime journey effortless and accessible. With competitive rates and flexible terms, we cater to all your watercraft needs, no matter the size or style. Don’t miss out on the joys of exploring the open waters – trust Allstar Auto Finance to help you embark on unforgettable aquatic adventures today.
+                            Get started today and turn your marine expedition dreams into reality with Auto Lending Canada, your trusted partner for life on the water.
                         </p>
                     </div>
                     <div className='power-sport-apply'>
@@ -81,10 +81,10 @@ function PowerSport() {
                     </div>
                     <div className='power-sport-detail'>
                         <p>
-                            Ignite your passion for adventure with our leisure financing options at Auto Lending Canada. Whether you’re eager to rev up on dirt bikes, hit the open road on motorcycles, embrace eco-friendly travel with e-bikes, conquer rugged terrain with ATVs and UTVs, or blaze through the snow on snowmobiles, we’re here to fuel your thrill-seeking desires.
+                            Life’s most memorable moments are waiting to be explored—don’t let financial concerns hold you back. With Auto Lending Canada, you’ll have the freedom to enjoy Canada’s natural beauty on your terms. 
                         </p>
                         <p>
-                            Our financing plans are tailored to empower your adrenaline-fueled escapades, offering competitive rates and flexible terms to accommodate your needs. Don’t let financial constraints hold you back from the exhilarating world of leisure vehicles – trust Auto Lending Canada to be your partner in adventure, making your recreational dreams a reality.
+                            Start your journey today with a trusted partner in recreational financing and experience leisure like never before.
                         </p>
                     </div>
                     <div className='power-sport-apply'>

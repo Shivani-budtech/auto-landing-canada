@@ -6,7 +6,7 @@ function BottomBanner() {
 
     return (
         <section className="banner-sec bottom-banner container">
-            <div className="banner-container">
+            <div className="banner-container home-banner">
                 <div className='banner-content'>
                     <div className="sec-title">Your Trusted Partner for Auto Loans in Canada!</div>
                     <div className="banner-desc">

@@ -7,12 +7,12 @@ function AboutBanner() {
 
     return (
         <section className="banner-sec about-banner container">
-            <div className="banner-container">
-                <div className='banner-content'>
-                    <div className="banner-desc">Looking for easy and fast car financing? We provide affordable auto loans across Canada, helping you drive your dream car without hassle.</div>
-                    <div className="sec-title">
-                        Your Trusted Partner for Auto Loans in Canada!
+            <div className="banner-container about-banner">
+                <div className='banner-content' >
+                    <div className="sec-title" style={{ marginBottom: '10px' }}>
+                        Leaders in Car Financing Across Canada
                     </div>
+                    <div className="banner-desc" style={{ marginBottom: '0px' }}>At Auto Lending Canada, we offer simple and affordable auto financing for individuals and families across Canada.</div>
                     <div className="banner-btn">
                         <Link to="/apply" className='primary-btn'>Apply Now</Link>
                     </div>

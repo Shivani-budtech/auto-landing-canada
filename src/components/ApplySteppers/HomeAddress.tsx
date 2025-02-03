@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import Autocomplete from "react-google-autocomplete";
 
 const HomeAddress = ({ formData, setFormData, setalcStep }) => {
     const [isApproved, setIsApproved] = useState("pending");
     const [hasError, setHasError] = useState(0);
+
+    const handlePlaceSelected = (place) => {
+        console.log("Selected Place:", place);
+        const address = place.formatted_address;
+        console.log("Address:", address);
+        setHasError(0);
+        setFormData({ ...formData, address: address });
+    };
 
     const checkForApproval = () => {
         if (formData.address === "") {
@@ -37,7 +46,19 @@ const HomeAddress = ({ formData, setFormData, setalcStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide" style={{ marginLeft: "15px" }}>Home Address</span>
                     <span className='text-input'>
-                        <input type='text' className='' value={formData.address} name="address" onChange={handleChange} />
+                        <Autocomplete
+                            apiKey="AIzaSyDisxeuwxGC2xoZwvUa1VPiOBzVBTNG2TA"
+                            onPlaceSelected={handlePlaceSelected}
+                            options={{
+                                types: ["geocode"],
+                                componentRestrictions: { country: "ca" },
+                            }}
+                            placeholder="Search for an address"
+                            className="autocomplete-input"
+                            value={formData.address}
+                            onChange={handleChange}
+                        />
+                        {/* <input type='text' className='' value={formData.address} name="address" onChange={handleChange} /> */}
                     </span>
                 </div>
                 <div className='stepper-btn'>
@@ -67,7 +88,7 @@ const HomeAddress = ({ formData, setFormData, setalcStep }) => {
                         </div>
                         <div className="approve-pop-address">
                             You Qualify for Pre-Approval in:
-                            <h1>Hamilton, Ontario</h1>
+                                <h1>{formData.address }</h1>
                         </div>
                         <div className="approve-pop-content">
                             <p>
@@ -93,7 +114,7 @@ const HomeAddress = ({ formData, setFormData, setalcStep }) => {
                         </div>
                         <div className="approve-pop-address">
                             You are not Qualify for Pre-Approval in:
-                            <h1>Canadore, Ontario</h1>
+                                    <h1>{formData.address }</h1>
                         </div>
                         <div className="approve-pop-content">
                             <p>

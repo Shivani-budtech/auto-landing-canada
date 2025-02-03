@@ -24,7 +24,7 @@ const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
                 <img src={require(`./images/success_application.png`)} />
             </div>
             <div className="stepper-application-title">
-                Would you like to add co-signer?
+                Would you like to add co-applicant?
             </div>
             <div className='stepper-input'>
                 <div className='inline-radio-input'>

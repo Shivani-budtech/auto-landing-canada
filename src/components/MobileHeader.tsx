@@ -14,9 +14,14 @@ const MobileHeader = ({ isMenuOpen, setIsMenuOpen }) => {
                         <Link to="/about">About Us</Link>
                     </li>
                     <li>
+                        <Link to="/how_works">How it works?</Link>
+                    </li>
+                    <li>
                         <Link to="/customer_stories">Customer Stories</Link>
                     </li>
-
+                    <li>
+                        <Link to="/power_sports">Power Sports</Link>
+                    </li>
                 </ul>
                 <h3>Resources</h3>
                 <ul>

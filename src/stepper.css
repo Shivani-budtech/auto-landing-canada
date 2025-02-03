@@ -103,7 +103,7 @@
     box-shadow: 0px 0px 50px 0px #072E731A;
     text-align: center;
     display: block;
-    opacity: 0.4;
+    /* opacity: 0.4; */
     padding: 10px;
     border-radius: 18px;
     position: relative;
@@ -456,6 +456,18 @@ label.custom-file-input  {
 .stepper-title-desc {
     margin-bottom: 20px;
 }
+.flatpickr-months .flatpickr-month ,
+.flatpickr-current-month .flatpickr-monthDropdown-months , .flatpickr-weekdays , span.flatpickr-weekday {
+    background: var(--primary-btn-color) !important;
+}
+span.flatpickr-weekday {
+    color: #fff !important;
+    font-weight: normal !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
+    background-color: #fff !important;
+    color:#000;
+}
 
 @media screen and (max-width:800px) {
     .stepper-flex-input .stepper-input:not(.input-text) {
@@ -481,6 +493,9 @@ label.custom-file-input  {
     }
     .stepper-flex-input .stepper-input{
         width: 100%;
+    }
+    .verification-code-input {
+        gap: 10px;
     }
 }
 @media screen and (max-width:480px) {

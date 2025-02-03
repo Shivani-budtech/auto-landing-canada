@@ -53,6 +53,8 @@ function PreApply() {
     const [isSubmiting, setIsSubmiting] = useState(0);
     const [completionPercentage, setCompletionPercentage] = useState(0);
 
+    const [verificationId, setVerificationId] = useState(null);
+
     const location = useLocation();
     const navigate = useNavigate();
     const { vehicle_type } = location.state || {};
@@ -221,9 +223,9 @@ function PreApply() {
             case 'full_name':
                 return <FullName formData={formData} setFormData={setFormData} setalcStep={handleStepChange} />
             case 'contact_details':
-                return <ContactDetails formData={formData} setFormData={setFormData} setalcStep={handleStepChange} />
+                return <ContactDetails formData={formData} setFormData={setFormData} setalcStep={handleStepChange} setVerificationId={setVerificationId} />
             case 'verification_code':
-                return <VerificationCode formData={formData} setFormData={setFormData} setalcStep={handleStepChange} />
+                return <VerificationCode formData={formData} setFormData={setFormData} setalcStep={handleStepChange} verificationId={verificationId} setVerificationId={setVerificationId}/>
             case 'application_success':
                 return <ApplicationSuccessful formData={formData} setFormData={setFormData} setalcStep={handleStepChange} />
             case 'upload_id':

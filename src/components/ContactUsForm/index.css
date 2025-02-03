@@ -86,6 +86,21 @@
     font-size: var(--font-size-18);
     padding: 15px 35px;
 }
+.primary-btn:disabled {
+    background-color: grey;
+}
+.successful-submit {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: green;
+}
+.error-submit {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: red;
+}
 @media screen and (max-width:928px) {
     .contact-us-form.contact-us-sec {
         padding: 100px 30px 0;

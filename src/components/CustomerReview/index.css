@@ -5,10 +5,13 @@
 .about-page .reviews-sec {
     padding-bottom: 0;
 }
-.review-grid {
+.review-row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+.review-row.reverse {
+  flex-direction: row-reverse;
 }
 .review-items-container {
     width: 40%;
@@ -39,14 +42,14 @@
 }
 .review-grid .review .review-desc {
     /* font-family: Outfit; */
-    font-size: var(--font-size-14);
+    font-size: 14px;
     font-weight: 300;
     line-height: 19px;
     text-align: left;
 }
 .review-grid .review .review-author {
     /* font-family: Outfit; */
-    font-size: var(--font-size-24);
+    font-size: 24px;
     font-weight: 700;
     line-height: 30.24px;
     text-align: left;

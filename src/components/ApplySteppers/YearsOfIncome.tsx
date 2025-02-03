@@ -45,11 +45,15 @@ const YearsOfIncome = ({ formData, setFormData, setalcStep }) => {
     }
     const handleChange = (e) => {
         setHasError(0);
-        setFormData({ ...formData, income_year: e.target.value });
+        if (e.target.value <= 100 && e.target.value >= 0) {
+            setFormData({ ...formData, income_year: e.target.value });
+        }
     };
     const handleChangeMonth = (e) => {
         setHasError(0);
-        setFormData({ ...formData, income_month: e.target.value });
+        if (e.target.value <= 12 && e.target.value >= 0) {
+            setFormData({ ...formData, income_month: e.target.value });
+        }
     }
 
 

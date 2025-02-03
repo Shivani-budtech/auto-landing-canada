@@ -29,11 +29,11 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
     return (
         <div className='stepper-content'>
             <div className="stepper-title-desc">
-                Co-signer details
+                Co-applicant details
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is Co-signer's full name?</span>
+                    <span className='stepper-question-title'>What is Co-applicant's full name?</span>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>

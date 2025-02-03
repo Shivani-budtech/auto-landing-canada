@@ -75,11 +75,11 @@ input[type=number] {
     padding: 25px 40px 25px 30px;
     display: flex;
     align-items: center;
-    gap:70px;
+    gap:55px;
     background-color: #ffffff;
 }
 .header-logo {
-    flex: 0 0 252px;
+    flex: 0 0 320px;
 }
 .header-logo img {
     max-width: 100%;
@@ -460,8 +460,8 @@ input[type=number] {
 }
 .header-logo > a {
     /* font-family: Montserrat; */
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: bolder;
     line-height: 21.94px;
     text-align: left;
     letter-spacing: 1px;
@@ -521,4 +521,7 @@ input[type=number] {
 }
 .power-sport-page + .main-footer-container .footer-sec {
     margin-top: 0;
+}
+.privacy-policy-page {
+    padding: 100px 70px 0;
 }

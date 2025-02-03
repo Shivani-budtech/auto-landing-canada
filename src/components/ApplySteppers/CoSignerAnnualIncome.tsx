@@ -24,7 +24,7 @@ const CoSignerAnnualIncome = ({ formData, setFormData, setalcStep }) => {
     return (
         <div className='stepper-content'>
             <div className="stepper-title-desc">
-                Co-signer details
+                Co-applicant details
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>

@@ -27,19 +27,27 @@ function InternalHeader() {
                 break;
             case "/faqs":
                 setPageTitle("Frequently Asked Questions");
-                setPageDesc("Find quick answers to common questions about auto financing at Auto Lending Canada. Browse through our comprehensive FAQs to gain the clarity you need for a seamless car buying experience.");
+                setPageDesc("Need clarity on auto financing? Auto Lending Canada’s FAQs are here to help! Find detailed answers and make your car purchase stress-free.");
                 break;
             case "/calculator":
-                setPageTitle("Your Budget Matters");
-                setPageDesc("This car loan calculator will help provide you with a rough estimate of what your approval options could be. Once you apply with Auto Lending Canada you will receive a pre-approval tailored to your personal financial circumstances at the click of a button.");
+                setPageTitle("Plan Your Budget");
+                setPageDesc("Estimate your car loan approval options with this easy-to-use calculator. Apply with Auto Lending Canada to get a pre-approval designed specifically for your financial circumstances in no time.");
                 break;
             case "/power_sports":
                 setPageTitle("Power Sports");
-                setPageDesc("Discover the ease of auto financing with Auto Lending Canada. Our innovative approach removes stress and connects you with tailored options. Redefine your car-buying journey with us, where every step is filled with simplicity and ease.");
+                setPageDesc("Looking to finance your dream powersports vehicle? Our loan company specializes in affordable and flexible financing options for motorcycles, ATVs, jet skis, and more.");
                 break;
             case "/how_works":
                 setPageTitle("How it works? ");
                 setPageDesc("Discover personalized auto financing options in Canada that perfectly fit your lifestyle and budget. With just a quick and easy quiz, you’ll be matched with competitive car loan rates tailored to your needs.");
+                break;
+            case "/privacy_policy":
+                setPageTitle("Privacy Policy");
+                setPageDesc("");
+                break;
+            case "/terms_of_user":
+                setPageTitle("Terms of Use");
+                setPageDesc("");
                 break;
             default:
                 setPageTitle ("My Website");

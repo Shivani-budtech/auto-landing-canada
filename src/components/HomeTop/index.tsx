@@ -17,9 +17,7 @@ function HomeTop() {
                     </p>
                     <div className="buttons">
                         <Link to="/apply" className="primary-btn">Apply Now</Link>
-                        <a href="#" className="secondary-btn">
-                            Learn More
-                        </a>
+                        <Link to="/about" className="secondary-btn">Learn More</Link>
                     </div>
                 </div>
                 <div className="info">

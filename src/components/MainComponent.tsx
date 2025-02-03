@@ -19,6 +19,9 @@ import VerificationCode from './VerificationCode.tsx';
 import PowerSports from './PowerSports.tsx';
 import HowItWorks from './HowItWorks.tsx';
 import PreApply from './PreApply.tsx';
+import app from './firebaseAuth.tsx';
+import PrivacyPolicy from './PrivacyPolicy.tsx';
+import TermsOfUSe from './TermsOfUSe.tsx';
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
@@ -47,6 +50,8 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Route path="/power_sports" element={<PowerSports />} />
         <Route path='/how_works' element={<HowItWorks />} />
         <Route path='/pre_apply' element={<PreApply />} />
+        <Route path='/privacy_policy' element={<PrivacyPolicy />} />
+        <Route path='/terms_of_user' element={<TermsOfUSe />} />
       </Routes>
 
       <Footer />
@@ -58,7 +63,7 @@ function MainComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState("closed");
 
   return (
-    <Router>
+    <Router basename='/alc-app'>
       <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </Router>
   );

@@ -4,7 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 function Footer() {
   const location = useLocation();
   const curLoc = location.pathname;
-  console.log(curLoc);
   return (
     <div className={(curLoc == "/apply") ? 'apply-footer main-footer-container' : 'main-footer-container'}>
       <div className="footer-sec">
@@ -66,37 +65,37 @@ function Footer() {
           <div className="footer-col-2">
             <div className="footer-contact-row">
                 <div className="contact-row">
-                  <a href="#" className="primary-btn contact-phone">778-650-0611</a>
-                  <a href="#" className="primary-btn contact-phone">888-899-7356</a>
+                <a href="tel:844-405-5363" className="primary-btn contact-phone">844-405-5363</a>
+                <a href="tel:778-652-3712" className="primary-btn contact-phone">778-652-3712</a>
                 </div>
                 <div className="contact-row">
-                  <a href="#" className="primary-btn contact-email">info@autolendingcanada.com</a>
+                  <a href="mailto:info@autolendingcanada.com" className="primary-btn contact-email">info@autolendingcanada.com</a>
                 </div>
             </div>
             
             <div className="social-media-copyright">
               <div className="social-media-row">
-                <a href="#">
-                  <img src={require(`../images/insta-social.png`)} />
+                <a href="https://www.instagram.com/autolendingcanada/" rel="noreferrer" target='_blank'>
+                  <img src={require(`../images/insta-social.png`)} alt="instagram"/>
                 </a>
-                <a href="#">
-                  <img src={require(`../images/facebook-social.png`)} />
+                <a href="https://www.facebook.com/people/Auto-Lending-Canada/61561773263064/" rel="noreferrer" target='_blank'>
+                  <img src={require(`../images/facebook-social.png`)} alt="facebook"/>
                 </a>
-                <a href="#">
-                  <img src={require(`../images/youtube-social.png`)} />
+                <a href="https://www.youtube.com/@AutoLendingCanada" rel="noreferrer" target='_blank'>
+                  <img src={require(`../images/youtube-social.png`)} alt="facebook" />
                 </a>
-                <a href="#">
-                  <img src={require(`../images/linkedin-social.png`)} />
+                <a href="https://www.linkedin.com/company/auto-lending-canada/" rel="noreferrer" target='_blank'>
+                  <img src={require(`../images/linkedin-social.png`)} alt="linkedin" />
                 </a>
-                <a href="#">
-                  <img src={require(`../images/twitter-social.png`)} />
+                <a href="https://x.com/AutoLendingCA" rel="noreferrer" target='_blank'>
+                  <img src={require(`../images/twitter-social.png`)} alt="twitter" />
                 </a>
-                <a href="#">
-                  <img src={require(`../images/tiktok-social.png`)} />
+                <a href="https://www.tiktok.com/@autolendingcanada" rel="noreferrer" target='_blank'>
+                  <img src={require(`../images/tiktok-social.png`)} alt="tiktok" />
                 </a>
               </div>
               <div className="copy-right-desc">
-                © 2024 Auto Lending Canada, All Rights Reserved.
+                © 2025 Auto Lending Canada, All Rights Reserved.
               </div>
               
             </div>
@@ -104,12 +103,10 @@ function Footer() {
         </div>
       </div>
       <div className="small-footer">
-        <p>Copyright © 2024 Auto Lending Canada. All rights reserved. Auto Lending Canada® and the Auto Lending Canada Logo design are registered <br/> trademarks of Auto Lending Canada Ltd. Other trademarks are the property of their respective owners.</p>
+        <p>Copyright © 2025 Auto Lending Canada. All rights reserved. Auto Lending Canada® and the Auto Lending Canada Logo design are registered <br/> trademarks of Auto Lending Canada Ltd. Other trademarks are the property of their respective owners.</p>
         <div className="footer-links">
-          <a href='#'>Privacy Policy</a>
-          <a href='#'>Privacy Policy</a>
-          <a href='#'>Privacy Policy</a>
-          <a href='#'>Privacy Policy</a>
+          <Link to="/privacy_policy">Privacy Policy</Link>
+          <Link to="/terms_of_user">Terms of Use</Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./index.css";
 import '../../responsive.css';
+import axios from 'axios';
+import { API_URL } from '../Constant.tsx';
 
 function ContactUsForm() {
     const [formData, setFormData] = useState({
@@ -8,9 +10,31 @@ function ContactUsForm() {
         last_name: "",
         email: "",
         mobile_no: "",
-        message: "",
-        consent: false
+        message: ""
     });
+    const [isSubmiting, setIsSubmiting] = useState(0);
+    const [consent, setConsent] = useState(false);
+    const [success,setSuccess] = useState({
+        success : false,
+        message : ""
+    })
+
+    const formatPhoneNumber = (value) => {
+        const cleaned = value.replace(/\D/g, "");
+
+        if (cleaned.length <= 3) {
+            return cleaned;
+        } else if (cleaned.length <= 6) {
+            return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3)}`;
+        } else {
+            return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(6, 10)}`;
+        }
+    };
+
+    const handleChangePhone = (e) => {
+        const formattedNumber = formatPhoneNumber(e.target.value);
+        setFormData({ ...formData, mobile_no: formattedNumber });
+    };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -18,20 +42,57 @@ function ContactUsForm() {
             ...formData,
             [name]: value
         });
-        console.log(formData);
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted with data:", formData);
+        const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
+        if (!formData.mobile_no || !phoneRegex.test(formData.mobile_no)) {
+            alert("Enter valid mobile number");
+        } else {
+            if (consent) {
+                if (!isSubmiting) {
+                    setIsSubmiting(1);
+                    try {
+                        const res = await axios.post(API_URL + 'submit-contact', formData, {
+                            headers: {
+                                "Content-Type": "multipart/form-data",
+                            },
+                        });
+                        console.log(res.data);
+                        setSuccess({
+                            success: true,
+                            message: "Thank you for your submission! We have received your information and will be in touch shortly to discuss your request."
+                        })
+                    } catch (error) {
+                        console.error('Error submitting form:', error);
+                        setSuccess({
+                            success: false,
+                            message: "Something goes wrong!!"
+                        })
+                    } finally {
+                        setIsSubmiting(0);
+                        setFormData({
+                            first_name: "",
+                            last_name: "",
+                            email: "",
+                            mobile_no: "",
+                            message: ""
+                        });
+                        setConsent(false);
+
+                    }
+                }
+            } else {
+                alert("Agree terms and condition")
+            }
+        }
+        
     };
     const handleCheckboxChange = (e) => {
-        const { name } = e.target;
-        setFormData({
-            ...formData,
-            [name]: e.target.checked
-        });
+        setConsent(e.target.checked)
     };
+
 
     return (
         <section className='contact-us-sec contact-us-form container'>
@@ -41,6 +102,13 @@ function ContactUsForm() {
                     Need assistance? Fill out the form, and we’ll get in touch soon!
                 </span>
             </div>
+            {
+            (success.message) ? 
+                <div className={success.success ? "successful-submit" : "error-submit"}>
+                    {success.message}
+                </div> : 
+                ""
+            }
             <div className='contact-form'>
                 <form onSubmit={handleSubmit}>
                     <div className='contact-form-row'>
@@ -86,11 +154,11 @@ function ContactUsForm() {
                         <div className='contact-col'>
                             <div className="form-input phone-input">
                                 <input
-                                    type="number"
+                                    type="text"
                                     id="mobile_no"
                                     name="mobile_no"
                                     value={formData.mobile_no}
-                                    onChange={handleInputChange}
+                                    onChange={handleChangePhone}
                                     placeholder='Mobile Number'
                                     required
                                 />
@@ -116,14 +184,14 @@ function ContactUsForm() {
                             <input
                                 type="checkbox"
                                 name="consent"
-                                checked={formData.consent}
+                                checked={consent}
                                 onChange={handleCheckboxChange}
                             />
                             By submitting this form, you are consenting to receive text message communications from Auto Lending Canada.
                         </label>
                     </div>
                     <div className='contact-form-row'>
-                        <button type='submit' className="primary-btn">
+                        <button type='submit' disabled={ (consent) ? false : true } className="primary-btn">
                             Send Questions
                         </button>
                     </div>

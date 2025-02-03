@@ -1,105 +1,67 @@
 import React from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 import '../../responsive.css';
+import axios from 'axios';
+import { API_URL, BACKEND_URL } from '../Constant.tsx';
 
 function CustomerReview() {
-    const arr = [
-        {
-            desc: "I was nervous about applying for a car loan, but the process was so easy! The team helped me navigate everything, and I was approved within hours. Now I’m driving my new SUV, and I couldn’t be happier!",
-            name: "Sarah M.",
-        },
-        {
-            desc: "After comparing several lenders, I found the best rates here. The customer service was outstanding—they took the time to explain all my options clearly. I’m thrilled with my new ride!",
-            name: "James T.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-        {
-            desc: "As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!",
-            name: "Linda R.",
-        },
-    ];
+    const arr = [];
     const [testimonials, setTestimonials] = useState(arr);
+    const [cms, setCms] = useState([]);
+
+    const fetchTestimonials = async () => {
+        try {
+            const response = await axios.get(API_URL + "customer_stories");
+            setTestimonials(response.data.testimonials);
+            setCms(response.data.cms);
+        } catch (err) {
+            
+        }
+    };
+
+    useEffect(() => {
+        fetchTestimonials();
+    }, []);
 
     return (
         <section className="reviews-sec container">
             <div className="review-grid">
-                <div className="review-items-container">
-                    <div className="review">
-                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
-                        <div className="review-author">Linda R.</div>
-                        <img
-                            alt="review vector"
-                            src={require(`./testimonial-vec.png`)}
-                            className="review-vec"
-                        />
+                {Object.entries(testimonials).map(([key, testimonial_chunk], index) => (
+                    <div key={key} className={index % 2 === 1 ? 'review-row reverse' : 'review-row'}>
+                        <div className="review-items-container">
+                            {Array.isArray(testimonial_chunk) ? (
+                                testimonial_chunk.reduce((acc, curr) => {
+                                    return acc.concat(curr);
+                                }, []).map((item, itemIndex) => (
+                                    <div className="review">
+                                        <div className="review-desc">
+                                            { item.content }
+                                        </div>
+                                        <div className="review-author">
+                                            {item.author}
+                                        </div>
+                                        <img className="review-vec"
+                                            alt="review vector"
+                                            src={require(`./testimonial-vec.png`)}
+                                        />
+                                    </div>
+                                ))
+                            ) : ""}
+                        </div>
+                        <div className="review-image-container">
+                            <img
+                                alt="review vector"
+                                src={
+                                    cms[index] 
+                                        ? BACKEND_URL + "public/uploads/" +cms[index]
+                                        : require(`../../images/customer-review-1.png`)
+                                }
+                            />
+                        </div>
                     </div>
-                    <div className="review">
-                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
-                        <div className="review-author">Linda R.</div>
-                        <img
-                            alt="review vector"
-                            src={require(`./testimonial-vec.png`)}
-                            className="review-vec"
-                        />
-                    </div>
-                </div>
-                <div className="review-image-container">
-                    <img
-                        alt="review vector"
-                        src={require(`../../images/customer-review-1.png`)}
-                        className=""
-                    />
-                </div>
-                <div className="review-image-container">
-                    <img
-                        alt="review vector"
-                        src={require(`../../images/customer-review-2.png`)}
-                        className=""
-                    />
-                </div>
-                <div className="review-items-container">
-                    <div className="review">
-                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
-                        <div className="review-author">Linda R.</div>
-                        <img
-                            alt="review vector"
-                            src={require(`./testimonial-vec.png`)}
-                            className="review-vec"
-                        />
-                    </div>
-                    <div className="review">
-                        <div className="review-desc">As a first-time car buyer in Canada, I had a lot of questions. Thankfully, my loan officer was incredibly patient and guided me through every step. I found a loan that works perfectly with my budget!</div>
-                        <div className="review-author">Linda R.</div>
-                        <img
-                            alt="review vector"
-                            src={require(`./testimonial-vec.png`)}
-                            className="review-vec"
-                        />
-                    </div>
-                </div>
+                ))}
             </div>
-                        
-                    
         </section>
     );
 }

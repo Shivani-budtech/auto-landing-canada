@@ -2,42 +2,59 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./index.css";
 import '../../responsive.css';
 import $ from 'jquery';
-import 'select2'; // Import Select2 jQuery plugin
+import 'select2';
+import axios from 'axios';
 import 'select2/dist/css/select2.min.css';
+import { API_URL, BACKEND_URL } from '../Constant.tsx';
+import { Link } from "react-router-dom";
 
 function CalculatorBudget() {
-    const [formData, setFormData] = useState({
-        amount : "",
-        duration : "",
-        credit_rating : ""
-    });
 
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-        console.log(formData);
+    const [loanAmount,setLoanAmount] = useState(0);
+    const [loanDuration, setLoanDuration] = useState('');
+    const [creditRating, setCreditRating] = useState('');
+
+    const [monthlyPayment, setMonthlyPayment] = useState(0);
+    const [weeklyPayment, setWeeklyPayment] = useState(0);
+    const [biWeeklyPayment, setBiWeeklyPayment] = useState(0);
+
+    const handleChangeLoanAmount = (e) => {
+        setLoanAmount(e.target.value);
     }
+    useEffect(() => {
+        const calculateLoan = async () => {
+            if (loanAmount > 0 && loanDuration && creditRating) {
+                try {
+                    const response = await axios.post(`${API_URL}calculate_loan`, {
+                        loan_amount: loanAmount,
+                        loan_duration: loanDuration,
+                        credit_rating: creditRating,
+                    });
+                    const { monthly, weekly, bi_weekly } = response.data;
+                    setMonthlyPayment(monthly);
+                    setWeeklyPayment(weekly);
+                    setBiWeeklyPayment(bi_weekly);
+                } catch (error) {
+                    console.error('Error calculating loan:', error);
+                }
+            }
+        };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted with data:", formData);
-    };
+        calculateLoan();
+    }, [loanAmount, loanDuration, creditRating]);
 
     useEffect(() => {
         // Initialize Select2 for the first select box
         $('#loan_duration').select2({
             placeholder: 'Loan Duration',
+        }).on("change", function (e) {
+            setLoanDuration(this.value);
         });
-
-        // Initialize Select2 for the second select box
         $('#credit_rating').select2({
             placeholder: 'Credit Rating',
+        }).on("change", function (e) {
+            setCreditRating(this.value);
         });
-
-        // Cleanup on component unmount
         return () => {
             $('#loan_duration').select2('destroy');
             $('#credit_rating').select2('destroy');
@@ -53,7 +70,7 @@ function CalculatorBudget() {
                 </span>
             </div>
             <div className='contact-form'>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <div className='contact-form-row'>
                         <div className='contact-col'>
                             <div className="form-input">
@@ -61,9 +78,9 @@ function CalculatorBudget() {
                                     type="number"
                                     id="amount"
                                     name="amount"
-                                    value={formData.amount}
-                                    onChange={handleInputChange}
-                                    placeholder='Amount'
+                                    value={loanAmount}
+                                    onChange={handleChangeLoanAmount}
+                                    placeholder='Loan Amount'
                                     required
                                 />
                             </div>
@@ -71,20 +88,26 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="form-input">
                                 <select id="loan_duration">
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                    <option value="option4">Option 4</option>
+                                    <option value="">Loan duration</option>
+                                    <option value="12" selected={loanDuration === "12"}>12 Months</option>
+                                    <option value="24" selected={loanDuration === "24"}>24 Months</option>
+                                    <option value="36" selected={loanDuration === "36"}>36 Months</option>
+                                    <option value="48" selected={loanDuration === "48"}>48 Months</option>
+                                    <option value="60" selected={loanDuration === "60"}>60 Months</option>
+                                    <option value="72" selected={loanDuration === "72"}>72 Months</option>
+                                    <option value="84" selected={loanDuration === "84"}>84 Months</option>
+                                    <option value="96" selected={loanDuration === "96"}>96 Months</option>
                                 </select>
                             </div>
                         </div>
                         <div className='contact-col'>
                             <div className="form-input">
                                 <select id="credit_rating">
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                    <option value="option4">Option 4</option>
+                                    <option value="">Credit Rating</option>
+                                    <option value="poor">Poor</option>
+                                    <option value="average">Average</option>
+                                    <option value="good">Good</option>
+                                    <option value="excellent">Excellent</option>
                                 </select>
                             </div>
                         </div>
@@ -93,7 +116,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="calculated-counter-sec">
                                 <h1>
-                                    $0
+                                    ${monthlyPayment}
                                 </h1>
                                 <p>
                                     Monthly Payment
@@ -103,7 +126,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="calculated-counter-sec">
                                 <h1>
-                                    $0
+                                    ${weeklyPayment}
                                 </h1>
                                 <p>
                                     Weekly Payment
@@ -113,7 +136,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="calculated-counter-sec">
                                 <h1>
-                                    $0
+                                    ${biWeeklyPayment}
                                 </h1>
                                 <p>
                                     Bi-Weekly Payment
@@ -122,7 +145,7 @@ function CalculatorBudget() {
                         </div>
                     </div>
                     <div className='contact-form-row'>
-                        <a href='#' className='primary-btn'>Get Pre-Approved Today</a>
+                        <Link to="/apply" className='primary-btn'>Get Pre-Approved Today</Link>
                     </div>
                 </form>
             </div>
