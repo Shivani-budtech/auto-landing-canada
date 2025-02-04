@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alc-app/static/css/main.223b04c2.css",
-    "main.js": "/alc-app/static/js/main.c6897bc1.js",
+    "main.js": "/alc-app/static/js/main.2b6f590e.js",
     "static/js/453.b81b6c15.chunk.js": "/alc-app/static/js/453.b81b6c15.chunk.js",
     "static/media/about_banner.jpg": "/alc-app/static/media/about_banner.6fbf230056b10ec4cd56.jpg",
     "static/media/how_works_banner.jpg": "/alc-app/static/media/how_works_banner.f00a56be67f7c6681d40.jpg",
@@ -30,11 +30,11 @@
     "static/media/slick.woff": "/alc-app/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/alc-app/index.html",
     "main.223b04c2.css.map": "/alc-app/static/css/main.223b04c2.css.map",
-    "main.c6897bc1.js.map": "/alc-app/static/js/main.c6897bc1.js.map",
+    "main.2b6f590e.js.map": "/alc-app/static/js/main.2b6f590e.js.map",
     "453.b81b6c15.chunk.js.map": "/alc-app/static/js/453.b81b6c15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.223b04c2.css",
-    "static/js/main.c6897bc1.js"
+    "static/js/main.2b6f590e.js"
   ]
 }
