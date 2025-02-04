@@ -31,10 +31,6 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
     window.scrollTo(0, 0);
   }, [location]);
 
-  useEffect(() => {
-    document.title = "Auto Lending Canada – Fast & Affordable Car Loans for All Credit Types";
-  }, []);
-
   return (
     <div className="auto-lending-app">
       <script src="http://localhost:8097"></script>
