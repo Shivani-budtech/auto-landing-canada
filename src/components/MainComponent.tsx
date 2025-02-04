@@ -63,7 +63,7 @@ function MainComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState("closed");
 
   return (
-    <Router basename='/alc-app'>
+    <Router>
       <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </Router>
   );
