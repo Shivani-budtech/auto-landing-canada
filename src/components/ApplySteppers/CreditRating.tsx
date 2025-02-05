@@ -9,20 +9,20 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
             'val': 'excellent'
         },
         {
-            'title': 'Good (660-724)',
-            'val': 'good'
-        },
-        {
-            'title': 'Poor (300-599)',
-            'val': 'poor'
-        },
-        {
             'title': 'Very Good (725-759)',
             'val': 'very_good'
         },
         {
+            'title': 'Good (660-724)',
+            'val': 'good'
+        },
+        {
             'title': 'Fair (600-659)',
             'val': 'fair'
+        },
+        {
+            'title': 'Poor (300-599)',
+            'val': 'poor'
         },
         {
             'title': 'No Credit / Unsure',

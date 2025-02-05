@@ -9,16 +9,16 @@ const CoSignerEmploymentStatus = ({ formData, setFormData, setalcStep }) => {
             'val': 'employed'
         },
         {
-            'title': 'Student',
-            'val': 'student'
-        },
-        {
             'title': 'Self-Employed',
             'val': 'self-employed'
         },
         {
             'title': 'Retired / Pension',
             'val': 'retired'
+        },
+        {
+            'title': 'Student',
+            'val': 'student'
         },
         {
             'title': 'Other',

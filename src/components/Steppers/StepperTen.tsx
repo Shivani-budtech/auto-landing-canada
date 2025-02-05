@@ -37,7 +37,7 @@ const StepperTen = ({ formData, setFieldValue, nextStep, prevStep, errors, touch
                 <div className='approval-pop'>
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
-                        <img src={require(`../../images/approved.png`)} />
+                        <img src={require(`../../images/approved.webp`)} />
                         <div className="approve-pop-title">
                             Congratulations!
                         </div>
@@ -63,7 +63,7 @@ const StepperTen = ({ formData, setFieldValue, nextStep, prevStep, errors, touch
                 <div className='approval-pop'>
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
-                        <img src={require(`../../images/rejected.png`)} />
+                        <img src={require(`../../images/rejected.webp`)} />
                         <div className="approve-pop-title">
                             Failed
                         </div>

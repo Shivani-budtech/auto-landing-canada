@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../images/main-logo.png";
+import logo from "../images/main-logo.webp";
 import { Link, useLocation } from "react-router-dom";
 function Footer() {
   const location = useLocation();
@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className={(curLoc == "/apply") ? 'apply-footer main-footer-container' : 'main-footer-container'}>
       <div className="footer-sec">
-        <img src={require(`../images/logos.png`)} />
+        <img src={require(`../images/logos.webp`)} />
         <div className="footer-container">
           <div className="footer-col-1">
             <div className="header-logo">
@@ -76,22 +76,22 @@ function Footer() {
             <div className="social-media-copyright">
               <div className="social-media-row">
                 <a href="https://www.instagram.com/autolendingcanada/" rel="noreferrer" target='_blank'>
-                  <img src={require(`../images/insta-social.png`)} alt="instagram"/>
+                  <img src={require(`../images/insta-social.webp`)} alt="instagram"/>
                 </a>
                 <a href="https://www.facebook.com/people/Auto-Lending-Canada/61561773263064/" rel="noreferrer" target='_blank'>
-                  <img src={require(`../images/facebook-social.png`)} alt="facebook"/>
+                  <img src={require(`../images/facebook-social.webp`)} alt="facebook"/>
                 </a>
                 <a href="https://www.youtube.com/@AutoLendingCanada" rel="noreferrer" target='_blank'>
-                  <img src={require(`../images/youtube-social.png`)} alt="facebook" />
+                  <img src={require(`../images/youtube-social.webp`)} alt="facebook" />
                 </a>
                 <a href="https://www.linkedin.com/company/auto-lending-canada/" rel="noreferrer" target='_blank'>
-                  <img src={require(`../images/linkedin-social.png`)} alt="linkedin" />
+                  <img src={require(`../images/linkedin-social.webp`)} alt="linkedin" />
                 </a>
                 <a href="https://x.com/AutoLendingCA" rel="noreferrer" target='_blank'>
-                  <img src={require(`../images/twitter-social.png`)} alt="twitter" />
+                  <img src={require(`../images/twitter-social.webp`)} alt="twitter" />
                 </a>
                 <a href="https://www.tiktok.com/@autolendingcanada" rel="noreferrer" target='_blank'>
-                  <img src={require(`../images/tiktok-social.png`)} alt="tiktok" />
+                  <img src={require(`../images/tiktok-social.webp`)} alt="tiktok" />
                 </a>
               </div>
               <div className="copy-right-desc">

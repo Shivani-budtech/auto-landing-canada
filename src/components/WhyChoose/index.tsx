@@ -6,19 +6,19 @@ function WhyChoose() {
     const whyChoose = [
         {
             title: "Better Rates",
-            img: "wheel.png",
+            img: "wheel.webp",
             desc: "Choose us for car financing in Canada and enjoy unbeatable rates, flexible payments, and more money in your pocket!",
             link: "#",
         },
         {
             title: "Low Payments",
-            img: "approval.png",
+            img: "approval.webp",
             desc: "With our low payments, you’ll save more while driving the car you love. Choose Canada’s trusted car loan provider!",
             link: "#",
         },
         {
             title: "Saving Money",
-            img: "24-7.png",
+            img: "24-7.webp",
             desc: "Get the best rates in Canada, low monthly payments, and save more with our tailored auto financing solutions.",
             link: "#",
         },
@@ -32,8 +32,8 @@ function WhyChoose() {
                 </span>
             </div>
             <div className="why-choose-row">
-                <img src={require("../../images/dotted-bg.png")} className="first-img" />
-                <img src={require("../../images/round.png")} className="last-img" />
+                <img src={require("../../images/dotted-bg.webp")} className="first-img" />
+                <img src={require("../../images/round.webp")} className="last-img" />
                 <div className="grida">
                     {Object.entries(whyChoose).map(([key, why]) => (
                         <div key={key} className="grida-item">

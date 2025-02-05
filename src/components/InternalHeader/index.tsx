@@ -19,7 +19,7 @@ function InternalHeader() {
                 break;
             case "/contact_us":
                 setPageTitle("Contact Us");
-                setPageDesc("<span class='email-header'>info@autolendingcanada.com</span><span class='phone-header'>888-899-7356</span>");
+                setPageDesc("<span class='email-header'>info@autolendingcanada.com</span><span class='phone-header'>844-405-5363</span>");
                 break;
             case "/blogs":
                 setPageTitle("ALC BLogs");
@@ -48,6 +48,10 @@ function InternalHeader() {
             case "/terms_of_user":
                 setPageTitle("Terms of Use");
                 setPageDesc("");
+                break;
+            case "/membership_programme":
+                setPageTitle("Auto Lending Canada Advantage Membership Program");
+                setPageDesc("<b>Welcome to the Auto Lending Canada Advantage Membership Program!</b><br />Our Advantage Membership offers exclusive benefits designed to simplify your car loan process and provide added value to our members.");
                 break;
             default:
                 setPageTitle ("My Website");

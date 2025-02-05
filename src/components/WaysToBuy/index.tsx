@@ -4,17 +4,17 @@ import '../../responsive.css';
 function waysToBuy() {
     const waysToBuy = [
         {
-            img: "budget.png",
+            img: "budget.webp",
             title: "Budget Discovery",
             desc: "Start your car-buying journey by discovering your budget. Calculate how much you can comfortably spend on your dream car with our easy-to-use tools.",
         },
         {
-            img: "finance.png",
+            img: "finance.webp",
             title: "Financing Approval",
             desc: "Get pre-approved for your car loan in minutes! Our hassle-free financing process ensures you secure the best rates in Canada.",
         },
         {
-            img: "vehicle.png",
+            img: "vehicle.webp",
             title: "Vehicle Selection",
             desc: "Choose the perfect vehicle for your lifestyle and budget. With financing secured, finding your dream car has never been easier!",
         },
@@ -38,7 +38,7 @@ function waysToBuy() {
                 ))}
             </div>
             <div className="content">
-                <img src={require(`../../images/car_app.png`)} />
+                <img src={require(`../../images/car_app.webp`)} />
             </div>
         </section>
     );

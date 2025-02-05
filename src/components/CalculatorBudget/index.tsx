@@ -116,7 +116,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="calculated-counter-sec">
                                 <h1>
-                                    ${monthlyPayment}
+                                    ${new Intl.NumberFormat('en-US').format(monthlyPayment)}
                                 </h1>
                                 <p>
                                     Monthly Payment
@@ -126,7 +126,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="calculated-counter-sec">
                                 <h1>
-                                    ${weeklyPayment}
+                                    ${new Intl.NumberFormat('en-US').format(weeklyPayment)}
                                 </h1>
                                 <p>
                                     Weekly Payment
@@ -136,7 +136,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="calculated-counter-sec">
                                 <h1>
-                                    ${biWeeklyPayment}
+                                    ${new Intl.NumberFormat('en-US').format(biWeeklyPayment)}
                                 </h1>
                                 <p>
                                     Bi-Weekly Payment

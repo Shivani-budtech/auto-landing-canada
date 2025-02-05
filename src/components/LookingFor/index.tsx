@@ -39,7 +39,7 @@ function LookingFor() {
             </div>
             <div className="looking-for-row">
                 <div className="content">
-                    <img src={require(`../../images/single-car.png`)} />
+                    <img src={require(`../../images/single-car.webp`)} />
                 </div>
                 <div className="info">
                     <div className="desc">What type of vehicle are you looking for?</div>

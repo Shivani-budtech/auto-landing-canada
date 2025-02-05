@@ -21,7 +21,7 @@ function HomeTop() {
                     </div>
                 </div>
                 <div className="info">
-                    <img src={require(`../../images/home-cars.png`)} />
+                    <img src={require(`../../images/home-cars.webp`)} />
                 </div>
             </div>
         </section>

@@ -5,30 +5,30 @@ function AboutFeatures() {
     const whyChoose = [
         {
             title: "Fast Approval Process",
-            img: "safe.png",
+            img: "safe.webp",
             desc: "We offer a quick and seamless approval process, ensuring you can secure your auto loan and hit the road without delay.",
         },
         {
             title: "Affordable Rate",
-            img: "fast.png",
+            img: "fast.webp",
             desc: "Enjoy the lowest interest rates in Canada and customizable payment options designed to fit your budget and lifestyle.",
         },
         {
             title: "All Credit Types Welcome",
-            img: "chat.png",
+            img: "chat.webp",
             desc: "Our inclusive financing solutions ensure everyone, regardless of credit history, can access reliable and affordable car loans.",
         },
         {
             title: "Nationwide Service",
-            img: "reference.png",
+            img: "reference.webp",
             desc: "Serving customers across Canada, we’re committed to making car financing easy and stress-free with personalized support every step of the way.",
         },
     ];
     return (
         <section className="about-features container">
             <div className="why-choose-row">
-                <img src={require("../../images/dotted-bg.png")} className="first-img" />
-                <img src={require("../../images/round.png")} className="last-img" />
+                <img src={require("../../images/dotted-bg.webp")} className="first-img" />
+                <img src={require("../../images/round.webp")} className="last-img" />
                 <div className="grida">
                     {Object.entries(whyChoose).map(([key, why]) => (
                         <div key={key} className="grida-item">

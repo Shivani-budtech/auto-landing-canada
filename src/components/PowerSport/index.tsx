@@ -7,7 +7,7 @@ function PowerSport() {
         <section className='power-sport-sec contact-us-sec container'>
             <div className='power-sport-row'>
                 <div className='power-sport-img'>
-                    <img src={require("../../images/power_sport_1.png")} />
+                    <img src={require("../../images/power_sport_1.webp")} />
                 </div>
                 <div className='power-sport-content'>
                     <div className='power-sports-counter'>
@@ -16,7 +16,7 @@ function PowerSport() {
                         </span>/03
                     </div>
                     <div className='power-sport-vector'>
-                        <img src={require("../../images/power_sport_1_vec.png")} />
+                        <img src={require("../../images/power_sport_1_vec.webp")} />
                     </div>
                     <div className='power-sport-title'>
                         Recreational<br/>Adventures
@@ -42,7 +42,7 @@ function PowerSport() {
                         </span>/03
                     </div>
                     <div className='power-sport-vector'>
-                        <img src={require("../../images/power_sport_2_vec.png")} />
+                        <img src={require("../../images/power_sport_2_vec.webp")} />
                     </div>
                     <div className='power-sport-title'>
                         Marine<br/>Expeditions
@@ -60,12 +60,12 @@ function PowerSport() {
                     </div>
                 </div>
                 <div className='power-sport-img'>
-                    <img src={require("../../images/power_sport_2.png")} />
+                    <img src={require("../../images/power_sport_2.webp")} />
                 </div>
             </div>
             <div className='power-sport-row'>
                 <div className='power-sport-img'>
-                    <img src={require("../../images/power_sport_3.png")} />
+                    <img src={require("../../images/power_sport_3.webp")} />
                 </div>
                 <div className='power-sport-content'>
                     <div className='power-sports-counter'>
@@ -74,7 +74,7 @@ function PowerSport() {
                         </span>/03
                     </div>
                     <div className='power-sport-vector'>
-                        <img src={require("../../images/power_sport_3_vec.png")} />
+                        <img src={require("../../images/power_sport_3_vec.webp")} />
                     </div>
                     <div className='power-sport-title'>
                         Leisurely<br/>Expeditions

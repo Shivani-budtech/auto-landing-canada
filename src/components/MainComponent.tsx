@@ -22,6 +22,7 @@ import PreApply from './PreApply.tsx';
 import app from './firebaseAuth.tsx';
 import PrivacyPolicy from './PrivacyPolicy.tsx';
 import TermsOfUSe from './TermsOfUSe.tsx';
+import MembershipProgramme from './membershipProgramme.tsx';
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
@@ -52,8 +53,8 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Route path='/pre_apply' element={<PreApply />} />
         <Route path='/privacy_policy' element={<PrivacyPolicy />} />
         <Route path='/terms_of_user' element={<TermsOfUSe />} />
+        <Route path='/membership_programme' element={<MembershipProgramme />} />
       </Routes>
-
       <Footer />
     </div>
   );

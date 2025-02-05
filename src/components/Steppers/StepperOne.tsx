@@ -7,32 +7,32 @@ const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touche
     const carTypes = [
         {
             'title' : 'Coupe',
-            'image' : 'coupe.png',
+            'image' : 'coupe.webp',
             'val': 'Coupe'
         },
         {
             'title': 'Hatchback',
-            'image': 'hatchback.png',
+            'image': 'hatchback.webp',
             'val': 'Hatchback'
         },
         {
             'title': 'Sedan',
-            'image': 'sedan.png',
+            'image': 'sedan.webp',
             'val': 'Sedan'
         },
         {
             'title': 'Minivan',
-            'image': 'minivan.png',
+            'image': 'minivan.webp',
             'val': 'Minivan'
         },
         {
             'title': 'SUV & Crossover',
-            'image': 'suv.png',
+            'image': 'suv.webp',
             'val': 'SUV & Crossover'
         },
         {
             'title': 'Truck',
-            'image': 'truck.png',
+            'image': 'truck.webp',
             'val': 'Truck'
         },
     ];

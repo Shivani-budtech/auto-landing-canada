@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../images/main-logo.png";
+import logo from "../images/main-logo.webp";
 import { Link, useLocation } from "react-router-dom";
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   const location = useLocation();
@@ -55,7 +55,11 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
           </div>
         </div>
         <div className="header-btn">
-          <Link to="/apply" className="primary-btn">Apply Now</Link>
+          {location.pathname === "/apply" ?
+            <a href="tel:+1 (604) 365-8090" className="">+1 (604) 365-8090</a> :
+            <Link to="/apply" className="primary-btn">Apply Now</Link>
+          }
+          
         </div>
         <div className="header-mobile-toggle" onClick={() => setIsMenuOpen("opened")}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg>

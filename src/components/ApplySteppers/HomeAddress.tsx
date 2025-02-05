@@ -82,7 +82,7 @@ const HomeAddress = ({ formData, setFormData, setalcStep }) => {
                 <div className='approval-pop'>
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
-                        <img src={require(`../../images/approved.png`)} alt="" />
+                        <img src={require(`../../images/approved.webp`)} alt="" />
                         <div className="approve-pop-title">
                             Congratulations!
                         </div>
@@ -92,13 +92,13 @@ const HomeAddress = ({ formData, setFormData, setalcStep }) => {
                         </div>
                         <div className="approve-pop-content">
                             <p>
-                                Join the Auto Lending Canada Affinity Program as a Premium Member and get pre-approved for your car loan today!
+                                Join the Auto Lending Canada Advantage Membership as a Premium Member and enjoy exclusive benefits, including faster pre-approvals and enhanced support for your car loan application.
                             </p>
                             <p>
-                                Membership is subject to the Rules for Membership in the Auto Lending Canada Affinity Program  viewable <Link to="/"><b>here</b></Link>
+                                Membership is subject to the Rules for Membership in the Auto Lending Canada Advantage Membership Program, viewable <Link to="/membership_programme"><b>[here]</b></Link>.
                             </p>
                             <p>
-                                    By clicking ‘Continue,’ I confirm that I agree to Auto Lending Canada's <Link to="/"><b>General Terms of Service</b></Link>, consent to the recording of my calls for quality assurance and training, and authorize Auto Lending Canada, participating car dealers, and lenders to access my credit reports to process my car loan application.
+                                By clicking “Continue,” I confirm that I agree to Auto Lending Canada’s <Link to="/terms_of_user">Terms of Use</Link>, consent to the recording of my calls for quality assurance and training purposes, and authorize Auto Lending Canada, participating car dealers, and lenders to access my credit reports to process my car loan application.
                             </p>
                         </div>
                         <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
@@ -108,7 +108,7 @@ const HomeAddress = ({ formData, setFormData, setalcStep }) => {
                 <div className='approval-pop'>
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
-                        <img src={require(`../../images/rejected.png`)} alt=""/>
+                        <img src={require(`../../images/rejected.webp`)} alt=""/>
                         <div className="approve-pop-title">
                             Failed
                         </div>

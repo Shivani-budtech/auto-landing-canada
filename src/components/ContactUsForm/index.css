@@ -33,7 +33,7 @@
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url("./email-input.png");
+    background-image: url("./email-input.webp");
     display: block;
     position: absolute;
     top: 50%;
@@ -48,7 +48,7 @@
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url("./phone-input.png");
+    background-image: url("./phone-input.webp");
     display: block;
     position: absolute;
     top: 50%;
@@ -59,7 +59,7 @@
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url("./user-input.png");
+    background-image: url("./user-input.webp");
     display: block;
     position: absolute;
     top: 50%;
@@ -67,13 +67,13 @@
     left: 18px;
 }
 .email-input:after {
-    background-image: url("./email-input.png");
+    background-image: url("./email-input.webp");
 }
 .phone-input:after {
-    background-image: url("./phone-input.png");
+    background-image: url("./phone-input.webp");
 }
 .support-input:after {
-    background-image: url("./support-input.png");
+    background-image: url("./support-input.webp");
     top:32px;
 }
 .user-input >input , .email-input > input , .phone-input > input , .support-input > textarea {

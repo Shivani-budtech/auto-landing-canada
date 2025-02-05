@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const UploadId = ({ formData, setFormData, setalcStep }) => {
+    const [isSkipId, setIsSkipId] = useState(0);
     const [hasError, setHasError] = useState(0);
     const handleFileChange = (event) => {
         setHasError(0);
@@ -16,6 +17,12 @@ const UploadId = ({ formData, setFormData, setalcStep }) => {
             setalcStep('co_signer'); // Move to the next step
         }
     }
+    const handleNotSkip = () => {
+        setIsSkipId(0)
+    }
+    const handleisSkip = () => {
+        setIsSkipId(1)
+    } 
     const handleSkip = () => {
         setHasError(0); // Clear error
         setalcStep('co_signer'); // Move to the next step
@@ -23,7 +30,7 @@ const UploadId = ({ formData, setFormData, setalcStep }) => {
     return (
         <div className='stepper-content'>
             <div className="stepper-top-img">
-                <img src={require(`./images/success_application.png`)} />
+                <img src={require(`./images/success_application.webp`)} />
             </div>
             <div className="stepper-application-title">
                 Upload a photo of the front of your driver's license
@@ -39,7 +46,7 @@ const UploadId = ({ formData, setFormData, setalcStep }) => {
                 <button type="button" className="primary-btn" onClick={handleNext}>Continue</button>
             </div>
             <div className="p-link">
-                <p onClick={handleSkip}>I don't have my ID</p>
+                <p onClick={handleisSkip}>I don't have my ID</p>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?
@@ -48,6 +55,19 @@ const UploadId = ({ formData, setFormData, setalcStep }) => {
                     </ul> : ""
                 }
             </div>
+            {isSkipId ? 
+                <div className='approval-pop'>
+                    <div className="approval-popoverlay"></div>
+                    <div className='approval-pop-container' style={{ width:"500px" }}>
+                        <div className="approve-pop-content">
+                            <p>Check out vehicle and payment options sooner by uploading a valid driver's license. No worries if it's not handy, we can grab it later!</p>
+                        </div>
+                        <button type='button' style={{padding: "15px 40px"}} className='primary-btn' onClick={handleNotSkip}>Provide ID</button>
+                        <div className="p-link">
+                            <p onClick={handleSkip}>I don't have my ID</p>
+                        </div>
+                    </div>
+                </div>: "" }
         </div>
     );
 }

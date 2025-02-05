@@ -211,17 +211,17 @@ input[type='radio']:checked {
     position: relative;
 }
 .stepper-text-input .dollar-input::after{
-    content: url('./images/dollar.png');
+    content: url('./images/dollar.webp');
     position: absolute;
     top: 16px;
     display: block;
     left: 16px;
 }
 .stepper-text-input .dollar-input.can-phone-input::after {
-    content: url('./images/canada-flag.png');
+    content: url('./images/canada-flag.webp');
 }
 .stepper-text-input .dollar-input.calender::after {
-    content: url('./images/calender.png');
+    content: url('./images/calender.webp');
     top: 19px;
 }
 .stepper-flex-input {

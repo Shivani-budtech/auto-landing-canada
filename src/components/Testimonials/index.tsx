@@ -78,7 +78,7 @@ function Testimonials() {
                                 <div className="testimonial-author">{testimonial.author}</div>
                                 <img
                                     alt="Testimonial vector"
-                                    src={require(`./testimonial-vec.png`)}
+                                    src={require(`./testimonial-vec.webp`)}
                                     className="testimonail-vec"
                                 />
                             </div>

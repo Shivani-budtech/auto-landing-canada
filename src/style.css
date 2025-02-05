@@ -184,7 +184,7 @@ input[type=number] {
 }
 /* .footer-sec:after {
     content: "";
-    background-image: url('./images/logos.png');
+    background-image: url('./images/logos.webp');
     width: 100%;
     max-width: 490px;
     display: block;
@@ -260,7 +260,7 @@ input[type=number] {
     content: "";
     width: 14px;
     height: 19px;
-    background-image: url("./images/phone-vec.png");
+    background-image: url("./images/phone-vec.webp");
     display: block;
     position: absolute;
     top: 50%;
@@ -288,7 +288,7 @@ input[type=number] {
     content: "";
     width: 20px;
     height: 16px;
-    background-image: url("./images/email-vec.png");
+    background-image: url("./images/email-vec.webp");
     display: block;
     position: absolute;
     top: 50%;

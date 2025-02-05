@@ -44,6 +44,8 @@ import CoSignerHomeDetails from './ApplySteppers/CoSignerHomeDetails.tsx';
 import CoSignerCitizenDetails from './ApplySteppers/CoSignerCitizenDetails.tsx';
 import CoSignerDateOfBirth from './ApplySteppers/CoSignerDateOfBirth.tsx';
 import CoSignerContactDetails from './ApplySteppers/CoSignerContactDetails.tsx';
+import CoSignerVerificationCode from './ApplySteppers/CoSignerVerificationCode.tsx';
+import FinalStep from './ApplySteppers/FinalStep.tsx';
 import { API_URL } from './Constant.tsx';
 
 
@@ -173,7 +175,8 @@ function PreApply() {
                     },
                 });
                 console.log(res.data);
-                navigate("/");
+                // navigate("/");
+                setalcStep('final_step');
             } catch (error) {
                 console.error('Error submitting form:', error);
             } finally {
@@ -263,7 +266,11 @@ function PreApply() {
             case 'co_signer_date_of_birth':
                 return <CoSignerDateOfBirth formData={formData} setFormData={setFormData} setalcStep={handleStepChange} />
             case 'co_signer_contact_details':
-                return <CoSignerContactDetails formData={formData} setFormData={setFormData} setalcStep={handleStepChange} handleSubmit={handleSubmit} />
+                return <CoSignerContactDetails formData={formData} setFormData={setFormData} setalcStep={handleStepChange} setVerificationId={setVerificationId} />
+            case 'co_signer_verification_code':
+                return <CoSignerVerificationCode formData={formData} setFormData={setFormData} setalcStep={handleStepChange} verificationId={verificationId} setVerificationId={setVerificationId} handleSubmit={handleSubmit} />
+            case 'final_step':
+                return <FinalStep />
         }
     };
 
@@ -275,11 +282,11 @@ function PreApply() {
 
     return (
         <div className='apply-stepper header-marging'>
-            {alcStep === "application_success" || alcStep === "upload_id" || alcStep === "co_signer" ? "" : 
+            {alcStep === "application_success" || alcStep === "upload_id" || alcStep === "co_signer" || alcStep === "final_step" ? ""  : 
                 <div className="stepper-progress-container">
                     <div className='stepper-progress'>
                         <div className='stepper-complete' style={{ width: completionPercentage + `%` }}>
-                            <img src={require(`../images/stepper.png`)} alt="Stepper" />
+                            <img src={require(`../images/stepper.webp`)} alt="Stepper" />
                         </div>
                     </div>
                 </div>
