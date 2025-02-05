@@ -14,6 +14,8 @@ const FullName = ({ formData, setFormData, setalcStep }) => {
             setHasError(1); // Show error
         } else {
             setHasError(0); // Clear error
+            setFormData({ ...formData, co_signer_first_name: formData.first_name });
+            setFormData({ ...formData, co_signer_last_name: formData.last_name });
             setalcStep('contact_details'); // Move to the next step
         }
     }

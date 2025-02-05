@@ -99,10 +99,10 @@ const CoSignerHomeAddress = ({ formData, setFormData, setalcStep }) => {
                                 Join the Auto Lending Canada Advantage Membership as a Premium Member and enjoy exclusive benefits, including faster pre-approvals and enhanced support for your car loan application.
                             </p>
                             <p>
-                                    Membership is subject to the Rules for Membership in the Auto Lending Canada Advantage Membership Program, viewable <Link to="/membership_programme"><b>[here]</b></Link>.
+                                    Membership is subject to the Rules for Membership in the Auto Lending Canada Advantage Membership Program, viewable <Link to="#" onClick={() => window.open('/membership_programme', '_blank')}><b>[here]</b></Link>.
                             </p>
                             <p>
-                                By clicking “Continue,” I confirm that I agree to Auto Lending Canada’s <Link to="/terms_of_user">Terms of Use</Link>, consent to the recording of my calls for quality assurance and training purposes, and authorize Auto Lending Canada, participating car dealers, and lenders to access my credit reports to process my car loan application.
+                                    By clicking “Continue,” I confirm that I agree to Auto Lending Canada’s <Link to="#" onClick={() => window.open('/terms_of_user', '_blank')}>Terms of Use</Link>, consent to the recording of my calls for quality assurance and training purposes, and authorize Auto Lending Canada, participating car dealers, and lenders to access my credit reports to process my car loan application.
                             </p>
                         </div>
                         <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>

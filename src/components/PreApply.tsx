@@ -61,7 +61,10 @@ function PreApply() {
     const navigate = useNavigate();
     const { vehicle_type } = location.state || {};
 
+    const uniqueNumber = Math.floor(100000 + Math.random() * 900000);
+
     const [formData,setFormData] = useState({
+        'unique_id': uniqueNumber,
         'vehicle_type': '',
         'budget': '',
         'trade_in': '',

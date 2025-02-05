@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.802f7648.css",
-    "main.js": "/static/js/main.b9731764.js",
+    "main.css": "/static/css/main.ee3d41e1.css",
+    "main.js": "/static/js/main.5e9d888d.js",
     "static/js/453.b81b6c15.chunk.js": "/static/js/453.b81b6c15.chunk.js",
-    "static/media/about_banner.jpg": "/static/media/about_banner.6fbf230056b10ec4cd56.jpg",
-    "static/media/how_works_banner.jpg": "/static/media/how_works_banner.f00a56be67f7c6681d40.jpg",
     "static/media/our-story.jpg": "/static/media/our-story.4ad7df1773e56dc50555.jpg",
+    "static/media/about_banner.webp": "/static/media/about_banner.13aa230f5860c41882fc.webp",
     "static/media/our-story.webp": "/static/media/our-story.b2d325611d725172092c.webp",
-    "static/media/home_banner.jpg": "/static/media/home_banner.700972342bd8a38152b1.jpg",
+    "static/media/how_works_banner.webp": "/static/media/how_works_banner.f601c6be51b38e23e02a.webp",
+    "static/media/home_banner.webp": "/static/media/home_banner.dc98562b6acd5ef522a6.webp",
     "static/media/power_sport_1.png": "/static/media/power_sport_1.dfaf44c9cab200f967bd.png",
     "static/media/customer-review-2.png": "/static/media/customer-review-2.3e89ec73d23e8b360366.png",
     "static/media/power_sport_3.png": "/static/media/power_sport_3.b621d34f358df590e89c.png",
@@ -59,10 +59,10 @@
     "static/media/chat.webp": "/static/media/chat.14b2e79628e03e0b26aa.webp",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "index.html": "/index.html",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/main-logo.webp": "/static/media/main-logo.e683869a20aa9fd9bb89.webp",
     "static/media/testimonial-vec.webp": "/static/media/testimonial-vec.0f319323aa5967f11996.webp",
-    "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/stepper.webp": "/static/media/stepper.5d82b0121663c8d52d9b.webp",
     "static/media/wheel.webp": "/static/media/wheel.0fd22bc254fcab33015c.webp",
@@ -94,12 +94,12 @@
     "static/media/youtube-social.webp": "/static/media/youtube-social.14471c6d287d3225d254.webp",
     "static/media/facebook-social.webp": "/static/media/facebook-social.22acd1863342de21c20b.webp",
     "static/media/home-bottom.webp": "/static/media/home-bottom.e439c44fe7f57fa08a9a.webp",
-    "main.802f7648.css.map": "/static/css/main.802f7648.css.map",
-    "main.b9731764.js.map": "/static/js/main.b9731764.js.map",
+    "main.ee3d41e1.css.map": "/static/css/main.ee3d41e1.css.map",
+    "main.5e9d888d.js.map": "/static/js/main.5e9d888d.js.map",
     "453.b81b6c15.chunk.js.map": "/static/js/453.b81b6c15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.802f7648.css",
-    "static/js/main.b9731764.js"
+    "static/css/main.ee3d41e1.css",
+    "static/js/main.5e9d888d.js"
   ]
 }

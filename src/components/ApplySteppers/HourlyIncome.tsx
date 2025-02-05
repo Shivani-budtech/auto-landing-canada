@@ -19,7 +19,10 @@ const HourlyIncome = ({ formData, setFormData, setalcStep }) => {
     }
     const handleChange = (e) => {
         setHasError(0);
-        setFormData({ ...formData, hourly_income: e.target.value });
+        var value = e.target.value;
+        const numericValue = value.replace(/[^0-9.]/g, "");
+        const formattedValue = numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        setFormData({ ...formData, hourly_income: formattedValue });
     };
     const handleChangeHour = (e) => {
         setHasError(0);
@@ -37,7 +40,7 @@ const HourlyIncome = ({ formData, setFormData, setalcStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide" style={{ marginLeft: "15px" }}>Round to Nearest Dollar</span>
                     <span className='dollar-input'>
-                        <input type='number' className='' value={formData.hourly_income} placeholder="Hourly wage" name="hourly_income" onChange={handleChange} />
+                        <input type='text' className='' value={formData.hourly_income} placeholder="Hourly wage" name="hourly_income" onChange={handleChange} />
                     </span>
                 </div>
                 <div className='stepper-text-input'>

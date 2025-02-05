@@ -27,7 +27,10 @@ const MonthlyIncome = ({ formData, setFormData, setalcStep }) => {
     }
     const handleChange = (e) => {
         setHasError(0);
-        setFormData({ ...formData, monthly_income: e.target.value });
+        var value = e.target.value;
+        const numericValue = value.replace(/[^0-9.]/g, "");
+        const formattedValue = numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        setFormData({ ...formData, monthly_income: formattedValue });
     };
     return (
         <div className='stepper-content'>
@@ -41,7 +44,7 @@ const MonthlyIncome = ({ formData, setFormData, setalcStep }) => {
                 <div className='stepper-text-input'>
                     <span className="input-guide" style={{ marginLeft: "15px" }}>Round to Nearest Dollar</span>
                     <span className='dollar-input'>
-                        <input type='number' className='' value={formData.monthly_income} placeholder="Monthly Income" name="monthly_income" onChange={handleChange} />
+                        <input type='text' className='' value={formData.monthly_income} placeholder="Monthly Income" name="monthly_income" onChange={handleChange} />
                     </span>
                 </div>
                 <div className='stepper-btn'>

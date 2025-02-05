@@ -27,14 +27,14 @@ const ApplicationSuccessful = ({ formData, setFormData, setalcStep }) => {
                 Application Successful!
             </div>
             <div className="stepper-application-number">
-                Confirmation Number: 1EFACE
+                Confirmation Number: {formData.unique_id}
             </div>
             <div className="stepper-application-desc-title">
                 A confirmation email will be sent to you shortly
             </div>
             <div className="stepper-input consent" style={{ marginTop: "50px" }}>
                 <input type="checkbox" name="sms_consent" id="sms_consent" value="yes" checked={formData.sms_consent === "yes"} onChange={handleChange} />
-                <label htmlFor="sms_consent">I consent to receive electronic messages regarding Auto lending Canada's products, services, and related offerings and understand that I can withdraw my consent at any time. More information is provided in our <Link to="/privacy_policy">Privacy Policy</Link> and <Link to="/terms_of_user">Terms of Use</Link></label>
+                <label htmlFor="sms_consent">I consent to receive electronic messages regarding Auto lending Canada's products, services, and related offerings and understand that I can withdraw my consent at any time. More information is provided in our <Link to="#" onClick={() => window.open('/privacy_policy', '_blank')}>Privacy Policy</Link> and <Link to="#" onClick={() => window.open('/terms_of_user', '_blank')}>Terms of Use</Link></label>
             </div>
             <div className='stepper-btn' style={{ marginTop: "40px" }}>
                 <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
