@@ -7,7 +7,7 @@ function AboutUs() {
         <section className="about-us-sec container">
             <div className="about-us-container">
                 <div className='about-image'>
-                    <img src={require("../../images/our-story.jpg")} />
+                    <img src={require("../../images/our-story.webp")} />
                 </div>
                 <div className='about-content'>
                     <h1>
