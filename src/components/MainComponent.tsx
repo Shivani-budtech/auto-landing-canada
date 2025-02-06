@@ -52,7 +52,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Route path='/how_works' element={<HowItWorks />} />
         <Route path='/pre_apply' element={<PreApply />} />
         <Route path='/privacy_policy' element={<PrivacyPolicy />} />
-        <Route path='/terms_of_user' element={<TermsOfUSe />} />
+        <Route path='/terms_of_use' element={<TermsOfUSe />} />
         <Route path='/membership_programme' element={<MembershipProgramme />} />
       </Routes>
       <Footer />

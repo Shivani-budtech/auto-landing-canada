@@ -166,7 +166,28 @@ function PreApply() {
     const handleStepChange = (newStep) => {
         setalcStep(newStep);
         setCompletionPercentage(stepPercentages[newStep]); // Set percentage statically
+
+        window.history.pushState({ step: newStep }, `Step ${newStep}`, `#${newStep}`);
     };
+
+    useEffect(() => {
+        const handlePopState = (event) => {
+            if (event.state && event.state.step) {
+                setalcStep(event.state.step);
+                setCompletionPercentage(stepPercentages[event.state.step]);
+            }
+        };
+
+        window.addEventListener('popstate', handlePopState);
+
+        // Initialize the history state with the current step
+        window.history.replaceState({ step: alcStep }, `Step ${alcStep}`, `#${alcStep}`);
+
+        // Cleanup
+        return () => {
+            window.removeEventListener('popstate', handlePopState);
+        };
+    }, [alcStep]);
 
     const handleSubmit = async () => {
         if(!isSubmiting) {

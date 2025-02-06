@@ -65,7 +65,7 @@ function Footer() {
           <div className="footer-col-2">
             <div className="footer-contact-row">
                 <div className="contact-row">
-                <a href="tel:844-405-5363" className="primary-btn contact-phone">844-405-5363</a>
+                <a href="tel:604-365-8090" className="primary-btn contact-phone">604-365-8090</a>
                 <a href="tel:778-652-3712" className="primary-btn contact-phone">778-652-3712</a>
                 </div>
                 <div className="contact-row">
@@ -106,7 +106,7 @@ function Footer() {
         <p>Copyright © 2025 Auto Lending Canada. All rights reserved. Auto Lending Canada® and the Auto Lending Canada Logo design are registered <br/> trademarks of Auto Lending Canada Ltd. Other trademarks are the property of their respective owners.</p>
         <div className="footer-links">
           <Link to="/privacy_policy">Privacy Policy</Link>
-          <Link to="/terms_of_user">Terms of Use</Link>
+          <Link to="/terms_of_use">Terms of Use</Link>
         </div>
       </div>
     </div>
