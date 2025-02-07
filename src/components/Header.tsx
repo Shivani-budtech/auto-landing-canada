@@ -56,7 +56,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
         </div>
         <div className="header-btn">
           {location.pathname === "/apply" ?
-            <a href="tel:+1 (604) 365-8090" className="">+1 (604) 365-8090</a> :
+            <a href="tel:1-844-405-5363" className="">1-844-405-LEND</a> :
             <Link to="/apply" className="primary-btn">Apply Now</Link>
           }
           
