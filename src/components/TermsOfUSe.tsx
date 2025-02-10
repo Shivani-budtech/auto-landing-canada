@@ -12,7 +12,7 @@ function TermsOfUSe() {
             <div className='container privacy-policy-page'>
                 <p><b>Overview</b></p>
                 <br />
-                <p>These terms of use (“<b>Terms</b>”) constitute a binding legal agreement between Auto Lending Canada Ltd. DBA Auto Lending Canada and any affiliates or subsidiaries through which we may operate (referenced herein as “<b>Auto Lending Canada</b>,” “<b>us</b>”, “<b>we</b>”, or “<b>our</b>”). These Terms govern your use of our website, accessible at <a href='www.autolendingcanada.ca'>www.autolendingcanada.ca</a> (the “<b>Website</b>”). By using or accessing the Website you agree to be bound by these Terms. If you do not agree with or accept any of these Terms, you may not access the Website.</p>
+                <p>These terms of use (“<b>Terms</b>”) constitute a binding legal agreement between Auto Lending Canada Ltd. DBA Auto Lending Canada and any affiliates or subsidiaries through which we may operate (referenced herein as “<b>Auto Lending Canada</b>,” “<b>us</b>”, “<b>we</b>”, or “<b>our</b>”). These Terms govern your use of our website, accessible at <a target='_blank' href='https://autolendingcanada.ca/'>www.autolendingcanada.ca</a> (the “<b>Website</b>”). By using or accessing the Website you agree to be bound by these Terms. If you do not agree with or accept any of these Terms, you may not access the Website.</p>
                 <br />
                 <p>By using the Website you represent and warrant that you are above the age of 19 or the age of majority in your jurisdiction. If you are using the Website on behalf of a separate legal entity such as a corporation, then you affirm that you are an authorized representative or agent of that entity with the authority to bind such entity, and agree to these terms on behalf of such entity. In such a circumstance, both you and the entity will be bound by these Terms and the words “you” and “your” as used in these terms will refer to and apply to both you personally and the entity.</p>
                 <br />
@@ -60,7 +60,7 @@ function TermsOfUSe() {
                 <br />
                 <p><b>Privacy</b></p>
                 <br />
-                <p>We take your privacy seriously. To find out about how we collect, share and use your content and information, please read our Privacy Policy, available at <a href='www.autolendingcanada.ca/privacypolicy/'>www.autolendingcanada.ca/privacypolicy/</a>. The Privacy Policy forms part of these Terms and is incorporated by reference.</p>
+                <p>We take your privacy seriously. To find out about how we collect, share and use your content and information, please read our Privacy Policy, available at <a href='https://autolendingcanada.ca/privacy_policy'>www.autolendingcanada.ca/privacypolicy/</a>. The Privacy Policy forms part of these Terms and is incorporated by reference.</p>
                 <br />
                 <p><b>General</b></p>
                 <br />

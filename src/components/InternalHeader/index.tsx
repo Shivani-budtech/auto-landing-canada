@@ -19,7 +19,7 @@ function InternalHeader() {
                 break;
             case "/contact_us":
                 setPageTitle("Contact Us");
-                setPageDesc("<span class='email-header'>info@autolendingcanada.com</span><span class='phone-header'>604-365-8090</span>");
+                setPageDesc("<span class='email-header'>info@autolendingcanada.ca</span><span class='phone-header'>844-405-5363</span>");
                 break;
             case "/blogs":
                 setPageTitle("ALC BLogs");

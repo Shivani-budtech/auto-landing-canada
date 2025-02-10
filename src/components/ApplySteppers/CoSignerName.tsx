@@ -43,7 +43,7 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
                         <div className='stepper-text-input'>
                             <span className="input-guide">First Name</span>
                             <span className='text-input'>
-                                <input type='text' className='' name="co_signer_first_name" value={formData.co_signer_first_name} onChange={handleChange} />
+                                <input type='text' className='' style={{ boxShadow:"none" }} disabled name="co_signer_first_name" value={formData.co_signer_first_name} onChange={handleChange} />
                             </span>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
                         <div className='stepper-text-input'>
                             <span className="input-guide">Last Name</span>
                             <span className='text-input'>
-                                <input type='text' className='' name="co_signer_last_name" value={formData.co_signer_last_name} onChange={handleChangeLastName} />
+                                <input type='text' className='' style={{ boxShadow: "none" }} disabled name="co_signer_last_name" value={formData.co_signer_last_name} onChange={handleChangeLastName} />
                             </span>
                         </div>
                     </div>

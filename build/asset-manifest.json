@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.345b6fa5.css",
-    "main.js": "/static/js/main.519fa552.js",
+    "main.js": "/static/js/main.1d66eb0e.js",
     "static/js/453.b81b6c15.chunk.js": "/static/js/453.b81b6c15.chunk.js",
     "static/media/our-story.jpg": "/static/media/our-story.4ad7df1773e56dc50555.jpg",
     "static/media/power_sport_1.png": "/static/media/power_sport_1.dfaf44c9cab200f967bd.png",
@@ -9,7 +9,6 @@
     "static/media/power_sport_3.png": "/static/media/power_sport_3.b621d34f358df590e89c.png",
     "static/media/customer-review-1.png": "/static/media/customer-review-1.1bf0c3e57ad7e33aa077.png",
     "static/media/home-top-bg.webp": "/static/media/home-top-bg.ef6a36f62bd0addb95e3.webp",
-    "static/media/our-story.webp": "/static/media/our-story.220f8872d940252ab07e.webp",
     "static/media/power_sport_2.png": "/static/media/power_sport_2.7ae653a51aaa98aa911a.png",
     "static/media/about-us-img.png": "/static/media/about-us-img.827cee19140fb3b73c9d.png",
     "static/media/about_banner.webp": "/static/media/about_banner.21be4092d362c3b500f9.webp",
@@ -39,6 +38,7 @@
     "static/media/car_app.webp": "/static/media/car_app.bf043cd6d9479eaeaab0.webp",
     "static/media/minivan.webp": "/static/media/minivan.a531e42d73041dc84d47.webp",
     "static/media/truck.webp": "/static/media/truck.3adcd40a7ede81d469d6.webp",
+    "static/media/our-story.webp": "/static/media/our-story.174d1740a6a110b2728c.webp",
     "static/media/logos.webp": "/static/media/logos.1cb7de09f189d7402246.webp",
     "static/media/logos.png": "/static/media/logos.95f2708690e6722d9f1b.png",
     "static/media/dotted-bg.webp": "/static/media/dotted-bg.afa7374b84db5e4c0d53.webp",
@@ -95,11 +95,11 @@
     "static/media/facebook-social.webp": "/static/media/facebook-social.22acd1863342de21c20b.webp",
     "static/media/home-bottom.webp": "/static/media/home-bottom.e439c44fe7f57fa08a9a.webp",
     "main.345b6fa5.css.map": "/static/css/main.345b6fa5.css.map",
-    "main.519fa552.js.map": "/static/js/main.519fa552.js.map",
+    "main.1d66eb0e.js.map": "/static/js/main.1d66eb0e.js.map",
     "453.b81b6c15.chunk.js.map": "/static/js/453.b81b6c15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.345b6fa5.css",
-    "static/js/main.519fa552.js"
+    "static/js/main.1d66eb0e.js"
   ]
 }

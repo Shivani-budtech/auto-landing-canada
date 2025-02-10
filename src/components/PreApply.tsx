@@ -45,6 +45,7 @@ import CoSignerCitizenDetails from './ApplySteppers/CoSignerCitizenDetails.tsx';
 import CoSignerDateOfBirth from './ApplySteppers/CoSignerDateOfBirth.tsx';
 import CoSignerContactDetails from './ApplySteppers/CoSignerContactDetails.tsx';
 import CoSignerVerificationCode from './ApplySteppers/CoSignerVerificationCode.tsx';
+import CoSignerUploadId from './ApplySteppers/CoSignerUploadId.tsx';
 import FinalStep from './ApplySteppers/FinalStep.tsx';
 import { API_URL } from './Constant.tsx';
 
@@ -96,7 +97,7 @@ function PreApply() {
         'sms_consent' : '',
         'driving_license_img' : '',
         'license_img': '',
-        'has_co_signer': '',
+        'has_co_signer': 'yes',
         'co_signer_first_name' : '',
         'co_signer_last_name' : '',
         'co_signer_employment_status': '',
@@ -121,6 +122,7 @@ function PreApply() {
         'co_signer_birth_date': '',
         'co_signer_email': '',
         'co_signer_phone_number': '',
+        'co_signer_driving_license_img	' : ''
     });
 
     const stepPercentages = {
@@ -161,6 +163,7 @@ function PreApply() {
         co_signer_citizen_details: 71,
         co_signer_date_of_birth: 75,
         co_signer_contact_details: 81,
+        co_signer_driving_license_img : 90
     };
 
     const handleStepChange = (newStep) => {
@@ -292,7 +295,9 @@ function PreApply() {
             case 'co_signer_contact_details':
                 return <CoSignerContactDetails formData={formData} setFormData={setFormData} setalcStep={handleStepChange} setVerificationId={setVerificationId} />
             case 'co_signer_verification_code':
-                return <CoSignerVerificationCode formData={formData} setFormData={setFormData} setalcStep={handleStepChange} verificationId={verificationId} setVerificationId={setVerificationId} handleSubmit={handleSubmit} />
+                return <CoSignerVerificationCode formData={formData} setFormData={setFormData} setalcStep={handleStepChange} verificationId={verificationId} setVerificationId={setVerificationId} />
+            case 'co_signer_upload_id':
+                return <CoSignerUploadId formData={formData} setFormData={setFormData} setalcStep={handleStepChange} handleSubmit={handleSubmit} />
             case 'final_step':
                 return <FinalStep />
         }
@@ -306,7 +311,7 @@ function PreApply() {
 
     return (
         <div className='apply-stepper header-marging'>
-            {alcStep === "application_success" || alcStep === "upload_id" || alcStep === "co_signer" || alcStep === "final_step" ? ""  : 
+            {alcStep === "application_success" || alcStep === "upload_id" || alcStep === "co_signer_upload_id"  || alcStep === "co_signer" || alcStep === "final_step" ? ""  : 
                 <div className="stepper-progress-container">
                     <div className='stepper-progress'>
                         <div className='stepper-complete' style={{ width: completionPercentage + `%` }}>

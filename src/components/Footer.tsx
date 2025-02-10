@@ -65,11 +65,11 @@ function Footer() {
           <div className="footer-col-2">
             <div className="footer-contact-row">
                 <div className="contact-row">
-                <a href="tel:604-365-8090" className="primary-btn contact-phone">604-365-8090</a>
+                <a href="tel:844-405-5363" className="primary-btn contact-phone">844-405-5363</a>
                 <a href="tel:778-652-3712" className="primary-btn contact-phone">778-652-3712</a>
                 </div>
                 <div className="contact-row">
-                  <a href="mailto:info@autolendingcanada.com" className="primary-btn contact-email">info@autolendingcanada.com</a>
+                  <a href="mailto:info@autolendingcanada.in" className="primary-btn contact-email">info@autolendingcanada.ca</a>
                 </div>
             </div>
             

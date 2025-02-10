@@ -19,7 +19,10 @@ function CalculatorBudget() {
     const [biWeeklyPayment, setBiWeeklyPayment] = useState(0);
 
     const handleChangeLoanAmount = (e) => {
-        setLoanAmount(e.target.value);
+        var value = e.target.value;
+        const numericValue = value.replace(/[^0-9.]/g, "");
+        const formattedValue = numericValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        setLoanAmount(formattedValue);
     }
     useEffect(() => {
         const calculateLoan = async () => {
@@ -75,7 +78,7 @@ function CalculatorBudget() {
                         <div className='contact-col'>
                             <div className="form-input">
                                 <input
-                                    type="number"
+                                    type="text"
                                     id="amount"
                                     name="amount"
                                     value={loanAmount}

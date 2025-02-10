@@ -4,7 +4,7 @@ import { getAuth, signInWithCredential, PhoneAuthProvider } from "firebase/auth"
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import axios from 'axios';
 
-const CoSignerVerificationCode = ({ formData, setFormData, setalcStep, verificationId, setVerificationId, handleSubmit }) => {
+const CoSignerVerificationCode = ({ formData, setFormData, setalcStep, verificationId, setVerificationId }) => {
     const [hasError, setHasError] = useState(0);
     const [resentOtp, setResentOtp] = useState(1);
     const [verificationCode, setVerificationCode] = useState(["", "", "", "","",""]);
@@ -52,7 +52,7 @@ const CoSignerVerificationCode = ({ formData, setFormData, setalcStep, verificat
                 const auth = getAuth();
                 const credential = PhoneAuthProvider.credential(verificationId, otp); // Create the credential
                 await signInWithCredential(auth, credential); // Sign in with the credential
-                handleSubmit();// Move to the next step
+                setalcStep('co_signer_upload_id');
             } catch (error) {
                 console.error("Error verifying OTP:", error);
                 setHasError(1);

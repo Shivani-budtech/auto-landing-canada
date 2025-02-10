@@ -10,7 +10,7 @@ function PrivacyPolicy() {
         <div className='about-page'>
             <InternalHeader />
             <div className='container privacy-policy-page'>
-                <p>This Privacy Policy (“<b>Privacy Policy</b>”) summarizes the personal information collected Auto Lending Canada Ltd. DBA Auto Lending Canada and any affiliates or subsidiaries through which we may operate (referenced herein as <b>“Auto Lending Canada”</b> <b>“us”</b>, <b>“we”</b>, or <b>“our”</b>), and how we use and disclose this information. Any capitalized terms not defined in this Privacy Policy have the same meaning as in our Terms of Use, accessible at <a target="_blank" href='www.autolendingcanada.ca/termsofuse'>www.autolendingcanada.ca/termsofuse</a>.</p>
+                <p>This Privacy Policy (“<b>Privacy Policy</b>”) summarizes the personal information collected Auto Lending Canada Ltd. DBA Auto Lending Canada and any affiliates or subsidiaries through which we may operate (referenced herein as <b>“Auto Lending Canada”</b> <b>“us”</b>, <b>“we”</b>, or <b>“our”</b>), and how we use and disclose this information. Any capitalized terms not defined in this Privacy Policy have the same meaning as in our Terms of Use, accessible at <a target="_blank" href='https://autolendingcanada.ca/terms_of_use'>Terms of Use</a> page.</p>
                 <br />
                 <p>Applicable privacy legislation, including BC’s Personal Information Protection Act (the “<b>Act</b>”) imposes certain requirements in respect to how we collect and handle any personal information that is related to an identifiable individual (“<b>Personal Information</b>”). We are committed to being accountable for our handling of Personal Information in accordance with the Act and applicable legal requirements. This Privacy Policy sets out how we collect and handle your Personal Information in accordance with the Act and other applicable legal requirements.</p>
                 <br />
@@ -23,7 +23,7 @@ function PrivacyPolicy() {
                 <p>We collect Personal Information when you voluntarily provide it through our Website, or when you provide it to us through other means, and as otherwise set out in this Privacy Policy. For example, we may collect Personal Information when you:</p>
                 <br />
                 <ul style={ulStyle}>
-                    <li style={{ listStyleType: "disc" }}><p>Provide it to us through functionality provided through the Website, including the “Apply Now” button or submitting a request through the “Need More Answers” page; or</p></li>
+                    <li style={{ listStyleType: "disc" }}><p>Provide it to us through functionality provided through the Website, including the “Apply Now” button or submitting a request through the <a href='https://autolendingcanada.ca/contact_us'>“Contact Us”</a> page; or</p></li>
                     <li style={{ listStyleType: "disc",marginTop:"10px" }}><p>Otherwise provide it to one of our representatives, including by email or phone or SMS/MMS;
                         The Personal Information may include:</p></li>
                     <li style={{ listStyleType: "disc",marginTop:"10px" }}><p>your full name and date of birth;</p></li>
@@ -124,7 +124,7 @@ function PrivacyPolicy() {
                 <br />
                 <p><b>How to Contact Us</b></p>
                 <br />
-                <p>If you have any questions regarding this Privacy Policy, or to access your information, please contact our Privacy at info@autolendingcanada.ca</p>
+                <p>If you have any questions regarding this Privacy Policy, or to access your information, please contact us at info@autolendingcanada.ca</p>
                 <br />
                 <p>This Privacy Policy is dated and effective as of October 2, 2023.</p>
             </div>
