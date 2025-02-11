@@ -24,6 +24,29 @@ import PrivacyPolicy from './PrivacyPolicy.tsx';
 import TermsOfUSe from './TermsOfUSe.tsx';
 import MembershipProgramme from './membershipProgramme.tsx';
 
+
+const imageList = [
+  "/images/cars/coupe.webp",
+  "/images/cars/hatchback.webp",
+  "/images/cars/minivan.webp",
+  "/images/cars/sedan.webp",
+  "/images/cars/suv.webp",
+  "/images/cars/truck.webp",
+];
+
+const preloadImages = (images) => {
+  return Promise.all(
+    images.map((src) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    })
+  );
+};
+
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
 
@@ -31,6 +54,12 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
     setIsMenuOpen("closed");
     window.scrollTo(0, 0);
   }, [location]);
+
+  useEffect(() => {
+    preloadImages(imageList)
+      .then(() => console.log("All images preloaded"))
+      .catch((err) => console.error("Failed to preload images", err));
+  }, []);
 
   return (
     <div className="auto-lending-app">

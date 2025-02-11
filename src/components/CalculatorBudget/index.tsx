@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function CalculatorBudget() {
 
-    const [loanAmount,setLoanAmount] = useState(0);
+    const [loanAmount,setLoanAmount] = useState('');
     const [loanDuration, setLoanDuration] = useState('');
     const [creditRating, setCreditRating] = useState('');
 
@@ -26,7 +26,7 @@ function CalculatorBudget() {
     }
     useEffect(() => {
         const calculateLoan = async () => {
-            if (loanAmount > 0 && loanDuration && creditRating) {
+            if (loanAmount !== "" && loanDuration && creditRating) {
                 try {
                     const response = await axios.post(`${API_URL}calculate_loan`, {
                         loan_amount: loanAmount,
