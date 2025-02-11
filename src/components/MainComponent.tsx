@@ -27,71 +27,65 @@ import MembershipProgramme from './membershipProgramme.tsx';
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true); // Show loader when the route changes
     setIsMenuOpen("closed");
     window.scrollTo(0, 0);
+
+    const images = document.querySelectorAll('img');
+    let loadedImagesCount = 0;
+
+    const handleImageLoad = () => {
+      loadedImagesCount += 1;
+      if (loadedImagesCount === images.length) {
+        setLoading(false); // Hide loader after all images are loaded
+      }
+    };
+
+    if (images.length > 0) {
+      images.forEach((img) => {
+        if (img.complete) {
+          handleImageLoad();
+        } else {
+          img.addEventListener('load', handleImageLoad);
+          img.addEventListener('error', handleImageLoad);
+        }
+      });
+    } else {
+      setLoading(false); // No images to load, hide loader immediately
+    }
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener('load', handleImageLoad);
+        img.removeEventListener('error', handleImageLoad);
+      });
+    };
   }, [location]);
 
 
   return (
-    <div className="auto-lending-app">
-      <script src="http://localhost:8097"></script>
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <MobileHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/customer_stories" element={<CustomerStories />} />
-        <Route path="/contact_us" element={<ContactUS />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
-        <Route path="/faqs" element={<Faqs />} />
-        <Route path="/calculator" element={<Calculator />} />
-        <Route path="/apply" element={<PreApply />} />
-        <Route path="/verification_code" element={<VerificationCode />} />
-        <Route path="/power_sports" element={<PowerSports />} />
-        <Route path='/how_works' element={<HowItWorks />} />
-        <Route path='/pre_apply' element={<PreApply />} />
-        <Route path='/privacy_policy' element={<PrivacyPolicy />} />
-        <Route path='/terms_of_use' element={<TermsOfUSe />} />
-        <Route path='/membership_programme' element={<MembershipProgramme />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
-}
-
-function MainComponent() {
-  const [loading, setLoading] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState("closed");
-
-  useEffect(() => {
-    window.onload = () => {
-      setLoading(false);
-    };
-  }, []);
-
-  return (
-    <Router>
+    <div className="">
       {loading ? (
         <div className="main-loader">
-        <div className="loader">
-          <svg
-            viewBox="0 0 254.532 254.532"
-            id="Capa_1"
-            version="1.1"
-            className="wheel"
-          >
-            <g>
-              <path
-                d="M127.267,0C57.092,0,0,57.091,0,127.266s57.092,127.266,127.267,127.266c70.174,0,127.266-57.091,127.266-127.266
+          <div className="loader">
+            <svg
+              viewBox="0 0 254.532 254.532"
+              id="Capa_1"
+              version="1.1"
+              className="wheel"
+            >
+              <g>
+                <path
+                  d="M127.267,0C57.092,0,0,57.091,0,127.266s57.092,127.266,127.267,127.266c70.174,0,127.266-57.091,127.266-127.266
 				S197.44,0,127.267,0z M127.267,217.656c-49.922,0-90.391-40.468-90.391-90.39s40.469-90.39,90.391-90.39
 				c49.92,0,90.39,40.468,90.39,90.39S177.186,217.656,127.267,217.656z"
-                id="tire"
-              ></path>
-              <path
-                d="M127.267,48.578c-43.39,0-78.689,35.299-78.689,78.688c0,43.389,35.3,78.688,78.689,78.688
+                  id="tire"
+                ></path>
+                <path
+                  d="M127.267,48.578c-43.39,0-78.689,35.299-78.689,78.688c0,43.389,35.3,78.688,78.689,78.688
 				c43.389,0,78.688-35.299,78.688-78.688C205.955,83.877,170.655,48.578,127.267,48.578z M195.878,122.249h-38.18
 				c-0.78-4.825-2.686-9.275-5.435-13.079l26.954-26.954C188.679,93.112,194.771,106.996,195.878,122.249z M132.204,58.648
 				c15.244,1.087,29.123,7.156,40.025,16.591l-26.948,26.949c-3.804-2.748-8.253-4.653-13.077-5.433V58.648z M122.329,58.648v38.106
@@ -109,16 +103,54 @@ function MainComponent() {
 				c-1.821,1.114-3.82,1.956-5.951,2.474v-0.072c-1.586,0.385-3.233,0.612-4.938,0.612S123.915,147.845,122.329,147.459z
 				M132.204,195.884v-38.267c4.824-0.78,9.273-2.685,13.077-5.433l27.034,27.034C161.4,188.696,147.488,194.794,132.204,195.884z
 				M179.292,172.23l-27.028-27.028c2.749-3.804,4.654-8.254,5.435-13.079h38.191C194.818,147.398,188.745,161.308,179.292,172.23z"
-                id="rim"
-              ></path>
-            </g>
-          </svg>
+                  id="rim"
+                ></path>
+              </g>
+            </svg>
             {/* <div className="road"></div> */}
-        </div>
+          </div>
         </div>
       ) : (
-      <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <div className="auto-lending-app">
+        <script src="http://localhost:8097"></script>
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <MobileHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/customer_stories" element={<CustomerStories />} />
+          <Route path="/contact_us" element={<ContactUS />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/faqs" element={<Faqs />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/apply" element={<PreApply />} />
+          <Route path="/verification_code" element={<VerificationCode />} />
+          <Route path="/power_sports" element={<PowerSports />} />
+          <Route path='/how_works' element={<HowItWorks />} />
+          <Route path='/pre_apply' element={<PreApply />} />
+          <Route path='/privacy_policy' element={<PrivacyPolicy />} />
+          <Route path='/terms_of_use' element={<TermsOfUSe />} />
+          <Route path='/membership_programme' element={<MembershipProgramme />} />
+        </Routes>
+        <Footer />
+      </div>
       )}
+    </div>
+  );
+}
+
+function MainComponent() {
+  
+  const [isMenuOpen, setIsMenuOpen] = useState("closed");
+
+  
+
+  return (
+    <Router>
+      
+      <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+     
     </Router>
   );
 }
