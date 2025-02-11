@@ -86,7 +86,7 @@ const CoSignerHomeAddress = ({ formData, setFormData, setalcStep }) => {
                 <div className='approval-pop'>
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
-                        <img src={require(`../../images/approved.webp`)} alt="" />
+                            <img src={`/images/approved.webp`} alt="" />
                         <div className="approve-pop-title">
                             Congratulations!
                         </div>
@@ -112,7 +112,7 @@ const CoSignerHomeAddress = ({ formData, setFormData, setalcStep }) => {
                 <div className='approval-pop'>
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
-                        <img src={require(`../../images/rejected.webp`)} alt="" />
+                                <img src={`/images/rejected.webp`} alt="" />
                         <div className="approve-pop-title">
                             Failed
                         </div>

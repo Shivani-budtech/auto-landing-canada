@@ -8,7 +8,7 @@ function VerificationCode() {
             <div className="stepper-progress-container">
                 <div className='stepper-progress'>
                     <div className='stepper-complete' style={{ width: '100%' }}>
-                        <img src={require(`../images/stepper.webp`)} alt="Stepper" />
+                        <img src={`/images/stepper.webp`} alt="Stepper" />
                     </div>
                 </div>
             </div>

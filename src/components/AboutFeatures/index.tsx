@@ -27,13 +27,13 @@ function AboutFeatures() {
     return (
         <section className="about-features container">
             <div className="why-choose-row">
-                <img src={require("../../images/dotted-bg.webp")} className="first-img" />
-                <img src={require("../../images/round.webp")} className="last-img" />
+                <img src={`/images/dotted-bg.webp`} className="first-img" />
+                <img src={`/images/round.webp`} className="last-img" />
                 <div className="grida">
                     {Object.entries(whyChoose).map(([key, why]) => (
                         <div key={key} className="grida-item">
                             <div className="grida-img">
-                                <img src={require(`../../images/${why.img}`)} />
+                                <img src={`/images/${why.img}`} />
                             </div>
                             <div className="grida-title">{why.title}</div>
                             <div className="grida-desc">{why.desc}</div>

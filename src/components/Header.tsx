@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from "../images/main-logo.webp";
 import { Link, useLocation } from "react-router-dom";
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   const location = useLocation();
@@ -8,7 +7,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
       <div className="header-container">
         <div className="header-logo">
           <Link to="/">
-            <img src={logo} alt="logo" />
+            <img src={`/images/main-logo.webp`} alt="logo" />
             <div>
             Auto Lending <span>Canada</span>
             </div>

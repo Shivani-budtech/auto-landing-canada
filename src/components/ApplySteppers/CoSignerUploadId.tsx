@@ -30,7 +30,7 @@ const CoSignerUploadId = ({ formData, setFormData, setalcStep, handleSubmit }) =
     return (
         <div className='stepper-content'>
             <div className="stepper-top-img">
-                <img src={require(`./images/success_application.webp`)} />
+                <img src={`/images/success_application.webp`} />
             </div>
             <div className="stepper-application-title">
                 Upload a photo of the front of your driver's license

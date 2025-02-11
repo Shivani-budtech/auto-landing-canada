@@ -315,7 +315,7 @@ function PreApply() {
                 <div className="stepper-progress-container">
                     <div className='stepper-progress'>
                         <div className='stepper-complete' style={{ width: completionPercentage + `%` }}>
-                            <img src={require(`../images/stepper.webp`)} alt="Stepper" />
+                            <img src={`/images/stepper.webp`} alt="Stepper" />
                         </div>
                     </div>
                 </div>

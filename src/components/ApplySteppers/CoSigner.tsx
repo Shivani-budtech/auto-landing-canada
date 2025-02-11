@@ -21,7 +21,7 @@ const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
     return (
         <div className='stepper-content'>
             <div className="stepper-top-img">
-                <img src={require(`./images/success_application.webp`)} />
+                <img src={`/images/success_application.webp`} />
             </div>
             <div className="stepper-application-title">
                 Would you like to add co-applicant?

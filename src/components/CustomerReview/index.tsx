@@ -43,7 +43,7 @@ function CustomerReview() {
                                         </div>
                                         <img className="review-vec"
                                             alt="review vector"
-                                            src={require(`./testimonial-vec.webp`)}
+                                            src={`/images/testimonial-vec.webp`}
                                         />
                                     </div>
                                 ))
@@ -55,7 +55,7 @@ function CustomerReview() {
                                 src={
                                     cms[index] 
                                         ? BACKEND_URL + "public/uploads/" +cms[index]
-                                        : require(`../../images/customer-review-1.webp`)
+                                        : `/images/customer-review-1.webp`
                                 }
                             />
                         </div>

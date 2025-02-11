@@ -70,7 +70,7 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
                                     checked={formData.vehicle_type === car.val}
                                     onChange={handleChange}
                                 />
-                                <img src={require(`./images/cars/` + car.image)} loading="eager" />
+                                <img src={`/images/cars/${car.image}`} />
                                 <span>{car.title}</span>
                             </label>
                         </div>
