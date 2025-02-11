@@ -525,3 +525,65 @@ input[type=number] {
 .privacy-policy-page {
     padding: 100px 70px 0;
 }
+
+/* loader */
+
+/* From Uiverse.io by aadium */ 
+.loader {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.wheel {
+  fill: var(--primary-btn-color);
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 6em;
+  text-align: center;
+  animation: rolling 1s linear infinite;
+}
+
+#rim {
+  fill: rgb(126, 126, 126);
+}
+
+#tire {
+  fill: var(--primary-btn-color);
+}
+
+.road {
+  position: absolute;
+  margin-top: -4px;
+  width: 100%;
+  height: 10px;
+  border-radius: 5em;
+  background-color: rgb(55, 55, 55);
+  animation: road-move 2s linear infinite;
+}
+
+@keyframes rolling {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes road-move {
+  from {
+    transform: translateX(-140%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+.main-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
