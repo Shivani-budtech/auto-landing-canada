@@ -65,7 +65,7 @@ const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touche
                                     //     console.log("e", e.target?.value)
                                     // }}
                                 />
-                                <img src={require(`./images/cars/`+car.image)} />
+                                <img src={require(`/images/cars/`+car.image)} />
                                 <span>{car.title}</span>
                             </label>
                         </div>

@@ -429,6 +429,17 @@ input[type=number] {
 .header-mobile-toggle {
     cursor: pointer;
 }
+.side-apply-btn {
+    position: fixed;
+    top: 50%;
+    right: -48px;
+    transform: rotate(90deg);
+    
+}
+.side-apply-btn .primary-btn {
+    border-radius: 0 0 10px 10px;
+    letter-spacing: 1.2px;
+}
 
 
 .mobile-header {

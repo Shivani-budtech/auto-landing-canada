@@ -65,6 +65,7 @@ function TopBlogs() {
                 {Object.entries(blogs).map(([key, blog]) => (
                     <div key={key} className="top-blog-item">
                         <div className='top-blog-image'>
+                            {blog.is_featured ? <span className="badge">Featured</span> : ''}
                             <img src={BACKEND_URL+"public/uploads/"+blog.image} />
                         </div>
                         <div className='top-blog-title'>

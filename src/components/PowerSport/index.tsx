@@ -30,7 +30,7 @@ function PowerSport() {
                         </p>
                     </div>
                     <div className='power-sport-apply'>
-                        <Link to={"/apply"} className="primary-btn">Apply Now</Link>
+                        <Link to={"/contact_us"} className="primary-btn">Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ function PowerSport() {
                         </p>
                     </div>
                     <div className='power-sport-apply'>
-                        <Link to={"/apply"} className="primary-btn">Apply Now</Link>
+                        <Link to={"/contact_us"} className="primary-btn">Contact Us</Link>
                     </div>
                 </div>
                 <div className='power-sport-img'>
@@ -88,7 +88,7 @@ function PowerSport() {
                         </p>
                     </div>
                     <div className='power-sport-apply'>
-                        <Link to={"/apply"} className="primary-btn">Apply Now</Link>
+                        <Link to={"/contact_us"} className="primary-btn">Contact Us</Link>
                     </div>
                 </div>
             </div>

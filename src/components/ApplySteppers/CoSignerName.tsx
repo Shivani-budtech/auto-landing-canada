@@ -33,7 +33,7 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is Co-applicant's full name?</span>
+                    <span className='stepper-question-title'>Co-applicant for:</span>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>
@@ -41,7 +41,7 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
                 <div className='stepper-flex-input'>
                     <div className='stepper-input input-text'>
                         <div className='stepper-text-input'>
-                            <span className="input-guide">First Name</span>
+                            <span className="input-guide">Main applicant's first Name</span>
                             <span className='text-input'>
                                 <input type='text' className='' style={{ boxShadow:"none" }} disabled name="co_signer_first_name" value={formData.co_signer_first_name} onChange={handleChange} />
                             </span>
@@ -49,7 +49,7 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
                     </div>
                     <div className='stepper-input input-text'>
                         <div className='stepper-text-input'>
-                            <span className="input-guide">Last Name</span>
+                            <span className="input-guide">Main applicant's last Name</span>
                             <span className='text-input'>
                                 <input type='text' className='' style={{ boxShadow: "none" }} disabled name="co_signer_last_name" value={formData.co_signer_last_name} onChange={handleChangeLastName} />
                             </span>

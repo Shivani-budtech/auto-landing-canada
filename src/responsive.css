@@ -35,7 +35,7 @@
 }
 
 @media screen and (min-width:978px) {
-    .header-mobile-toggle {
+    .header-mobile-toggle , .side-apply-btn {
         display: none;
     }
 }
@@ -72,7 +72,10 @@
     .contact-row {
         flex-direction: column;
     }
-    .contact-row > a {
+    .contact-row > a:not(.contact-email) {
+        width: 170px;
+    }
+    .contact-row > a.contact-email {
         width: fit-content;
     }
 }
@@ -90,7 +93,7 @@
 }
 @media screen and (max-width: 480px) {
     .header-logo>a {
-        font-size: 18px;
+        font-size: 20px;
     }
     .header-logo img {
         max-width: 40px;

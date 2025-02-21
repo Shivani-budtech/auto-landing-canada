@@ -10,8 +10,8 @@ function Blog() {
 
     const fetchBlog = async () => {
         try {
-            const response = await axios.get(API_URL+"blog/"+id); // Replace with your API URL
-            setBlog(response.data); // Assume the API returns an array of blogs
+            const response = await axios.get(API_URL+"blog/"+id);
+            setBlog(response.data);
 
         } catch (err) {
 

@@ -55,7 +55,7 @@ function Footer() {
                       <Link to="/faqs">FAQs</Link>
                   </li>
                   <li>
-                      <Link to="/calculator">Car loan calculator</Link>
+                      <Link to="/calculator">Car Loan Calculator</Link>
                   </li>
                 </ul>
               </div>
@@ -68,7 +68,7 @@ function Footer() {
                 <a href="tel:778-652-3712" className="primary-btn contact-phone">778-652-3712</a>
                 </div>
                 <div className="contact-row">
-                  <a href="mailto:info@autolendingcanada.in" className="primary-btn contact-email">info@autolendingcanada.ca</a>
+                  <a href="mailto:info@autolendingcanada.ca" className="primary-btn contact-email">info@autolendingcanada.ca</a>
                 </div>
             </div>
             
