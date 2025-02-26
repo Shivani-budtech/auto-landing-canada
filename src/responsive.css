@@ -73,7 +73,7 @@
         flex-direction: column;
     }
     .contact-row > a:not(.contact-email) {
-        width: 170px;
+        width: 190px;
     }
     .contact-row > a.contact-email {
         width: fit-content;
