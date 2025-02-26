@@ -44,6 +44,9 @@
     .power-sport-sec .power-sport-row {
         flex-direction: column;
     }
+    .power-sport-sec .power-sport-row.marine {
+        flex-direction: column-reverse;
+    }
     .power-sport-row .power-sport-content {
         padding: 20px 0;
     }

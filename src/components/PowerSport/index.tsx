@@ -34,7 +34,7 @@ function PowerSport() {
                     </div>
                 </div>
             </div>
-            <div className='power-sport-row'>
+            <div className='power-sport-row marine'>
                 <div className='power-sport-content'>
                     <div className='power-sports-counter'>
                         <span>
