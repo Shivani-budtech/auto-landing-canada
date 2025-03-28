@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './index.css';
-import '../../responsive.css';
 import { Link } from 'react-router-dom';
+import '../../responsive.css';
+import './index.css';
 
 function LookingFor() {
 
@@ -35,7 +35,7 @@ function LookingFor() {
     return (
         <section className="looking-for container">
             <div className="sec-title">
-                Quick Car Financing for All Makes and Models
+            Fast Auto Loan Financing for All Makes and Models
             </div>
             <div className="looking-for-row">
                 <div className="content">

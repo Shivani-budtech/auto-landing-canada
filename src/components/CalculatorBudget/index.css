@@ -1,52 +1,52 @@
-.calculator-budget.contact-us-sec {
+.car-loan-calculator-budget.contact-us-sec {
     padding: 100px 70px 0;
 }
-.calculator-budget .contact-form-row {
+.car-loan-calculator-budget .contact-form-row {
     display: flex;
     align-items: center;
     gap: 25px;
     flex-wrap: wrap;
     justify-content: center;
 }
-.calculator-budget .contact-form-row .contact-col {
+.car-loan-calculator-budget .contact-form-row .contact-col {
     flex: 1;
 }
-.calculator-budget .contact-form-row + .contact-form-row {
+.car-loan-calculator-budget .contact-form-row + .contact-form-row {
     margin-top: 25px;
 }
-.calculator-budget .contact-col {
+.car-loan-calculator-budget .contact-col {
     max-width: 100%;
 }
-.calculator-budget .consent-check {
+.car-loan-calculator-budget .consent-check {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.calculator-budget .calculated-counter-sec {
+.car-loan-calculator-budget .calculated-counter-sec {
     box-shadow: 0px 0px 50px 0px #072E7312;
     border-radius: 18px;
     padding:40px;
     text-align: center;
 }
-.calculator-budget .calculated-counter-sec h1 {
+.car-loan-calculator-budget .calculated-counter-sec h1 {
     font-size: clamp(50px, 3vw, 64px);
     font-weight: 700;
 }
-.calculator-budget .calculated-counter-sec p {
+.car-loan-calculator-budget .calculated-counter-sec p {
     font-size: var(--font-size-22);
     font-weight: 300;
 }
 
 @media screen and (max-width: 928px) {
-    .calculator-budget.contact-us-sec {
+    .car-loan-calculator-budget.contact-us-sec {
         padding: 100px 30px 0;
     }
 }
 @media screen and (max-width: 680px) {
-    .calculator-budget .contact-form-row:first-child {
+    .car-loan-calculator-budget .contact-form-row:first-child {
         flex-direction: column;
     }
-    .calculator-budget .contact-form-row .contact-col{
+    .car-loan-calculator-budget .contact-form-row .contact-col{
         width: 100%;
     }
 }

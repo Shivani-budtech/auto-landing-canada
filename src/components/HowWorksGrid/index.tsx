@@ -6,12 +6,12 @@ function HowWorksGrid() {
         {
             title: "Fast Approvals Across Canada",
             img: "online_fin.webp",
-            desc: "Our streamlined application process ensures you get approved for your car loan in minutes, no matter where you are in Canada.",
+            desc: " Our streamlined application process ensures you get approved for your car loan in minutes, no matter where you are in Canada.",
         },
         {
-            title: "Competitive Rates for Every Budget",
+            title: "Lowest Car Finance Rates for Every Budget",
             img: "guide.webp",
-            desc: "Enjoy some of the lowest interest rates in the Canadian market, with flexible payment plans tailored to suit your financial needs.",
+            desc: "Enjoy some of the lowest car finance rates in Canada, with flexible payment plans tailored to your financial needs.",
         },
         {
             title: "Inclusive Financing for All Credit Types",
@@ -21,25 +21,26 @@ function HowWorksGrid() {
         {
             title: "Nationwide Network for All Makes and Models",
             img: "car_blog.webp",
-            desc: "From compact cars to SUVs, we finance vehicles of all makes and models, providing reliable service across Canada.",
+            desc: "From compact cars to SUVs, we provide car financing in Canada for all vehicle types, ensuring reliable service across the country.",
         },
         {
             title: "Customer-First Approach with Expert Support",
             img: "verified.webp",
-            desc: "Our team is dedicated to guiding you every step of the way, offering personalized advice to make car financing stress-free.",
+            desc: "Our team is dedicated to guiding you every step of the way, offering personalized advice to help you secure the best auto loan rates in Canada with ease.",
         },
         {
             title: "Save Time and Money with Tailored Solutions",
             img: "low_arr.webp",
-            desc: "Our efficient process and customized loan options help you save both time and money, putting you behind the wheel faster.",
+            desc: "Our efficient process and customized online car loan options help you save both time and money, getting you behind the wheel faster!",
         },
     ];
     return (
         <section className="how-works-grid container">
             <div className="sec-title">
-                What Sets Us Apart 
+            What Makes Our Online Car Loan Process Stand Out?
                 <span>
-                    We stand out by empowering you to take charge of your auto loan and drive towards your financial goals with confidence
+                We are here to empower you to secure the best auto finance rates in Canada that help you drive towards your financial goals with confidence.
+
                 </span>
             </div>
             <div className="how-works-grid-row">

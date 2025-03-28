@@ -1,8 +1,8 @@
-import './index.css';
-import '../../responsive.css';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import '../../responsive.css';
+import './index.css';
 function Faq() {
     const [isOpen, setIsOpen] = useState("");
     const faqs = [
@@ -20,7 +20,7 @@ function Faq() {
         },
         {
             question: "How long does it take to get approved for a car loan?",
-            answer: "With our fast approval process, you can receive car loan approval in as little as a few minutes!",
+            answer: "With our fast approval process, you can get your auto loan approval in just a few minutes and finance your car with ease! Apply Today!",
         },
         {
             question: "What documents are needed for a car loan in Canada?",

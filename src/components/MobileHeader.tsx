@@ -14,19 +14,19 @@ const MobileHeader = ({ isMenuOpen, setIsMenuOpen }) => {
                         <Link to="/about">About Us</Link>
                     </li>
                     <li>
-                        <Link to="/how_works">How it works?</Link>
+                        <Link to="/how-it-works">How it works?</Link>
                     </li>
                     <li>
-                        <Link to="/customer_stories">Customer Stories</Link>
+                        <Link to="/customer-stories">Customer Stories</Link>
                     </li>
                     <li>
-                        <Link to="/power_sports">Power Sports</Link>
+                        <Link to="/power-sports">Power Sports</Link>
                     </li>
                 </ul>
                 <h3>Resources</h3>
                 <ul>
                     <li>
-                        <Link to="/contact_us">Contact Us</Link>
+                        <Link to="/contact-us">Contact Us</Link>
                     </li>
                     <li>
                         <Link to="/blogs">Blogs</Link>
@@ -35,7 +35,7 @@ const MobileHeader = ({ isMenuOpen, setIsMenuOpen }) => {
                         <Link to="/faqs">FAQs</Link>
                     </li>
                     <li>
-                        <Link to="/calculator">Car Loan Calculator</Link>
+                        <Link to="/car-loan-calculator">Car Loan Calculator</Link>
                     </li>
                 </ul>
             </div>

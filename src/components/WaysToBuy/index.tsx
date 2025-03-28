@@ -6,17 +6,18 @@ function waysToBuy() {
         {
             img: "budget.webp",
             title: "Budget Discovery",
-            desc: "Start your car-buying journey by discovering your budget. Calculate how much you can comfortably spend on your dream car with our easy-to-use tools.",
+            desc: "Auto financing made easy! Use our smart tools to find the perfect budget for your dream car and get the best auto loans!",
+
         },
         {
             img: "finance.webp",
             title: "Financing Approval",
-            desc: "Get pre-approved for your car loan in minutes! Our hassle-free financing process ensures you secure the best rates in Canada.",
+            desc: "Apply now to get a pre-approved loan for your car in minutes! We provide the best auto financing in Canada with a hassle-free process that ensures you secure the best auto loan rates.",
         },
         {
             img: "vehicle.webp",
             title: "Vehicle Selection",
-            desc: "Choose the perfect vehicle for your lifestyle and budget. With financing secured, finding your dream car has never been easier!",
+            desc: "Choose the perfect vehicle for your lifestyle and budget. Auto financing with us makes finding your dream car easier than ever - with the best Car Loan Rates! Apply Now!",
         },
     ];
     return (

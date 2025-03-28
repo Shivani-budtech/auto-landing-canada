@@ -30,13 +30,13 @@ function Footer() {
                     <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link to="/how_works">How it works?</Link>
+                    <Link to="/how-it-works">How it works?</Link>
                   </li>
                   <li>
-                      <Link to="/customer_stories">Customer Stories</Link>
+                      <Link to="/customer-stories">Customer Stories</Link>
                   </li>
                   <li>
-                      <Link to="/power_sports">Power Sports</Link>
+                      <Link to="/power-sports">Power Sports</Link>
                   </li>
                 </ul>
               </div>
@@ -46,7 +46,7 @@ function Footer() {
                 </div>
                 <ul>
                   <li>
-                      <Link to="/contact_us">Contact Us</Link>
+                      <Link to="/contact-us">Contact Us</Link>
                   </li>
                   <li>
                       <Link to="/blogs">Blogs</Link>
@@ -55,7 +55,7 @@ function Footer() {
                       <Link to="/faqs">FAQs</Link>
                   </li>
                   <li>
-                      <Link to="/calculator">Car Loan Calculator</Link>
+                      <Link to="/car-loan-calculator">Car Loan Calculator</Link>
                   </li>
                 </ul>
               </div>
@@ -104,8 +104,8 @@ function Footer() {
       <div className="small-footer">
         <p>Copyright © 2025 Auto Lending Canada. All rights reserved. Auto Lending Canada® and the Auto Lending Canada Logo design are registered <br/> trademarks of Auto Lending Canada Ltd. Other trademarks are the property of their respective owners.</p>
         <div className="footer-links">
-          <Link to="/privacy_policy">Privacy Policy</Link>
-          <Link to="/terms_of_use">Terms of Use</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms-of-use">Terms of Use</Link>
         </div>
       </div>
     </div>

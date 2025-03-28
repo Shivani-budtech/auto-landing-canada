@@ -13,7 +13,8 @@ function StepsTOFollow() {
                     </div>
                     <div className='steps-to-follow'>
                         <img src={`/images/step_2.webp`} />
-                        <p>We'll get you the best rates to compare.</p>
+                        <p>We'll get you the best auto loan rates to compare.
+                        </p>
                     </div>
                     <div className='steps-to-follow'>
                         <img src={`/images/step_3.webp`} />

@@ -1,5 +1,6 @@
 import React from 'react';
 import InternalHeader from './InternalHeader/index.tsx';
+import { Helmet } from "react-helmet-async";
 
 function TermsOfUSe() {
     const ulStyle = {
@@ -7,6 +8,28 @@ function TermsOfUSe() {
         listStyleType: "disc"
     };
     return (
+        <>
+         <Helmet>
+                <meta charSet="UTF-8" />
+                <title>Terms of Service | Auto Lending Canada</title>
+                <meta 
+                    name="description" 
+                    content="In the event you are interested in purchasing and obtaining financing for a Vehicle, we may put you in touch with an authorized motor vehicle dealer." 
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://autolendingcanada.ca/terms-of-use" />
+
+                {/* Open Graph Metadata for Social Sharing */}
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Auto Lending Canada" />
+                <meta property="og:title" content="Terms of Service | Auto Lending Canada" />
+                <meta 
+                    property="og:description" 
+                    content="In the event you are interested in purchasing and obtaining financing for a Vehicle, we may put you in touch with an authorized motor vehicle dealer." 
+                />
+                <meta property="og:url" content="https://autolendingcanada.ca/terms-of-use" />
+            </Helmet>
+
         <div className='about-page'>
             <InternalHeader />
             <div className='container privacy-policy-page'>
@@ -60,7 +83,7 @@ function TermsOfUSe() {
                 <br />
                 <p><b>Privacy</b></p>
                 <br />
-                <p>We take your privacy seriously. To find out about how we collect, share and use your content and information, please read our Privacy Policy, available at <a href='https://autolendingcanada.ca/privacy_policy'>www.autolendingcanada.ca/privacypolicy/</a>. The Privacy Policy forms part of these Terms and is incorporated by reference.</p>
+                <p>We take your privacy seriously. To find out about how we collect, share and use your content and information, please read our Privacy Policy, available at <a href='https://autolendingcanada.ca/privacy-policy'>www.autolendingcanada.ca/privacypolicy/</a>. The Privacy Policy forms part of these Terms and is incorporated by reference.</p>
                 <br />
                 <p><b>General</b></p>
                 <br />
@@ -71,6 +94,7 @@ function TermsOfUSe() {
                 <p>These Terms are dated and effective as of October 2, 2023.</p>
             </div>
         </div>
+        </>
     );
 }
 

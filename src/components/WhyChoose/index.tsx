@@ -1,25 +1,25 @@
 import React from 'react';
-import './index.css';
-import '../../responsive.css';
 import { Link } from "react-router-dom";
+import '../../responsive.css';
+import './index.css';
 function WhyChoose() {
     const whyChoose = [
         {
             title: "Better Rates",
             img: "wheel.webp",
-            desc: "Choose us for car financing in Canada and enjoy unbeatable rates, flexible payments, and more money in your pocket!",
+            desc: "Choose us for the best auto financing in Canada and get unbeatable deals on interest rates with flexible payments for more savings!",
             link: "#",
         },
         {
             title: "Low Payments",
             img: "approval.webp",
-            desc: "With our low payments, you’ll save more while driving the car you love. Choose Canada’s trusted car loan provider!",
+            desc: "Save more with low payments on auto financing - get flexible loans from Canada’s most trusted auto loan provider and drive your dream car!",
             link: "#",
         },
         {
             title: "Saving Money",
             img: "24-7.webp",
-            desc: "Get the best rates in Canada, low monthly payments, and save more with our tailored auto financing solutions.",
+            desc: "Choose the best car for your budget. With easy auto financing and flexible loans, apply stress-free and enjoy low monthly payments in Canada.",
             link: "#",
         },
     ];
@@ -28,7 +28,7 @@ function WhyChoose() {
             <div className="sec-title">
                 Why Choose ALC?
                 <span>
-                    Enjoy better rates, low monthly payments, and significant savings. We make car financing in Canada easy and affordable!
+                Apply and get pre-approved auto financing in minutes! Enjoy the best rates, low monthly payments, and significant savings. We make Auto Loans in Canada easy and affordable!
                 </span>
             </div>
             <div className="why-choose-row">

@@ -25,9 +25,9 @@ const FinalStep = () => {
                 <br />
                 In the meantime, feel free to explore more about us:
                 <ul >
-                    <li><a style={{ color:"#e5082b" }} href="https://autolendingcanada.ca/how_works">How it Works?</a></li>
+                    <li><a style={{ color:"#e5082b" }} href="https://autolendingcanada.ca/how-it-works">How it Works?</a></li>
                     <li><a style={{ color: "#e5082b" }} href="https://autolendingcanada.ca/faqs">FAQs</a></li>
-                    <li><a style={{ color: "#e5082b" }} href="https://autolendingcanada.ca/customer_stories">Customer Stories</a></li>
+                    <li><a style={{ color: "#e5082b" }} href="https://autolendingcanada.ca/customer-stories">Customer Stories</a></li>
                     <li><a style={{ color: "#e5082b" }} href="https://autolendingcanada.ca/about">About</a></li>
                 </ul>
             </div>

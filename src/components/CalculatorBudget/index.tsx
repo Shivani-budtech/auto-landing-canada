@@ -65,11 +65,12 @@ function CalculatorBudget() {
     }, []);
 
     return (
-        <section className='contact-us-sec calculator-budget container'>
+        <section className='contact-us-sec car-loan-calculator-budget container'>
             <div className="sec-title">
                 Car Loan Calculator
                 <span>
-                    Pick your loan amount, pick the duration of your loan, and choose your credit rating to help determine your finance options.
+                Pick your loan amount, choose the duration, and select your credit rating with our car loan calculator for Canada to explore your best financing options.
+
                 </span>
             </div>
             <div className='contact-form'>

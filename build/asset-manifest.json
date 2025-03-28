@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb79ae5d.css",
-    "main.js": "/static/js/main.7295588e.js",
+    "main.css": "/static/css/main.ad708c1b.css",
+    "main.js": "/static/js/main.53d59230.js",
     "static/js/453.18ac2cde.chunk.js": "/static/js/453.18ac2cde.chunk.js",
     "static/media/home-top-bg.webp": "/static/media/home-top-bg.ef6a36f62bd0addb95e3.webp",
     "static/media/about_banner.webp": "/static/media/about_banner.21be4092d362c3b500f9.webp",
@@ -9,8 +9,8 @@
     "static/media/home_banner.webp": "/static/media/home_banner.68300ae31c2fdb9e130d.webp",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "index.html": "/index.html",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/canada-flag.webp": "/static/media/canada-flag.8057a68916c0966ed7e4.webp",
     "static/media/faq-arrow.webp": "/static/media/faq-arrow.74cd94b6843109fa551f.webp",
@@ -22,12 +22,12 @@
     "static/media/email-vec.webp": "/static/media/email-vec.e92b543c31c133ca39dc.webp",
     "static/media/email-input.webp": "/static/media/email-input.d9994f9226388e7de555.webp",
     "static/media/support-input.webp": "/static/media/support-input.2b43146dfe83900e745a.webp",
-    "main.fb79ae5d.css.map": "/static/css/main.fb79ae5d.css.map",
-    "main.7295588e.js.map": "/static/js/main.7295588e.js.map",
+    "main.ad708c1b.css.map": "/static/css/main.ad708c1b.css.map",
+    "main.53d59230.js.map": "/static/js/main.53d59230.js.map",
     "453.18ac2cde.chunk.js.map": "/static/js/453.18ac2cde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb79ae5d.css",
-    "static/js/main.7295588e.js"
+    "static/css/main.ad708c1b.css",
+    "static/js/main.53d59230.js"
   ]
 }

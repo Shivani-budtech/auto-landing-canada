@@ -1,27 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Formik, Form } from 'formik';
+import { Formik } from 'formik';
+import React, { useEffect, useRef, useState } from 'react';
 
-import StepperOne from './Steppers/StepperOne.tsx';
-import StepperTwo from './Steppers/StepperTwo.tsx';
-import StepperThree from './Steppers/StepperThree.tsx';
-import StepperFour from './Steppers/StepperFour.tsx';
-import StepperFive from './Steppers/StepperFive.tsx';
-import StepperSix from './Steppers/StepperSix.tsx';
-import StepperSeven from './Steppers/StepperSeven.tsx';
-import StepperEight from './Steppers/StepperEight.tsx';
-import StepperNine from './Steppers/StepperNine.tsx';
-import StepperTen from './Steppers/StepperTen.tsx';
-import StepperEleven from './Steppers/StepperEleven.tsx';
-import StepperTwelve from './Steppers/StepperTwelve.tsx';
-import StepperThirteen from './Steppers/StepperThirteen.tsx';
-import StepperFourteen from './Steppers/StepperFourteen.tsx';
-import StepperFifteen from './Steppers/StepperFifteen.tsx';
-import StepperSixteen from './Steppers/StepperSixteen.tsx';
-import StepperSeventeen from './Steppers/StepperSeventeen.tsx';
-import '../stepper.css';
-import '../responsive.css';
-import validationSchemas from './validationSchemas.tsx';
 import { useLocation, useParams } from 'react-router-dom';
+import '../responsive.css';
+import '../stepper.css';
+import StepperEight from './Steppers/StepperEight.tsx';
+import StepperEleven from './Steppers/StepperEleven.tsx';
+import StepperFifteen from './Steppers/StepperFifteen.tsx';
+import StepperFive from './Steppers/StepperFive.tsx';
+import StepperFour from './Steppers/StepperFour.tsx';
+import StepperFourteen from './Steppers/StepperFourteen.tsx';
+import StepperNine from './Steppers/StepperNine.tsx';
+import StepperOne from './Steppers/StepperOne.tsx';
+import StepperSeven from './Steppers/StepperSeven.tsx';
+import StepperSeventeen from './Steppers/StepperSeventeen.tsx';
+import StepperSix from './Steppers/StepperSix.tsx';
+import StepperSixteen from './Steppers/StepperSixteen.tsx';
+import StepperTen from './Steppers/StepperTen.tsx';
+import StepperThirteen from './Steppers/StepperThirteen.tsx';
+import StepperThree from './Steppers/StepperThree.tsx';
+import StepperTwelve from './Steppers/StepperTwelve.tsx';
+import StepperTwo from './Steppers/StepperTwo.tsx';
+import validationSchemas from './validationSchemas.tsx';
 
 
 function ApplyNow() {

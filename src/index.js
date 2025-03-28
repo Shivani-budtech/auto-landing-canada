@@ -4,11 +4,15 @@ import './index.css';
 // import App from './App';
 import MainComponent from './components/MainComponent.tsx';
 import reportWebVitals from './reportWebVitals';
+import { HelmetProvider } from "react-helmet-async";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <MainComponent />
+    <HelmetProvider>
+      <MainComponent />
+    </HelmetProvider>
   </React.StrictMode>
 );
 

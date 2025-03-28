@@ -23,14 +23,15 @@ function PowerSport() {
                     </div>
                     <div className='power-sport-detail'>
                         <p>
-                            Discover Canada’s breathtaking landscapes with Auto Lending Canada's recreational financing solutions. Whether it’s an RV for road trips, a camper for serene escapes, or a trailer to carry your gear, we make adventure affordable. 
+                        Discover Canada’s breathtaking landscapes with lowest financing rates in Canada through Auto Lending Canada's financing solutions. Whether it’s an RV for road trips, a camper for serene escapes, or a trailer to carry your gear, we make adventure affordable.
                         </p>
                         <p>
-                            With competitive rates and flexible terms, you’re one step closer to the outdoor experience you’ve always dreamed of. Start your journey today and explore Canada like never before!
+                        With competitive auto financing rates in Canada and flexible terms, you’re one step closer to the outdoor experience you’ve always dreamed of. Start your journey today and explore Canada like never before!
+
                         </p>
                     </div>
                     <div className='power-sport-apply'>
-                        <Link to={"/contact_us"} className="primary-btn">Contact Us</Link>
+                        <Link to={"/contact-us"} className="primary-btn">Contact Us</Link>
                     </div>
                 </div>
             </div>
@@ -56,7 +57,7 @@ function PowerSport() {
                         </p>
                     </div>
                     <div className='power-sport-apply'>
-                        <Link to={"/contact_us"} className="primary-btn">Contact Us</Link>
+                        <Link to={"/contact-us"} className="primary-btn">Contact Us</Link>
                     </div>
                 </div>
                 <div className='power-sport-img'>
@@ -88,7 +89,7 @@ function PowerSport() {
                         </p>
                     </div>
                     <div className='power-sport-apply'>
-                        <Link to={"/contact_us"} className="primary-btn">Contact Us</Link>
+                        <Link to={"/contact-us"} className="primary-btn">Contact Us</Link>
                     </div>
                 </div>
             </div>

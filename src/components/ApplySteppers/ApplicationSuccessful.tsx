@@ -34,7 +34,7 @@ const ApplicationSuccessful = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-input consent" style={{ marginTop: "50px" }}>
                 <input type="checkbox" name="sms_consent" id="sms_consent" value="yes" checked={formData.sms_consent === "yes"} onChange={handleChange} />
-                <label htmlFor="sms_consent">I consent to receive electronic messages regarding Auto lending Canada's products, services, and related offerings and understand that I can withdraw my consent at any time. More information is provided in our <a href="https://autolendingcanada.ca/privacy_policy" target="_blank">Privacy Policy</a> and <a href="https://autolendingcanada.ca/terms_of_use" target="_blank">Terms of Use</a></label>
+                <label htmlFor="sms_consent">I consent to receive electronic messages regarding Auto lending Canada's products, services, and related offerings and understand that I can withdraw my consent at any time. More information is provided in our <a href="https://autolendingcanada.ca/privacy-policy" target="_blank">Privacy Policy</a> and <a href="https://autolendingcanada.ca/terms-of-use" target="_blank">Terms of Use</a></label>
             </div>
             <div className='stepper-btn' style={{ marginTop: "40px" }}>
                 <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import './index.css';
-import '../../responsive.css';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import '../../responsive.css';
 import { API_URL, BACKEND_URL } from '../Constant.tsx';
+import './index.css';
 
 function TopBlogs() {
     const [blogs, setBlogs] = useState({});

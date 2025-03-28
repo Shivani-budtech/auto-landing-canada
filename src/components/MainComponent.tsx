@@ -1,28 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import "../style.css";
-import '../responsive.css';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import "../font.css";
-import Header from "./Header.tsx";
-import MobileHeader from './MobileHeader.tsx';
-import Footer from "./Footer.tsx";
-import Home from "./Home.tsx";
+import '../responsive.css';
+import "../style.css";
 import About from "./About.tsx";
-import CustomerStories from "./CustomerStories.tsx";
-import ContactUS from "./ContactUs.tsx";
-import Blogs from "./Blogs.tsx";
-import BlogsPage from './BlogsPage.tsx';
 import BlogDetail from './BlogDetail.tsx';
-import Faqs from './Faqs.tsx';
+import BlogsPage from './BlogsPage.tsx';
 import Calculator from './Calculator.tsx';
-import ApplyNow from './ApplyNow.tsx';
-import VerificationCode from './VerificationCode.tsx';
-import PowerSports from './PowerSports.tsx';
+import ContactUS from "./ContactUs.tsx";
+import CustomerStories from "./CustomerStories.tsx";
+import Faqs from './Faqs.tsx';
+import Footer from "./Footer.tsx";
+import Header from "./Header.tsx";
+import Home from "./Home.tsx";
 import HowItWorks from './HowItWorks.tsx';
+import MobileHeader from './MobileHeader.tsx';
+import PowerSports from './PowerSports.tsx';
 import PreApply from './PreApply.tsx';
-import app from './firebaseAuth.tsx';
 import PrivacyPolicy from './PrivacyPolicy.tsx';
 import TermsOfUSe from './TermsOfUSe.tsx';
+import VerificationCode from './VerificationCode.tsx';
 import MembershipProgramme from './membershipProgramme.tsx';
 
 
@@ -119,19 +116,19 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/customer_stories" element={<CustomerStories />} />
-          <Route path="/contact_us" element={<ContactUS />} />
+          <Route path="/customer-stories" element={<CustomerStories />} />
+          <Route path="/contact-us" element={<ContactUS />} />
           <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/faqs" element={<Faqs />} />
-          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/car-loan-calculator" element={<Calculator />} />
           <Route path="/apply" element={<PreApply />} />
           <Route path="/verification_code" element={<VerificationCode />} />
-          <Route path="/power_sports" element={<PowerSports />} />
-          <Route path='/how_works' element={<HowItWorks />} />
+          <Route path="/power-sports" element={<PowerSports />} />
+          <Route path='/how-it-works' element={<HowItWorks />} />
           <Route path='/pre_apply' element={<PreApply />} />
-          <Route path='/privacy_policy' element={<PrivacyPolicy />} />
-          <Route path='/terms_of_use' element={<TermsOfUSe />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/terms-of-use' element={<TermsOfUSe />} />
           <Route path='/membership_programme' element={<MembershipProgramme />} />
         </Routes>
         <Footer />
@@ -148,7 +145,7 @@ function MainComponent() {
   
 
   return (
-    <Router>
+    <Router >
       
       <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
      

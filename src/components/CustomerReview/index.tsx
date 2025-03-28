@@ -1,9 +1,8 @@
-import React from 'react';
-import { useState, useEffect } from "react";
-import "./index.css";
-import '../../responsive.css';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import '../../responsive.css';
 import { API_URL, BACKEND_URL } from '../Constant.tsx';
+import "./index.css";
 
 function CustomerReview() {
     const arr = [];
