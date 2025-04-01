@@ -46,10 +46,10 @@ function FeatureBlogs() {
                                 <div className='blog-list-date'>
                                     {formateDate(blog.created_at)}
                                 </div>
-                                <Link to={`/blog/` + blog.id} className='primary-link'>Read More</Link>
+                                <Link to={`/blog/` + blog.slug} className='primary-link'>Read More</Link>
                             </div>
                         </div>
-                        <Link to={`/blog/`+blog.id}></Link>
+                        <Link to={`/blog/`+blog.slug}></Link>
                     </div>
                 ))}
             </div>

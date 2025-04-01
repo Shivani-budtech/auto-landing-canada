@@ -76,7 +76,7 @@ function TopBlogs() {
                                 {formateDate(blog.created_at)}
                             </div>
                             <div className='top-blog-btn'>
-                                <Link to={`/blog/` + blog.id} className="primary-link">Read more</Link>
+                                <Link to={`/blog/` + blog.slug} className="primary-link">Read more</Link>
                             </div>
                         </div>
                     </div>

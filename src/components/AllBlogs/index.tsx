@@ -46,7 +46,7 @@ function AllBlogs() {
                                 {formateDate(blog.created_at)}
                             </div>
                             <div className='blog-btn'>
-                                <Link to={`/blog/` + blog.id} className='primary-link'>Read More</Link>
+                                <Link to={`/blog/` + blog.slug} className='primary-link'>Read More</Link>
                             </div>
                         </div>
                     </div>
