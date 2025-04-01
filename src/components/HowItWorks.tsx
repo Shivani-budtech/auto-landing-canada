@@ -29,7 +29,6 @@ function HowItWorks() {
                 <StepsTOFollow />
                 <HowWorksGrid />
                 <HowWorksBanner />
-                <BottomBanner />
             </section>
         </>
     );

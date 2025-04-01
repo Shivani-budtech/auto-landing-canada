@@ -4,6 +4,7 @@ import '../../responsive.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { API_URL, BACKEND_URL } from '../Constant.tsx';
+import { Helmet } from "react-helmet-async";
 function Blog() {
     const { id } = useParams();
     const [blog, setBlog] = useState({});
@@ -31,6 +32,27 @@ function Blog() {
     }, [id]);
 
     return (
+        <>
+        <Helmet>
+            <meta charSet="UTF-8" />
+            <title>{blog.meta_title}</title>
+            <meta 
+                name="description" 
+                content={blog.meta_desc}
+            />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href={blog.canonical_url} />
+
+            {/* Open Graph Metadata for Social Sharing */}
+            <meta property="og:type" content={blog.og_type} />
+            <meta property="og:site_name" content={blog.og_site_name} />
+            <meta property="og:title" content={blog.og_title} />
+            <meta 
+                property="og:description" 
+                content={blog.og_desc} 
+            />
+            <meta property="og:url" content={blog.og_url} />
+        </Helmet>
         <section className="blog-detail-sec">
             <div className='blog-detail-img'>
                 <img src={BACKEND_URL+"public/uploads/"+blog.image} />
@@ -50,6 +72,7 @@ function Blog() {
                 />
             </div>
         </section>
+        </>
     );
 }
 
