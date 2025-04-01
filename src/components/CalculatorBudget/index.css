@@ -14,6 +14,9 @@
 .car-loan-calculator-budget .contact-form-row + .contact-form-row {
     margin-top: 25px;
 }
+.car-loan-calculator-budget .contact-form-row .primary-btn {
+    margin-top: 20px;
+}
 .car-loan-calculator-budget .contact-col {
     max-width: 100%;
 }

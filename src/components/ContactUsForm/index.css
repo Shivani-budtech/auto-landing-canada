@@ -84,7 +84,7 @@
 }
 .contact-form {
     font-size: var(--font-size-18);
-    padding: 15px 35px;
+    padding: 15px 20px;
 }
 .primary-btn:disabled {
     background-color: grey;
