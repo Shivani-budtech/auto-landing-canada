@@ -54,6 +54,7 @@ const DateOfBirth = ({ formData, setFormData, setalcStep }) => {
                                 dateFormat: "d/m/Y", // Your preferred format
                                 minDate: "01/01/1970",
                                 maxDate: "today",
+                                disableMobile: true
                             }}
                         />
                     </span>

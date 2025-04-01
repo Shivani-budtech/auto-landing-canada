@@ -117,6 +117,7 @@ function AllBlogsNew() {
                                     <div key={key} className={key == 0 ? "blog-item first" : "blog-item"}>
                                         
                                         <div className='blog-image'>
+                                            
                                             {blog.is_featured ? <span className="badge">Featured</span> : ''}
                                             {!imageLoaded[key] && <div className="skeleton-loader"></div>}
                                             <img

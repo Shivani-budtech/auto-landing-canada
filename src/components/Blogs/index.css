@@ -50,6 +50,9 @@
 }
 .first .blog-image {
     flex: 0 0 50%;
+    height: auto;
+}
+.first .skeleton-loader {
     height: 400px;
 }
 .first .blog-content {
@@ -71,6 +74,9 @@
     flex: 0 0 33.33%;
 }
 .blog-item:not(.first) .blog-image {
+    height: auto;
+}
+.blog-item:not(.first) .skeleton-loader {
     height: 200px;
 }
 .blog-item:not(.first) .blog-title {
@@ -149,6 +155,9 @@
 }
 @media screen and (max-width: 725px) {
     .first .blog-image {
+        height: auto;
+    }
+    .first .skeleton-loader {
         height: 300px;
     }
 }
@@ -159,6 +168,9 @@
 }
 @media screen and (max-width: 520px) {
     .first .blog-image {
+        height: auto;
+    }
+    .first .skeleton-loader {
         height: 200px;
     }
     .first .blog-title {
