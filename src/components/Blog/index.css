@@ -21,7 +21,7 @@
     object-fit: cover;
     border-radius: 44px;
 }
-.blog-detail-img-text {
+.blog-detail-img-text  {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,16 +30,19 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
     border-radius: 44px;
 }
-.blog-detail-img-text h1 {
+.blog-detail-img-text-absolute {
     position: absolute;
     bottom: 20px;
     color: #fff;
     left: 15px;
+}
+.blog-detail-img-text h1 {
+    
     font-size: var(--font-size-22);
     font-weight: 700;
     /* text-transform: uppercase; */
 }
-.blog-detail-img-text h1 span {
+.blog-detail-img-text span {
     text-transform: none;
     font-size: var(--font-size-17);
     display: block;

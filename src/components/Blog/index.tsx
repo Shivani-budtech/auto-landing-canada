@@ -57,11 +57,12 @@ function Blog() {
             <div className='blog-detail-img'>
                 <img src={BACKEND_URL+"public/uploads/"+blog.image} />
                 <div className='blog-detail-img-text'>
-                    <h1>{blog.title}
-                        <span>
+                    <div className="blog-detail-img-text-absolute">
+                    <h1>{blog.title}</h1>
+                    <span>
                             {formateDate(blog.created_at)}
                         </span>
-                    </h1>
+                    </div>
                 </div>
             </div>
             <div className="blog-content">

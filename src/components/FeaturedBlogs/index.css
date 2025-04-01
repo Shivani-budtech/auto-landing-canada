@@ -9,11 +9,12 @@
     position: sticky;
     top: 104px;
 }
-.featured-blogs-sec > h1 {
+.featured-blogs-sec > h3 {
     font-size: var(--font-size-24);
     font-weight: 700;
     color: #373435;
     text-transform: uppercase;
+    margin: 0;
     margin-bottom: 10px;
 }
 .blog-list-item {

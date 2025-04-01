@@ -31,7 +31,7 @@ function FeatureBlogs() {
 
     return (
         <section className="featured-blogs-sec">
-            <h1>Featured Blogs</h1>
+            <h3>Featured Blogs</h3>
             <div className="blog-list">
                 {Object.entries(blogs).map(([key, blog]) => (
                     <div key={key} className="blog-list-item">

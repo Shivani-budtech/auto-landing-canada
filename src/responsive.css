@@ -1,7 +1,7 @@
 @media screen and (max-width:928px) {
     .footer-sec {
         padding: 46px 30px;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     .small-footer {
         padding: 50px 30px;
