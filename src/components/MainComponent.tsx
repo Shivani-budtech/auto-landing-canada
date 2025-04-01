@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import "../font.css";
-import '../responsive.css';
 import "../style.css";
+import '../responsive.css';
 import About from "./About.tsx";
 import BlogDetail from './BlogDetail.tsx';
 import BlogsPage from './BlogsPage.tsx';
