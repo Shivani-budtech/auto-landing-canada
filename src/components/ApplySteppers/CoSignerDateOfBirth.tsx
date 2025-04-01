@@ -48,6 +48,7 @@ const CoSignerDateOfBirth = ({ formData, setFormData, setalcStep }) => {
                                 dateFormat: "d/m/Y",
                                 minDate: "01/01/1970",
                                 maxDate: "today",
+                                disableMobile: true
                             }}
                         />
                     </span>

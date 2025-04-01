@@ -117,7 +117,7 @@ function AllBlogsNew() {
                                     <div key={key} className={key == 0 ? "blog-item first" : "blog-item"}>
                                         
                                         <div className='blog-image'>
-                                            
+                                        <Link to={`/blog/${blog.slug}`}>
                                             {blog.is_featured ? <span className="badge">Featured</span> : ''}
                                             {!imageLoaded[key] && <div className="skeleton-loader"></div>}
                                             <img
@@ -126,14 +126,14 @@ function AllBlogsNew() {
                                                 style={{ display: imageLoaded[key] ? 'block' : 'none' }}
                                                 alt={blog.title}
                                             />
-                                            
+                                            </Link>
                                             
                                         </div>
                                         <div className="blog-content">
                                             <div className="blog-category">
                                                 {blog.category ? blog.category.title : ""}
                                             </div>
-                                            <div className='blog-title'>{blog.title}</div>
+                                            <Link to={`/blog/${blog.slug}`}><div className='blog-title'>{blog.title}</div></Link>
                                             {
                                                 key == 0 ?
                                                     <div className='blog-desc' dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content , 320) }} /> :
