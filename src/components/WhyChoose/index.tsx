@@ -41,7 +41,7 @@ function WhyChoose() {
                     {Object.entries(whyChoose).map(([key, why]) => (
                         <div key={key} className="grida-item">
                             <div className="grida-img">
-                                <img src={`/images/${why.img}`} />
+                                <img src={`/images/${why.img}`} alt={why.alt} />
                             </div>
                             <h3 className="grida-title" style={{margin:"0"}}>{why.title}</h3>
                             <div className="grida-desc">{why.desc}</div>

@@ -52,6 +52,9 @@
 .blog-content {
     margin-top: 20px;
 }
+.blog-detail-page .blog-content a {
+    color: var(--primary-btn-color);
+}
 .blog-content p {
     margin-bottom:15px;
     font-size: var(--font-size-18);

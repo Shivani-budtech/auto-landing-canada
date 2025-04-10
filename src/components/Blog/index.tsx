@@ -55,7 +55,7 @@ function Blog() {
         </Helmet>
         <section className="blog-detail-sec">
             <div className='blog-detail-img'>
-                <img src={BACKEND_URL+"public/uploads/"+blog.image} />
+                <img src={BACKEND_URL+"public/uploads/"+blog.image} alt={blog.img_alt} />
                 <div className='blog-detail-img-text'>
                     <div className="blog-detail-img-text-absolute">
                     
@@ -65,11 +65,7 @@ function Blog() {
             <div className="blog-content">
                 <h1>{blog.title}</h1>
                 <span style={{ display:"inline-block",marginBottom:"10px",fontSize:"18px" }}>{formateDate(blog.created_at)}</span>
-                <div
-                    dangerouslySetInnerHTML={{
-                        __html: blog.content,
-                    }}
-                />
+                <div dangerouslySetInnerHTML={{ __html: blog.content }} />
             </div>
         </section>
         </>

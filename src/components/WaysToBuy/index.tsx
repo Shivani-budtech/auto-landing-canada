@@ -30,7 +30,7 @@ function waysToBuy() {
                     <div key={key} className="way-sec-container">
                         <div className="way-section">
                             <div className="way-img">
-                                <img src={`/images/${ways.img}`} />
+                                <img src={`/images/${ways.img}`} alt={ways.alt} />
                             </div>
                             <div className="way-info">
                                 <h2>{ways.title}</h2>

@@ -191,7 +191,7 @@ function AllBlogsNew() {
                                                 src={BACKEND_URL + 'public/uploads/' + blog.image}
                                                 onLoad={() => handleImageLoad(key)}
                                                 style={{ display: imageLoaded[key] ? 'block' : 'none' }}
-                                                alt={blog.title}
+                                                alt={blog.img_alt}
                                             />
                                             </Link>
                                             
