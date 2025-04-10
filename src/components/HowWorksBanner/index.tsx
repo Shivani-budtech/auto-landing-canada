@@ -8,7 +8,7 @@ function HowWorksBanner() {
         <section className="banner-sec bottom-banner container">
             <div className="banner-container how-works-banner">
                 <div className='banner-content'>
-                    <div className="sec-title">GET APPROVED FOR CAR FINANCING IN CANADA WITH 3 EASY STEPS </div>
+                    <h4 className="sec-title">GET APPROVED FOR CAR FINANCING IN CANADA WITH 3 EASY STEPS </h4>
                     <div className="banner-desc">
                     Understanding the car financing process in Canada shouldn’t be complicated. With Auto Lending Canada, we’ve streamlined it into three simple steps to help you secure the best auto loan rates in Canada!
 

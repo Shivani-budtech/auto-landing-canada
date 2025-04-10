@@ -50,6 +50,7 @@
     padding: 15px 50px 15px 15px;
     position: relative;
     font-weight: 600;
+    font-size: inherit;
 }
 .faq-tab-items .faq-tab-item .faq-tab-ans {
     padding: 0 15px 15px;

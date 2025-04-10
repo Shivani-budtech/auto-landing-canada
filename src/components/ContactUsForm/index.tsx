@@ -97,10 +97,10 @@ function ContactUsForm() {
     return (
         <section className='contact-us-sec contact-us-form container'>
             <div className="sec-title">
-                Get in touch!
-                <span>
+                <h2 style={{fontSize:"inherit"}}>Get in touch!</h2>
+                <h3>
                     Need assistance? Fill out the form, and we’ll get in touch soon!
-                </span>
+                </h3>
             </div>
             {
             (success.message) ? 

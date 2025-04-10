@@ -38,9 +38,9 @@ function AllBlogs() {
                         <div className='blog-image'>
                             <img src={BACKEND_URL+'public/uploads/'+blog.image} />
                         </div>
-                        <div className='blog-title'>
+                        <h2 className='blog-title'>
                             {blog.title}
-                        </div>
+                        </h2>
                         <div className='blog-info'>
                             <div className='blog-date'>
                                 {formateDate(blog.created_at)}

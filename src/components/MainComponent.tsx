@@ -145,7 +145,7 @@ function MainComponent() {
   
 
   return (
-    <Router >
+    <Router>
       
       <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
      

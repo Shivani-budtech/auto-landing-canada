@@ -52,6 +52,10 @@ function TopBlogs() {
             year: "numeric",
         });
     }
+    const getTruncatedContent = (content, maxLength = 150) => {
+        if (content.length <= maxLength) return content;
+        return `${content.substring(0, maxLength)}...`;
+    };
 
     useEffect(() => {
         fetchBlogs();
@@ -68,15 +72,18 @@ function TopBlogs() {
                             {blog.is_featured ? <span className="badge">Featured</span> : ''}
                             <img src={BACKEND_URL+"public/uploads/"+blog.image} />
                         </div>
-                        <div className='top-blog-title'>
-                            {blog.title}
-                        </div>
-                        <div className='top-blog-info'>
-                            <div className='top-blog-date'>
-                                {formateDate(blog.created_at)}
+                        <div className='top-blog-content'>
+                            <div className='top-blog-title'>
+                                {blog.title}
                             </div>
-                            <div className='top-blog-btn'>
-                                <Link to={`/blog/` + blog.slug} className="primary-link">Read more</Link>
+                            <div className='blog-desc' dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content) }} />
+                            <div className='top-blog-info'>
+                                <div className='top-blog-date'>
+                                    {formateDate(blog.created_at)}
+                                </div>
+                                <div className='top-blog-btn'>
+                                    <Link to={`/blog/` + blog.slug} className="primary-link">Read more</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

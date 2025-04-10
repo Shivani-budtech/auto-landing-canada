@@ -28,9 +28,9 @@ function AboutUs() {
                         <img src={`/images/our-story.webp`} alt="Our Story" />
                     </div>
                     <div className='about-content'>
-                        <h1>
-                            Our Story <br /> Driving Dreams Across Canada
-                        </h1>
+                        <h2>
+                        Driving Dreams Across Canada — <br /> with Pre-Approved Car Loans & Auto Financing
+                        </h2>
                         <p>
                         At Auto Lending Canada, our journey began with a simple mission: to make car ownership accessible for every Canadian, no matter their financial situation. We saw a gap in the market—a need for a car loan company that not only provided financing but also cared about the people behind the applications. That’s when we decided to create a service that combines speed, affordability, and a human touch.
 

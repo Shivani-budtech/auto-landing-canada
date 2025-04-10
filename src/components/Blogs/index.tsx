@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import './index.css';
 import '../../responsive.css';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,9 @@ function AllBlogsNew() {
     const [imageLoaded, setImageLoaded] = useState({});
     const [categories, setCategories] = useState({});
     const [curCategory , setCurCategory] = useState(0);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
     
     const fetchBlogs = async () => {
         try {
@@ -49,10 +52,31 @@ function AllBlogsNew() {
     useEffect(() => {
         fetchBlogs();
         fetchCategories();
+
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+
     }, [curCategory]);
+
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+                setDropdownOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
 
     const handleImageLoad = (key) => {
         setImageLoaded((prev) => ({ ...prev, [key]: true }));
+    };
+
+    const currentCategoryLabel = () => {
+        if (curCategory === 0) return "All";
+        const match = Object.values(categories).find((cat) => cat.id === curCategory);
+        return match ? match.title : "All";
     };
 
     return (
@@ -102,14 +126,57 @@ function AllBlogsNew() {
             ) : (
                 <div className="">
                     <div className="categories-row">
-                        <div className='categories'>
+                    {isMobile ? (
+                            <div className="custom-dropdown" ref={dropdownRef}>
+                                <div
+                                    className={dropdownOpen ? "dropdown-header opened" : "dropdown-header "}
+                                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                                >
+                                    {currentCategoryLabel()}
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                                </div>
+                                {dropdownOpen && (
+                                    
+                                    <div className="dropdown-list">
+                                        {curCategory == 0 ? "" :(
+                                            <div
+                                            className={`dropdown-item ${curCategory === 0 ? 'active' : ''}`}
+                                            onClick={() => {
+                                                setCurCategory(0);
+                                                setDropdownOpen(false);
+                                            }}
+                                        >
+                                            All
+                                        </div>
+                                        )}
+                                        
+                                        {Object.entries(categories)
+                                            .filter(([_, category]) => category.id !== curCategory)
+                                            .map(([key, category]) => (
+                                                <div
+                                                    key={key}
+                                                    className="dropdown-item"
+                                                    onClick={() => {
+                                                        setCurCategory(category.id);
+                                                        setDropdownOpen(false);
+                                                    }}
+                                                >
+                                                    {category.title}
+                                                </div>
+                                            ))}
+                                    </div>
+                                )}
+                            </div>
+                        ) : (
+                            <div className='categories'>
                                 <span className={curCategory === 0 ? "active" : ""}
                                     onClick={() => setCurCategory(0)}>All</span>
                                 {Object.entries(categories).map(([key, category]) => (
                                     <span key={key} className={curCategory === category.id ? "active" : ""}
                                         onClick={() => setCurCategory(category.id)}>{category.title}</span>
                                 ))}
-                        </div>
+                            </div>
+                        )}
                     </div>
                     <div className="blog-grid">
                             {Object.keys(blogs).length > 0 ? (
@@ -133,7 +200,7 @@ function AllBlogsNew() {
                                             <div className="blog-category">
                                                 {blog.category ? blog.category.title : ""}
                                             </div>
-                                            <Link to={`/blog/${blog.slug}`}><div className='blog-title'>{blog.title}</div></Link>
+                                            <Link to={`/blog/${blog.slug}`}><h2 className='blog-title'>{blog.title}</h2></Link>
                                             {
                                                 key == 0 ?
                                                     <div className='blog-desc' dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content , 320) }} /> :

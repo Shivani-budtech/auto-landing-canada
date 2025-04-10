@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className={(curLoc == "/apply") ? 'apply-footer main-footer-container' : 'main-footer-container'}>
       <div className="footer-sec">
-        <img src={`/images/logos.webp`} />
+        <img src={`/images/logos.webp`} alt="A red maple leaf with a white silhouette of a car in the center, symbolizing Canadian automotive culture with the logo of Auto Lending Canada."/>
         <div className="footer-container">
           <div className="footer-col-1">
             <div className="header-logo">

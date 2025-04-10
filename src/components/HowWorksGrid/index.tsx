@@ -44,8 +44,8 @@ function HowWorksGrid() {
                 </span>
             </div>
             <div className="how-works-grid-row">
-                <img src={`/images/dotted-bg.webp`} className="first-img" />
-                <img src={`/images/round.webp`} className="last-img" />
+                <img src={`/images/dotted-bg.webp`} className="first-img" alt="A repeating pattern of grey colored dots on a transparent background, creating a visually striking and rhythmic design."/>
+                <img src={`/images/round.webp`} className="last-img" alt="A plain bold red circle against a transparent background."/>
                 <div className="grida">
                     {Object.entries(Array).map(([key, why]) => (
                         <div key={key} className="grida-item">
@@ -53,7 +53,7 @@ function HowWorksGrid() {
                                 <img src={`/images/${why.img}`} />
                             </div>
                             <div className='grida-desc-sec'>
-                            <div className="grida-title">{why.title}</div>
+                            <h3 className="grida-title">{why.title}</h3>
                             <div className="grida-desc">{why.desc}</div>
                             </div>
                         </div>

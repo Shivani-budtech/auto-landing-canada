@@ -67,7 +67,7 @@ function Testimonials() {
 
     return (
         <section className="testimonials-sec container">
-            <div className="sec-title">Why Canadians Love Us</div>
+            <h4 className="sec-title">Why Canadians Love Us</h4>
             <div className="testimonial-grid">
                 <Slider {...settings}>
                     {Object.entries(testimonials).map(([key, testimonial]) => (

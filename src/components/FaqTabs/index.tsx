@@ -58,9 +58,9 @@ function Faq() {
             <div className='faq-tab-items' >
                 {Object.entries(faqs).map(([key, faq]) => (
                     <div className="faq-tab-item" key={key}>
-                        <div className={isOpen == key ? "faq-tab-question opened" : "faq-tab-question"} onClick={() => toggleFAQ(key)}>
+                        <h2 className={isOpen == key ? "faq-tab-question opened" : "faq-tab-question"} onClick={() => toggleFAQ(key)}>
                             {faq.question}
-                        </div>
+                        </h2>
                         <motion.div
                             initial={{ height: 0 }}
                             animate={{ height: isOpen == key ? 'auto' : 0 }}

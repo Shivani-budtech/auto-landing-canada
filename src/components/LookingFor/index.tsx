@@ -34,12 +34,12 @@ function LookingFor() {
     const imagePath = "../../images/";
     return (
         <section className="looking-for container">
-            <div className="sec-title">
+            <h2 className="sec-title">
             Fast Auto Loan Financing for All Makes and Models
-            </div>
+            </h2>
             <div className="looking-for-row">
                 <div className="content">
-                    <img src={`/images/single-car.webp`} />
+                    <img src={`/images/single-car.webp`} alt="A vibrant red Dodge Challenger in front of a large red circle, showcasing its sleek design and sporty appearance." />
                 </div>
                 <div className="info">
                     <div className="desc">What type of vehicle are you looking for?</div>

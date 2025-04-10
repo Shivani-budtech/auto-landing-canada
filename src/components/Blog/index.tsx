@@ -58,14 +58,13 @@ function Blog() {
                 <img src={BACKEND_URL+"public/uploads/"+blog.image} />
                 <div className='blog-detail-img-text'>
                     <div className="blog-detail-img-text-absolute">
-                    <h1>{blog.title}</h1>
-                    <span>
-                            {formateDate(blog.created_at)}
-                        </span>
+                    
                     </div>
                 </div>
             </div>
             <div className="blog-content">
+                <h1>{blog.title}</h1>
+                <span style={{ display:"inline-block",marginBottom:"10px",fontSize:"18px" }}>{formateDate(blog.created_at)}</span>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: blog.content,

@@ -167,7 +167,7 @@ input[type=number] {
     margin: 0 auto;
     margin-bottom: 50px;
 }
-.sec-title span {
+.sec-title span , .sec-title h3 {
     display: block;
     /* font-family: Outfit; */
     font-size: var(--font-size-16);

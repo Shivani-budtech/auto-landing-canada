@@ -75,7 +75,7 @@ function InternalHeader() {
   }, [location]);
   return (
     <section className="internal-header header-marging">
-      <div className="header-title">{pageTitle}</div>
+      <h1 className="header-title">{pageTitle}</h1>
       <div
         className="header-desc"
         dangerouslySetInnerHTML={{ __html: pageDesc }}

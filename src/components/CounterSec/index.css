@@ -20,9 +20,10 @@
 .counter-row .counter:last-child {
     border-right: 1px solid var(--primary-btn-color);
 }
-.counter-row .counter h1 {
+.counter-row .counter h3 {
     font-size: var(--font-size-24);
     font-weight: 700;
+    margin: 0;
     margin-bottom: 10px;
 }
 .counter-row .counter p {

@@ -18,9 +18,9 @@ function PowerSport() {
                     <div className='power-sport-vector'>
                         <img src={`/images/power_sport_1_vec.webp`} />
                     </div>
-                    <div className='power-sport-title'>
+                    <h2 className='power-sport-title'>
                         Recreational<br/>Adventures
-                    </div>
+                    </h2>
                     <div className='power-sport-detail'>
                         <p>
                         Discover Canada’s breathtaking landscapes with lowest financing rates in Canada through Auto Lending Canada's financing solutions. Whether it’s an RV for road trips, a camper for serene escapes, or a trailer to carry your gear, we make adventure affordable.
@@ -45,9 +45,9 @@ function PowerSport() {
                     <div className='power-sport-vector'>
                         <img src={`/images/power_sport_2_vec.webp`} />
                     </div>
-                    <div className='power-sport-title'>
+                    <h2 className='power-sport-title'>
                         Marine<br/>Expeditions
-                    </div>
+                    </h2>
                     <div className='power-sport-detail'>
                         <p>
                             Canada’s waterways are waiting—don’t let financial constraints hold you back. Whether you're exploring crystal-clear lakes or venturing into coastal waters, our recreational marine loans make it possible. 
@@ -77,9 +77,9 @@ function PowerSport() {
                     <div className='power-sport-vector'>
                         <img src={`/images/power_sport_3_vec.webp`} />
                     </div>
-                    <div className='power-sport-title'>
+                    <h2 className='power-sport-title'>
                         Leisurely<br/>Expeditions
-                    </div>
+                    </h2>
                     <div className='power-sport-detail'>
                         <p>
                             Life’s most memorable moments are waiting to be explored—don’t let financial concerns hold you back. With Auto Lending Canada, you’ll have the freedom to enjoy Canada’s natural beauty on your terms. 

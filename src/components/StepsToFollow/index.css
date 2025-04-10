@@ -15,9 +15,10 @@
 .steps-row .steps-to-follow + .steps-to-follow {
     border-left: 1px solid #373435;
 }
-.steps-row .steps-to-follow p {
+.steps-row .steps-to-follow h2 {
     margin-top: 20px;
     font-size: var(--font-size-20);
+    font-weight: normal;
 }
 @media screen and (max-width:860px) {
     .steps-row .steps-to-follow + .steps-to-follow {
