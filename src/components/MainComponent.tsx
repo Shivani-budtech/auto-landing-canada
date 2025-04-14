@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes, useLocation, matchPath } from 'react-router-dom';
 import "../font.css";
 import "../style.css";
 import '../responsive.css';
@@ -21,6 +21,7 @@ import PrivacyPolicy from './PrivacyPolicy.tsx';
 import TermsOfUSe from './TermsOfUSe.tsx';
 import VerificationCode from './VerificationCode.tsx';
 import MembershipProgramme from './membershipProgramme.tsx';
+import NotFound from './NotFound.tsx';
 
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
@@ -62,7 +63,6 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
       });
     };
   }, [location]);
-
 
   return (
     <div className="">
@@ -130,6 +130,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/terms-of-use' element={<TermsOfUSe />} />
           <Route path='/membership_programme' element={<MembershipProgramme />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

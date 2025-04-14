@@ -606,3 +606,12 @@ input[type=number] {
 .note-frame {
     font-family: inherit !important;
 }
+.not-found-container {
+    max-width: 100%;
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.not-found-container img {
+    width: 100%;
+}
