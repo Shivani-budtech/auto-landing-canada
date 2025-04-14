@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import '../../responsive.css';
 import { API_URL, BACKEND_URL } from '../Constant.tsx';
+import striptags from 'striptags';
 import './index.css';
 
 function TopBlogs() {
@@ -53,8 +54,9 @@ function TopBlogs() {
         });
     }
     const getTruncatedContent = (content, maxLength = 150) => {
-        if (content.length <= maxLength) return content;
-        return `${content.substring(0, maxLength)}...`;
+        const plainText = striptags(content);
+        if (plainText.length <= maxLength) return plainText;
+        return `${plainText.substring(0, maxLength)}...`;
     };
 
     useEffect(() => {

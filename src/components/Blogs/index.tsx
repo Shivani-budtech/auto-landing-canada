@@ -4,6 +4,7 @@ import '../../responsive.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { API_URL, BACKEND_URL } from '../Constant.tsx';
+import striptags from 'striptags';
 function AllBlogsNew() {
     const arr = []
     const [blogs, setBlogs] = useState(arr);
@@ -45,8 +46,9 @@ function AllBlogsNew() {
     }
 
     const getTruncatedContent = (content, maxLength = 100) => {
-        if (content.length <= maxLength) return content;
-        return `${content.substring(0, maxLength)}...`;
+        const plainText = striptags(content);
+        if (plainText.length <= maxLength) return plainText;
+        return `${plainText.substring(0, maxLength)}...`;
     };
 
     useEffect(() => {
@@ -201,10 +203,11 @@ function AllBlogsNew() {
                                                 {blog.category ? blog.category.title : ""}
                                             </div>
                                             <Link to={`/blog/${blog.slug}`}><h2 className='blog-title'>{blog.title}</h2></Link>
+                                            {console.log(blog.content)}
                                             {
                                                 key == 0 ?
-                                                    <div className='blog-desc' dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content , 320) }} /> :
-                                                    <div className='blog-desc' dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content) }} />
+                                                    <div className='blog-desc'><p dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content , 320) }} /></div> :
+                                                    <div className='blog-desc'><p dangerouslySetInnerHTML={{ __html: getTruncatedContent(blog.content) }} /></div>
                                             }
                                             
                                             <div className='blog-date'>{formateDate(blog.created_at)}</div>
