@@ -6,32 +6,38 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
         {
             'title': 'Coupe',
             'image': 'coupe.webp',
-            'val': 'Coupe'
+            'val': 'Coupe',
+            'alt':'A sleek green coupe with sporty design features, alloy wheels, and a modern profile, set against a black background.'
         },
         {
             'title': 'Hatchback',
             'image': 'hatchback.webp',
-            'val': 'Hatchback'
+            'val': 'Hatchback',
+            'alt':'A sleek, red hatchback car showcasing a sporty design, featuring black alloy wheels and aerodynamic body lines.'
         },
         {
             'title': 'Sedan',
             'image': 'sedan.webp',
-            'val': 'Sedan'
+            'val': 'Sedan',
+            'alt':'Side view of a sleek blue sedan featuring a modern design, alloy wheels, and a streamlined body shape.'
         },
         {
             'title': 'Minivan',
             'image': 'minivan.webp',
-            'val': 'Minivan'
+            'val': 'Minivan',
+            'alt':'A sleek black minivan side profile with a modern design, featuring tinted windows and sporty black alloy wheels.'
         },
         {
             'title': 'SUV & Crossover',
             'image': 'suv.webp',
-            'val': 'SUV & Crossover'
+            'val': 'SUV & Crossover',
+            'alt':'A white SUV parked sideways, showcasing its sleek design, silver alloy wheels, and black accents along the bottom.'
         },
         {
             'title': 'Truck',
             'image': 'truck.webp',
-            'val': 'Truck'
+            'val': 'Truck',
+            'alt':'Gray pickup truck with a stylish profile, featuring a spacious cab and robust wheels, showcasing its TRD design elements.'
         },
     ];
 
@@ -53,7 +59,7 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
                     <div className="stepper-title">Secure Pre-Approval for Your Dream Car at a Price That Fits Your Budget!</div>
-                    <span className='stepper-question-title'>What kind of vehicle are you interested in?</span>
+                    <h2 className='stepper-question-title'>What kind of vehicle are you interested in?</h2>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>
@@ -70,8 +76,8 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
                                     checked={formData.vehicle_type === car.val}
                                     onChange={handleChange}
                                 />
-                                <img src={`/images/cars/${car.image}`} />
-                                <span>{car.title}</span>
+                                <img src={`/images/cars/${car.image}`} alt={`${car.alt}`} />
+                                <h3>{car.title}</h3>
                             </label>
                         </div>
                     ))}

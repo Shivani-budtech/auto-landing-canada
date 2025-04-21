@@ -8,7 +8,7 @@ const StepperSixteen = ({ formData, setFieldValue, nextStep, prevStep, errors, t
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Create your account:</span>
+                    <h2 className='stepper-question-title'>Create your account:</h2>
                 </div>
                 <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>

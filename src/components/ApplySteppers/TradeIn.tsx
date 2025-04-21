@@ -40,7 +40,7 @@ const TradeIn = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Do you have a vehicle to trade in?</span>
+                    <h2 className='stepper-question-title'>Do you have a vehicle to trade in?</h2>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>

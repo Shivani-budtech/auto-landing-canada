@@ -66,9 +66,9 @@ const YearsOfLiving = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     If you just moved in please enter 1 month to continue.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

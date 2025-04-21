@@ -70,7 +70,7 @@ const CoSignerCitizenDetails = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Do you hold a valid Canadian driver's license?</span>
+                    <h2 className='stepper-question-title'>Do you hold a valid Canadian driver's license?</h2>
                 </div>
             </div>
             <div className="stepper-input">

@@ -28,7 +28,7 @@ const AnnualIncome = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your annual income before taxes & deductions?</span>
+                    <h2 className='stepper-question-title'>What is your annual income before taxes & deductions?</h2>
                 </div>
                 <span className='stepper-time'>2 minutes from finish</span>
             </div>

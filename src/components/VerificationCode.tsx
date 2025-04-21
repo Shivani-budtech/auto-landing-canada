@@ -8,7 +8,7 @@ function VerificationCode() {
             <div className="stepper-progress-container">
                 <div className='stepper-progress'>
                     <div className='stepper-complete' style={{ width: '100%' }}>
-                        <img src={`/images/stepper.webp`} alt="Stepper" />
+                        <img src={`/images/stepper.webp`} alt="Icon featuring a white car silhouette inside a red Canadian maple leaf on a red circular background." />
                     </div>
                 </div>
             </div>
@@ -16,7 +16,7 @@ function VerificationCode() {
                 <div className='stepper-content'>
                     <div className="stepper-question">
                         <div className='stepper-title-sec'>
-                            <span className='stepper-question-title'>Enter verification code:</span>
+                            <h2 className='stepper-question-title'>Enter verification code:</h2>
                         </div>
                         <span className='stepper-time'>Almost Done</span>
                     </div>

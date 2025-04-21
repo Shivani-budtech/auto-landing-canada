@@ -51,7 +51,7 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your approximate credit score?</span>
+                    <h2 className='stepper-question-title'>What is your approximate credit score?</h2>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>
@@ -77,9 +77,9 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Enjoy great rates, no matter your credit score.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

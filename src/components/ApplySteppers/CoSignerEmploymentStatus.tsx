@@ -60,7 +60,7 @@ const CoSignerEmploymentStatus = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your current employment status?</span>
+                    <h2 className='stepper-question-title'>What is your current employment status?</h2>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>
@@ -86,9 +86,9 @@ const CoSignerEmploymentStatus = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Your employment status helps us find the best vehicle and financing options for you.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

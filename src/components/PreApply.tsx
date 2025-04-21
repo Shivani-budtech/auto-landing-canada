@@ -3,6 +3,7 @@ import '../stepper.css';
 import '../responsive.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { Helmet } from "react-helmet-async";
 
 import VehicleType from './ApplySteppers/VehicleType.tsx';
 import Budget from './ApplySteppers/Budget.tsx';
@@ -310,18 +311,40 @@ function PreApply() {
     }, [vehicle_type]);
 
     return (
+        <>
+        <Helmet>
+            <meta charSet="UTF-8" />
+            <title>Pre-Approved Online Car Loan | Apply for New Car Loan</title>
+            <meta 
+                name="description" 
+                content="Apply for a new car loan online and get pre-approved fast. With top lenders, it's a hassle-free process for your next vehicle. Start your online car loan now." 
+            />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href="https://autolendingcanada.ca/apply" />
+
+            {/* Open Graph Metadata for Social Sharing */}
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Auto Lending Canada" />
+            <meta property="og:title" content="Pre-Approved Online Car Loan | Apply for New Car Loan" />
+            <meta 
+                property="og:description" 
+                content="Apply for a new car loan online and get pre-approved fast. With top lenders, it's a hassle-free process for your next vehicle. Start your online car loan now." 
+            />
+            <meta property="og:url" content="https://autolendingcanada.ca/apply" />
+        </Helmet>
         <div className='apply-stepper header-marging'>
             {alcStep === "application_success" || alcStep === "upload_id" || alcStep === "co_signer_upload_id"  || alcStep === "co_signer" || alcStep === "final_step" ? ""  : 
                 <div className="stepper-progress-container">
                     <div className='stepper-progress'>
                         <div className='stepper-complete' style={{ width: completionPercentage + `%` }}>
-                            <img src={`/images/stepper.webp`} alt="Stepper" />
+                            <img src={`/images/stepper.webp`} alt="Icon featuring a white car silhouette inside a red Canadian maple leaf on a red circular background."  />
                         </div>
                     </div>
                 </div>
             }
             {renderContent()}
         </div>
+        </>
     );
 }
 

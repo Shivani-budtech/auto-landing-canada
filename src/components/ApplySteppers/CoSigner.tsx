@@ -23,9 +23,9 @@ const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
             <div className="stepper-top-img">
                 <img src={`/images/success_application.webp`} />
             </div>
-            <div className="stepper-application-title">
+            <h2 className="stepper-application-title">
                 Would you like to add co-applicant?
-            </div>
+            </h2>
             <div className='stepper-input'>
                 <div className='inline-radio-input'>
                     <div className="inline-radio-row">

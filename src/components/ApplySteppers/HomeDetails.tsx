@@ -76,9 +76,9 @@ const HomeDetails = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     If you share a mortgage or rent payment with someone, please only include the portion you pay each month.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

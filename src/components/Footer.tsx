@@ -11,7 +11,7 @@ function Footer() {
           <div className="footer-col-1">
             <div className="header-logo">
               <Link to="/">
-                <img src={`/images/main-logo.webp`} alt="logo" />
+                <img src={`/images/main-logo.webp`} alt="White car icon centered in a red maple leaf silhouette on a grey background, symbolizing Canadian automotive themes." />
                 <div>
                   Auto Lending <span>Canada</span>
                 </div>
@@ -75,22 +75,22 @@ function Footer() {
             <div className="social-media-copyright">
               <div className="social-media-row">
                 <a href="https://www.instagram.com/autolendingcanada/" rel="noreferrer" target='_blank'>
-                  <img src={`/images/insta-social.webp`} alt="instagram"/>
+                  <img src={`/images/insta-social.webp`} alt="White Instagram logo featuring a camera outline inside a square on a transparent background."/>
                 </a>
                 <a href="https://www.facebook.com/people/Auto-Lending-Canada/61561773263064/" rel="noreferrer" target='_blank'>
-                  <img src={`/images/facebook-social.webp`} alt="facebook"/>
+                  <img src={`/images/facebook-social.webp`} alt="White Facebook logo featuring a stylized lowercase 'f' on a transparent background."/>
                 </a>
                 <a href="https://www.youtube.com/@AutoLendingCanada" rel="noreferrer" target='_blank'>
-                  <img src={`/images/youtube-social.webp`} alt="facebook" />
+                  <img src={`/images/youtube-social.webp`} alt="White YouTube logo featuring a play button inside a long circular design." />
                 </a>
                 <a href="https://www.linkedin.com/company/auto-lending-canada/" rel="noreferrer" target='_blank'>
-                  <img src={`/images/linkedin-social.webp`} alt="linkedin" />
+                  <img src={`/images/linkedin-social.webp`} alt="LinkedIn logo featuring a simple white outline of the company's iconic 'in' initials." />
                 </a>
                 <a href="https://x.com/AutoLendingCA" rel="noreferrer" target='_blank'>
-                  <img src={`/images/twitter-social.webp`} alt="twitter" />
+                  <img src={`/images/twitter-social.webp`} alt="The image features the Twitter logo, a stylized white letter 'X' with a bold outline and white fill" />
                 </a>
                 <a href="https://www.tiktok.com/@autolendingcanada" rel="noreferrer" target='_blank'>
-                  <img src={`/images/tiktok-social.webp`} alt="tiktok" />
+                  <img src={`/images/tiktok-social.webp`} alt="The image features the TikTok logo, a stylized musical note in white." />
                 </a>
               </div>
               <div className="copy-right-desc">

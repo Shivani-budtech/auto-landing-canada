@@ -8,9 +8,9 @@ const FinalStep = () => {
             <div className="stepper-top-img">
                 <img src={`/images/success_application.webp`} />
             </div>
-            <div className="stepper-application-title" style={{ textAlign: "left" }}>
+            <h2 className="stepper-application-title" style={{ textAlign: "left" }}>
                 Thank you! Your application has been submitted successfully
-            </div>
+            </h2>
             <div className="stepper-application-desc" style={{ fontSize: "20px" }}>
                 <p>We've received your application and reviewing it now!</p>
                 <br />

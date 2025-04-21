@@ -35,6 +35,11 @@ function HomeTop() {
           content="Get fast approval for car loans in Canada. Apply now for the best rates, quick decisions & hassle-free auto financing with Auto Lending Canada!"
         />
         <meta property="og:url" content="https://autolendingcanada.ca/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@AutoLendingCA" />
+        <meta name="twitter:title" content="Apply for Auto Financing in Canada & Secure the Best Loans" />
+        <meta name="twitter:description" content="Get fast approval for car loans in Canada. Apply now for the best rates, quick decisions & hassle-free auto financing with Auto Lending Canada!" />
+        <meta name="twitter:image" content="/images/home-cars.webp" />
       </Helmet>
 
       {/* Main Content */}

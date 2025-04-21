@@ -58,7 +58,7 @@ const CoSignerIncomeType = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Please provide your income details by selecting one of the options below:</span>
+                    <h2 className='stepper-question-title'>Please provide your income details by selecting one of the options below:</h2>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>
@@ -84,9 +84,9 @@ const CoSignerIncomeType = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Your income details help us ensure that your vehicle payments are manageable and within your budget.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

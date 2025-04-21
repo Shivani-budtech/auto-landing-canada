@@ -16,7 +16,7 @@ function PowerSport() {
                         </span>/03
                     </div>
                     <div className='power-sport-vector'>
-                        <img src={`/images/power_sport_1_vec.webp`} />
+                        <img src={`/images/power_sport_1_vec.webp`} alt='Illustration of a simple, black outline of a travel trailer with a door and windows, symbolizing outdoor adventure and travel.' />
                     </div>
                     <h2 className='power-sport-title'>
                         Recreational<br/>Adventures
@@ -43,7 +43,7 @@ function PowerSport() {
                         </span>/03
                     </div>
                     <div className='power-sport-vector'>
-                        <img src={`/images/power_sport_2_vec.webp`} />
+                        <img src={`/images/power_sport_2_vec.webp`} alt='A sleek motorboat with a person riding on it, gliding over water, emphasizing speed and adventure.' />
                     </div>
                     <h2 className='power-sport-title'>
                         Marine<br/>Expeditions
@@ -75,7 +75,7 @@ function PowerSport() {
                         </span>/03
                     </div>
                     <div className='power-sport-vector'>
-                        <img src={`/images/power_sport_3_vec.webp`} />
+                        <img src={`/images/power_sport_3_vec.webp`} alt='A silhouette of a person riding a snowmobile on a snowy terrain.' />
                     </div>
                     <h2 className='power-sport-title'>
                         Leisurely<br/>Expeditions

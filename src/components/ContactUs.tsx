@@ -19,6 +19,13 @@ function About() {
                 <meta property="og:title" content="Contact Auto Lending Canada | Car Financing & Best Rates" />
                 <meta property="og:description" content="Get in touch with Auto Lending Canada for the best auto financing rates in Canada. We make car financing easy and stress-free. Contact us today!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/contact-us" />
+                
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@AutoLendingCA" />
+                <meta name="twitter:title" content="Contact Auto Lending Canada | Car Financing & Best Rates" />
+                <meta name="twitter:description" content="Get in touch with Auto Lending Canada for the best auto financing rates in Canada. We make car financing easy and stress-free. Contact us today!" />
+                <meta name="twitter:image" content="/images/home-cars.webp" />
+
             </Helmet>
 
             <section className='contact-page'>

@@ -76,7 +76,7 @@ function Testimonials() {
                                 <div className="testimonial-desc">{testimonial.content}</div>
                                 <div className="testimonial-author">{testimonial.author}</div>
                                 <img
-                                    alt="Testimonial vector"
+                                    alt="Stylized red quotation marks symbolizing dialogue or emphasis, with a modern design against a transparent background."
                                     src={`/images/testimonial-vec.webp`}
                                     className="testimonail-vec"
                                 />

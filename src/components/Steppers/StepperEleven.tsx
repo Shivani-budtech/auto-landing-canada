@@ -65,9 +65,9 @@ const StepperEleven = ({ formData, setFieldValue, nextStep, prevStep, errors, to
                     <button type='button' className='secondary-btn' onClick={prevStep}>Back</button>
                     <button type='button' className='primary-btn' onClick={nextStep}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     If you just moved in please enter 1 month to continue.
-                </div>
+                </h3>
             </div>
         </div>
     );

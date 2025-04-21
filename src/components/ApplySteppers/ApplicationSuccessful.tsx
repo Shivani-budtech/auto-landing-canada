@@ -23,15 +23,15 @@ const ApplicationSuccessful = ({ formData, setFormData, setalcStep }) => {
             <div className="stepper-top-img">
                 <img src={`/images/success_application.webp`} />
             </div>
-            <div className="stepper-application-title">
+            <h2 className="stepper-application-title">
                 Application Successful!
-            </div>
-            <div className="stepper-application-number">
+            </h2>
+            <h3 className="stepper-application-number">
                 Confirmation Number: {formData.unique_id}
-            </div>
-            <div className="stepper-application-desc-title">
+            </h3>
+            <h4 className="stepper-application-desc-title">
                 A confirmation email will be sent to you shortly
-            </div>
+            </h4>
             <div className="stepper-input consent" style={{ marginTop: "50px" }}>
                 <input type="checkbox" name="sms_consent" id="sms_consent" value="yes" checked={formData.sms_consent === "yes"} onChange={handleChange} />
                 <label htmlFor="sms_consent">I consent to receive electronic messages regarding Auto lending Canada's products, services, and related offerings and understand that I can withdraw my consent at any time. More information is provided in our <a href="https://autolendingcanada.ca/privacy-policy" target="_blank">Privacy Policy</a> and <a href="https://autolendingcanada.ca/terms-of-use" target="_blank">Terms of Use</a></label>

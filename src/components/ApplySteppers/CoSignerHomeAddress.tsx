@@ -42,7 +42,7 @@ const CoSignerHomeAddress = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>In which location are you searching for a vehicle?</span>
+                    <h2 className='stepper-question-title'>In which location are you searching for a vehicle?</h2>
                 </div>
                 <span className='stepper-time'>2 minutes from finish</span>
             </div>
@@ -69,9 +69,9 @@ const CoSignerHomeAddress = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={checkForApproval}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Sharing your location helps us find the best deals available in your area.
-                </div>
+                </h3>
                 <div className="error-messages">
                     {hasError === 1 ?
                         <ul>
@@ -87,13 +87,13 @@ const CoSignerHomeAddress = ({ formData, setFormData, setalcStep }) => {
                     <div className="approval-popoverlay"></div>
                     <div className='approval-pop-container'>
                             <img src={`/images/approved.webp`} alt="" />
-                        <div className="approve-pop-title">
+                        <h2 className="approve-pop-title">
                             Congratulations!
-                        </div>
-                        <div className="approve-pop-address">
+                        </h2>
+                        <h3 className="approve-pop-address">
                             You Qualify for Pre-Approval in:
                                 <h1>{formData.co_signer_address }</h1>
-                        </div>
+                        </h3>
                         <div className="approve-pop-content">
                             <p>
                                 Join the Auto Lending Canada Advantage Membership as a Premium Member and enjoy exclusive benefits, including faster pre-approvals and enhanced support for your car loan application.

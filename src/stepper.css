@@ -111,8 +111,10 @@
 .stepper-car-input .car-radio img {
     max-width: 100%;
 }
-.stepper-car-input .car-radio label > span {
+.stepper-car-input .car-radio label > h3 {
     display: block;
+    font-size: var(--font-size-14);
+    font-weight: normal;
 }
 .stepper-car-input .car-radio label:has( > input:checked) {
     opacity: 1;
@@ -414,6 +416,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
     margin-top: 20px;
     color: #373435;
+    font-size: inherit;
+    font-weight: normal;
 }
 .verify-desc {
     display: flex;

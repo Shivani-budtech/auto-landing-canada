@@ -34,7 +34,7 @@ const CoSignerHomeDetails = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Do you currently rent or own your home?</span>
+                    <h2 className='stepper-question-title'>Do you currently rent or own your home?</h2>
                 </div>
                 <span className='stepper-time'>1 minutes from finish</span>
             </div>
@@ -79,9 +79,9 @@ const CoSignerHomeDetails = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     If you share a mortgage or rent payment with someone, please only include the portion you pay each month.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

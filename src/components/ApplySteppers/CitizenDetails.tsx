@@ -29,7 +29,7 @@ const CitizenDetails = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Are you a Canadian citizen or permanent resident?</span>
+                    <h2 className='stepper-question-title'>Are you a Canadian citizen or permanent resident?</h2>
                 </div>
                 <span className='stepper-time'>1 minutes from finish</span>
             </div>
@@ -67,7 +67,7 @@ const CitizenDetails = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Do you hold a valid Canadian driver's license?</span>
+                    <h2 className='stepper-question-title'>Do you hold a valid Canadian driver's license?</h2>
                 </div>
             </div>
             <div className="stepper-input">

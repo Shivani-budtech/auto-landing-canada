@@ -44,7 +44,7 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your budget range?</span>
+                    <h2 className='stepper-question-title'>What is your budget range?</h2>
                 </div>
                 <span className='stepper-time'>3 minutes from finish</span>
             </div>
@@ -70,9 +70,9 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Discover Vehicle Options Within Your Budget.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

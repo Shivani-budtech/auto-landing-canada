@@ -36,7 +36,7 @@ const DateOfBirth = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>What is your date of birth?</span>
+                    <h2 className='stepper-question-title'>What is your date of birth?</h2>
                 </div>
                 <span className='stepper-time'>1 minutes from finish</span>
             </div>

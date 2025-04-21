@@ -19,6 +19,13 @@ function CustomerStories() {
                 <meta property="og:title" content="Explore Our Successful Customer Stories | Auto Lending Canada" />
                 <meta property="og:description" content="Discover how customers secured new car loan interest rates in Canada with ease. Get inspired and apply today for hassle-free financing at the best rates!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/customer-stories" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@AutoLendingCA" />
+                <meta name="twitter:title" content="Explore Our Successful Customer Stories | Auto Lending Canada" />
+                <meta name="twitter:description" content="Discover how customers secured new car loan interest rates in Canada with ease. Get inspired and apply today for hassle-free financing at the best rates!" />
+                <meta name="twitter:image" content="/images/how_works_banner.webp" />
+
             </Helmet>
 
             <div className='customer-stories-page'>

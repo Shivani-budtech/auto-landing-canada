@@ -52,6 +52,13 @@ function Blog() {
                 content={blog.og_desc} 
             />
             <meta property="og:url" content={blog.og_url} />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@AutoLendingCA" />
+            <meta name="twitter:title" content={blog.og_title} />
+            <meta name="twitter:description" content={blog.meta_desc} />
+            <meta name="twitter:image" content={blog.image} />
+
         </Helmet>
         <section className="blog-detail-sec">
             <div className='blog-detail-img'>

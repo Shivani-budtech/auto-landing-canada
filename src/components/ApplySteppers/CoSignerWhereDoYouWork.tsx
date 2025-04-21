@@ -31,7 +31,7 @@ const CoSignerWhereDoYouWork = ({ formData, setFormData, setalcStep }) => {
             </div>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Where is your place of employment?</span>
+                    <h2 className='stepper-question-title'>Where is your place of employment?</h2>
                 </div>
                 <span className='stepper-time'>2 minutes from finish</span>
             </div>
@@ -58,9 +58,9 @@ const CoSignerWhereDoYouWork = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Don’t worry, we won’t visit—we just need these details to verify your employment and secure the best rates for you.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

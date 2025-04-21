@@ -7,7 +7,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
       <div className="header-container">
         <div className="header-logo">
           <Link to="/">
-            <img src={`/images/main-logo.webp`} alt="logo" />
+            <img src={`/images/main-logo.webp`} alt="White car icon centered in a red maple leaf silhouette on a grey background, symbolizing Canadian automotive themes." />
             <div>
             Auto Lending <span>Canada</span>
             </div>

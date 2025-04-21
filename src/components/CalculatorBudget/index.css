@@ -31,7 +31,7 @@
     padding:40px;
     text-align: center;
 }
-.car-loan-calculator-budget .calculated-counter-sec h1 {
+.car-loan-calculator-budget .calculated-counter-sec div {
     font-size: clamp(50px, 3vw, 64px);
     font-weight: 700;
 }

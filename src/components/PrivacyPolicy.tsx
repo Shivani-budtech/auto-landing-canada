@@ -89,9 +89,9 @@ function PrivacyPolicy() {
             on our home page.
           </p>
           <br />
-          <p>
+          <h2>
             <b>What Personal Information We Collect</b>
-          </p>
+          </h2>
           <br />
           <p>
             We collect Personal Information when you voluntarily provide it
@@ -170,9 +170,9 @@ function PrivacyPolicy() {
             </li>
           </ul>
           <br />
-          <p>
+          <h2>
             <b>How We Collect Information Through Technological Means</b>
-          </p>
+          </h2>
           <br />
           <p>
             When you use our Website, we may collect information that is
@@ -202,9 +202,9 @@ function PrivacyPolicy() {
             or how you may change or restrict this.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Cookies</b>
-          </p>
+          </h2>
           <br />
           <p>
             We and third-parties we partner with may use cookies and other
@@ -261,12 +261,12 @@ function PrivacyPolicy() {
             revisit our Website your ability to limit cookies is subject to your
             browser settings and limitations. You can also find out more
             information about managing, disabling, and deleting cookies at{" "}
-            <a href="www.allaboutcookies.org">www.allaboutcookies.org</a>.
+            <a target="_blank" href="https://www.allaboutcookies.org">www.allaboutcookies.org</a>.
           </p>
           <br />
-          <p>
+          <h2>
             <b>How We Use and Disclose Information Collected from You</b>
-          </p>
+          </h2>
           <br />
           <p>
             The information we collect from you may be used by us for the
@@ -387,9 +387,9 @@ function PrivacyPolicy() {
             consent.
           </p>
           <br />
-          <p>
+          <h2>
             <b>How We Protect Personal Information</b>
-          </p>
+          </h2>
           <br />
           <p>
             The security of your Personal Information is important to us. We
@@ -400,9 +400,9 @@ function PrivacyPolicy() {
             access to provide you with the services indicated above.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Third Party Collection of Information</b>
-          </p>
+          </h2>
           <br />
           <p>
             This Privacy Policy does not apply to applications, technologies or
@@ -413,9 +413,9 @@ function PrivacyPolicy() {
             different from ours.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Do Not Track</b>
-          </p>
+          </h2>
           <br />
           <p>
             Do Not Track is a privacy option that people can set in certain web
@@ -428,9 +428,9 @@ function PrivacyPolicy() {
             not.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Withdrawal of Consent</b>
-          </p>
+          </h2>
           <br />
           <p>
             You have the right to withdraw consent from the collection, use or
@@ -462,9 +462,9 @@ function PrivacyPolicy() {
             </li>
           </ul>
           <br />
-          <p>
+          <h2>
             <b>Access and Rectification </b>
-          </p>
+          </h2>
           <br />
           <p>
             We will make every effort to ensure any Personal Information
@@ -482,9 +482,9 @@ function PrivacyPolicy() {
             and subject to any restrictions set out in the Act.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Retention of Personal Information</b>
-          </p>
+          </h2>
           <br />
           <p>
             We will retain any Personal Information used to make a decision that
@@ -496,9 +496,9 @@ function PrivacyPolicy() {
             reasonable legal or business purposes.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Opting Out</b>
-          </p>
+          </h2>
           <br />
           <p>
             You can opt out all marketing communications by (i) clicking the
@@ -509,9 +509,9 @@ function PrivacyPolicy() {
             in.
           </p>
           <br />
-          <p>
+          <h2>
             <b>Age Restriction</b>
-          </p>
+          </h2>
           <br />
           <p>
             We do not knowingly collect or maintain Personal Information from
@@ -527,9 +527,9 @@ function PrivacyPolicy() {
             terminated and personal information deleted.
           </p>
           <br />
-          <p>
+          <h2>
             <b>How to Contact Us</b>
-          </p>
+          </h2>
           <br />
           <p>
             If you have any questions regarding this Privacy Policy, or to

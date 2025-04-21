@@ -41,10 +41,10 @@ const StepperTen = ({ formData, setFieldValue, nextStep, prevStep, errors, touch
                         <div className="approve-pop-title">
                             Congratulations!
                         </div>
-                        <div className="approve-pop-address">
+                        <h3 className="approve-pop-address">
                             You Qualify for Pre-Approval in:
                             <h1>Hamilton, Ontario</h1>
-                        </div>
+                        </h3>
                         <div className="approve-pop-content">
                             <p>
                                 Become a Premium Member of the Auto Lending Canada Affinity Program and get pre-approved for your car loan.

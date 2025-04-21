@@ -20,12 +20,18 @@ function AboutUs() {
                 <meta property="og:title" content="Lowest Auto Finance Rates in Canada | Pre Approved Car Loan" />
                 <meta property="og:description" content="Start with Pre Approved Loan for a car in minutes to determine your borrowing power and Lowest Auto Finance Rates in Canada! Start with Pre Approved Loans!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/about" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@AutoLendingCA" />
+                <meta name="twitter:title" content="Lowest Auto Finance Rates in Canada | Pre Approved Car Loan" />
+                <meta name="twitter:description" content="Start with Pre Approved Loan for a car in minutes to determine your borrowing power and Lowest Auto Finance Rates in Canada! Start with Pre Approved Loans!" />
+                <meta name="twitter:image" content="/images/our-story.webp" />
             </Helmet>
 
             <section className="about-us-sec container">
                 <div className="about-us-container">
                     <div className='about-image'>
-                        <img src={`/images/our-story.webp`} alt="Our Story" />
+                        <img src={`/images/our-story.webp`} alt="A car salesperson gestures toward a white SUV while engaging in conversation with a customer in a modern dealership." />
                     </div>
                     <div className='about-content'>
                         <h2>

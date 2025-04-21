@@ -19,6 +19,14 @@ function Faqs() {
                 <meta property="og:title" content="FAQs | Get Answers About Auto Financing & Car Loans in Canada" />
                 <meta property="og:description" content="Find answers to common questions about auto financing in Canada. Learn about car loans, rates, and approvals. Get started today with hassle-free financing!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/faqs" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@AutoLendingCA" />
+                <meta name="twitter:title" content="FAQs | Get Answers About Auto Financing & Car Loans in Canada" />
+                <meta name="twitter:description" content="Find answers to common questions about auto financing in Canada. Learn about car loans, rates, and approvals. Get started today with hassle-free financing!" />
+                <meta name="twitter:image" content="/images/home-cars.webp" />
+
+
             </Helmet>
 
             <section className='faq-page'>

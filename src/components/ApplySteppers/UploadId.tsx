@@ -32,9 +32,9 @@ const UploadId = ({ formData, setFormData, setalcStep }) => {
             <div className="stepper-top-img">
                 <img src={`/images/success_application.webp`} />
             </div>
-            <div className="stepper-application-title">
+            <h2 className="stepper-application-title">
                 Upload a photo of the front of your driver's license
-            </div>
+            </h2>
             <div className='upload-img-btn'>
                 <input type="file" onChange={handleFileChange} id="fileInput" />
                 <label htmlFor="fileInput" className='custom-file-input'>

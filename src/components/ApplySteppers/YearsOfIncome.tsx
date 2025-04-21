@@ -61,7 +61,7 @@ const YearsOfIncome = ({ formData, setFormData, setalcStep }) => {
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>For how long have you been receiving this income source?</span>
+                    <h2 className='stepper-question-title'>For how long have you been receiving this income source?</h2>
                 </div>
                 <span className='stepper-time'>2 minutes from finish</span>
             </div>
@@ -92,9 +92,9 @@ const YearsOfIncome = ({ formData, setFormData, setalcStep }) => {
                     <button type='button' className='secondary-btn' onClick={handleBack}>Back</button>
                     <button type='button' className='primary-btn' onClick={handleNext}>Continue</button>
                 </div>
-                <div className="stepper-desc">
+                <h3 className="stepper-desc">
                     Enter '1 month' if you recently started your job.
-                </div>
+                </h3>
             </div>
             <div className="error-messages">
                 {hasError === 1 ?

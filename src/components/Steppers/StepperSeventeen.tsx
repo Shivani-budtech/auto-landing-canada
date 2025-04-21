@@ -37,7 +37,7 @@ const StepperSeventeen = ({ formData, setFieldValue, nextStep, prevStep, errors,
         <div className='stepper-content'>
             <div className="stepper-question">
                 <div className='stepper-title-sec'>
-                    <span className='stepper-question-title'>Enter verification code:</span>
+                    <h2 className='stepper-question-title'>Enter verification code:</h2>
                 </div>
                 <span className='stepper-time'>{remainingMinutes} minutes from finish</span>
             </div>

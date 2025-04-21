@@ -37,12 +37,12 @@ function CustomerReview() {
                                         <div className="review-desc">
                                             { item.content }
                                         </div>
-                                        <div className="review-author">
+                                        <h2 className="review-author">
                                             {item.author}
-                                        </div>
+                                        </h2>
                                         <img className="review-vec"
-                                            alt="review vector"
-                                            src={`/images/testimonial-vec.webp`}
+                                            alt="Stylized red quotation marks symbolizing dialogue or emphasis, with a modern design against a transparent background."
+                                            src={`/images/testimonial-vec.webp`} 
                                         />
                                     </div>
                                 ))
