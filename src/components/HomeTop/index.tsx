@@ -10,7 +10,7 @@ function HomeTop() {
       <Helmet>
         <meta charSet="UTF-8" />
         <title>
-          Apply for Auto Financing in Canada & Secure the Best Loans| Auto Lending Canada
+          Apply for Auto Financing in Canada & Secure the Best Loans | Auto Lending Canada
         </title>
         <meta
           name="description"
@@ -28,7 +28,7 @@ function HomeTop() {
         <meta property="og:site_name" content="Auto Lending Canada" />
         <meta
           property="og:title"
-          content="Apply for Auto Financing in Canada & Secure the Best Loans| Auto Lending Canada"
+          content="Apply for Auto Financing in Canada & Secure the Best Loans | Auto Lending Canada"
         />
         <meta
           property="og:description"
@@ -37,7 +37,7 @@ function HomeTop() {
         <meta property="og:url" content="https://autolendingcanada.ca/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@AutoLendingCA" />
-        <meta name="twitter:title" content="Apply for Auto Financing in Canada & Secure the Best Loans| Auto Lending Canada" />
+        <meta name="twitter:title" content="Apply for Auto Financing in Canada & Secure the Best Loans | Auto Lending Canada" />
         <meta name="twitter:description" content="Get fast approval for car loans in Canada. Apply now for the best rates, quick decisions & hassle-free auto financing with Auto Lending Canada!" />
         <meta name="twitter:image" content="/images/home-cars.webp" />
       </Helmet>
