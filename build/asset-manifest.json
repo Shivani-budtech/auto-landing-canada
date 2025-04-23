@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.782f90bf.css",
-    "main.js": "/static/js/main.c5a5cb9e.js",
+    "main.js": "/static/js/main.30cb12f3.js",
     "static/js/453.18ac2cde.chunk.js": "/static/js/453.18ac2cde.chunk.js",
     "static/media/home-top-bg.webp": "/static/media/home-top-bg.ef6a36f62bd0addb95e3.webp",
     "static/media/about_banner.webp": "/static/media/about_banner.21be4092d362c3b500f9.webp",
@@ -10,8 +10,8 @@
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/canada-flag.webp": "/static/media/canada-flag.8057a68916c0966ed7e4.webp",
     "static/media/faq-arrow.webp": "/static/media/faq-arrow.74cd94b6843109fa551f.webp",
     "static/media/dollar.webp": "/static/media/dollar.46b7f1ffed3618a3a2cf.webp",
@@ -23,11 +23,11 @@
     "static/media/email-input.webp": "/static/media/email-input.d9994f9226388e7de555.webp",
     "static/media/support-input.webp": "/static/media/support-input.2b43146dfe83900e745a.webp",
     "main.782f90bf.css.map": "/static/css/main.782f90bf.css.map",
-    "main.c5a5cb9e.js.map": "/static/js/main.c5a5cb9e.js.map",
+    "main.30cb12f3.js.map": "/static/js/main.30cb12f3.js.map",
     "453.18ac2cde.chunk.js.map": "/static/js/453.18ac2cde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.782f90bf.css",
-    "static/js/main.c5a5cb9e.js"
+    "static/js/main.30cb12f3.js"
   ]
 }
