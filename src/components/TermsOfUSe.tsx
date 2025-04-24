@@ -28,6 +28,7 @@ function TermsOfUSe() {
                     content="In the event you are interested in purchasing and obtaining financing for a Vehicle, we may put you in touch with an authorized motor vehicle dealer." 
                 />
                 <meta property="og:url" content="https://autolendingcanada.ca/terms-of-use" />
+                <meta property="og:image" content="https://autolendingcanada.ca/images/home-cars.webp" />
             </Helmet>
 
         <div className='about-page'>

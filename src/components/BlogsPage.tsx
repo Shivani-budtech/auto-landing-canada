@@ -25,6 +25,7 @@ function BlogsPage() {
                     content="Learn about car loan eligibility, interest rates, and find the best deals at Auto Lending Canada. Get expert tips and insights for a smooth car financing experience" 
                 />
                 <meta property="og:url" content="https://autolendingcanada.ca/blogs" />
+                <meta property="og:image" content="https://autolendingcanada.ca/images/home-cars.webp" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AutoLendingCA" />

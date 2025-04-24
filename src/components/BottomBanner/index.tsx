@@ -10,7 +10,7 @@ function BottomBanner() {
                 <div className='banner-content'>
                     <h2 className="sec-title">Your Trusted Partner for AUTO LOAN FINANCING IN CANADA! </h2>
                     <div className="banner-desc">
-                    Looking for easy and fast auto financing? We provide affordable car loans across Canada, helping you get the car you want—hassle-free! Apply now!
+                    Looking for easy and fast auto financing? We provide affordable car loans across<br/> Canada, helping you get the car you want—hassle-free! Apply now!
 
                     </div>
                     <div className="banner-btn">

@@ -10,9 +10,9 @@ function AboutBanner() {
             <div className="banner-container about-banner">
                 <div className='banner-content' >
                     <h2 className="sec-title" style={{ marginBottom: '10px' }}>
-                    Leaders in The Lowest Car Loan Rates Across Canada
+                    Leaders in The Lowest Car <br/>Loan Rates Across Canada
                     </h2>
-                    <div className="banner-desc" style={{ marginBottom: '0px' }}>At Auto Lending Canada, we offer simple and affordable auto financing for individuals and families with the lowest loan rates across Canada.
+                    <div className="banner-desc" style={{ marginBottom: '0px' }}>At Auto Lending Canada, we offer simple and affordable auto financing<br/>for individuals and families with the lowest loan rates across Canada.
                     </div>
                     <div className="banner-btn">
                         <Link to="/apply" className='primary-btn'>Apply Now</Link>

@@ -20,6 +20,8 @@ function AboutUs() {
                 <meta property="og:title" content="Lowest Auto Finance Rates in Canada | Pre Approved Car Loan" />
                 <meta property="og:description" content="Start with Pre Approved Loan for a car in minutes to determine your borrowing power and Lowest Auto Finance Rates in Canada! Start with Pre Approved Loans!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/about" />
+                <meta property="og:image" content="https://autolendingcanada.ca/images/our-story.webp" />
+
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AutoLendingCA" />
@@ -35,7 +37,7 @@ function AboutUs() {
                     </div>
                     <div className='about-content'>
                         <h2>
-                        Driving Dreams Across Canada — <br /> with Pre-Approved Car Loans & Auto Financing
+                        Driving Dreams Across Canada with Pre-Approved Car Loans & Auto Financing
                         </h2>
                         <p>
                         At Auto Lending Canada, our journey began with a simple mission: to make car ownership accessible for every Canadian, no matter their financial situation. We saw a gap in the market—a need for a car loan company that not only provided financing but also cared about the people behind the applications. That’s when we decided to create a service that combines speed, affordability, and a human touch.

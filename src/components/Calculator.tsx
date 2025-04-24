@@ -19,6 +19,7 @@ function Calculator() {
                 <meta property="og:title" content="Plan Your Budget with Car Loan Calculator | Auto Lending Canada" />
                 <meta property="og:description" content="Use our car loan calculator Canada to estimate payments and find the best financing options. Get pre-approved today and drive your dream car with ease!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/car-loan-calculator" />
+                <meta property="og:image" content="https://autolendingcanada.ca/images/home-cars.webp" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AutoLendingCA" />

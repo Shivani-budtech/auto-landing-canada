@@ -10,7 +10,7 @@ function InternalHeader() {
     // Dynamically set the title based on the route
     switch (location.pathname) {
       case "/about":
-        setPageTitle("Your Trusted Partner for the Lowest Auto Loan Rates in Canada");
+        setPageTitle("Your Trusted Partner for the Lowest<br/> Auto Loan Rates in Canada");
         setPageDesc(
           "At ALC, we pride ourselves on delivering pre approved, fast, transparent, and affordable auto loans in Canada. With the lowest rates, low monthly payments, and a customer-first approach, we’re here to drive your dreams forward."
         );
@@ -38,19 +38,19 @@ function InternalHeader() {
         );
         break;
       case "/car-loan-calculator":
-        setPageTitle("Plan Your Budget with Our Car Loan Estimator for Canada ");
+        setPageTitle("Car loan calculator");
         setPageDesc(
           "Pick your loan amount, choose the duration, and select your credit rating with our car loan calculator for Canada to explore your best financing options."
         );
         break;
       case "/power-sports":
-        setPageTitle("Affordable Auto Financing in Canada for Powersports Vehicles ");
+        setPageTitle("Affordable Auto Financing in Canada<br/>for Powersports Vehicles ");
         setPageDesc(
-          "Looking to finance your dream power sports vehicle? Our auto financing services in Canada offer affordable and flexible loans for motorcycles, ATVs, jet skis, and more."
+          "Looking to finance your dream power sports vehicle? Our auto financing services in Canada<br/>offer affordable and flexible loans for motorcycles, ATVs, jet skis, and more."
         );
         break;
       case "/how-it-works":
-        setPageTitle("How Car Financing in Canada Works – Get the Best Rates Today!");
+        setPageTitle("How Car Financing in Canada Works<br/>Get the Best Rates Today!");
         setPageDesc(
           "Discover auto financing options in Canada that perfectly align with your lifestyle and budget. With just a quick and easy quiz, you’ll be matched with the lowest car finance rates in Canada and gain access to the best car loans in Canada."
         );
@@ -75,7 +75,7 @@ function InternalHeader() {
   }, [location]);
   return (
     <section className="internal-header header-marging">
-      <h1 className="header-title">{pageTitle}</h1>
+      <h1 className="header-title" dangerouslySetInnerHTML={{ __html: pageTitle }} />
       <div
         className="header-desc"
         dangerouslySetInnerHTML={{ __html: pageDesc }}

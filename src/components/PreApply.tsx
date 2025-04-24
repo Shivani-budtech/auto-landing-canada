@@ -326,6 +326,7 @@ function PreApply() {
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="Auto Lending Canada" />
             <meta property="og:title" content="Pre-Approved Online Car Loan | Apply for New Car Loan" />
+            <meta property="og:image" content="https://autolendingcanada.ca/images/home-cars.webp" />
             <meta 
                 property="og:description" 
                 content="Apply for a new car loan online and get pre-approved fast. With top lenders, it's a hassle-free process for your next vehicle. Start your online car loan now." 

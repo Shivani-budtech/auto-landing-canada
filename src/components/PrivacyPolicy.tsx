@@ -37,6 +37,7 @@ function PrivacyPolicy() {
           property="og:url"
           content="https://autolendingcanada.ca/privacy-policy"
         />
+        <meta property="og:image" content="https://autolendingcanada.ca/images/home-cars.webp" />
       </Helmet>
 
       <div className="about-page">

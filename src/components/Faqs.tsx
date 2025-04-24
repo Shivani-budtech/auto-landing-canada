@@ -19,6 +19,8 @@ function Faqs() {
                 <meta property="og:title" content="FAQs | Get Answers About Auto Financing & Car Loans in Canada" />
                 <meta property="og:description" content="Find answers to common questions about auto financing in Canada. Learn about car loans, rates, and approvals. Get started today with hassle-free financing!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/faqs" />
+                <meta property="og:image" content="https://autolendingcanada.ca/images/home-cars.webp" />
+
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AutoLendingCA" />

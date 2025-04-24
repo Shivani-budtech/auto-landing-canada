@@ -22,12 +22,13 @@ function HowItWorks() {
                 <meta property="og:title" content="Get the Best New Car Finance Rates & Car Financing in Canada" />
                 <meta property="og:description" content="Compare new car finance rates and find the best car financing in Canada. Apply for an online car loan today and get fast approval with competitive rates!" />
                 <meta property="og:url" content="https://autolendingcanada.ca/how-it-works" />
+                <meta property="og:image" content="https://autolendingcanada.ca/images/how_works_banner.webp" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AutoLendingCA" />
                 <meta name="twitter:title" content="Get the Best New Car Finance Rates & Car Financing in Canada" />
                 <meta name="twitter:description" content="Compare new car finance rates and find the best car financing in Canada. Apply for an online car loan today and get fast approval with competitive rates!" />
-                <meta name="twitter:image" content="images/how_works_banner.webp" />
+                <meta name="twitter:image" content="https://autolendingcanada.ca/images/how_works_banner.webp" />
 
             </Helmet>
 

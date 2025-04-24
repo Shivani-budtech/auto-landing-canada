@@ -67,7 +67,7 @@ function CalculatorBudget() {
     return (
         <section className='contact-us-sec car-loan-calculator-budget container'>
             <div className="sec-title">
-                <h2 style={{fontSize:"inherit"}}>Car Loan Calculator</h2>
+                <h2 style={{fontSize:"inherit"}}>Plan Your Budget with Our Car Loan Estimator for Canada</h2>
                 <span>
                 Pick your loan amount, choose the duration, and select your credit rating with our car loan calculator for Canada to explore your best financing options.
 
