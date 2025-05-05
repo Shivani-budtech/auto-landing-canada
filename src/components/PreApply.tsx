@@ -332,6 +332,28 @@ function PreApply() {
                 content="Apply for a new car loan online and get pre-approved fast. With top lenders, it's a hassle-free process for your next vehicle. Start your online car loan now." 
             />
             <meta property="og:url" content="https://autolendingcanada.ca/apply" />
+            
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `!function(f,b,e,v,n,t,s)
+                    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                    n.queue=[];t=b.createElement(e);t.async=!0;
+                    t.src=v;s=b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t,s)}(window, document,'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                    fbq('init', '991486116394583');
+                    fbq('track', 'PageView');`
+                }}
+                />
+            <noscript
+            dangerouslySetInnerHTML={{
+                __html: `<img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=991486116394583&ev=PageView&noscript=1" />`
+            }}
+            />
+
         </Helmet>
         <div className='apply-stepper header-marging'>
             {alcStep === "application_success" || alcStep === "upload_id" || alcStep === "co_signer_upload_id"  || alcStep === "co_signer" || alcStep === "final_step" ? ""  : 
