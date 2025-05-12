@@ -71,13 +71,16 @@
     font-size: var(--font-size-34);
     font-weight: 700;
 }
-.blog-content ul {
+.blog-content ul , .blog-content ol {
     margin-bottom:15px;
     padding-left: 40px;
     list-style-type: disc;
 }
 .blog-content ul li {
     list-style-type: disc;
+}
+.blog-content ol li {
+    list-style-type: decimal;
 }
 .blog-content h2 {
     margin-bottom: 10px;
