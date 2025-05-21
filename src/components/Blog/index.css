@@ -61,6 +61,13 @@
     font-weight: 400;
     line-height: 1.5;
 } 
+.blog-content img {
+    max-width: 100%;
+}
+.blog-content .image {
+    margin-left:0;
+    margin-right: 0;
+}
 .blog-content li {
     font-size: var(--font-size-18);
     font-weight: 400;
