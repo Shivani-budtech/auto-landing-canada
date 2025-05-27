@@ -40,18 +40,36 @@ const CoSignerName = ({ formData, setFormData, setalcStep }) => {
             <div className="stepper-input">
                 <div className='stepper-flex-input'>
                     <div className='stepper-input input-text'>
-                        <div className='stepper-text-input'>
+                        <div className='stepper-text-input' style={{ marginBottom:"10px" }}>
                             <span className="input-guide">Main applicant's first Name</span>
                             <span className='text-input'>
-                                <input type='text' className='' style={{ boxShadow:"none" }} disabled name="co_signer_first_name" value={formData.co_signer_first_name} onChange={handleChange} />
+                                <input type='text' className='' style={{ boxShadow:"none" }} disabled name="co_signer_first_name" value={formData.first_name} />
                             </span>
                         </div>
                     </div>
                     <div className='stepper-input input-text'>
-                        <div className='stepper-text-input'>
+                        <div className='stepper-text-input' style={{ marginBottom:"10px" }}>
                             <span className="input-guide">Main applicant's last Name</span>
                             <span className='text-input'>
-                                <input type='text' className='' style={{ boxShadow: "none" }} disabled name="co_signer_last_name" value={formData.co_signer_last_name} onChange={handleChangeLastName} />
+                                <input type='text' className='' style={{ boxShadow: "none" }} disabled name="co_signer_last_name" value={formData.last_name} />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div className='stepper-flex-input'>
+                    <div className='stepper-input input-text'>
+                        <div className='stepper-text-input' style={{ marginTop:"10px" }}>
+                            <span className="input-guide">Co-applicant Name</span>
+                            <span className='text-input'>
+                                <input type='text' className='' name="co_signer_first_name" value={formData.co_signer_first_name} onChange={handleChange} />
+                            </span>
+                        </div>
+                    </div>
+                    <div className='stepper-input input-text'>
+                        <div className='stepper-text-input' style={{ marginTop:"10px" }}>
+                            <span className="input-guide">Co-applicant Name</span>
+                            <span className='text-input'>
+                                <input type='text' className=''  name="co_signer_last_name" value={formData.co_signer_last_name} onChange={handleChangeLastName} />
                             </span>
                         </div>
                     </div>
