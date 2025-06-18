@@ -98,6 +98,10 @@
 }
 .blog-content h2 {
     margin-bottom: 10px;
+    font-size: 26px !important;
+}
+.blog-content h3 {
+   font-size: 22px !important; 
 }
 @media screen and (max-width: 1110px) {
     .blogs-detail-row {
