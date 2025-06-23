@@ -45,30 +45,15 @@ function HomeTop() {
 
       {/* Main Content */}
       <section className="car-ad header-marging">
-        <picture>
-          <source
-            srcSet="/home-top-bg-small.webp"
-            media="(max-width: 767px)"
-            type="image/webp"
-          />
-
-          <source
-            srcSet="/home-top-bg.webp"
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-
-          <img
-            src="/home-top-bg.webp"
-            alt="Hero background"
-            className="hero-bg-img"
-            loading="eager"
-            fetchPriority="high"
-            decoding="sync"
-            width="100%"
-            height="auto"
-          />
-        </picture>
+        
+        <img
+          src="/home-top-bg.webp"
+          alt="Hero background"
+          className="hero-bg-img"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync" width="360" height="640"
+        />
         <div className="car-ad-row container">
           <div className="content">
             <h1>
