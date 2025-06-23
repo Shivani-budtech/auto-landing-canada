@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.c63c9090.css",
-    "main.js": "/static/js/main.019c90b7.js",
+    "main.js": "/static/js/main.2d40dead.js",
     "static/js/453.18ac2cde.chunk.js": "/static/js/453.18ac2cde.chunk.js",
     "static/media/home-top-bg.webp": "/static/media/home-top-bg.ef6a36f62bd0addb95e3.webp",
     "static/media/about_banner.webp": "/static/media/about_banner.21be4092d362c3b500f9.webp",
     "static/media/how_works_banner.webp": "/static/media/how_works_banner.aaac53ec050a189d765f.webp",
     "static/media/home_banner.webp": "/static/media/home_banner.68300ae31c2fdb9e130d.webp",
-    "index.html": "/index.html",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "index.html": "/index.html",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/canada-flag.webp": "/static/media/canada-flag.8057a68916c0966ed7e4.webp",
@@ -23,11 +23,11 @@
     "static/media/email-input.webp": "/static/media/email-input.d9994f9226388e7de555.webp",
     "static/media/support-input.webp": "/static/media/support-input.2b43146dfe83900e745a.webp",
     "main.c63c9090.css.map": "/static/css/main.c63c9090.css.map",
-    "main.019c90b7.js.map": "/static/js/main.019c90b7.js.map",
+    "main.2d40dead.js.map": "/static/js/main.2d40dead.js.map",
     "453.18ac2cde.chunk.js.map": "/static/js/453.18ac2cde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c63c9090.css",
-    "static/js/main.019c90b7.js"
+    "static/js/main.2d40dead.js"
   ]
 }
