@@ -112,12 +112,29 @@
       </style>
 
       <link
-  rel="preload"
-  as="image"
-  href="/home-top-bg.webp"
-  type="image/webp"
-  fetchpriority="high"
-/>
+        rel="preload"
+        as="image"
+        href="/home-top-bg-medium.webp"
+        type="image/webp"
+        media="(min-width: 769px)"
+        fetchpriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/home-top-bg-small.webp"
+        type="image/webp"
+        media="(max-width: 768px)"
+        fetchpriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/home-top-bg-large.webp"
+        type="image/webp"
+        media="(min-width: 769px)"
+        fetchpriority="high"
+      />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
