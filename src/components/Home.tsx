@@ -1,12 +1,11 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import HomeTop from "./HomeTop/index.tsx";
-
-const WaysToBuy = lazy(() => import("./WaysToBuy/index.tsx"));
-const LookingFor = lazy(() => import("./LookingFor/index.tsx"));
-const WhyChoose = lazy(() => import("./WhyChoose/index.tsx"));
-const Testimonials = lazy(() => import("./Testimonials/index.tsx"));
-const Faq = lazy(() => import("./Faqs/index.tsx"));
-const BottomBanner = lazy(() => import("./BottomBanner/index.tsx"));
+import WaysToBuy from "./WaysToBuy/index.tsx";
+import LookingFor from "./LookingFor/index.tsx";
+import WhyChoose from "./WhyChoose/index.tsx";
+import Testimonials from "./Testimonials/index.tsx";
+import Faq from "./Faqs/index.tsx";
+import BottomBanner from "./BottomBanner/index.tsx";
 
 function Home() {
   return (
