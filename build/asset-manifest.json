@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.11b1ecf7.css",
+    "main.css": "/static/css/main.db022c71.css",
     "main.js": "/static/js/main.ef6a7c2d.js",
     "static/css/13.378f3f63.chunk.css": "/static/css/13.378f3f63.chunk.css",
     "static/js/13.a86c0aa3.chunk.js": "/static/js/13.a86c0aa3.chunk.js",
@@ -17,6 +17,7 @@
     "static/media/about_banner.webp": "/static/media/about_banner.21be4092d362c3b500f9.webp",
     "static/media/how_works_banner.webp": "/static/media/how_works_banner.aaac53ec050a189d765f.webp",
     "static/media/home_banner.webp": "/static/media/home_banner.68300ae31c2fdb9e130d.webp",
+    "static/media/home-cars-small.webp": "/static/media/home-cars-small.00389ae922b33a07dfe4.webp",
     "static/media/home-top-bg-small.webp": "/static/media/home-top-bg-small.91a0a39ab8c167f54d7a.webp",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "index.html": "/index.html",
@@ -33,7 +34,7 @@
     "static/media/email-vec.webp": "/static/media/email-vec.e92b543c31c133ca39dc.webp",
     "static/media/email-input.webp": "/static/media/email-input.d9994f9226388e7de555.webp",
     "static/media/support-input.webp": "/static/media/support-input.2b43146dfe83900e745a.webp",
-    "main.11b1ecf7.css.map": "/static/css/main.11b1ecf7.css.map",
+    "main.db022c71.css.map": "/static/css/main.db022c71.css.map",
     "main.ef6a7c2d.js.map": "/static/js/main.ef6a7c2d.js.map",
     "13.378f3f63.chunk.css.map": "/static/css/13.378f3f63.chunk.css.map",
     "13.a86c0aa3.chunk.js.map": "/static/js/13.a86c0aa3.chunk.js.map",
@@ -48,7 +49,7 @@
     "453.b81b6c15.chunk.js.map": "/static/js/453.b81b6c15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11b1ecf7.css",
+    "static/css/main.db022c71.css",
     "static/js/main.ef6a7c2d.js"
   ]
 }

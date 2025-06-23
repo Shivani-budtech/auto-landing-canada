@@ -103,7 +103,7 @@
   .hero-bg-img {
     content: url("./home-top-bg-small.webp");
   }
-  /* .home-cars-img-small {
+  .home-cars-img-small {
     content: url("./home-cars-small.webp");
-  } */
+  }
 }
