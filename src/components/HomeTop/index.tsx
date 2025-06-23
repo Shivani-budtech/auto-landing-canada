@@ -51,7 +51,7 @@ function HomeTop() {
           className="hero-bg-img"
           loading="eager"
           fetchpriority="high"
-          decoding="async"
+          decoding="auto"
         />
         <div className="car-ad-row container">
           <div className="content">
