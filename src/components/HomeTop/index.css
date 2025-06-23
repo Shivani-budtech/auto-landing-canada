@@ -100,7 +100,7 @@
     }
 }
 @media (max-width: 767px) {
-  .car-ad {
+  .hero-bg-img {
     content: url("./home-top-bg-small.webp");
   }
 }
