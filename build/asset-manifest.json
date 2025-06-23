@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.04280954.css",
-    "main.js": "/static/js/main.b6cc58c3.js",
+    "main.css": "/static/css/main.2667daae.css",
+    "main.js": "/static/js/main.4d7fbf9f.js",
     "static/js/453.18ac2cde.chunk.js": "/static/js/453.18ac2cde.chunk.js",
     "static/media/home-top-bg.webp": "/static/media/home-top-bg.ef6a36f62bd0addb95e3.webp",
     "static/media/about_banner.webp": "/static/media/about_banner.21be4092d362c3b500f9.webp",
     "static/media/how_works_banner.webp": "/static/media/how_works_banner.aaac53ec050a189d765f.webp",
     "static/media/home_banner.webp": "/static/media/home_banner.68300ae31c2fdb9e130d.webp",
-    "static/media/home-top-bg-small.webp": "/static/media/home-top-bg-small.49a396744c324f2a8a7e.webp",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "index.html": "/index.html",
@@ -23,12 +22,12 @@
     "static/media/email-vec.webp": "/static/media/email-vec.e92b543c31c133ca39dc.webp",
     "static/media/email-input.webp": "/static/media/email-input.d9994f9226388e7de555.webp",
     "static/media/support-input.webp": "/static/media/support-input.2b43146dfe83900e745a.webp",
-    "main.04280954.css.map": "/static/css/main.04280954.css.map",
-    "main.b6cc58c3.js.map": "/static/js/main.b6cc58c3.js.map",
+    "main.2667daae.css.map": "/static/css/main.2667daae.css.map",
+    "main.4d7fbf9f.js.map": "/static/js/main.4d7fbf9f.js.map",
     "453.18ac2cde.chunk.js.map": "/static/js/453.18ac2cde.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04280954.css",
-    "static/js/main.b6cc58c3.js"
+    "static/css/main.2667daae.css",
+    "static/js/main.4d7fbf9f.js"
   ]
 }

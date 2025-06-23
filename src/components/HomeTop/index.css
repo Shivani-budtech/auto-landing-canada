@@ -99,8 +99,8 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
 }
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .hero-bg-img {
-    content: url("./home-top-bg-small.webp");
+    content: url("./home-top-bg.webp");
   }
 }

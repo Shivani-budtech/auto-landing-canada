@@ -47,7 +47,7 @@ function HomeTop() {
       <section className="car-ad header-marging">
         
         <img
-          src="/home-top-bg.webp"
+          src="/home-top-bg-small.webp"
           alt="Hero background"
           className="hero-bg-img"
           loading="eager"
