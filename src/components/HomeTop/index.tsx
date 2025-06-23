@@ -50,7 +50,7 @@ function HomeTop() {
           src="/home-top-bg-small.webp"
           alt="Hero background"
           className="hero-bg-img"
-          loading="lazy"
+          loading="eager"
           fetchpriority="high"
           decoding="sync" width="360" height="640"
         />
