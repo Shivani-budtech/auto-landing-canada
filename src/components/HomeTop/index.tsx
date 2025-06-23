@@ -75,7 +75,7 @@ function HomeTop() {
             </div>
           </div>
           <div className="info">
-            <img className="home-cars-img" src="/images/home-cars.webp" alt="Car Financing in Canada" />
+            <img src="/images/home-cars.webp" alt="Car Financing in Canada" />
           </div>
         </div>
       </section>
