@@ -50,8 +50,24 @@ const CoSignerEmploymentStatus = ({ formData, setFormData, setalcStep }) => {
         }
     }
     const handleChange = (e) => {
-        setHasError(0);
-        setFormData({ ...formData, co_signer_employment_status: e.target.value });
+        // setHasError(0);
+        // setFormData({ ...formData, co_signer_employment_status: e.target.value });
+        setHasError(0); // Clear error
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...prev, co_signer_employment_status: selectedValue }));
+
+        if (selectedValue === "employed") {
+            setalcStep('co_signer_income_type');
+        } else if (selectedValue === "self-employed") {
+            setalcStep('co_signer_income_type');
+        } else if (selectedValue === "student") {
+            setalcStep('co_signer_do_you_work');
+        } else if (selectedValue === "retired") {
+            setalcStep('co_signer_monthly_income');
+        } else if (selectedValue === "other") {
+            setalcStep('co_signer_income_source');
+        }
     };
     return (
         <div className='stepper-content'>

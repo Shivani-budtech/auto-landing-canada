@@ -43,10 +43,18 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
             setalcStep('employment_status'); // Move to the next step
         }
     }
+    // const handleChange = (e) => {
+    //     setHasError(0);
+    //     setFormData({ ...formData, credit_rating: e.target.value });
+    // };
+
     const handleChange = (e) => {
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...formData, credit_rating: selectedValue }));
         setHasError(0);
-        setFormData({ ...formData, credit_rating: e.target.value });
-    };
+        setalcStep('employment_status'); // ✅ Move to next step immediately
+      };
     return (
         <div className='stepper-content'>
             <div className="stepper-question">

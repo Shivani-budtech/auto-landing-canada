@@ -50,9 +50,29 @@ const EmploymentStatus = ({ formData, setFormData, setalcStep }) => {
         }
     }
     const handleChange = (e) => {
-        setHasError(0);
-        setFormData({ ...formData, employment_status: e.target.value });
-    };
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...prev, employment_status: selectedValue }));
+      
+        if (selectedValue === "employed" || selectedValue === "self-employed") {
+          setalcStep('income_type');
+        } else if (selectedValue === "student") {
+          setalcStep('do_you_work');
+        } else if (selectedValue === "retired") {
+          setalcStep('monthly_income');
+        } else if (selectedValue === "other") {
+          setalcStep('income_source');
+        }
+      };
+      
+
+    // const handleChange = (e) => {
+    //     const selectedValue = e.target.value;
+      
+    //     setFormData(prev => ({ ...formData, employment_status: selectedValue }));
+    //     setHasError(0);
+    //     setalcStep('employment_status'); // ✅ Move to next step immediately
+    //   };
     return (
         <div className='stepper-content'>
             <div className="stepper-question">

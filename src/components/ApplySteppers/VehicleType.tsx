@@ -50,10 +50,18 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
             setalcStep('budget'); // Move to the next step
         }
     }
+    // const handleChange = (e) => {
+    //     setHasError(0);
+    //     setFormData({ ...formData, vehicle_type: e.target.value });
+    // };
     const handleChange = (e) => {
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...prev, vehicle_type: selectedValue }));
         setHasError(0);
-        setFormData({ ...formData, vehicle_type: e.target.value });
-    };
+        setalcStep('budget'); // ✅ Move to next step immediately
+      };
+      
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
@@ -76,7 +84,7 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
                                     checked={formData.vehicle_type === car.val}
                                     onChange={handleChange}
                                 />
-                                <img src={`/images/cars/${car.image}`} alt={`${car.alt}`} />
+                                <img src={`/images/cars/${car.image}`} alt={`${car.alt}`} className="cursor-pointer"/>
                                 <h3>{car.title}</h3>
                             </label>
                         </div>

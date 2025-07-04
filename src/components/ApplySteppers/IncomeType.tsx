@@ -47,10 +47,25 @@ const IncomeType = ({ formData, setFormData, setalcStep }) => {
             }
         }
     }
+    // const handleChange = (e) => {
+    //     setHasError(0);
+    //     setFormData({ ...formData, income_type: e.target.value });
+    // };
     const handleChange = (e) => {
-        setHasError(0);
-        setFormData({ ...formData, income_type: e.target.value });
-    };
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...prev, employment_status: selectedValue }));
+      
+        if (selectedValue === "monthly") {
+            setalcStep('monthly_income');
+        } else if (selectedValue === "other") {
+            setalcStep('monthly_income');
+        } else if (selectedValue === "annual") {
+            setalcStep('annual_income');
+        } else if (selectedValue === "hourly") {
+            setalcStep('hourly_income');
+        }
+      };
     return (
         <div className='stepper-content'>
             <div className="stepper-question">

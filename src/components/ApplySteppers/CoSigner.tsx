@@ -3,8 +3,19 @@ import React, { useState } from 'react';
 const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
     const [hasError, setHasError] = useState(0);
     const handleChange = (e) => {
-        setHasError(0);
-        setFormData({ ...formData, has_co_signer: e.target.value });
+        // setHasError(0);
+        // setFormData({ ...formData, has_co_signer: e.target.value });
+
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...prev, has_co_signer: selectedValue }));
+        if (selectedValue === "yes") {
+            setalcStep('co_signer_name');
+        } else if (selectedValue === "no") {
+            handleSubmit();
+        }
+
+
     };
     const handleNext = () => {
         if (formData.has_co_signer === "") {

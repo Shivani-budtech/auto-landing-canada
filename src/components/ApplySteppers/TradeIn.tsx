@@ -31,10 +31,18 @@ const TradeIn = ({ formData, setFormData, setalcStep }) => {
             setalcStep('credit_rating'); // Move to the next step
         }
     }
+    // const handleChange = (e) => {
+    //     setHasError(0);
+    //     setFormData({ ...formData, trade_in: e.target.value });
+    // };
+
     const handleChange = (e) => {
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...formData, trade_in: selectedValue }));
         setHasError(0);
-        setFormData({ ...formData, trade_in: e.target.value });
-    };
+        setalcStep('credit_rating'); // ✅ Move to next step immediately
+      };
 
     return (
         <div className='stepper-content'>

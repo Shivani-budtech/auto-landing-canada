@@ -6,9 +6,9 @@ import React, { useState } from 'react';
 const StepperOne = ({ formData, setFieldValue, nextStep, prevStep, errors,touched,total_steps,alcStep }) => {
     const carTypes = [
         {
-            'title' : 'Coupe',
+            'title' : 'Coupe AA',
             'image' : 'coupe.webp',
-            'val': 'Coupe'
+            'val': 'Coupe AA'
         },
         {
             'title': 'Hatchback',

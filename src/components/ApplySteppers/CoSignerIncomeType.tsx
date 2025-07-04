@@ -48,8 +48,22 @@ const CoSignerIncomeType = ({ formData, setFormData, setalcStep }) => {
         }
     }
     const handleChange = (e) => {
-        setHasError(0);
-        setFormData({ ...formData, co_signer_income_type: e.target.value });
+        // setHasError(0);
+        // setFormData({ ...formData, co_signer_income_type: e.target.value });
+        setHasError(0); // Clear error
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...prev, co_signer_income_type: selectedValue }));
+
+        if (selectedValue === "monthly") {
+            setalcStep('co_signer_monthly_income');
+        } else if (selectedValue === "other") {
+            setalcStep('co_signer_monthly_income');
+        } else if (selectedValue === "annual") {
+            setalcStep('co_signer_annual_income');
+        } else if (selectedValue === "hourly") {
+            setalcStep('co_signer_hourly_income');
+        }
     };
     return (
         <div className='stepper-content'>

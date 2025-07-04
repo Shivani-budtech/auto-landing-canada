@@ -35,11 +35,18 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
             setalcStep('trade_in'); // Move to the next step
         }
     }
-    const handleChange = (e) => {
-        setHasError(0);
-        setFormData({ ...formData, budget: e.target.value });
-    };
+    // const handleChange = (e) => {
+    //     setHasError(0);
+    //     setFormData({ ...formData, budget: e.target.value });
+    // };
 
+    const handleChange = (e) => {
+        const selectedValue = e.target.value;
+      
+        setFormData(prev => ({ ...formData, budget: selectedValue }));
+        setHasError(0);
+        setalcStep('trade_in'); // ✅ Move to next step immediately
+      };
     return (
         <div className='stepper-content'>
             <div className="stepper-question">
