@@ -54,16 +54,28 @@ const IncomeType = ({ formData, setFormData, setalcStep }) => {
     const handleChange = (e) => {
         const selectedValue = e.target.value;
       
-        setFormData(prev => ({ ...prev, employment_status: selectedValue }));
+        setFormData(prev => ({ ...prev, income_type: selectedValue }));
       
         if (selectedValue === "monthly") {
-            setalcStep('monthly_income');
+            setTimeout(() => {
+                setalcStep('monthly_income');
+            }, 400);
+            // setalcStep('monthly_income');
         } else if (selectedValue === "other") {
-            setalcStep('monthly_income');
+            setTimeout(() => {
+                setalcStep('monthly_income');
+            }, 400);
+            // setalcStep('monthly_income');
         } else if (selectedValue === "annual") {
-            setalcStep('annual_income');
+            setTimeout(() => {
+                setalcStep('annual_income');
+            }, 400);
+            // setalcStep('annual_income');
         } else if (selectedValue === "hourly") {
-            setalcStep('hourly_income');
+            setTimeout(() => {
+                setalcStep('hourly_income');
+            }, 400);
+            // setalcStep('hourly_income');
         }
       };
     return (

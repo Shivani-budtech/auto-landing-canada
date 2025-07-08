@@ -53,7 +53,10 @@ const CreditRating = ({ formData, setFormData, setalcStep }) => {
       
         setFormData(prev => ({ ...formData, credit_rating: selectedValue }));
         setHasError(0);
-        setalcStep('employment_status'); // ✅ Move to next step immediately
+        setTimeout(() => {
+            setalcStep('employment_status');
+          }, 400);
+        // setalcStep('employment_status'); // ✅ Move to next step immediately
       };
     return (
         <div className='stepper-content'>

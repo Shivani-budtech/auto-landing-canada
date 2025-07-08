@@ -8,25 +8,51 @@ import { Helmet } from "react-helmet-async";
 
 function Blog() {
   const { id } = useParams();
-  const [blog, setBlog] = useState({});
+  const [blog, setBlog] = useState(null);
+  const [schema, setSchema] = useState(null);
 
-  const fetchBlog = async () => {
-    try {
-      const response = await axios.get(API_URL + "blog/" + id);
-      if (typeof response.data.schema === 'string') {
-        try {
-          response.data.schema = JSON.parse(response.data.schema);
-        } catch (e) {
-          console.error("Invalid schema JSON:", e);
+  useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        const response = await axios.get(`${API_URL}blog/${id}`);
+        const data = response.data;
+
+        let parsedSchema = null;
+        if (typeof data.schema === 'string') {
+          try {
+            parsedSchema = JSON.parse(data.schema);
+          } catch (error) {
+            console.error('Schema JSON parse error:', error);
+          }
+        } else if (typeof data.schema === 'object') {
+          parsedSchema = data.schema;
         }
-      }
-      setBlog(response.data);
-    } catch (err) {
-      console.error("Error fetching blog:", err);
-    }
-  };
 
-  const formateDate = (dateString) => {
+        setBlog(data);
+        setSchema(parsedSchema);
+
+        // Inject schema script manually
+        if (parsedSchema) {
+          const script = document.getElementById('dynamic-schema');
+          if (script) {
+            script.remove(); // remove previous
+          }
+          const newScript = document.createElement('script');
+          newScript.type = 'application/ld+json';
+          newScript.id = 'dynamic-schema';
+          newScript.innerHTML = JSON.stringify(parsedSchema);
+          document.head.appendChild(newScript);
+        }
+
+      } catch (error) {
+        console.error('Error fetching blog:', error);
+      }
+    };
+
+    fetchBlog();
+  }, [id]);
+
+  const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-GB", {
       day: "2-digit",
@@ -35,46 +61,36 @@ function Blog() {
     });
   };
 
-  useEffect(() => {
-    fetchBlog();
-  }, [id]);
+  if (!blog) return <div>Loading...</div>;
 
-  if (blog.schema && typeof blog.schema === 'object') {
-    console.log('HELLO123', blog.schema);
-  }
- 
   return (
     <>
       <Helmet>
         <meta charSet="UTF-8" />
-        <title>{blog.meta_title}</title>
-        <meta name="description" content={blog.meta_desc} />
+        <title>{blog.meta_title || blog.title}</title>
+        <meta name="description" content={blog.meta_desc || ''} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={blog.canonical_url} />
+        <link rel="canonical" href={blog.canonical_url || window.location.href} />
 
-        <meta property="og:type" content={blog.og_type} />
-        <meta property="og:site_name" content={blog.og_site_name} />
-        <meta property="og:title" content={blog.og_title} />
-        <meta property="og:description" content={blog.og_desc} />
-        <meta property="og:url" content={blog.og_url} />
+        {/* Open Graph (Facebook, LinkedIn, etc.) */}
+        <meta property="og:type" content={blog.og_type || 'article'} />
+        <meta property="og:site_name" content={blog.og_site_name || 'Auto Lending Canada'} />
+        <meta property="og:title" content={blog.og_title || blog.title} />
+        <meta property="og:description" content={blog.og_desc || blog.meta_desc} />
+        <meta property="og:url" content={blog.og_url || window.location.href} />
+        <meta property="og:image" content={blog.image ? BACKEND_URL + 'public/uploads/' + blog.image : ''} />
 
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@AutoLendingCA" />
-        <meta name="twitter:title" content={blog.og_title} />
-        <meta name="twitter:description" content={blog.meta_desc} />
-        <meta name="twitter:image" content={blog.image} />
-
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema),
-            }}
-          />
+        <meta name="twitter:title" content={blog.og_title || blog.title} />
+        <meta name="twitter:description" content={blog.meta_desc || ''} />
+        <meta name="twitter:image" content={blog.image ? BACKEND_URL + 'public/uploads/' + blog.image : ''} />
       </Helmet>
 
       <section className="blog-detail-sec">
         <div className='blog-detail-img'>
-          <img src={BACKEND_URL + "public/uploads/" + blog.image} alt={blog.img_alt} />
+          <img src={`${BACKEND_URL}public/uploads/${blog.image}`} alt={blog.img_alt || blog.title} />
           <div className='blog-detail-img-text'>
             <div className="blog-detail-img-text-absolute"></div>
           </div>
@@ -82,7 +98,7 @@ function Blog() {
         <div className="blog-content">
           <h1>{blog.title}</h1>
           <span style={{ display: "inline-block", marginBottom: "10px", fontSize: "18px" }}>
-            {formateDate(blog.created_at)}
+            {formatDate(blog.created_at)}
           </span>
           <div dangerouslySetInnerHTML={{ __html: blog.content }} />
         </div>

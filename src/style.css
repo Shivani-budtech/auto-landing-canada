@@ -95,6 +95,16 @@ input[type=number] {
     gap:25px;
     flex: 1;
 }
+
+.car-radio.selected {
+    animation: pulse-select 0.3s ease-in-out;
+  }
+  
+  @keyframes pulse-select {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
 /* .header-nav .nav-link-dropdown {
     padding-right: 15px;
 } */

@@ -55,13 +55,25 @@ const EmploymentStatus = ({ formData, setFormData, setalcStep }) => {
         setFormData(prev => ({ ...prev, employment_status: selectedValue }));
       
         if (selectedValue === "employed" || selectedValue === "self-employed") {
-          setalcStep('income_type');
+        //   setalcStep('income_type');
+          setTimeout(() => {
+            setalcStep('income_type');
+          }, 400);
         } else if (selectedValue === "student") {
-          setalcStep('do_you_work');
+            setTimeout(() => {
+                setalcStep('do_you_work');
+              }, 400);
+        //   setalcStep('do_you_work');
         } else if (selectedValue === "retired") {
-          setalcStep('monthly_income');
+            setTimeout(() => {
+                setalcStep('monthly_income');
+              }, 400);
+        //   setalcStep('monthly_income');
         } else if (selectedValue === "other") {
-          setalcStep('income_source');
+            setTimeout(() => {
+                setalcStep('income_source');
+              }, 400);
+        //   setalcStep('income_source');
         }
       };
       

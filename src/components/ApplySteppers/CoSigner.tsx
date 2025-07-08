@@ -10,7 +10,10 @@ const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
       
         setFormData(prev => ({ ...prev, has_co_signer: selectedValue }));
         if (selectedValue === "yes") {
-            setalcStep('co_signer_name');
+            // setalcStep('co_signer_name');
+            setTimeout(() => {
+                setalcStep('co_signer_name');
+              }, 400);
         } else if (selectedValue === "no") {
             handleSubmit();
         }

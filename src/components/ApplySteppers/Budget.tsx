@@ -45,7 +45,10 @@ const Budget = ({ formData, setFormData, setalcStep }) => {
       
         setFormData(prev => ({ ...formData, budget: selectedValue }));
         setHasError(0);
-        setalcStep('trade_in'); // ✅ Move to next step immediately
+        // setalcStep('trade_in'); // ✅ Move to next step immediately
+        setTimeout(() => {
+            setalcStep('trade_in');
+          }, 400);
       };
     return (
         <div className='stepper-content'>

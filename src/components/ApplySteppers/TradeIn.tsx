@@ -41,7 +41,10 @@ const TradeIn = ({ formData, setFormData, setalcStep }) => {
       
         setFormData(prev => ({ ...formData, trade_in: selectedValue }));
         setHasError(0);
-        setalcStep('credit_rating'); // ✅ Move to next step immediately
+        setTimeout(() => {
+            setalcStep('credit_rating');
+        }, 400);
+        // setalcStep('credit_rating'); // ✅ Move to next step immediately
       };
 
     return (

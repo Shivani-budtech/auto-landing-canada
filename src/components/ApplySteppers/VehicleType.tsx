@@ -59,7 +59,10 @@ const VehicleType = ({ formData, setFormData, setalcStep }) => {
       
         setFormData(prev => ({ ...prev, vehicle_type: selectedValue }));
         setHasError(0);
-        setalcStep('budget'); // ✅ Move to next step immediately
+        // setalcStep('budget'); // ✅ Move to next step immediately
+        setTimeout(() => {
+            setalcStep('budget');
+          }, 400);
       };
       
     return (

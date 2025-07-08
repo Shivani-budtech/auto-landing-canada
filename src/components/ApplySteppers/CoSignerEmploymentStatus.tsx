@@ -58,15 +58,30 @@ const CoSignerEmploymentStatus = ({ formData, setFormData, setalcStep }) => {
         setFormData(prev => ({ ...prev, co_signer_employment_status: selectedValue }));
 
         if (selectedValue === "employed") {
-            setalcStep('co_signer_income_type');
+            setTimeout(() => {
+                setalcStep('co_signer_income_type');
+              }, 400);
+            // setalcStep('co_signer_income_type');
         } else if (selectedValue === "self-employed") {
-            setalcStep('co_signer_income_type');
+            setTimeout(() => {
+                setalcStep('co_signer_income_type');
+              }, 400);
+            // setalcStep('co_signer_income_type');
         } else if (selectedValue === "student") {
-            setalcStep('co_signer_do_you_work');
+            setTimeout(() => {
+                setalcStep('co_signer_do_you_work');
+              }, 400);
+            // setalcStep('co_signer_do_you_work');
         } else if (selectedValue === "retired") {
-            setalcStep('co_signer_monthly_income');
+            setTimeout(() => {
+                setalcStep('co_signer_monthly_income');
+              }, 400);
+            // setalcStep('co_signer_monthly_income');
         } else if (selectedValue === "other") {
-            setalcStep('co_signer_income_source');
+            setTimeout(() => {
+                setalcStep('co_signer_income_source');
+              }, 400);
+            // setalcStep('co_signer_income_source');
         }
     };
     return (

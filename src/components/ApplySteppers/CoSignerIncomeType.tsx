@@ -56,13 +56,25 @@ const CoSignerIncomeType = ({ formData, setFormData, setalcStep }) => {
         setFormData(prev => ({ ...prev, co_signer_income_type: selectedValue }));
 
         if (selectedValue === "monthly") {
-            setalcStep('co_signer_monthly_income');
+            setTimeout(() => {
+                setalcStep('co_signer_monthly_income');
+              }, 400);
+            // setalcStep('co_signer_monthly_income');
         } else if (selectedValue === "other") {
-            setalcStep('co_signer_monthly_income');
+            setTimeout(() => {
+                setalcStep('co_signer_monthly_income');
+              }, 400);
+            // setalcStep('co_signer_monthly_income');
         } else if (selectedValue === "annual") {
-            setalcStep('co_signer_annual_income');
+            setTimeout(() => {
+                setalcStep('co_signer_annual_income');
+              }, 400);
+            // setalcStep('co_signer_annual_income');
         } else if (selectedValue === "hourly") {
-            setalcStep('co_signer_hourly_income');
+            setTimeout(() => {
+                setalcStep('co_signer_hourly_income');
+              }, 400);
+            // setalcStep('co_signer_hourly_income');
         }
     };
     return (
