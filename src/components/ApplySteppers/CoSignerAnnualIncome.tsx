@@ -13,8 +13,8 @@ const CoSignerAnnualIncome = ({ formData, setFormData, setalcStep }) => {
         if (formData.co_signer_annual_income === "") {
             setHasError(1); // Show error
         } else {
-            setHasError(0); // Clear error
-            setalcStep('co_signer_years_of_income'); // Move to the next step
+            setHasError(0); 
+            setalcStep('co_signer_years_of_income'); 
         }
     }
     const handleChange = (e) => {
@@ -56,7 +56,6 @@ const CoSignerAnnualIncome = ({ formData, setFormData, setalcStep }) => {
                         {formData.co_signer_annual_income === "" ? <li>Enter Annual Income</li> : ""}
                     </ul> : ""
                 }
-
             </div>
         </div>
     );
