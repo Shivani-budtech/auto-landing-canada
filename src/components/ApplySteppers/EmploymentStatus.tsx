@@ -30,10 +30,11 @@ const EmploymentStatus = ({ formData, setFormData, setalcStep }) => {
         setHasError(0);
         setalcStep('credit_rating');
     }
+    
 
     const handleNext = () => {
         if (formData.employment_status === "") {
-            setHasError(1); // Show error
+            setHasError(1);
         } else {
             setHasError(0); // Clear error
             if (formData.employment_status === "employed") {
