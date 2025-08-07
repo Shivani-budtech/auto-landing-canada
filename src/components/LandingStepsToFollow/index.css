@@ -1,0 +1,28 @@
+.steps-sec-new {
+    background-image: url('./home-top-bg.webp');
+    background-color: #D9D9D9;
+    margin-top:100px;
+}
+.steps-row-new {
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.steps-row-new .steps-to-follow {
+    flex: 1;
+    text-align: center;
+    padding: 20px 40px;
+}
+.steps-row-new .steps-to-follow + .steps-to-follow {
+    border-left: 1px solid #373435;
+}
+.steps-row-new .steps-to-follow h2 {
+    margin-top: 20px;
+    font-size: var(--font-size-20);
+    font-weight: normal;
+}
+@media screen and (max-width:860px) {
+    .steps-row-new .steps-to-follow + .steps-to-follow {
+        border: none;
+    }
+}

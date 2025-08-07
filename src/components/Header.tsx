@@ -14,7 +14,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
           </Link>
         </div>
             <div className="header-nav">
-      {location.pathname !== '/apply' && (
+      {location.pathname !== '/apply' || location.pathname !== '/apply_now' && (
         <>
           <div className="nav-link-dropdown">
             <a href="#">Why Choose ALC?</a>
@@ -61,7 +61,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
 
  
         <div className="header-btn">
-          {location.pathname === "/apply" ?
+          {location.pathname === "/apply" || location.pathname === "/apply_now" ?
             <a href="tel:1-844-405-5363" className="">1-844-405-LEND</a> :
             <Link to="/apply" className="primary-btn">Apply Now</Link>
           }

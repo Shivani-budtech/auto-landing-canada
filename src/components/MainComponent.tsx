@@ -22,6 +22,7 @@ import TermsOfUSe from './TermsOfUSe.tsx';
 import VerificationCode from './VerificationCode.tsx';
 import MembershipProgramme from './membershipProgramme.tsx';
 import NotFound from './NotFound.tsx';
+import ApplyNow from './landing_page_apply_now.tsx';
 
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
@@ -130,6 +131,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/terms-of-use' element={<TermsOfUSe />} />
           <Route path='/membership_programme' element={<MembershipProgramme />} />
+          <Route path='/apply_now' element={<ApplyNow />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

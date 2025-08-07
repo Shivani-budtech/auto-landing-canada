@@ -1,0 +1,106 @@
+.ways-to-buy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 70px 0;
+    /* color: #373435; */
+}
+.ways-to-buy .content {
+    flex: 0 1 45%;
+    padding: 20px;
+}
+.ways-to-buy .content img {
+    width: 100%;
+}
+.ways-to-buy h1 {
+    /* font-family: Outfit; */
+    font-size: clamp(30px, 3vw, 45px);
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.ways-to-buy .info {
+    flex: 1;
+}
+.ways-to-buy .info img {
+    width: 100%;
+}
+.ways-to-buy .description {
+    /* font-family: Outfit; */
+    font-size: var(--font-size-18);
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 20px;
+}
+.ways-to-buy .way-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0px 0px 50px 0px #072E7312;
+    border-radius: 18px;
+    padding: 29px;
+    width: 100%;
+    /* max-width: 526px; */
+}
+.ways-to-buy .way-sec-container + .way-sec-container {
+    margin-top: 20px;
+}
+.ways-to-buy .way-sec-container:nth-child(odd) {
+    margin-left: 110px;
+}
+.ways-to-buy .way-sec-container:nth-child(even) {
+    margin-right: 110px;
+}
+.ways-to-buy .way-section .way-img {
+    flex: 0 0 58px;
+    background: var(--primary-btn-color);
+    padding: 15px;
+    height: 58px;
+    border-radius: 50%;
+}
+.ways-to-buy .way-section .way-info {
+    flex: 1;
+}
+.ways-to-buy .way-section .way-info h2 {
+    /* font-family: Outfit; */
+    font-size: var(--font-size-24);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+}
+.way-desc {
+    /* font-family: Outfit; */
+    font-size: var(--font-size-24);
+     font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 10px;
+}
+@media screen and (max-width:1020px) {
+    .ways-to-buy .way-sec-container:nth-child(odd) {
+        margin-left: 0;
+    }
+    .ways-to-buy .way-sec-container:nth-child(even) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:928px) {
+    .ways-to-buy {
+        padding: 20px 30px 0;
+    }
+}
+@media screen and (max-width:830px) {
+    .ways-to-buy {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:500px) {
+    .ways-to-buy .way-section {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
