@@ -13,46 +13,53 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
             </div>
           </Link>
         </div>
-        <div className="header-nav">
+            <div className="header-nav">
+      {location.pathname !== '/apply' && (
+        <>
           <div className="nav-link-dropdown">
             <a href="#">Why Choose ALC?</a>
             <div className="dropdown-menu">
               <ul>
-                <li className={location.pathname == "/about" ? "active" : ""}> 
+                <li className={location.pathname === '/about' ? 'active' : ''}>
                   <Link to="/about">About Us</Link>
                 </li>
-                <li className={location.pathname == "/how-it-works" ? "active" : ""}>
+                <li className={location.pathname === '/how-it-works' ? 'active' : ''}>
                   <Link to="/how-it-works">How it works?</Link>
                 </li>
-                <li className={location.pathname == "/customer-stories" ? "active" : ""} > 
+                <li className={location.pathname === '/customer-stories' ? 'active' : ''}>
                   <Link to="/customer-stories">Customer Stories</Link>
                 </li>
-                <li className={location.pathname == "/power-sports" ? "active" : ""}>
+                <li className={location.pathname === '/power-sports' ? 'active' : ''}>
                   <Link to="/power-sports">Power Sports</Link>
                 </li>
               </ul>
             </div>
           </div>
+
           <div className="nav-link-dropdown">
             <a href="#">Resources</a>
             <div className="dropdown-menu">
               <ul>
-                <li className={location.pathname == "/contact-us" ? "active" : ""}>
+                <li className={location.pathname === '/contact-us' ? 'active' : ''}>
                   <Link to="/contact-us">Contact Us</Link>
                 </li>
-                <li className={location.pathname == "/blogs" ? "active" : ""} >
+                <li className={location.pathname === '/blogs' ? 'active' : ''}>
                   <Link to="/blogs">Blogs</Link>
                 </li>
-                <li className={location.pathname == "/faqs" ? "active" : ""} >
+                <li className={location.pathname === '/faqs' ? 'active' : ''}>
                   <Link to="/faqs">FAQs</Link>
                 </li>
-                <li className={location.pathname == "/car-loan-calculator" ? "active" : ""} >
+                <li className={location.pathname === '/car-loan-calculator' ? 'active' : ''}>
                   <Link to="/car-loan-calculator">Car Loan Calculator</Link>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
+        </>
+      )}
+    </div>
+
+ 
         <div className="header-btn">
           {location.pathname === "/apply" ?
             <a href="tel:1-844-405-5363" className="">1-844-405-LEND</a> :

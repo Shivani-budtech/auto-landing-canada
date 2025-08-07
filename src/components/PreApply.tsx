@@ -98,7 +98,7 @@ function PreApply() {
         'sms_consent' : '',
         'driving_license_img' : '',
         'license_img': '',
-        'has_co_signer': 'yes',
+        'has_co_signer': 'no',
         'co_signer_first_name' : '',
         'co_signer_last_name' : '',
         'co_signer_employment_status': '',

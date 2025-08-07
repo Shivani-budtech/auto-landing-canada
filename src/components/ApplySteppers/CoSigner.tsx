@@ -7,20 +7,21 @@ const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
         // setFormData({ ...formData, has_co_signer: e.target.value });
 
         const selectedValue = e.target.value;
-      
+        console.log("selectedValue",selectedValue)
         setFormData(prev => ({ ...prev, has_co_signer: selectedValue }));
         if (selectedValue === "yes") {
-            // setalcStep('co_signer_name');
-            setTimeout(() => {
-                setalcStep('co_signer_name');
-              }, 400);
-        } else if (selectedValue === "no") {
+             setalcStep('co_signer_name');
+             setTimeout(() => {
+                 setalcStep('co_signer_name');
+               }, 1000);
+        } else {
             handleSubmit();
         }
 
 
     };
     const handleNext = () => {
+        console.log(formData.has_co_signer);
         if (formData.has_co_signer === "") {
             setHasError(1); // Show error
         } else {
@@ -53,7 +54,8 @@ const CoSigner = ({ formData, setFormData, setalcStep, handleSubmit }) => {
                                     name="has_co_signer"
                                     value="yes"
                                     checked={formData.has_co_signer === "yes"}
-                                    onChange={handleChange} />
+                                    onChange={handleChange}
+                                     />
                             </label>
                         </div>
                         <div className="inline-radio">
