@@ -14,12 +14,15 @@ function AllBlogsNew() {
     const [curCategory , setCurCategory] = useState(0);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [visibleCount, setVisibleCount] = useState(6); // 👈 show 6 initially
     const dropdownRef = useRef(null);
     
     const fetchBlogs = async () => {
         try {
             const response = await axios.get(API_URL + "blogs?category="+curCategory); // Replace with your API URL
             setBlogs(response.data); // Assume the API returns an array of blogs
+            setVisibleCount(7); // 👈 reset when category changes
+
         } catch (err) {
             
         } finally {
@@ -182,7 +185,7 @@ function AllBlogsNew() {
                     </div>
                     <div className="blog-grid">
                             {Object.keys(blogs).length > 0 ? (
-                                Object.entries(blogs).map(([key, blog]) => (
+                                Object.entries(blogs).slice(0, visibleCount).map(([key, blog]) => (
                                     <div key={key} className={key == 0 ? "blog-item first" : "blog-item"}>
                                         
                                         <div className='blog-image'>
@@ -260,6 +263,14 @@ function AllBlogsNew() {
                     </div>
                 </div>
                             )}
+
+                            {visibleCount < Object.keys(blogs).length && (
+    <div className="load-more text-center">
+        <button onClick={() => setVisibleCount(prev => prev + 6)} className="primary-btn">
+            Load More
+        </button>
+    </div>
+)}
                     </div>
                 </div>
             )}

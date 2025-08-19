@@ -18,7 +18,7 @@
 }
 .steps-row-new .steps-to-follow h2 {
     margin-top: 20px;
-    font-size: var(--font-size-20);
+    font-size: var(--font-size-18);
     font-weight: normal;
 }
 @media screen and (max-width:860px) {

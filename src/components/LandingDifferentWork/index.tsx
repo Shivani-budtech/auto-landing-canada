@@ -40,7 +40,7 @@ function ComparisonSection() {
         </div>
 
         <div className="column right">
-                              <div className="column-header modern">Canada Drives</div>
+                              <div className="column-header modern">Auto Lending Canada Drives</div>
 
           <div className="point">
             <span className="icon blue">➤</span>

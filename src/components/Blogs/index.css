@@ -191,7 +191,20 @@
 .dropdown-item.active {
     color: var(--primary-btn-color);
 }
-
+.load-more
+{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}
+.primary-btn
+{
+    cursor:pointer;
+}
 @keyframes loading {
     0% {
         background-position: 200% 0;
