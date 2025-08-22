@@ -48,6 +48,7 @@ function ComparisonSection() {
               <p>It takes less than 3 minutes to apply online, whenever and wherever it works for you.</p>
             </div>
           </div>
+          
           <div className="point">
             <span className="icon blue">➤</span>
             <div class="margin-set">
