@@ -5,62 +5,61 @@ import './index.css';
 function ComparisonSection() {
   return (
     <section className="comparison-section container">
-      <h2 className="comparison-title">Yes, It's Different. Yes, It Works.</h2>
+      <h2 className="comparison-title">A Smarter Way to Buy. A Better Way to Drive.</h2>
       <p className="comparison-subtitle">
-        We understand that this is not the traditional way to buy a vehicle, but<br />
-        the traditional way is outdated and has some serious flaws.
+        We don’t follow the outdated way of doing things. Instead, we’ve created a system that’s built to actually work.
       </p>
 
       <div className="comparison-table">
         <div className="column left">
-                    <div className="column-header modern">Traditional Car Shopping
+                    <div className="column-header modern_two">Traditional Car Shopping
 </div>
 
           <div className="point">
-            <span className="icon">➤</span>
+            <span className="icon-gray">➤</span>
             <div class="margin-set">
-              <h4>Time Consuming</h4>
-              <p>Spend hours or days looking at cars without knowing what type of financing you can get approved for.</p>
+              <h4>Takes Too Much Time</h4>
+              <p>Browsing lots and websites for days, without a clue if you’ll get approved, is frustrating.</p>
             </div>
           </div>
           <div className="point">
-            <span className="icon">➤</span>
+            <span className="icon-gray">➤</span>
             <div class="margin-set">
-              <h4>Inefficient</h4>
-              <p>Trips to multiple dealerships, negotiating with salespeople, bank appointments — the entire process can result in a lot of unnecessary stress.</p>
+              <h4>Too Many Hoops</h4>
+              <p>Multiple dealerships, pushy sales tactics, and back-and-forth with banks — it’s exhausting.</p>
             </div>
           </div>
           <div className="point">
-            <span className="icon">➤</span>
+            <span className="icon-gray">➤</span>
             <div class="margin-set">
-              <h4>Potential Rejection</h4>
-              <p>There is nothing worse than spending all that time finding a vehicle you love just to discover you can’t actually get approved for a loan to buy it!</p>
+              <h4>Disappointing Outcomes</h4>
+              <p>Imagine finding your dream car, only to be told you don’t qualify for the financing.</p>
             </div>
           </div>
         </div>
 
         <div className="column right">
-                              <div className="column-header modern">Auto Lending Canada Drives</div>
+                              <div className="column-header modern">Auto Lending Canada</div>
 
           <div className="point">
             <span className="icon blue">➤</span>
             <div class="margin-set">
-              <h4>Fast & Easy</h4>
-              <p>Complete our free online application in under 3 minutes from anywhere, at anytime.</p>
+              <h4>Easy to Start</h4>
+              <p>It takes less than 3 minutes to apply online, whenever and wherever it works for you.</p>
             </div>
           </div>
           <div className="point">
             <span className="icon blue">➤</span>
             <div class="margin-set">
-              <h4>Stress-Free</h4>
-              <p>Once you get pre-approved we will only show you vehicles<br/> you qualify for, so you won’t waste time looking at cars outside<br/> your budget.</p>
+              <h4>Hassle-Free</h4>
+              <p>We’ll match you with cars you’re already approved for, so you don’t waste time falling for ones outside your reach.</p>
             </div>
           </div>
           <div className="point">
             <span className="icon blue">➤</span>
             <div class="margin-set">
-              <h4>Any Credit Accepted</h4>
-              <p>We believe that every Canadian should have access to the financing they need, regardless of their credit situation. No fear of rejection here!</p>
+              <h4>Approval for Everyone</h4>
+              <p>Your credit situation shouldn’t hold you back. We welcome all credit types with no fear of rejection.</p>
             </div>
           </div>
         </div>

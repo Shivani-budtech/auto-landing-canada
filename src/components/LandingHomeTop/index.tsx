@@ -68,7 +68,7 @@ function HomeTop() {
               <Link to="/apply" className="primary-btn">
                 New
               </Link>
-              <Link to="/about" className="secondary-btn">
+              <Link to="/apply" className="primary-btn">
                 Used
               </Link>
             </div>

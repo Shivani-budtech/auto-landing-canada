@@ -63,6 +63,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
         </ul>
       </div>
     </div>
+   
   </>
 )}
 
@@ -70,7 +71,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
 
  
         <div className="header-btn">
-          {isApply === "/apply" || isApplyNow === "/apply_now" ?
+          {(isApply || isApplyNow) ?
             <a href="tel:1-844-405-5363" className="">1-844-405-LEND</a> :
             <Link to="/apply" className="primary-btn">Apply Now</Link>
           }

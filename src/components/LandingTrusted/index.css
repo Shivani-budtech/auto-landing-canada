@@ -11,6 +11,14 @@
   margin-bottom: 15px;
 }
 
+.deskset
+{
+  display: block;
+}
+.mobileset
+{
+  display:none;
+}
 .trusted-subtitle {
   font-size: 16px;
   max-width: 800px;
@@ -37,4 +45,16 @@
 
 .customer-card img:hover {
   transform: scale(1.03);
+}
+
+@media screen and (max-width:767px)
+{
+  .deskset
+{
+  display: none;
+}
+.mobileset
+{
+  display:block;
+}
 }

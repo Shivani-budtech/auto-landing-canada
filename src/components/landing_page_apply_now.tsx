@@ -12,8 +12,9 @@ function Home() {
     <div>
         <LandingHomeTop />
         <LandingWaysToBuy />
-        <LookingFor />
+        
         <LandingStepsToFollow />
+        <LookingFor />
         <LandingTrusted />
         <LandingDifferentWork />
         <LandingBottomBanner />

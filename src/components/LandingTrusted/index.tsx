@@ -5,13 +5,16 @@ import './index.css';
 function TrustedCustomers() {
   return (
     <section className="trusted-customers container">
-      <h2 className="trusted-title">Trusted by Over 1 Million Canadians</h2>
+      <h2 className="trusted-title">Trusted Across Canada</h2>
       <p className="trusted-subtitle">
-        Our nationwide network of partner dealerships have special finance programs available, so regardless of your current income or credit situation we are confident we'll be able to help you get a car you love.
+        Across Canada, our trusted dealership partners provide flexible financing options. Whatever your credit or income situation, we’ll work to get you into a car you’ll love.
       </p>
       <div className="customer-grid">
-          <div className="customer-card">
-            <img src={`/images/dark_customer_grid.webp`} alt={`Happy Customer`} />
+          <div className="customer-card deskset">
+            <img src={`/images/website.webp`} alt={`Happy Customer`} />
+          </div>
+          <div className="customer-card mobileset">
+            <img src={`/images/phone.webp`} alt={`Happy Customer`} />
           </div>
       </div>
     </section>
