@@ -62,8 +62,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
           </li>
         </ul>
       </div>
-    </div>
-   
+    </div> 
   </>
 )}
 

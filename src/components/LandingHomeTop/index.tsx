@@ -63,7 +63,7 @@ function HomeTop() {
             No appointments, no obligation and free to apply
 
             </p>
-            <p className="subtext">Are you looking for a new and used vehicle</p>
+            <p className="subtext">Are you looking for a new or used vehicle?</p>
             <div className="buttons">
               <Link to="/apply" className="primary-btn">
                 New
@@ -77,7 +77,7 @@ function HomeTop() {
             </p>
           </div>
           <div className="info">
-            <img className="home-cars-img-small" src="/images/home-cars.webp" alt="Car Financing in Canada" />
+            <img className="home-cars-img-small" src="./images/home-cars.webp" alt="Car Financing in Canada" />
           </div>
         </div>
       </section>
