@@ -191,6 +191,7 @@
 .dropdown-item.active {
     color: var(--primary-btn-color);
 }
+
 .load-more
 {
     justify-content: center;
