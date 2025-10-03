@@ -1,29 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Routes, useLocation, matchPath } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useLocation,
+  matchPath,
+} from "react-router-dom";
 import "../font.css";
 import "../style.css";
-import '../responsive.css';
+import "../responsive.css";
 import About from "./About.tsx";
-import BlogDetail from './BlogDetail.tsx';
-import BlogsPage from './BlogsPage.tsx';
-import Calculator from './Calculator.tsx';
+import BlogDetail from "./BlogDetail.tsx";
+import BlogsPage from "./BlogsPage.tsx";
+import Calculator from "./Calculator.tsx";
 import ContactUS from "./ContactUs.tsx";
 import CustomerStories from "./CustomerStories.tsx";
-import Faqs from './Faqs.tsx';
+import Faqs from "./Faqs.tsx";
 import Footer from "./Footer.tsx";
 import Header from "./Header.tsx";
 import Home from "./Home.tsx";
-import HowItWorks from './HowItWorks.tsx';
-import MobileHeader from './MobileHeader.tsx';
-import PowerSports from './PowerSports.tsx';
-import PreApply from './PreApply.tsx';
-import PrivacyPolicy from './PrivacyPolicy.tsx';
-import TermsOfUSe from './TermsOfUSe.tsx';
-import VerificationCode from './VerificationCode.tsx';
-import MembershipProgramme from './membershipProgramme.tsx';
-import NotFound from './NotFound.tsx';
-import ApplyNow from './landing_page_apply_now.tsx';
-
+import HowItWorks from "./HowItWorks.tsx";
+import MobileHeader from "./MobileHeader.tsx";
+import PowerSports from "./PowerSports.tsx";
+import PreApply from "./PreApply.tsx";
+import PrivacyPolicy from "./PrivacyPolicy.tsx";
+import TermsOfUSe from "./TermsOfUSe.tsx";
+import VerificationCode from "./VerificationCode.tsx";
+import MembershipProgramme from "./membershipProgramme.tsx";
+import NotFound from "./NotFound.tsx";
+import ApplyNow from "./landing_page_apply_now.tsx";
 
 function AppContent({ isMenuOpen, setIsMenuOpen }) {
   const location = useLocation();
@@ -34,7 +39,7 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
     setIsMenuOpen("closed");
     window.scrollTo(0, 0);
 
-    const images = document.querySelectorAll('img');
+    const images = document.querySelectorAll("img");
     let loadedImagesCount = 0;
 
     const handleImageLoad = () => {
@@ -49,8 +54,8 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
         if (img.complete) {
           handleImageLoad();
         } else {
-          img.addEventListener('load', handleImageLoad);
-          img.addEventListener('error', handleImageLoad);
+          img.addEventListener("load", handleImageLoad);
+          img.addEventListener("error", handleImageLoad);
         }
       });
     } else {
@@ -59,8 +64,8 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
 
     return () => {
       images.forEach((img) => {
-        img.removeEventListener('load', handleImageLoad);
-        img.removeEventListener('error', handleImageLoad);
+        img.removeEventListener("load", handleImageLoad);
+        img.removeEventListener("error", handleImageLoad);
       });
     };
   }, [location]);
@@ -68,21 +73,19 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div className="">
       {loading ? (
-        <div className="main-loader" >
+        <div className="main-loader">
           <div className="loader">
             <svg
               viewBox="0 0 254.532 254.532"
               id="Capa_1"
               version="1.1"
-              className="wheel"
-            >
+              className="wheel">
               <g>
                 <path
                   d="M127.267,0C57.092,0,0,57.091,0,127.266s57.092,127.266,127.267,127.266c70.174,0,127.266-57.091,127.266-127.266
 				S197.44,0,127.267,0z M127.267,217.656c-49.922,0-90.391-40.468-90.391-90.39s40.469-90.39,90.391-90.39
 				c49.92,0,90.39,40.468,90.39,90.39S177.186,217.656,127.267,217.656z"
-                  id="tire"
-                ></path>
+                  id="tire"></path>
                 <path
                   d="M127.267,48.578c-43.39,0-78.689,35.299-78.689,78.688c0,43.389,35.3,78.688,78.689,78.688
 				c43.389,0,78.688-35.299,78.688-78.688C205.955,83.877,170.655,48.578,127.267,48.578z M195.878,122.249h-38.18
@@ -102,56 +105,52 @@ function AppContent({ isMenuOpen, setIsMenuOpen }) {
 				c-1.821,1.114-3.82,1.956-5.951,2.474v-0.072c-1.586,0.385-3.233,0.612-4.938,0.612S123.915,147.845,122.329,147.459z
 				M132.204,195.884v-38.267c4.824-0.78,9.273-2.685,13.077-5.433l27.034,27.034C161.4,188.696,147.488,194.794,132.204,195.884z
 				M179.292,172.23l-27.028-27.028c2.749-3.804,4.654-8.254,5.435-13.079h38.191C194.818,147.398,188.745,161.308,179.292,172.23z"
-                  id="rim"
-                ></path>
+                  id="rim"></path>
               </g>
             </svg>
             {/* <div className="road"></div> */}
           </div>
         </div>
       ) : (
-      <div className="auto-lending-app">
-        <script src="http://localhost:8097"></script>
-        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-        <MobileHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/customer-stories" element={<CustomerStories />} />
-          <Route path="/contact-us" element={<ContactUS />} />
-          <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/blog/:id" element={<BlogDetail />} />
-          <Route path="/faqs" element={<Faqs />} />
-          <Route path="/car-loan-calculator" element={<Calculator />} />
-          <Route path="/apply" element={<PreApply />} />
-          <Route path="/verification_code" element={<VerificationCode />} />
-          <Route path="/power-sports" element={<PowerSports />} />
-          <Route path='/how-it-works' element={<HowItWorks />} />
-          <Route path='/pre_apply' element={<PreApply />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-          <Route path='/terms-of-use' element={<TermsOfUSe />} />
-          <Route path='/membership_programme' element={<MembershipProgramme />} />
-          <Route path='/apply_now' element={<ApplyNow />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </div>
+        <div className="auto-lending-app">
+          <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+          <MobileHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/customer-stories" element={<CustomerStories />} />
+            <Route path="/contact-us" element={<ContactUS />} />
+            <Route path="/blogs" element={<BlogsPage />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
+            <Route path="/faqs" element={<Faqs />} />
+            <Route path="/car-loan-calculator" element={<Calculator />} />
+            <Route path="/apply" element={<PreApply />} />
+            <Route path="/verification_code" element={<VerificationCode />} />
+            <Route path="/power-sports" element={<PowerSports />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/pre_apply" element={<PreApply />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-use" element={<TermsOfUSe />} />
+            <Route
+              path="/membership_programme"
+              element={<MembershipProgramme />}
+            />
+            <Route path="/apply_now" element={<ApplyNow />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </div>
       )}
     </div>
   );
 }
 
 function MainComponent() {
-  
   const [isMenuOpen, setIsMenuOpen] = useState("closed");
-
-  
 
   return (
     <Router>
-      
       <AppContent isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-     
     </Router>
   );
 }
